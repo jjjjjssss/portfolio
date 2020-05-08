@@ -1,0 +1,725 @@
+/************************** Header (Navigation Bar) **************************/
+
+header {
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: fixed;
+  overflow-x: auto;
+  overflow-y: hidden;
+  z-index: 1; /* Note: z-index of page-title is 0 */
+  background-color: WhiteSmoke;
+}
+
+/* Container for logo, website name, and menu*/
+.navigation-bar {
+  width: 100%;
+  min-width: 1000px;
+  margin: auto;
+}
+
+.logo {
+  display: inline-block;
+  padding-left: 5%;
+  padding-right: 20px;
+  float: left;
+  height: 40px;
+}
+
+.website-name {
+  display: inline-block;
+  float: left;
+  color: #474747;
+  font-family: "Futura";
+  font-size: 30px;
+}
+
+/* Appearance of website name (Joyce Shen) doesn't change as a link */
+.website-name a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* Menu */
+nav ul {
+  display: inline-block;
+  line-height: 10px; /* Vertically aligns to logo and name */
+  list-style-type: none;
+  float: right;
+  padding-right: 5%;
+}
+
+/* Menu Items */
+nav li {
+  display: inline-block;
+  padding-left: 30px;
+  color: #474747;
+  font-family: "Futura";
+  font-size: 20px;
+}
+
+/* Appearance of menu items doesn't change as a link */
+nav li a {
+  color: inherit;
+  text-decoration: inherit;
+
+}
+
+/* 'Art' turns red on hover */
+#nav-art:hover {
+  color: #ffd000;
+  transition: .2s ease;
+}
+
+/* 'Yearbook' turns yellow on hover */
+#nav-yearbook:hover {
+  color: red;
+  transition: .2s ease;
+}
+
+/* 'Graphic Design' turns blue on hover */
+#nav-graphic-design:hover {
+  color: #0044ff;
+  transition: .2s ease;
+}
+
+/* 'Art' turns red on hover */
+#nav-product-design:hover {
+  color: #ffa600;
+  transition: .2s ease;
+}
+
+
+
+
+
+/************************** Body Content **************************/
+
+body {
+  margin: 0;
+  min-width: 1000px;
+  overflow: auto;
+  background-color: WhiteSmoke;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: "Futura";
+
+}
+
+/* Decrease space between lines in a paragraph */
+p {
+  margin: 10px 0;
+}
+
+/* Color of link doesn't change */
+p a {
+  color: inherit;
+}
+
+
+/* Banner */
+.banner {
+  width: 100%;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Page title */
+.page-title {
+  top: 213px;
+  margin: auto;
+  position: relative;
+  z-index: 0; /* z-index of header is 1 */
+  border: 7px solid white;
+  text-align: center;
+  color: white;
+  font-size: 120px;
+  text-shadow: 4px 5px 7px rgba(0,0,0,0.6);
+  box-shadow: 4px 5px 7px rgba(0,0,0,0.6);
+  /* width of border is set in the code for individual pages */
+}
+
+.section-title {
+  margin: auto;
+  position: relative;
+  z-index: 0; /* z-index of header is 1 */
+  text-align: center;
+  color: white;
+  text-shadow: 4px 5px 7px rgba(0,0,0,0.6);
+}
+
+/* Container for image gallery */
+.gallery {
+  margin-top: 45px;
+  margin-bottom: 65px;
+  color: #474747;
+  font-size: 14px;
+}
+
+/* Container for image and overlay */
+.image {
+  position: relative;
+  max-width: 100%;
+}
+
+/* Row of images (for Art and Yearbook (Photos) pages*/
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  min-width: 900px;
+  max-width: 1800px;
+  margin: auto;
+}
+
+/* Spacing between images */
+.row div {
+  margin: 10px;
+}
+
+/* Width of image in each row */
+.row img {
+  display: block;
+  max-width: 100%;
+}
+
+/* To ensure image heights line up in every row, format aspect ratios of each photo */
+/* See code in #art and #yearbook section */
+
+/* Image in the container .image */
+.image img {
+  display: block;
+}
+
+/* Overlay when hovering over image */
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /* Note: overlay is slightly shifted in .row layouts
+  (art and yearbook (photo) page), see code below */
+  height: 100%;
+  width: 100%;
+  transition: .5s ease;
+  background: rgba(0, 0, 0, 0);
+}
+
+/* Shift overlay to line up with images */
+.row .overlay {
+  top: -10px;
+  left: -10px;
+}
+
+/* Image description in overlay */
+.image-description {
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  max-width: 600px;
+  opacity: 0;
+  overflow: auto;
+  color: white;
+  font-size: 12px;
+  transition: .5s ease;
+}
+
+/* Bold and resize description title*/
+.description-title {
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Change overlay opacity from 0 to 0.5 when hovering*/
+.image:hover .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+/* Change description opacity from 0 to 1 when hovering*/
+.image:hover .image-description {
+  opacity: 1;
+}
+
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 150px;
+  padding-top: 50px;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Appearance of link doesn't change */
+footer a {
+  text-decoration: inherit;
+}
+
+/* Footer Logos */
+footer #logo {
+  height: 40px;
+  margin: 10px;
+}
+
+
+
+
+
+/**************************** Home Page ****************************/
+
+/* Appearance of link doesn't change */
+#index a {
+  text-decoration: inherit;
+}
+
+/* Image for banner */
+#index .banner {
+  background-color: #0000ff;
+  background-image: url("media/primary-background.png");
+}
+
+#index .intro-image-container {
+  width: 100%;
+  min-width: 1000px;
+  position: absolute;
+}
+
+#index .intro-image {
+  position: absolute;
+  transition: transform .2s;
+}
+
+#index .intro-image:hover {
+  transform: scale(1.1);
+}
+
+#index .intro-shapes {
+  position: absolute;
+}
+
+#index #seagull-left {
+  top: 180px;
+  left: 10%;
+  width: 250px;
+}
+
+#index #seagull-right {
+  top: 200px;
+  left: 32%;
+  width: 320px;
+}
+
+#index #rectangle {
+  top: 220px;
+  left: 8%;
+  width: 190px;
+  opacity: 90%;
+}
+
+#index #dots {
+  top: 170px;
+  left: 25%;
+  width: 240px;
+  opacity: 90%;
+}
+
+#index #blob {
+  top: 160px;
+  left: 37%;
+  width: 260px;
+  opacity: 90%;
+}
+
+
+#index .introduction {
+  width: 25%;
+  max-height: 300px;
+  left: 65%;
+  /* center aligns vertically */
+  top: calc(50% + 50px);
+  transform: translateY(-50%);
+  /**/
+  position: relative;
+  z-index: 0; /* z-index of header is 1 */
+  overflow: auto;
+  color: white;
+  font-size: 18px;
+}
+
+/* Gallery/section of subpage title banners */
+#index .gallery {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* Banners for subpage titles */
+#index .gallery .banner {
+  height: 140px;
+  margin-top: 30px;
+}
+
+/* Art Banner */
+#index #art-banner {
+  background-image: url("media/yellow-background.png");
+}
+
+/* Yearbook Banner */
+#index #yearbook-banner {
+  background-image: url("media/red-background.png");
+}
+
+/* Graphic Design Banner */
+#index #graphic-design-banner {
+  background-image: url("media/blue-background.png");
+
+}
+
+/* Product Design Banner */
+#index #product-design-banner {
+  background-image: url("media/orange-background.png");
+}
+
+/* Section titles (Art, Yearbook, Graphic Design)*/
+#index .section-title {
+  top: 14px;
+  font-size: 84px;
+  transition: transform .2s;
+}
+
+/* Section title scales up on hover */
+#index .section-title:hover {
+  transform: scale(1.05);
+}
+
+/* Background image for footer */
+#index footer {
+  padding-top: 20px;
+}
+
+
+
+
+
+/**************************** Art Page ****************************/
+
+/* Image for banner */
+#art .banner {
+  background-image: url("media/yellow-background.png");
+}
+
+/* Set width of box around page title */
+#art .page-title {
+  width: 300px;
+}
+
+/* Format aspect ratio of each image; image heights line up in every row */
+/* aspect ratio = width / height */
+#art #ruin { flex: calc(1800 / 1273); }
+#art #away { flex: calc(3068 / 2277); }
+#art #laundry-day { flex: calc(3724 / 2980); }
+#art #mandrill { flex: calc(2726 / 3394); }
+#art #self-portrait { flex: calc(2586 / 3203); }
+#art #lakeview { flex: calc(3618 / 2897); }
+#art #adore-me-too { flex: calc(1369 / 1710); }
+#art #natures-glitch{ flex: calc(2927 / 3744); }
+#art #alter-seago { flex: calc(2400 / 1874); }
+#art #in-n-out { flex: calc(1712 / 1980); }
+#art #northern-bald-ibis { flex: calc(2718 / 2755); }
+#art #animal-sketches { flex: calc(3410 / 2516); }
+#art #oceans-ways { flex: calc(7650 / 9900); }
+#art #the-day-after-yesterday { flex: calc(3880 / 1634); }
+#art #bikini-bottom { flex: calc(1800 / 3600); }
+#art #beryl-flare { flex: calc(4800 / 2700); }
+#art #final-december { flex: calc(3445 / 3301); }
+#art #fine-line { flex: calc(7088 / 3300); }
+#art #twentyten-part-1 { flex: calc(3258 / 1904); }
+
+/* Background image for footer */
+#art footer {
+  background-image: url("media/yellow-background.png");
+}
+
+
+
+
+
+/**************************** Yearbook Page ****************************/
+
+/* Image for banner */
+#yearbook .banner {
+  background-image: url("media/red-background.png");
+}
+
+/* Set width of box around page title */
+#yearbook .page-title {
+  width: 750px;
+}
+
+/* Banner for page section (Yearbook Layouts / Yearbook Photos) */
+#yearbook .page-section .banner {
+  width: 400px;
+  height: 60px;
+  margin-top: 65px;
+}
+
+/* Section title */
+#yearbook .section-title {
+  top: 10px;
+  font-size: 30px;
+}
+
+/* Image grid */
+#yearbook .grid {
+  margin: auto;
+  width: 60%;
+  min-width: 900px;
+  max-width: 1800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Image in grid */
+#yearbook .grid img {
+  width: 100%;
+}
+
+/* Format aspect ratio of each image; image heights line up in every row */
+/* aspect ratio = width / height */
+#yearbook .portrait { flex: calc(1365 / 2048); }
+#yearbook .landscape { flex: calc(2048 / 1365); }
+
+/* Background image for footer */
+#yearbook footer {
+  background-image: url("media/red-background.png");
+}
+
+
+
+
+
+/**************************** Graphic Design Page ****************************/
+
+/* Image for banner */
+#graphic-design .banner {
+  background-image: url("media/blue-background.png");
+}
+
+/* Set width of box around page title */
+#graphic-design .page-title {
+  width: 750px;
+  top: 233px; /* overrides parent class */
+  font-size: 80px; /* overrides parent class */
+}
+
+/* Set margins for gallery */
+#graphic-design .gallery {
+  margin-left: auto;
+  margin-right: auto;
+  width: 920px; /* originally 900 but accounts for 10px padding on left and
+                right columns*/
+  display: flex;
+}
+
+/* Set width of each column as 1/3 (300px) of .content */
+#graphic-design .column {
+  width: 20%;
+  min-width: 300px;
+  max-width: 600px;
+  padding: 0 10px;
+}
+
+/* Bottom padding on images + their overlay */
+#graphic-design .column .image {
+  margin-bottom: 20px;
+}
+
+/* Image spans width of column */
+#graphic-design .column .image img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* Background image for footer */
+#graphic-design footer {
+  background-image: url("media/blue-background.png");
+}
+
+
+
+
+
+/************************ Product/Interior Design Page ************************/
+
+/* Image for banner */
+#product-design .banner {
+  background-image: url("media/orange-background.png");
+}
+
+/* Set width of box around page title and position */
+#product-design .page-title {
+  width: 850px;
+  top: 188px; /* overrides parent class */
+  font-size: 80px; /* overrides parent class */
+}
+
+/* Format aspect ratio of each image; image heights line up in every row */
+/* aspect ratio = width / height */
+#product-design #bamboo { flex: calc(5786 / 2800); }
+#product-design #peingu { flex: calc(3300 / 5100); }
+#product-design #jingles { flex: calc(7200 / 3665); }
+#product-design #twentyten-part-2 { flex: calc(1762 / 992); }
+
+/* Background image for footer */
+#product-design footer {
+  background-image: url("media/orange-background.png");
+}
+
+
+
+
+
+/**************************** Modal ****************************/
+
+/****************************
+Title: W3.CSS
+Author: W3Schools
+Date:
+Code version:
+Availability:
+Location: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal_lightbox
+****************************/
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: calc(50vh - 270px); /* Vertically aligns image; 50% of screen
+                                   minus half the height of modal content
+                                   (540 / 2 px) */
+  padding-bottom: calc(50vh - 270px);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  overflow: auto;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Modal Image Containers */
+.modal-content .image-container {
+  position: relative;
+  margin: auto;
+  width: 80%;
+  height: 400px;
+}
+
+/* Modal Images */
+.modal-content .image-container img {
+  position: relative;
+  margin: auto;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  /* Vertically align images in container*/
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Caption text */
+.modal-content .caption-container {
+  display: block;
+  position: relative;
+  bottom: 0px;
+  width: 50%;
+  height: 120px;
+  margin: 20px 25% 0 25%; /* center aligns container */
+  text-align: center;
+  overflow: auto;
+  color: white;
+  font-family: "Futura";
+  font-size: 14px;
+}
+
+
+/* The Close Button */
+.close {
+  color: white;
+  opacity: 0.3;
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  right: 30px;
+  font-size: 48px;
+  transition: 0.2s ease;
+}
+
+.close:hover,
+.close:focus {
+  opacity: 0.7;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 175px;
+  width: auto;
+  margin: 1%;
+  padding: 16px;
+  color: white;
+  opacity: 0.3;
+  font-size: 36px;
+  transition: 0.2s ease;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/* On hover, change opacity of buttons from 0.3 to 0.5 */
+.prev:hover,
+.next:hover {
+  opacity: 0.7;
+}
