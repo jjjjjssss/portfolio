@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 /************************** Header (Navigation Bar) **************************/
 
 header {
+  top: 0;
   left: 0;
   right: 0;
   width: 100%;
@@ -33,7 +37,8 @@ header {
   display: inline-block;
   float: left;
   color: #474747;
-  font-family: "Futura";
+  font-family: "Jost";
+  font-weight: 600;
   font-size: 30px;
 }
 
@@ -57,7 +62,8 @@ nav li {
   display: inline-block;
   padding-left: 30px;
   color: #474747;
-  font-family: "Futura";
+  font-family: "Jost";
+  font-weight: 600;
   font-size: 20px;
 }
 
@@ -76,17 +82,17 @@ nav li a {
 
 /* 'Yearbook' turns yellow on hover */
 #nav-yearbook:hover {
-  color: red;
+  color: #ed253c;
   transition: .2s ease;
 }
 
 /* 'Graphic Design' turns blue on hover */
 #nav-graphic-design:hover {
-  color: #0044ff;
+  color: #2b41ea;
   transition: .2s ease;
 }
 
-/* 'Art' turns red on hover */
+/* 'Product/Interior Design' turns orange on hover */
 #nav-product-design:hover {
   color: #ffa600;
   transition: .2s ease;
@@ -99,15 +105,17 @@ nav li a {
 /************************** Body Content **************************/
 
 body {
-  margin: 0;
-  min-width: 1000px;
   overflow: auto;
+  width: 100%;
+  min-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Open Sans";
   background-color: WhiteSmoke;
-  background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  font-family: "Futura";
-
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Decrease space between lines in a paragraph */
@@ -120,11 +128,9 @@ p a {
   color: inherit;
 }
 
-
 /* Banner */
 .banner {
   width: 100%;
-  height: 500px;
   margin-left: auto;
   margin-right: auto;
   background-attachment: fixed;
@@ -135,33 +141,43 @@ p a {
 
 /* Page title */
 .page-title {
-  top: 213px;
+  top: 140px;
   margin: auto;
   position: relative;
   z-index: 0; /* z-index of header is 1 */
   border: 7px solid white;
   text-align: center;
   color: white;
-  font-size: 120px;
-  text-shadow: 4px 5px 7px rgba(0,0,0,0.6);
-  box-shadow: 4px 5px 7px rgba(0,0,0,0.6);
+  font-family: "Jost";
+  font-size: 66px;
+  text-shadow: 4px 5px 7px rgba(0,0,0,0.4);
+  box-shadow: 4px 5px 7px rgba(0,0,0,0.4);
   /* width of border is set in the code for individual pages */
 }
 
+/* Section title (ex. Yearbook Layouts, Yearbook Pictures)*/
 .section-title {
   margin: auto;
   position: relative;
   z-index: 0; /* z-index of header is 1 */
   text-align: center;
-  color: white;
   text-shadow: 4px 5px 7px rgba(0,0,0,0.6);
+  color: white;
+  font-family: "Jost";
 }
 
 /* Container for image gallery */
 .gallery {
-  margin-top: 45px;
-  margin-bottom: 65px;
+  width: 60%;
+  min-width: 900px;
+  max-width: 1800px;
+  position: relative;
+  top: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 75px;
   color: #474747;
+  background-color: WhiteSmoke;
   font-size: 14px;
 }
 
@@ -237,6 +253,7 @@ p a {
 /* Bold and resize description title*/
 .description-title {
   margin-top: 0px;
+  font-family: "Jost";
   font-size: 20px;
   font-weight: bold;
 }
@@ -257,14 +274,13 @@ p a {
 footer {
   width: 100%;
   height: 150px;
+  top: 180px;
   padding-top: 50px;
+  position: relative;
   text-align: center;
+  font-family: "Jost";
   font-size: 16px;
   color: white;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /* Appearance of link doesn't change */
@@ -289,68 +305,78 @@ footer #logo {
   text-decoration: inherit;
 }
 
-/* Image for banner */
-#index .banner {
-  background-color: #0000ff;
-  background-image: url("media/primary-background.png");
+/* Image for intro section banner */
+#index #intro-banner {
+  height: 400px;
+  background-color: #182fd6;
+  background-image: url("media/white-background.png");
 }
 
+/* Container for all images in intro section */
 #index .intro-image-container {
   width: 100%;
   min-width: 1000px;
   position: absolute;
 }
 
+/* Seagulls in intro */
 #index .intro-image {
   position: absolute;
   transition: transform .2s;
 }
 
+/* Seagulls scale up when hovered over */
 #index .intro-image:hover {
   transform: scale(1.1);
 }
 
+/* Shapes in intro */
 #index .intro-shapes {
   position: absolute;
 }
 
+/* Left seagull */
 #index #seagull-left {
-  top: 180px;
+  top: 130px;
   left: 10%;
-  width: 250px;
+  width: 200px;
 }
 
+/* Right seagull */
 #index #seagull-right {
-  top: 200px;
-  left: 32%;
-  width: 320px;
+  top: 150px;
+  left: 30%;
+  width: 280px;
 }
 
+/* Rectangle */
 #index #rectangle {
-  top: 220px;
+  top: 165px;
   left: 8%;
-  width: 190px;
+  width: 170px;
   opacity: 90%;
 }
 
+/* Dots */
 #index #dots {
-  top: 170px;
-  left: 25%;
+  top: 150px;
+  left: 23%;
+  width: 210px;
+  opacity: 90%;
+}
+
+/* Blob */
+#index #blob {
+  top: 150px;
+  left: 37%;
   width: 240px;
   opacity: 90%;
 }
 
-#index #blob {
-  top: 160px;
-  left: 37%;
-  width: 260px;
-  opacity: 90%;
-}
-
-
+/* Intro statement */
 #index .introduction {
   width: 25%;
-  max-height: 300px;
+  max-height: 200px;
   left: 65%;
   /* center aligns vertically */
   top: calc(50% + 50px);
@@ -363,16 +389,28 @@ footer #logo {
   font-size: 18px;
 }
 
-/* Gallery/section of subpage title banners */
-#index .gallery {
+/* Large text in intro statement */
+#index h1 {
+  font-family: "Jost";
+  font-size: 44px;
+  margin: 0px;
+}
+
+/* Grid of subpage title banners */
+#index .page-list {
+  margin-top: 35px;
+  margin-bottom: 30px;
+  color: #474747;
   margin-left: 50px;
   margin-right: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
 
 /* Banners for subpage titles */
-#index .gallery .banner {
-  height: 140px;
-  margin-top: 30px;
+#index .page-list .banner {
+  height: 80px;
 }
 
 /* Art Banner */
@@ -398,8 +436,8 @@ footer #logo {
 
 /* Section titles (Art, Yearbook, Graphic Design)*/
 #index .section-title {
-  top: 14px;
-  font-size: 84px;
+  top: 2px;
+  font-size: 54px;
   transition: transform .2s;
 }
 
@@ -410,6 +448,7 @@ footer #logo {
 
 /* Background image for footer */
 #index footer {
+  top: 0px;
   padding-top: 20px;
 }
 
@@ -420,13 +459,13 @@ footer #logo {
 /**************************** Art Page ****************************/
 
 /* Image for banner */
-#art .banner {
+#art body {
   background-image: url("media/yellow-background.png");
 }
 
 /* Set width of box around page title */
 #art .page-title {
-  width: 300px;
+  width: 200px;
 }
 
 /* Format aspect ratio of each image; image heights line up in every row */
@@ -451,11 +490,6 @@ footer #logo {
 #art #fine-line { flex: calc(7088 / 3300); }
 #art #twentyten-part-1 { flex: calc(3258 / 1904); }
 
-/* Background image for footer */
-#art footer {
-  background-image: url("media/yellow-background.png");
-}
-
 
 
 
@@ -463,8 +497,13 @@ footer #logo {
 /**************************** Yearbook Page ****************************/
 
 /* Image for banner */
-#yearbook .banner {
+#yearbook body {
   background-image: url("media/red-background.png");
+}
+
+/* Override gallery padding */
+#yearbook .gallery {
+  padding-top: 5px;
 }
 
 /* Set width of box around page title */
@@ -472,11 +511,20 @@ footer #logo {
   width: 750px;
 }
 
-/* Banner for page section (Yearbook Layouts / Yearbook Photos) */
-#yearbook .page-section .banner {
+/* Box for page section (Yearbook Layouts / Yearbook Photos) */
+#yearbook .page-section {
   width: 400px;
   height: 60px;
-  margin-top: 65px;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("media/red-background.png");
 }
 
 /* Section title */
@@ -508,11 +556,6 @@ footer #logo {
 #yearbook .portrait { flex: calc(1365 / 2048); }
 #yearbook .landscape { flex: calc(2048 / 1365); }
 
-/* Background image for footer */
-#yearbook footer {
-  background-image: url("media/red-background.png");
-}
-
 
 
 
@@ -520,32 +563,28 @@ footer #logo {
 /**************************** Graphic Design Page ****************************/
 
 /* Image for banner */
-#graphic-design .banner {
+#graphic-design body {
   background-image: url("media/blue-background.png");
 }
 
 /* Set width of box around page title */
 #graphic-design .page-title {
-  width: 750px;
-  top: 233px; /* overrides parent class */
-  font-size: 80px; /* overrides parent class */
+  width: 650px;
 }
 
-/* Set margins for gallery */
+/* Place columns side by side and center align */
 #graphic-design .gallery {
-  margin-left: auto;
-  margin-right: auto;
-  width: 920px; /* originally 900 but accounts for 10px padding on left and
-                right columns*/
   display: flex;
+  justify-content: center;
 }
 
-/* Set width of each column as 1/3 (300px) of .content */
+/* Set width of each column */
 #graphic-design .column {
-  width: 20%;
-  min-width: 300px;
-  max-width: 600px;
-  padding: 0 10px;
+  width: 33%;
+  min-width: 240px;
+  max-width: 480px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* Bottom padding on images + their overlay */
@@ -559,11 +598,6 @@ footer #logo {
   vertical-align: middle;
 }
 
-/* Background image for footer */
-#graphic-design footer {
-  background-image: url("media/blue-background.png");
-}
-
 
 
 
@@ -571,15 +605,13 @@ footer #logo {
 /************************ Product/Interior Design Page ************************/
 
 /* Image for banner */
-#product-design .banner {
+#product-design body {
   background-image: url("media/orange-background.png");
 }
 
 /* Set width of box around page title and position */
 #product-design .page-title {
-  width: 850px;
-  top: 188px; /* overrides parent class */
-  font-size: 80px; /* overrides parent class */
+  width: 1000px;
 }
 
 /* Format aspect ratio of each image; image heights line up in every row */
@@ -588,11 +620,6 @@ footer #logo {
 #product-design #peingu { flex: calc(3300 / 5100); }
 #product-design #jingles { flex: calc(7200 / 3665); }
 #product-design #twentyten-part-2 { flex: calc(1762 / 992); }
-
-/* Background image for footer */
-#product-design footer {
-  background-image: url("media/orange-background.png");
-}
 
 
 
@@ -622,7 +649,7 @@ Location: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal_ligh
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.85);
   overflow: auto;
 }
 
@@ -666,7 +693,7 @@ Location: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal_ligh
   text-align: center;
   overflow: auto;
   color: white;
-  font-family: "Futura";
+  font-family: "Open Sans";
   font-size: 14px;
 }
 
