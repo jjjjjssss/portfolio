@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html id="product-design">
+<head>
+  <title>Art | Joyce Shen</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+  <script src="modal.js"></script>
+</head>
+
+<header>
+
+  <div class="navigation-bar">
+
+    <!-- Website Logo and Name -->
+    <a href="index.html">
+      <img class="logo"
+           src="media/logo.png"
+           alt="Joyce Shen Logo">
+      <div class="website-name">JOYCE SHEN</div>
+    </a>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a id="nav-art" href="art.html">Art</a></li>
+            <li><a id="nav-yearbook" href="yearbook.html">Yearbook</a></li>
+            <li><a id="nav-graphic-design" href="graphic-design.html">Graphic Design</a></li>
+            <li><a id="nav-product-design" href="product-design.html">Product/Interior Design</a></li>
+        </ul>
+    </nav>
+
+  </div>
+
+</header>
+
+
+<body>
+
+
+  <!-- Banner and Page Title -->
+  <div class="page-title">PRODUCT/INTERIOR DESIGN</div>
+
+
+  <!-- Main Content (Gallery) -->
+  <div class="gallery">
+
+    <!-- Row 1 -->
+    <div class="row">
+
+      <!-- Image 1: Jingles -->
+      <div id="jingles" class="image" onclick="openModal();currentSlide(1)">
+        <img src="media/art/jingles.png"
+             alt="Jingles">
+        <div class="overlay">
+          <div class="image-description">
+            <p class="description-title">Jingles</p>
+            <p>9.5” × 4” × 5.5” (large prototype), foam and cardstock (large
+              prototype), clay (small prototype), color pencil, Photoshop,
+              Autodesk Sketchbook (illustrations)</p>
+            <p>I wanted to create a playful shoe for young children by
+              combining the form of a bowling shoe and the jingles of a
+              tambourine. I first sculpted a prototype out of clay, then
+              developed my idea by sketching orthographic sketches of the shoe
+              and sculpting a life-sized prototype from foam.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row">
+
+      <!-- Image 2: Peingu -->
+      <div id="peingu" class="image" onclick="openModal();currentSlide(2)">
+        <img src="media/art/peingu.png"
+             alt="Peingu">
+        <div class="overlay">
+          <div class="image-description">
+            <p class="description-title">Peingü</p>
+            <p>8.5" ×  14", Photoshop</p>
+            <p>This is a poster for an ergonomic pitcher and creamer that I
+              designed in a team (Isaac Lerner, Asli Kocaoglu, and Louis
+              Dubarry). The pitcher is built to redistribute the weight of
+              water to make it easier to pour. I illustrated the pitcher and
+              creamer and designed the poster.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 3: Bamboo -->
+      <div id="bamboo" class="image" onclick="openModal();currentSlide(3)">
+        <img src="media/art/bamboo.png"
+             alt="Bamboo">
+        <div class="overlay">
+          <div class="image-description">
+            <p class="description-title">Bamboo</p>
+            <p>19” × 19” × 42” (chair), cardboard and bicycle tube (chair),
+              Photoshop and Autodesk Sketchbook (illustrations)</p>
+            <p>Inspired by a bamboo grove, I designed this chair with a
+              rounded seat and a back panel made of cardboard strips of
+              different heights. It can seat an adult and be disassembled and
+              reassembled for shipping. </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Row 3 -->
+    <div class="row">
+
+    <!-- Image 4: 2010, Part 2 -->
+      <div id="twentyten-part-2" class="image" onclick="openModal();currentSlide(4)">
+        <!-- Location for 2010, Part 1 to link to -->
+        <span id="twentyten-part-2-anchor" style="position:relative; top:-100px;"></span>
+        <img src="media/art/2010-part-2.png"
+             alt="2010, Part 2">
+        <div class="overlay">
+          <div class="image-description">
+            <p class="description-title">2010, Part 2</p>
+            <p>1762 px × 992 px, Maya</p>
+            <p>This is an interior model of a treehouse, similar to those I
+              pictured in my head as a 9-year-old. It has a minimal, cozy, and
+              bright vibe that would have been perfect for my childhood
+              playdates. Part 1 can be found in the
+              <a href="art.html#twentyten-part-1-anchor">Art page</a>.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <!-- Slide 1: Jingles -->
+        <div class="mySlides">
+          <div class="image-container">
+            <img src="media/art/jingles.png"
+                 alt="Jingles" style="width:100%">
+          </div>
+          <div class="caption-container">
+            <p class="description-title">Jingles</p>
+            <p>9.5” × 4” × 5.5” (large prototype), foam and cardstock (large
+              prototype), clay (small prototype), color pencil, Photoshop,
+              Autodesk Sketchbook (illustrations)</p>
+              <p>I wanted to create a playful shoe for young children by
+                combining the form of a bowling shoe and the jingles of a
+                tambourine. I first sculpted a prototype out of clay, then
+                developed my idea by sketching orthographic sketches of the shoe
+                and sculpting a life-sized prototype from foam.</p>
+          </div>
+        </div>
+
+        <!-- Slide 2: Peingu -->
+        <div class="mySlides">
+          <div class="image-container">
+            <img src="media/art/peingu.png"
+                 alt="Peingu" style="width:100%">
+          </div>
+          <div class="caption-container">
+            <p class="description-title">Peingü</p>
+            <p>8.5" ×  14", Photoshop</p>
+            <p>This is a poster for an ergonomic pitcher and creamer that I
+              designed in a team (Isaac Lerner, Asli Kocaoglu, and Louis
+              Dubarry). The pitcher is built to redistribute the weight of
+              water to make it easier to pour. I illustrated the pitcher and
+              creamer and designed the poster.</p>
+          </div>
+        </div>
+
+        <!-- Slide 3: Bamboo -->
+        <div class="mySlides">
+          <div class="image-container">
+            <img src="media/art/bamboo.png"
+                 alt="Bamboo" style="width:100%">
+          </div>
+          <div class="caption-container">
+            <p class="description-title">Bamboo</p>
+            <p>19” × 19” × 42” (chair), cardboard and bicycle tube (chair),
+              Photoshop and Autodesk Sketchbook (illustrations)</p>
+            <p>Inspired by a bamboo grove, I designed this chair with a
+              rounded seat and a back panel made of cardboard strips of
+              different heights. It can seat an adult and be disassembled and
+              reassembled for shipping. </p>
+          </div>
+        </div>
+
+        <!-- Slide 4: 2010, Part 2 -->
+        <div class="mySlides">
+          <div class="image-container">
+            <img src="media/art/2010-part-2.png"
+                 alt="2010, Part 2" style="width:100%">
+          </div>
+          <div class="caption-container">
+            <p class="description-title">2010, Part 2</p>
+            <p>1762 px × 992 px, Maya</p>
+            <p>This is an interior model of a treehouse, similar to those I
+              pictured in my head as a 9-year-old. It has a minimal, cozy, and
+              bright vibe that would have been perfect for my childhood
+              playdates. Part 1 can be found in the
+              <a href="art.html#twentyten-part-1-anchor">Art page</a>.</p>
+          </div>
+        </div>
+
+        <!-- Next/previous controls with buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Next/previous controls with arrow keys -->
+        <script>
+          document.onkeydown = function(e) {
+            if (modalOpen === true) {
+              switch (e.keyCode) {
+                case 37: // left arrow
+                  plusSlides(-1);
+                  break;
+                case 39: // right arrow
+                  plusSlides(1);
+                  break;
+              }
+            }
+          }
+        </script>
+
+      </div>
+    </div>
+
+
+  <footer>
+    <a href="https://www.linkedin.com/in/joyce-shen-009938198/" target="_blank">
+      <img src="media/linkedin-logo.png"
+           alt="Linkedin" title="Linkedin" id="logo">
+    </a>
+    <a href="https://github.com/jjjjjssss" target="_blank">
+      <img src="media/github-logo.png"
+           alt="Github" title="Github" id="logo">
+    </a>
+    <p>
+      <a href="mailto:jshen315@gatech.edu">jshen315@gatech.edu</a>
+    </p>
+  </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html id="graphic-design">
+<head>
+  <title>Graphic Design | Joyce Shen</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+  <script src="modal.js"></script>
+</head>
+
+<header>
+
+  <div class="navigation-bar">
+
+    <!-- Website Logo and Name -->
+    <a href="index.html">
+      <img class="logo"
+           src="media/logo.png"
+           alt="Joyce Shen Logo">
+      <div class="website-name">JOYCE SHEN</div>
+    </a>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a id="nav-art" href="art.html">Art</a></li>
+            <li><a id="nav-yearbook" href="yearbook.html">Yearbook</a></li>
+            <li><a id="nav-graphic-design" href="graphic-design.html">Graphic Design</a></li>
+            <li><a id="nav-product-design" href="product-design.html">Product/Interior Design</a></li>
+        </ul>
+    </nav>
+
+  </div>
+
+</header>
+
+
+<body>
+
+
+  <!-- Page Title -->
+  <div class="page-title">GRAPHIC DESIGN</div>
+
+
+  <!-- Main Content (Gallery)-->
+  <div class="gallery">
+
+    <!-- Note: image numbers are in order by distance from top, not by column -->
+
+    <!-- Column 1 -->
+    <div class="column">
+
+      <!-- Image 1: Fly SFO -->
+      <div class="image" onclick="openModal();currentSlide(1)">
+        <img src="media/graphic-design/fly-sfo.png"
+             alt="Fly SFO" >
+        <div class="overlay">
+          <div class="image-description">
+            <p class="description-title">Fly SFO</p>
+            <p>I used flat shapes and minimal colors to design an imaginary
+              flyer for the San Francisco International Airport. I overlapped
+              airplanes, the airport, the skyline, and the city landmark (the
+              Golden Gate Bridge) to create a feeling of depth.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 6: Yearbook Application Deadline -->
+      <div class="image" onclick="openModal();currentSlide(6)">
+        <img src="media/graphic-design/yearbook-apps.png"
+             alt="Yearbook Application Deadline" >
+        <div class="overlay">
+          <div class="image-description">
+            <p class="description-title">Yearbook Application Deadline</p>
+            <p>This is a set of Facebook flyers released across four days
+              alerting students to apply for my school's yearbook team. The
+              designs behind 'Y', 'B', and 'K' reflect the yearbook covers from
+              the previous three years.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Column 2 -->
+    <div class="column">
+
+      <!-- Image 2: Pup-toberfest -->
+      <div class="image" onclick="openModal();currentSlide(2)">
+        <img src="media/graphic-design/puptoberfest-black.png"
+             alt="Pup-toberfest" >
+        <div class="overlay">
+          <div class="image-description">
+            <p class="description-title">Pup-toberfest</p>
+            <p>This is a T-shirt design I made for Delaware Pet Rescue's annual
+              event, the Pup-toberfest. </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 5: T4 -->
+      <div class="image" onclick="openModal();currentSlide(5)">
+        <img src="media/graphic-design/t4.jpg"
+             alt="T4" >
+        <div class="overlay">
+          <div class="image-description">
+            <p class="description-title">T4</p>
+            <p>This is a Facebook flyer advertising a fundraiser at a boba tea shop.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 8: Senior Superlatives -->
+      <div class="image" onclick="openModal();currentSlide(8)">
+        <img src="media/graphic-design/senior-superlatives.jpg"
+             alt="Senior Superlatives" >
+        <div class="overlay">
+          <div class="image-description">
+            <p class="description-title">Senior Superlatives</p>
+            <p>This is a Facebook flyer notifying seniors in high school to
+              submit votes for senior superlatives (Best Dressed, Future
+              Olympian, etc.).</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Column 3 -->
+    <div class="column">
+
+      <!-- Image 3: Yearbook Price Increase -->
+      <div class="image" onclick="openModal();currentSlide(3)">
+        <img src="media/graphic-design/price-increase.jpg"
+             alt="Yearbook Price Increase" >
+        <div class="overlay">
+          <div class="image-description">
+            <p class="description-title">Yearbook Price Increase</p>
+            <p>This is a Facebook flyer alerting about increasing yearbook prices.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 4: Yearbooks on Sale -->
+      <div class="image" onclick="openModal();currentSlide(4)">
+        <img src="media/graphic-design/yearbooks-on-sale.jpg"
+             alt="Yearbooks on Sale" >
+        <div class="overlay">
+          <div class="image-description">
+            <p class="description-title">Yearbooks on Sale</p>
+            <p>This is a Facebook flyer advertising my school's yearbook.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 7: Senior Quotes -->
+      <div class="image" onclick="openModal();currentSlide(7)">
+        <img src="media/graphic-design/senior-quotes.jpg"
+             alt="Senior Quotes" >
+        <div class="overlay">
+          <div class="image-description">
+            <p class="description-title">Senior Quotes</p>
+            <p>This is a Facebook flyer notifying seniors in high school to
+              submit their senior quotations to the yearbook team.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <!-- Slide 1: Fly SFO -->
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/graphic-design/fly-sfo.png"
+               alt="Fly SFO" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">Fly SFO</p>
+          <p>I used flat shapes and minimal colors to design an imaginary
+              flyer for the San Francisco International Airport. I overlapped
+              airplanes, the airport, the skyline, and the city landmark (the
+              Golden Gate Bridge) to create a feeling of depth.</p>
+        </div>
+      </div>
+
+      <!-- Slide 2: Pup-toberfest -->
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/graphic-design/puptoberfest-white.png"
+               alt="Pup-toberfest" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">Pup-toberfest</p>
+          <p>This is a T-shirt design I made for Delaware Pet Rescue's annual
+            event, the Pup-toberfest. </p>
+        </div>
+      </div>
+
+      <!-- Slide 3: Yearbook Price Increase -->
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/graphic-design/price-increase.jpg"
+               alt="Ruin" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">Yearbook Price Increase</p>
+          <p>This is a Facebook flyer alerting about increasing yearbook prices.</p>
+        </div>
+      </div>
+
+      <!-- Slide 4: Yearbooks on Sale -->
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/graphic-design/yearbooks-on-sale.jpg"
+               alt="Yearbooks on Sale" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">Yearbooks on Sale</p>
+          <p>This is a Facebook flyer advertising my school's yearbook.</p>
+        </div>
+      </div>
+
+      <!-- Slide 5: T4 -->
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/graphic-design/t4.jpg"
+               alt="T4" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">T4</p>
+          <p>This is a Facebook flyer advertising a fundraiser at a boba tea shop.</p>
+        </div>
+      </div>
+
+      <!-- Slide 6: Yearbook Application Deadline -->
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/graphic-design/yearbook-apps.png"
+               alt="Yearbook Application Deadline" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">Yearbook Application Deadline</p>
+          <p>This is a set of Facebook flyers released across four days
+            alerting students to apply for my school's yearbook team. The
+            designs behind 'Y', 'B', and 'K' reflect the yearbook covers from
+            the previous three years.</p>
+        </div>
+      </div>
+
+      <!-- Slide 7: Senior Quotes -->
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/graphic-design/senior-quotes.jpg"
+               alt="Senior Quotes" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">Senior Quotes</p>
+          <p>This is a Facebook flyer notifying seniors in high school to
+            submit their senior quotations to the yearbook team.</p>
+        </div>
+      </div>
+
+      <!-- Slide 8: Senior Superlatives -->
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/graphic-design/senior-superlatives.jpg"
+               alt="Senior Superlatives" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">Senior Superlatives</p>
+          <p>This is a Facebook flyer notifying seniors in high school to
+            submit votes for senior superlatives (Best Dressed, Future
+            Olympian, etc.).</p>
+        </div>
+      </div>
+
+      <!-- Next/previous controls with buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Next/previous controls with arrow keys -->
+      <script>
+        document.onkeydown = function(e) {
+          if (modalOpen === true) {
+            switch (e.keyCode) {
+              case 37: // left arrow
+                plusSlides(-1);
+                break;
+              case 39: // right arrow
+                plusSlides(1);
+                break;
+            }
+          }
+        }
+      </script>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+    <a href="https://www.linkedin.com/in/joyce-shen-009938198/" target="_blank">
+      <img src="media/linkedin-logo.png"
+           alt="Linkedin" title="Linkedin" id="logo">
+    </a>
+    <a href="https://github.com/jjjjjssss" target="_blank">
+      <img src="media/github-logo.png"
+           alt="Github" title="Github" id="logo">
+    </a>
+    <p>
+      <a href="mailto:jshen315@gatech.edu">jshen315@gatech.edu</a>
+    </p>
+  </footer>
+
+</body>
+</html>
