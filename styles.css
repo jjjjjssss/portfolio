@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,450;0,500;0,600;0,700;1,400;1,450;1,500;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700;&display=swap');
-
 /************************** Header (Navigation Bar) **************************/
 
 header {
@@ -62,7 +59,7 @@ nav li {
   display: inline-block;
   padding-left: 30px;
   font-family: "Jost";
-  font-size: max(15.9px,min(1.60vw,20px));
+  font-size: max(15.8px,min(1.60vw,20px));
  /* resizes text between 16 and 20 px */
 }
 
@@ -94,13 +91,13 @@ nav .selected {
 
 /* 'Art' turns red on hover */
 #nav-art:hover {
-  color: #ed253c;
+  color: #ed263c;
   transition: .2s ease;
 }
 
 /* 'Yearbook' turns blue on hover */
 #nav-yearbook:hover {
-  color: #0045c6;
+  color: #004bdd;
   transition: .2s ease;
 }
 
@@ -112,7 +109,7 @@ nav .selected {
 
 /* 'Product/Interior Design' turns pink on hover */
 #nav-product-design:hover {
-  color: #ed254f;
+  color: #ed254e;
   transition: .2s ease;
 }
 
@@ -128,7 +125,7 @@ body {
   min-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   background-color: WhiteSmoke;
   background-attachment: fixed;
   background-position: center;
@@ -142,7 +139,7 @@ p {
 }
 
 /* Color of link doesn't change */
-p a {
+a {
   color: inherit;
 }
 
@@ -162,16 +159,15 @@ p a {
   top: 120px;
   margin: auto;
   position: relative;
-  z-index: 0; /* z-index of header is 1 */
   border: 7px solid white;
   text-align: center;
   color: white;
   font-family: "Jost";
   font-size: 66px;
-  text-shadow: 4px 5px 7px rgba(0,0,0,0.4);
-  -webkit-text-shadow: 4px 5px 7px rgba(0,0,0,0.4);
-  box-shadow: 4px 5px 7px rgba(0,0,0,0.4);
-  -webkit-box-shadow: 4px 5px 7px rgba(0,0,0,0.4);
+  text-shadow: 4px 5px 7px rgba(0,0,0,0.15);
+  -webkit-text-shadow: 4px 5px 7px rgba(0,0,0,0.15);
+  box-shadow: 4px 5px 7px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 4px 5px 7px rgba(0,0,0,0.15);
   /* width of border is set in the code for individual pages */
 }
 
@@ -179,10 +175,10 @@ p a {
 .section-title {
   margin: auto;
   position: relative;
-  z-index: 0; /* z-index of header is 1 */
   text-align: center;
-  text-shadow: 4px 5px 7px rgba(0,0,0,0.6);
-  -webkit-text-shadow: 4px 5px 7px rgba(0,0,0,0.6);
+  text-shadow: 4px 5px 7px rgba(0,0,0,0.15);
+  -webkit-text-shadow: 4px 5px 7px rgba(0,0,0,0.15);
+  font-weight: 450;
   color: white;
   font-family: "Jost";
 }
@@ -196,11 +192,22 @@ p a {
   top: 160px;
   margin-left: auto;
   margin-right: auto;
-  padding: 75px;
+  padding: 50px 65px;
   color: #474747;
   background-color: WhiteSmoke;
   font-size: 14px;
 }
+/* Different colored shadows for each page*/
+#design-process .gallery {box-shadow: 1px 2px 8px rgba(166,111,12,0.4);
+  -webkit-box-shadow: 1px 2px 8px rgba(166,111,12,0.4);}
+#art .gallery {box-shadow: 1px 2px 8px rgba(166,12,19,0.4);
+  -webkit-box-shadow: 1px 2px 8px rgba(166,12,19,0.4);}
+#yearbook .gallery {box-shadow: 1px 2px 8px rgba(12,63,160,0.4);
+  -webkit-box-shadow: 1px 2px 8px rgba(12,63,160,0.4);}
+#graphic-design .gallery {box-shadow: 1px 2px 8px rgba(166,124,12,0.4);
+  -webkit-box-shadow: 1px 2px 8px rgba(166,124,12,0.4);}
+#product-design .gallery {box-shadow: 1px 2px 8px rgba(166,12,43,0.4);
+  -webkit-box-shadow: 1px 2px 8px rgba(166,12,43,0.4);}
 
 /* Container for image and overlay */
 .image {
@@ -212,9 +219,9 @@ p a {
 .row {
   display: flex;
   flex-direction: row;
-  width: 60%;
-  min-width: 900px;
-  max-width: 1800px;
+  width: 100%;
+  min-width: 750px;
+  max-width: 1650px;
   margin: auto;
 }
 
@@ -290,11 +297,10 @@ p a {
   opacity: 1;
 }
 
-
 /* Footer */
 footer {
   width: 100%;
-  height: 150px;
+  height: 130px;
   top: 150px;
   padding-top: 50px;
   position: relative;
@@ -311,8 +317,8 @@ footer a {
 
 /* Footer Logos */
 footer #logo {
-  height: 40px;
-  margin: 10px;
+  height: 30px;
+  margin: 10px 10px 0 10px;
 }
 
 
@@ -333,158 +339,183 @@ footer #logo {
 
 /* Image for intro section banner */
 #index #intro-banner {
-  height: 470px;
-  background-color: #182fd6;
-  background-image: url("media/white-background.png");
-}
-
-/* Container for all images in intro section */
-#index .intro-image-container {
   width: 100%;
-  min-width: 1000px;
+  height: 85vh;
+  min-height: 600px;
+  max-height: 700px;
+  overflow: hidden;
+  background-color: #1730d6;
+  background-image: url("media/white-background-more-transparent.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Section for all bird circles */
+#index .bird-circle-container {
+  width: 56%;
+  min-width: 580px;
+  height: 85vh; /* same as intro-banner*/
+  min-height: 600px; /* same as intro-banner*/
+  max-height: 700px; /* same as intro-banner*/
+  /* center aligns vertically */
+  top: calc(50% + 30px);
+  transform: translateY(-50%);
+  /**/
+  left: calc(44% + 10px);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Bird circles */
+#index .bird-circle {
+  width: 28vh;
+  min-width: 200px;
+  max-width: 230px;
   position: absolute;
 }
 
-/* Seagulls in intro */
-#index .intro-image {
-  position: absolute;
-  transition: transform .2s;
+/* Identical bird circles with different background colors */
+#index .bird-circle-hover {
+  opacity: 0;
+  transition: opacity .2s ease-out;
 }
 
-/* Seagulls scale up when hovered over */
-#index .intro-image:hover {
-  transform: scale(1.1);
-}
-
-/* Shapes in intro */
-#index .intro-shapes {
-  position: absolute;
-}
-
-/* Left seagull */
-#index #seagull-left {
-  top: 135px;
-  left: 10%;
-  width: 200px;
-}
-
-/* Right seagull */
-#index #seagull-right {
-  top: 190px;
-  left: 30%;
-  width: 280px;
-}
-
-/* Rectangle */
-#index #rectangle {
-  top: 170px;
-  left: 8%;
-  width: 170px;
-  opacity: 90%;
-}
-
-/* Dots */
-#index #dots {
-  top: 170px;
-  left: 23%;
-  width: 210px;
-  opacity: 90%;
-}
-
-/* Blob */
-#index #blob {
-  top: 190px;
-  left: 37%;
-  width: 240px;
-  opacity: 90%;
+/* Bird circle changes background color when hovered */
+#index .bird-circle-hover:hover {
+  opacity: 1;
 }
 
 /* Intro statement */
-#index .introduction {
-  width: 25%;
-  max-height: 300px;
-  left: 65%;
-  /* center aligns vertically */
-  top: calc(50% + 40px);
-  transform: translateY(-50%);
-  /**/
-  position: relative;
-  z-index: 0; /* z-index of header is 1 */
+#index #introduction {
+  width: 35%;
+  min-width: 510px;
+  max-height: 430px;
+  left: 7%;
+  top: min(170px,max(130px,18vh));
+  position: absolute;
   overflow: auto;
   color: white;
-  font-size: 18px;
 }
 
 /* Large text in intro statement */
-#index h1 {
+#index #introduction h1 {
   font-family: "Jost";
-  font-size: 44px;
+  font-size: 7.5em;
   margin: 0px;
 }
 
-/* Grid of subpage title banners */
-#index .page-list {
-  margin-top: 35px;
-  margin-bottom: 30px;
-  margin-left: 30px;
-  margin-right: 30px;
+/* Small description text */
+#index #introduction p {
+  font-size: 1.1em;
+}
+
+/* About section */
+#index #about {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Images in about section */
+#index #about img {
+  position: absolute;
+}
+
+/* Text in about section */
+#index #about-description {
+  width: 26%;
+  max-height: 300px;
+  position: absolute;
+  overflow: scroll;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5%;
+}
+
+/* Header in about section*/
+#index #about-description h2 {
+  margin: 0 0 5px 0;
+  font-family: "Jost";
+  font-size: 2.5em;
+  font-weight: 500;
+  letter-spacing: 0px;
+  color: #1730d6;
+}
+
+/* Main text in about section */
+#index #about-description p {
+  font-size: 1.1em;
+  color: #474747;
+}
+
+/* List of subpage title buttons */
+#index #page-list {
   justify-content: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: -20px 0; /* accounts for 20px margin on page-title-containers*/
   color: #474747;
 }
 
-/* Banners for subpage titles */
-#index .page-list .banner {
-  width: 400px;
-  height: 70px;
-  margin: 7px;
+/* Subpage title button */
+#index .page-title-container {
+  width: 220px;
+  height: 90px;
+  position: relative;
+  display: inline-block;
+  margin: 20px;
 }
 
-/* UI/UX Design Banner */
-#index #ui-design-banner {
-  background-image: url("media/orange-background.png");
+/* Hand-drawn rectangle */
+#index .page-title-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
 }
 
-/* Art Banner */
-#index #art-banner {
-  background-image: url("media/red-background.png");
+/* Doodle background overlays subpage title buttons */
+#index .doodles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("media/white-background.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* Yearbook Banner */
-#index #yearbook-banner {
-  background-image: url("media/blue-background.png");
+/* Text in subpage title button */
+#index .page-title-container h3 {
+  width: 100%;
+  height: 24px;
+  position: absolute;
+  margin: 0;
+  padding: 33px 0; /* centers text in textbox */
+  text-align: center;
+  line-height: 1.2;
+  font-family: "Jost";
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  transition: .2s ease;
 }
 
-/* Graphic Design Banner */
-#index #graphic-design-banner {
-  background-image: url("media/yellow-background.png");
-
+/* Text size increases when hovered */
+#index .page-title-container h3:hover {
+  transform: scale(1.1);
 }
 
-/* Product Design Banner */
-#index #product-design-banner {
-  background-image: url("media/pink-background.png");
-}
 
-/* Section titles (Art, Yearbook, Graphic Design)*/
-#index .section-title {
-  top: 5px;
-  font-size: 42px;
-  transition: transform .2s;
-}
-
-/* Section title scales up on hover */
-#index .section-title:hover {
-  transform: scale(1.05);
-}
-
-/* Background image for footer */
+/* Footer settings */
 #index footer {
   top: -10px;
-  padding-top: 20px;
-  height: 120px;
+  height: 130px;
 }
 
 
@@ -500,48 +531,77 @@ footer #logo {
 
 /* Set width of box around page title and position */
 #ui-design .page-title {
-  width: 550px;
+  width: 540px;
 }
 
-/* Change padding of gallery (gray background box) */
+/* Change padding of gallery (container for all content) */
 #ui-design .gallery {
-  padding: 70px;
+  padding: 0px;
+  width: 1020px;
+  /* min-width: 1050px;
+  max-width: 1950px; */
+  background-color: transparent;
+  box-shadow: none;
+  -webkit-box-shadow: none;
 }
 
-/* Project Sections (each colored section) */
+/* Project Sections */
 #ui-design .project {
   display: block;
   position: relative;
-  margin: 15px;
-  background-image: url("media/white-background-more-transparent.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  margin: 0;
   overflow: hidden;
+  box-shadow: 1px 2px 8px rgba(130,82,12,0.4);
+  -webkit-box-shadow: 1px 2px 8px rgba(130,82,12,0.4);
+  background-color: WhiteSmoke;
+}
+
+/* Tea Mobile Project Section */
+#ui-design #tea-mobile {
+  width: 100%;
+  height: 450px;
+  margin-bottom: 40px;
 }
 
 /* Breezy Ice Cream Project Section*/
 #ui-design #breezy-ice-cream {
   width: 100%;
   height: 450px;
-  background-color: #ed253c;
-  color: #ffffff;
+  margin-bottom: 40px;
 }
 
 /* Oversubscribed Project Section */
 #ui-design #oversubscribed {
   height: 600px;
   width: 40%;
-  background-color: #2b41ea;
-  color: #ffffff;
+  margin-right: 40px;
 }
 
 /* StreetEats Project Section */
 #ui-design #streeteats {
   height: 600px;
   width: 60%;
-  background-color: #ffd000;
+}
+
+/* Container for colored block in background of project section */
+#ui-design .rectangle {
+  width: 700px; /* random big number */
+  height: 500px; /* random big number */
+  position: absolute;
+}
+
+/* Doodle background overlays handrawn color blocks */
+#ui-design .doodles {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background-image: url("media/white-background.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Project Name */
@@ -557,13 +617,15 @@ footer #logo {
 #ui-design .project p {
   position: absolute;
   font-size: 14px;
+  overflow: scroll;
 }
 
-/* Images, add drop shadow */
+/* Images */
 #ui-design .project img {
   position: absolute;
-  -webkit-filter: drop-shadow(3px 5px 5px rgb(0,0,0,0.39));
-  filter: drop-shadow(3px 5px 5px rgb(0,0,0,0.35));
+  cursor: pointer;
+  /*-webkit-filter: drop-shadow(3px 5px 5px rgb(0,0,0,0.39));
+  filter: drop-shadow(3px 5px 5px rgb(0,0,0,0.35));*/
 }
 
 /* Button for 'Prototype' and 'Design Process' */
@@ -596,6 +658,7 @@ footer #logo {
 /* Create two rows for gallery (gray background box)*/
 #design-process .gallery {
   width: 75%;
+  padding: 75px;
   top: 140px;
   display: flex;
   flex-direction: row;
@@ -675,6 +738,31 @@ footer #logo {
   padding: 5px;
 }
 
+/* Scrollable images for long wireframes and mockups*/
+#design-process .scrollable-image {
+  width: 23.1%;
+  margin: 5px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Image fills its scrollable container */
+#design-process .scrollable-image img {
+  width: 100%;
+}
+
+/* Adjust height of an scrollable image so that it scales with the width */
+#design-process #tea-mobile-wireframes .scrollable-image {
+  height: max(27.4vw, 328px);
+}
+
+/* Adjust height of an scrollable image so that it scales with the width */
+#design-process #tea-mobile-mockups .scrollable-image {
+  height: max(29.8vw, 357px);
+}
+
 
 
 
@@ -688,7 +776,7 @@ footer #logo {
 
 /* Set width of box around page title */
 #art .page-title {
-  width: 200px;
+  width: 230px;
 }
 
 /* Format aspect ratio of each image; image heights line up in every row */
@@ -759,14 +847,16 @@ footer #logo {
 /* Image grid */
 #yearbook .grid {
   margin: auto;
-  width: 60%;
-  min-width: 900px;
-  max-width: 1800px;
+  padding: 10px;
+  width: 100%;
+  min-width: 750px;
+  max-width: 1650px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 /* Image in grid */
@@ -792,7 +882,7 @@ footer #logo {
 
 /* Set width of box around page title */
 #graphic-design .page-title {
-  width: 650px;
+  width: 640px;
 }
 
 /* Place columns side by side and center align */
@@ -812,7 +902,7 @@ footer #logo {
 
 /* Bottom padding on images + their overlay */
 #graphic-design .column .image {
-  margin-bottom: 20px;
+  margin: 10px 0;
 }
 
 /* Image spans width of column */
@@ -834,7 +924,7 @@ footer #logo {
 
 /* Set width of box around page title and position */
 #product-design .page-title {
-  width: 1000px;
+  width: 950px;
 }
 
 /* Format aspect ratio of each image; image heights line up in every row */
@@ -879,8 +969,7 @@ Location: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal_ligh
 /* Modal Content */
 .modal-content {
   position: relative;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: -12vh; /* "raises" modal for mobile */
   margin-left: auto;
   margin-right: auto;
 }
@@ -888,9 +977,11 @@ Location: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal_ligh
 /* Modal Image Containers */
 .modal-content .image-container {
   position: relative;
-  margin: auto;
+  margin-top: 80px; /* "lowers" modal for web */
+  margin-left: auto;
+  margin-right: auto;
   width: 80%;
-  height: 400px;
+  height: min(800px,max(63vh,450px));
 }
 
 /* Modal Images */
@@ -911,13 +1002,14 @@ Location: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal_ligh
   position: relative;
   bottom: 0px;
   width: 50%;
-  height: min(20vh, 400px);
-  margin: 20px 25% 0 25%; /* center aligns container */
+  max-width: 800px;
+  height: min(17vh, 400px);
+  margin: 20px auto 0 auto; /* center aligns container */
   text-align: center;
   overflow: auto;
   color: white;
   font-family: "Open Sans";
-  font-size: 14px;
+  font-size: 12px;
 }
 
 
@@ -951,7 +1043,8 @@ Location: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal_ligh
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 175px;
+  top: calc(50% - 30px);
+  transform: translateY(-50%);
   width: auto;
   margin: 1%;
   padding: 16px;

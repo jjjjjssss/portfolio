@@ -3,6 +3,7 @@
 <head>
   <title>Home | Joyce Shen</title>
   <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,450;0,500;0,600;0,700;1,400;1,450;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/x-icon" href="media/favicon.ico">
 </head>
@@ -37,62 +38,115 @@
 
   <!-- Banner and Page Title -->
   <div class="banner" id="intro-banner">
-    <div class="intro-image-container">
-      <img class="intro-shapes" id="dots" src="media/index/dots.png">
-      <img class="intro-shapes" id="rectangle" src="media/index/rectangle.png">
-      <img class="intro-shapes" id="blob" src="media/index/blob.png">
+    <div class="bird-circle-container">
+      <img src="media/index/seagull-circle.png" alt="Seagull"
+           class="bird-circle" style="bottom:52%;left:0;">
+      <img src="media/index/seagull-circle-hover.png" alt="Seagull"
+           class="bird-circle bird-circle-hover" style="bottom:52%;left:0;">
 
-      <a href="art.html#in-n-out-anchor">
-        <img class="intro-image" id="seagull-right" src="media/index/seagull-right.png" alt="Seagull">
-      </a>
-      <a href="art.html#in-n-out-anchor">
-        <img class="intro-image" id="seagull-left" src="media/index/seagull-left.png" alt="Seagull">
-      </a>
+      <img src="media/index/duck-circle.png" alt="Duck"
+           class="bird-circle" style="top:52%;left:19%;">
+      <img src="media/index/duck-circle-hover.png" alt="Duck"
+           class="bird-circle bird-circle-hover" style="top:52%;left:19%;">
+
+      <img src="media/index/pigeon-circle.png" alt="Pigeon"
+           class="bird-circle" style="bottom:52%;left:38%;">
+      <img src="media/index/pigeon-circle-hover.png" alt="Pigeon"
+           class="bird-circle bird-circle-hover" style="bottom:52%;left:38%;">
+
+      <img src="media/index/goose-circle.png" alt="Goose"
+           class="bird-circle" style="top:52%;left:57%;">
+      <img src="media/index/goose-circle-hover.png" alt="Goose"
+           class="bird-circle bird-circle-hover" style="top:52%;left:57%;">
+
+      <img src="media/index/solid-circle.png" alt="Solid Circle"
+           class="bird-circle" style="bottom:52%;left:76%;">
+      <img src="media/index/solid-circle-hover.png" alt="Solid Circle"
+           class="bird-circle bird-circle-hover" style="bottom:52%;left:76%;">
+
+      <img src="media/index/outline-circle.png" alt="Outline Circle"
+           class="bird-circle" style="top:52%;left:95%;">
+      <img src="media/index/outline-circle-hover.png" alt="Outline Circle"
+           class="bird-circle bird-circle-hover" style="top:52%;left:95%;">
     </div>
-    <div class="introduction">
-      <h1 style="font-weight:500">Hey! It's Joyce.</h1>
-      <p>I am an undergraduate student studying computer science at Georgia
-        Tech. I'm an enthusiastic individual who loves all things art, design,
-        and programming.</p>
+
+    <div id="introduction">
+      <h1 style="font-weight:500">Hey!</h1>
+      <h1 style="font-weight:500;margin-top:-30px;">I'm Joyce.</h1>
+      <p style="margin-top:20px;">I am an undergraduate student living in the
+        Bay Area and studying computer science at Georgia Tech. I'm passionate
+        about all things art, design, and programming.</p>
+    </div>
+  </div>
+
+  <!-- About Me-->
+  <div id="about">
+    <img src="media/index/triangle1.png" style="width:25px;left:5%;top:calc(50% - 130px);transform: translateY(-50%);">
+    <img src="media/index/triangle2.png" style="width:25px;left:62%;top:calc(50% + 120px);transform: translateY(-50%);">
+    <img src="media/index/seagull-left.png" alt="Seagull" style="width:13%;max-width:200px;left:7%;top:calc(50% - 50px);transform: translateY(-50%);">
+    <img src="media/index/seagull-right.png" alt="Seagull" style="width:20%;max-width:308px;left:16%;top:calc(50% + 25px);transform: translateY(-50%);">
+    <img src="media/index/seagull-duo.png" alt="Seagull" style="width:27%;max-width:415px;top:50%;transform: translateY(-50%);left:0;right:0;margin:auto">
+    <div id="about-description">
+      <h2>About</h2>
+      <p>I’m on a journey to learn about people, the way they interact with the
+        world around them, and how I can help design that world. In other words,
+        <b>I’m really into UI/UX design</b>. Take a look around and learn more
+        about me, the stuff I make, and my slight obsession with birds.</p>
     </div>
   </div>
 
 
+  <!-- Links to Subpages -->
 
+  <div id="page-list">
 
-  <!-- Main Content -->
-
-  <div class="page-list">
+    <div style="position:relative;">
 
     <a href="ui-ux-design.html">
-      <div class="banner" id="ui-design-banner">
-        <div class="section-title">UI/UX DESIGN</div>
+      <div class="page-title-container">
+        <img src="media/index/orange-block.png">
+        <div class="doodles"></div>
+        <h3>UI/UX Design</h3>
       </div>
     </a>
 
     <a href="art.html">
-      <div class="banner" id="art-banner">
-        <div class="section-title">ART</div>
+      <div class="page-title-container">
+        <img src="media/index/red-block.png">
+        <div class="doodles"></div>
+        <h3>Art</h3>
       </div>
     </a>
 
     <a href="yearbook.html">
-      <div class="banner" id="yearbook-banner">
-        <div class="section-title">YEARBOOK</div>
+      <div class="page-title-container">
+          <img src="media/index/blue-block.png">
+          <div class="doodles"></div>
+          <h3>Yearbook</h3>
       </div>
     </a>
 
+    </div>
+
+    <div style="position:relative;">
+
     <a href="graphic-design.html">
-      <div class="banner" id="graphic-design-banner">
-        <div class="section-title">GRAPHIC DESIGN</div>
+      <div class="page-title-container">
+        <img src="media/index/yellow-block.png">
+        <div class="doodles"></div>
+        <h3>Graphic Design</h3>
       </div>
     </a>
 
     <a href="product-design.html">
-      <div class="banner" id="product-design-banner">
-        <div class="section-title" style="font-size:29px;top:14px;">PRODUCT/INTERIOR DESIGN</div>
+      <div class="page-title-container">
+        <img src="media/index/pink-block.png">
+        <div class="doodles"></div>
+        <h3 style="height:54px;padding:18px 0;">Product/Interior Design</h3>
       </div>
     </a>
+
+    </span>
 
   </div>
 

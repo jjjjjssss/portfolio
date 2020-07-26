@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html id="design-process">
+<head>
+  <title>Tea Mobile Design Process | Joyce Shen</title>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,450;0,500;0,600;0,700;1,400;1,450;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/74240a07b4.js" crossorigin="anonymous"></script>
+</head>
+
+<header>
+
+  <div class="navigation-bar">
+
+    <!-- Website Logo and Name -->
+    <a href="index.html" title="Home">
+      <img class="logo"
+           src="media/logo.png"
+           alt="Joyce Shen Logo">
+      <div class="website-name">JOYCE SHEN</div>
+    </a>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+          <li class="selected"><a id="nav-ui-ux-design" href="ui-ux-design.html">UI/UX Design</a></li>
+          <li class="inactive"><a id="nav-art" href="art.html">Art</a></li>
+          <li class="inactive"><a id="nav-yearbook" href="yearbook.html">Yearbook</a></li>
+          <li class="inactive"><a id="nav-graphic-design" href="graphic-design.html">Graphic Design</a></li>
+          <li class="inactive"><a id="nav-product-design" href="product-design.html">Product/Interior Design</a></li>
+        </ul>
+    </nav>
+
+  </div>
+
+</header>
+
+
+<body>
+
+
+  <!-- Main Content (Gallery) -->
+  <div class="gallery">
+
+    <div class="table-of-contents">
+      <h3 style="font-size:24px;margin-bottom:20px;"><a href="ui-ux-design.html">&lt; BACK</a></h3>
+      <h3><a href="#ideation-anchor" class="scroll_to">Ideation</a></h3>
+      <h3><a href="#sitemap-anchor" class="scroll_to">Sitemap</a></h3>
+      <h3><a href="#wireframes-anchor" class="scroll_to">Wireframes</a></h3>
+      <h3><a href="#moodboard-anchor" class="scroll_to">Moodboard</a></h3>
+      <h3><a href="#visual-mockups-anchor" class="scroll_to">Visual Mockups</a></h3>
+      <h3><a href="https://www.sketch.com/s/34b56263-cdbe-47ab-bff6-81e79423450f/a/pPMkGk/play" target=”_blank”>Prototype&nbsp;<i class="fas fa-external-link-alt" style="font-size:16px;"></i></a></h3>
+    </div>
+
+    <div class="content">
+
+      <h1>Tea Mobile Design Process</h1>
+      <br>
+
+      <!---Ideation--->
+      <span id="ideation-anchor" style="position:relative; top:-100px;"></span>
+      <h2>Ideation</h2>
+
+      <p><b>Description:</b> Tea Mobile is a delivery-only boba store
+        delivering affordable and customizable drinks to college students
+        around Midtown Atlanta.</p>
+
+      <p><b>Elevator Pitch:</b> Need a quick treat for yourself or catering for
+        a group event? Tea Mobile delivers refreshing, authentic, and
+        affordable boba right to you, perfect for study sessions, movie nights,
+        and small events.</p>
+
+      <p><b>Audience:</b> College students and event organizers for college events</p>
+      <!--<p style="margin:0;">Roles:</p>
+      <ul style="margin:0 0 7px 0;">
+        <li>College students who have had boba before</li>
+        <li>College students trying boba for the first time</li>
+        <li>Event organizers for small college events</li>
+      </ul>
+      <p style="margin:0;">Demographics:</p>
+      <ul style="margin:0 0 7px 0;">
+        <li>Gender: all genders</li>
+        <li>Age: 18-30</li>
+        <li>Education: college</li>
+        <li>Occupation: students, school administration</li>
+        <li>Marital Status: single</li>
+        <li>Income: limited income</li>
+        <li>Location: Georgia Tech (urban, college campus)</li>
+      </ul>
+      <p style="margin:0;">Psychographics:</p>
+      <ul>
+        <li>Personality & Attitudes: social, outspoken, fun, lazy</li>
+        <li>Values: open-minded, work-hard-play-hard attitude</li>
+        <li>Lifestyles: busy and stressed, studious, studies with friends,
+          works a student job</li>
+      </ul>-->
+
+      <p style="margin:0 0 7px 0"><b>User Profile:</b></p>
+      <div style="width:31.5%; margin-right:10px; display:inline-block; vertical-align:top;">
+        <p style="margin:0;">Michelle (the studious student):</p>
+        <ul>
+          <li>23-year-old Georgia Tech student</li>
+          <li>Pursuing a PhD in Digital Media</li>
+          <li>Studies alone for hours in the library</li>
+          <li>Has a small circle of friends she hangs out with on weekends</li>
+          <li>Has only tried boba once or twice before</li>
+          <li>"No pain no gain"</li>
+        </ul>
+      </div>
+      <div style="width:31.5%; margin-right:10px; display:inline-block; vertical-align:top;">
+        <p style="margin:0;">Brandon (the party student):</p>
+        <ul>
+          <li>18-year-old Georgia Tech student</li>
+          <li>Pursuing a Bachelor’s in Mechanical Engineering</li>
+          <li>Parties every weekend</li>
+          <li>Just moved from Vancouver, a place with lots of boba shops</li>
+          <li>Drinks boba every other day and keeps a stock in his fridge</li>
+          <li>“I don’t study much but I get good grades”</li>
+        </ul>
+      </div>
+      <div style="width:31.5%; margin-right:10px; display:inline-block; vertical-align:top;">
+        <p style="margin:0;">Mary (housing department staff member):</p>
+        <ul>
+          <li>Building/hall director for a small freshman dorm at Georgia Tech</li>
+          <li>Has a budget to organize dorm events</li>
+          <li>Has never tried boba before</li>
+          <li>Loving mother of three kids</li>
+          <li>Lives close to campus</li>
+          <li>"I want to make freshman year a good experience for everyone”</li>
+        </ul>
+    </div>
+
+      <p style="margin:0 0 7px 0;"><b>Strategy:</b></p>
+      <p style="margin:0;">User Needs:</p>
+      <ul style="margin:0 0 7px 0;">
+        <li>Find out if the restaurant delivers to their area</li>
+        <li>Order food online</li>
+        <li>Customize their order</li>
+        <li>Change the quantity of drinks they ordered</li>
+        <li>Track delivery</li>
+        <li>Contact the restaurant</li>
+        <li>View the restaurant menu</li>
+        <li>Learn more about boba</li>
+      </ul>
+      <p style="margin:0;">Client Needs:</p>
+      <ul>
+        <li>To sell food online that will be delivered</li>
+        <li>Provide a system for order customization</li>
+        <li>Show their colorful, fun brand identity</li>
+        <li>Communicate reliability</li>
+        <li>Communicate quality</li>
+        <li>Promote new or popular items on front page</li>
+        <li>Encourage users to buy more items</li>
+      </ul>
+
+      <!--<p style="margin:0 0 7px 0;"><b>Outline of Scope:</b></p>
+      <p style="margin:0;">Content Requirements:</p>
+      <ul style="margin:0 0 7px 0;">
+        <li>Information about boba</li>
+        <li>Information about delivery radius and speedy delivery service</li>
+        <li>About us</li>
+        <li>Pictures of new menu items</li>
+        <li>List of popular menu items</li>
+        <li>Menu: images and cost of each item</li>
+        <li>Contact information of restaurant</li>
+      </ul>
+      <p style="margin:0;">Functionality Requirements:</p>
+      <ul>
+        <li>Enter address and check if they are in the restaurant’s delivery radius</li>
+        <li>Customize their order (drink flavor, size, sugar and ice levels,
+          toppings, quantity)</li>
+        <li>Add items to cart</li>
+        <li>Check out (edit address, payment information)</li>
+        <li>Track order on a map</li>
+      </ul>-->
+
+      <br>
+
+      <!---Sitemap--->
+      <span id="sitemap-anchor" style="position:relative; top:-100px;"></span>
+      <h2>Sitemap</h2>
+      <img src="media/design-process/tea-mobile-sitemap.png" alt="Sitemap" width=80%>
+      <br><br><br>
+
+      <!---Wireframes--->
+      <span id="wireframes-anchor" style="position:relative; top:-100px;"></span>
+      <h2>Wireframes</h2>
+      <div style="margin: -5px -5px 0 -5px;" id="tea-mobile-wireframes">
+        <div class="scrollable-image"><img src="media/design-process/tea-mobile-wireframe-home-mobile.png" alt="Wireframe - Home (Mobile)"></div>
+        <div class="scrollable-image"><img src="media/design-process/tea-mobile-wireframe-hours.png" alt="Wireframe - Hours & Delivery"></div>
+        <div class="scrollable-image"><img src="media/design-process/tea-mobile-wireframe-delivery-radius.png" alt="Wireframe - Order (Delivery Radius)"></div>
+        <div class="scrollable-image"><img src="media/design-process/tea-mobile-wireframe-drink.png" alt="Wireframe - Order (Drink)"></div>
+        <div class="scrollable-image"><img src="media/design-process/tea-mobile-wireframe-customize.png" alt="Wireframe - Order (Customize)"></div>
+        <div class="scrollable-image"><img src="media/design-process/tea-mobile-wireframe-transition.png" alt="Wireframe - Order (Transition)"></div>
+        <div class="scrollable-image"><img src="media/design-process/tea-mobile-wireframe-cart.png" alt="Wireframe - Order (Cart)"></div>
+        <div class="scrollable-image"><img src="media/design-process/tea-mobile-wireframe-checkout.png" alt="Wireframe - Order (Checkout)"></div>
+        <div class="scrollable-image"><img src="media/design-process/tea-mobile-wireframe-track-order.png" alt="Wireframe - Order (Track Order)"></div>
+        <div class="scrollable-image" style="width:72.5%"><img src="media/design-process/tea-mobile-wireframe-home-web.png" alt="Wireframe - Home (Web)"></div>
+      </div>
+      <br><br>
+
+      <!---Moodboard--->
+      <span id="moodboard-anchor" style="position:relative; top:-100px;"></span>
+      <h2>Moodboard</h2>
+      <img src="media/design-process/tea-mobile-moodboard.png" alt="Moodboard" width=70%>
+      <br><br><br>
+
+      <!---Visual Mockups--->
+      <span id="visual-mockups-anchor" style="position:relative; top:-100px;"></span>
+      <h2>Visual Mockups</h2>
+      <div style="margin: -5px -5px 0 -5px;" id="tea-mobile-mockups">
+        <div class="scrollable-image"><img src="media/design-process/tea-mobile-mockup-home-mobile.png" alt="Mockup - Home (Mobile)"></div>
+        <div class="scrollable-image"><img src="media/design-process/tea-mobile-mockup-menu.png" alt="Mockup - Menu"></div>
+        <div class="scrollable-image"><img src="media/design-process/tea-mobile-mockup-delivery-radius.png" alt="Mockup - Order (Delivery Radius)"></div>
+        <div class="scrollable-image"><img src="media/design-process/tea-mobile-mockup-drink.png" alt="Mockup - Order (Drink)"></div>
+        <div class="scrollable-image"><img src="media/design-process/tea-mobile-mockup-customize.png" alt="Mockup - Order (Customize)"></div>
+        <div class="scrollable-image"><img src="media/design-process/tea-mobile-mockup-cart.png" alt="Mockup - Order (Cart)"></div>
+        <div class="scrollable-image"><img src="media/design-process/tea-mobile-mockup-checkout.png" alt="Mockup - Order (Checkout)"></div>
+        <div class="scrollable-image"><img src="media/design-process/tea-mobile-mockup-track-order.png" alt="Mockup - Home (Track Order)"></div>
+        <div class="scrollable-image"><img src="media/design-process/tea-mobile-mockup-hours.png" alt="Mockup - Hours & Delivery"></div>
+        <div class="scrollable-image"><img src="media/design-process/tea-mobile-mockup-more.png" alt="Mockup - More"></div>
+        <div class="scrollable-image" style="width:47.8%"><img src="media/design-process/tea-mobile-mockup-home-web.png" alt="Mockup - Home (Web)"></div>
+      </div>
+      <br><br>
+
+      <!--Link to Prototype-->
+      <h2>Link to Prototype</h2>
+      <p><a href="https://www.sketch.com/s/34b56263-cdbe-47ab-bff6-81e79423450f/a/pPMkGk/play">https://www.sketch.com/s/34b56263-cdbe-47ab-bff6-81e79423450f/a/pPMkGk/play</p>
+
+    </div>
+
+  </div>
+
+
+  <footer>
+    <a href="https://www.linkedin.com/in/jjjjjssss/" target="_blank">
+      <img src="media/linkedin-logo.png"
+           alt="Linkedin" title="Linkedin" id="logo">
+    </a>
+    <a href="https://github.com/jjjjjssss" target="_blank">
+      <img src="media/github-logo.png"
+           alt="Github" title="Github" id="logo">
+    </a>
+    <p>
+      <a href="mailto:jshen315@gatech.edu">jshen315@gatech.edu</a>
+    </p>
+  </footer>
+
+  <script src="scroll-to-element.js"></script>
+
+</body>
+</html>

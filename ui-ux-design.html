@@ -3,8 +3,10 @@
 <head>
   <title>UI/UX Design | Joyce Shen</title>
   <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,450;0,500;0,600;0,700;1,400;1,450;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+  <script src="modal.js"></script>
 </head>
 
 <header>
@@ -46,20 +48,50 @@
 
     <div class="row">
 
+      <div class="project" id="tea-mobile">
+        <div class="rectangle" style="top:-10px;left:670px;">
+          <img src="media/ui-design/orange-block-right.png" style="width:100%;height:100%">
+          <div class="doodles"></div>
+        </div>
+        <h1 style="top:100px;left:70px;">Tea Mobile</h1>
+        <p style="width:250px;top:150px;left:70px;"> Tea Mobile is a boba
+          delivery website designed for college students. Its vibrant but
+          straightforward design makes it easy for users to order drinks
+          quickly and for the business to promote their teas.</p>
+        <a class="button" style="top:300px;left:70px;" href="https://www.sketch.com/s/34b56263-cdbe-47ab-bff6-81e79423450f/a/pPMkGk/play" target="_blank">Prototype</a>
+        <a class="button" style="top:300px;left:180px;" href="tea-mobile.html">Design Process</a>
+        <img src="media/ui-design/teamobile1.png" alt="Tea Mobile"
+             style="height:350px;top:calc(50% - 175px);right:460px;"
+             onclick="openModal();currentSlide(1)">
+        <img src="media/ui-design/teamobile2.png" alt="Tea Mobile"
+             style="height:250px;top:calc(50% - 125px);right:40px;"
+             onclick="openModal();currentSlide(2)">
+      </div>
+
+    </div>
+
+    <div class="row">
+
       <div class="project" id="breezy-ice-cream">
+        <div class="rectangle" style="top:-10px;right:590px;">
+          <img src="media/ui-design/salmon-block-left.png" style="width:100%;height:100%">
+          <div class="doodles"></div>
+        </div>
         <img src="media/ui-design/breezy2.png" alt="Breezy Ice Cream"
-             style="width:240px;left:40px;top:35px;opacity:0.60;">
+             style="width:240px;left:60px;top:35px;opacity:0.60;"
+             onclick="openModal();currentSlide(3)">
         <img src="media/ui-design/breezy1.png" alt="Breezy Ice Cream"
-             style="width:240px;left:70px;bottom:35px">
-        <h1 style="top:90px;left:355px;">Breezy Ice Cream</h1>
-        <p style="width:250px;top:140px;left:355px;"> Breezy Ice Cream is an ice
+             style="width:240px;left:130px;bottom:35px;"
+             onclick="openModal();currentSlide(4)">
+        <h1 style="top:90px;left:465px;">Breezy Ice Cream</h1>
+        <p style="width:250px;top:140px;left:465px;"> Breezy Ice Cream is an ice
           cream vending machine that dispenses fresh ice cream at the click of a
           button. I prototyped what the ordering screen would look like, adding
           playful graphics and animations that would appeal to its young audience.</p>
-        <a class="button" style="top:310px;left:355px;" href="https://www.youtube.com/watch?v=g5MTH0Jy_2g" target="_blank">Prototype</a>
-        <a class="button" style="top:310px;left:465px;" href="breezy-ice-cream.html">Design Process</a>
+        <a class="button" style="top:310px;left:465px;" href="breezy-ice-cream.html#prototype-anchor">Prototype</a>
+        <a class="button" style="top:310px;left:575px;" href="breezy-ice-cream.html">Design Process</a>
         <img src="media/ui-design/vending-machine.png" alt="Vending Machine"
-             style="width:200px;top:30px;right:30px;">
+             style="width:200px;top:30px;right:60px;cursor:default;">
       </div>
 
     </div>
@@ -67,22 +99,36 @@
     <div class="row">
 
       <div class="project" id="oversubscribed">
-        <h1 style="top:30px;left:56px;">Oversubscribed</h1>
-        <p style="width:250px;top:70px;left:44px;text-align:center;">
+        <div class="rectangle" style="top:380px;left:-10px;">
+          <img src="media/ui-design/green-block-down.png" style="width:100%;height:100%;">
+          <div class="doodles"></div>
+        </div>
+        <h1 style="width:250px;top:30px;left:calc(50% - 125px);text-align:center;">Oversubscribed</h1>
+        <p style="width:250px;height:60px;top:70px;left:calc(50% - 125px);text-align:center;">
           Oversubscribed is an app that helps everyday users keep track of
           their free trials and subscriptions.</p>
-        <a class="button" style="top:160px;left:44px;" href="https://xd.adobe.com/view/07603bce-85cd-4c1d-7f56-3d4b1dc4dc11-7151/" target="_blank">Prototype</a>
-        <a class="button" style="top:160px;right:44px;" href="oversubscribed.html">Design Process</a>
-        <img src="media/ui-design/oversubscribed.png" alt="Oversubscribed" style="width:250px;top:230px;left:43px;">
+        <a class="button" style="top:160px;left:72px;" href="oversubscribed.html#prototype-anchor" target="_blank">Prototype</a>
+        <a class="button" style="top:160px;right:72px;" href="oversubscribed.html">Design Process</a>
+        <img src="media/ui-design/oversubscribed.png" alt="Oversubscribed"
+             style="width:250px;top:231px;left:calc(50% - 125px);"
+             onclick="openModal();currentSlide(5)">
       </div>
 
 
       <div class="project" id="streeteats">
-        <img src="media/ui-design/streeteats1.png" alt="StreetEats" style="width:205px;top:30px;left:40px">
-        <img src="media/ui-design/streeteats2.png" alt="StreetEats" style="width:205px;top:30px;right:40px">
-        <h1 style="bottom:90px;left:51px;">StreetEats</h1>
-        <a class="button" style="bottom:45px;left:50px;" href="streeteats.html">Design Process</a>
-        <p style="width:240px;bottom:25px;right:50px;">StreetEats is a food
+        <div class="rectangle" style="bottom:260px;left:-10px;">
+          <img src="media/ui-design/orange-block-up.png" style="width:100%;height:100%">
+          <div class="doodles"></div>
+        </div>
+        <img src="media/ui-design/streeteats1.png" alt="StreetEats"
+             style="width:205px;top:30px;left:80px;"
+             onclick="openModal();currentSlide(6)">
+        <img src="media/ui-design/streeteats2.png" alt="StreetEats"
+             style="width:205px;top:30px;right:80px;"
+             onclick="openModal();currentSlide(7)">
+        <h1 style="bottom:90px;left:90px;">StreetEats</h1>
+        <a class="button" style="bottom:45px;left:90px;" href="streeteats.html">Design Process</a>
+        <p style="width:235px;bottom:25px;right:90px;">StreetEats is a food
           rating app that locates cheap, authentic street food vendors near a
           user. It has a playful design and allows users to rate and post
           pictures of street vendors.</p>
@@ -91,6 +137,143 @@
     </div>
 
   </div>
+
+
+
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <!-- Slide 1: Tea Mobile - Customize Order -->
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/ui-design/teamobile1.png"
+               alt="Tea Mobile - Order (Customize)" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">Tea Mobile - Customize Order</p>
+          <p>375 px × 812 px, Sketch App</p>
+            <p>This page on the Tea Mobile mobile site gives a brief
+              description of a drink and allows users to customize its size,
+              temperature, sugar and ice levels, and toppings (not shown).</p>
+        </div>
+      </div>
+
+      <!-- Slide 2: Tea Mobile - Home -->
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/ui-design/teamobile2.png"
+               alt="Tea Mobile - Home (Web)" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">Tea Mobile - Home</p>
+          <p>2560 px × 1440 px, Sketch App</p>
+            <p>The home page of the Tea Mobile site opens with promotions about
+              new drinks, popular drinks, and job openings. </p>
+        </div>
+      </div>
+
+      <!-- Slide 3: Breezy Ice Cream - Home  -->
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/ui-design/breezy2.png"
+               alt="Peingu" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">Breezy Ice Cream - Home</p>
+          <p>800 px × 1200 px, Adobe XD</p>
+          <p>This is the home screen of a ice cream vending machine that allows
+            customers to customize their ice cream order. The columns of ice
+            cream illustrations in the background are animated (see prototype)
+            and capture the eye of customers that walk by the vending machine.</p>
+        </div>
+      </div>
+
+      <!-- Slide 4: Breezy Ice Cream - Choose Toppings -->
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/ui-design/breezy1.png"
+               alt="Bamboo" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">Breezy Ice Cream - Choose Toppings</p>
+          <p>800 px × 1200 px, Adobe XD</p>
+          <p>This customization screen of a ice cream vending machine allows
+            customers to choose various toppings that they want on their ice
+            cream. When customers select certain toppings, they show up on the
+            ice cream illustration on the top.</p>
+        </div>
+      </div>
+
+      <!-- Slide 5: Oversubscribed - Subscriptions -->
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/ui-design/oversubscribed.png"
+               alt="2010, Part 2" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">Oversubscribed - Subscriptions</p>
+          <p>375 px × 667 px, Adobe XD</p>
+          <p>This page displays a list of the user’s subscriptions by payment
+            date. The minimal page design makes it easy for the user to view
+            all of their subscriptions at once.</p>
+        </div>
+      </div>
+
+      <!-- Slide 6: StreetEats - Home -->
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/ui-design/streeteats1.png"
+               alt="2010, Part 2" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">StreetEats - Home</p>
+          <p>375 px × 667 px, Adobe Lightroom</p>
+          <p>The home page of the StreetEats app allows users to filter the
+            kinds of street food they would like to order, scroll through
+            vendor options, and see their options on a map.</p>
+        </div>
+      </div>
+
+      <!-- Slide 7: StreetEats - Vendor Page -->
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/ui-design/streeteats2.png"
+               alt="2010, Part 2" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">StreetEats - Vendor Page</p>
+          <p>375 px × 667 px, Adobe Lightroom</p>
+          <p>Each vendor on the StreetEats app has their own page where users
+            can view information about the vendor, rate it, upload photos, and
+            see its location on a map.</p>
+        </div>
+      </div>
+
+      <!-- Next/previous controls with buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Next/previous controls with arrow keys -->
+      <script>
+        document.onkeydown = function(e) {
+          if (modalOpen === true) {
+            switch (e.keyCode) {
+              case 37: // left arrow
+                plusSlides(-1);
+                break;
+              case 39: // right arrow
+                plusSlides(1);
+                break;
+            }
+          }
+        }
+      </script>
+
+    </div>
+  </div>
+
 
 
   <footer>
