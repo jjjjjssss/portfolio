@@ -588,15 +588,6 @@ footer #logo {
   width: 700px; /* random big number */
   height: 500px; /* random big number */
   position: absolute;
-}
-
-/* Doodle background overlays handrawn color blocks */
-#ui-design .doodles {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: -10px;
-  left: -10px;
   background-image: url("media/white-background.png");
   background-attachment: fixed;
   background-position: center;
