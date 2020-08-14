@@ -59,8 +59,9 @@ nav li {
   display: inline-block;
   padding-left: 30px;
   font-family: "Jost";
-  font-size: max(15.8px,min(1.60vw,20px));
- /* resizes text between 16 and 20 px */
+  font-size: 20px;
+  /* font-size: max(15.8px,min(1.60vw,20px)); */
+  /* resizes text between 16 and 20 px */
 }
 
 /* Appearance of menu items doesn't change as a link */
@@ -95,21 +96,15 @@ nav .selected {
   transition: .2s ease;
 }
 
-/* 'Yearbook' turns blue on hover */
-#nav-yearbook:hover {
-  color: #004bdd;
-  transition: .2s ease;
-}
-
 /* 'Graphic Design' turns yellow on hover */
 #nav-graphic-design:hover {
-  color: #ffba00;
+  color: #004bdd;
   transition: .2s ease;
 }
 
 /* 'Product/Interior Design' turns pink on hover */
 #nav-product-design:hover {
-  color: #ed254e;
+  color: #ffba00;
   transition: .2s ease;
 }
 
@@ -202,12 +197,10 @@ a {
   -webkit-box-shadow: 1px 2px 8px rgba(166,111,12,0.4);}
 #art .gallery {box-shadow: 1px 2px 8px rgba(166,12,19,0.4);
   -webkit-box-shadow: 1px 2px 8px rgba(166,12,19,0.4);}
-#yearbook .gallery {box-shadow: 1px 2px 8px rgba(12,63,160,0.4);
-  -webkit-box-shadow: 1px 2px 8px rgba(12,63,160,0.4);}
 #graphic-design .gallery {box-shadow: 1px 2px 8px rgba(166,124,12,0.4);
   -webkit-box-shadow: 1px 2px 8px rgba(166,124,12,0.4);}
-#product-design .gallery {box-shadow: 1px 2px 8px rgba(166,12,43,0.4);
-  -webkit-box-shadow: 1px 2px 8px rgba(166,12,43,0.4);}
+#product-design .gallery {box-shadow: 1px 2px 8px rgba(166,124,12,0.4);
+  -webkit-box-shadow: 1px 2px 8px rgba(166,124,12,0.4);}
 
 /* Container for image and overlay */
 .image {
@@ -463,7 +456,7 @@ footer #logo {
 
 /* Subpage title button */
 #index .page-title-container {
-  width: 220px;
+  width: 250px;
   height: 90px;
   position: relative;
   display: inline-block;
@@ -547,52 +540,34 @@ footer #logo {
 
 /* Project Sections */
 #ui-design .project {
+  width: 100%;
+  height: 490px;
   display: block;
   position: relative;
-  margin: 0;
+  margin: 0 0 45px 0;
   overflow: hidden;
   box-shadow: 1px 2px 8px rgba(130,82,12,0.4);
   -webkit-box-shadow: 1px 2px 8px rgba(130,82,12,0.4);
   background-color: WhiteSmoke;
 }
-
-/* Tea Mobile Project Section */
-#ui-design #tea-mobile {
-  width: 100%;
-  height: 450px;
-  margin-bottom: 40px;
-}
-
-/* Breezy Ice Cream Project Section*/
-#ui-design #breezy-ice-cream {
-  width: 100%;
-  height: 450px;
-  margin-bottom: 40px;
-}
-
-/* Oversubscribed Project Section */
-#ui-design #oversubscribed {
-  height: 600px;
-  width: 40%;
-  margin-right: 40px;
-}
-
 /* StreetEats Project Section */
 #ui-design #streeteats {
-  height: 600px;
-  width: 60%;
+  margin-bottom: 0;
 }
 
-/* Container for colored block in background of project section */
+/* Colored block in background of project section */
 #ui-design .rectangle {
   width: 700px; /* random big number */
   height: 500px; /* random big number */
   position: absolute;
-  background-image: url("media/white-background.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  top: -10px;
+}
+
+#ui-design .text-and-buttons {
+  width: 270px;
+  margin: 0;
+  position: absolute;
+  left: 70px;
 }
 
 /* Project Name */
@@ -615,8 +590,6 @@ footer #logo {
 #ui-design .project img {
   position: absolute;
   cursor: pointer;
-  /*-webkit-filter: drop-shadow(3px 5px 5px rgb(0,0,0,0.39));
-  filter: drop-shadow(3px 5px 5px rgb(0,0,0,0.35));*/
 }
 
 /* Button for 'Prototype' and 'Design Process' */
@@ -626,6 +599,10 @@ footer #logo {
   margin: 0px;
   padding: 7px 14px;
   border: 3px solid;
+  border-radius: 25px; /* random large number */
+  -webkit-box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.2);
+  box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.2);
   text-align: center;
   font-size: 14px;
   font-weight: bold;
@@ -637,9 +614,13 @@ footer #logo {
 /* Section title scales up on hover */
 #ui-design .button:hover {
   transform: scale(1.05);
+  -webkit-box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.1);
+  box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.1);
 }
 
 /* CSS for positioning and scaling individual elements is in HTML code */
+
 
 /* Image for background */
 #design-process body {
@@ -796,25 +777,25 @@ footer #logo {
 
 
 
-/**************************** Yearbook Page ****************************/
+/**************************** Graphic Page ****************************/
 
 /* Image for background */
-#yearbook body {
+#graphic-design body {
   background-image: url("media/blue-background.png");
 }
 
 /* Override gallery padding */
-#yearbook .gallery {
+#graphic-design .gallery {
   padding-top: 5px;
 }
 
 /* Set width of box around page title */
-#yearbook .page-title {
-  width: 450px;
+#graphic-design .page-title {
+  width: 640px;
 }
 
 /* Box for page section (Yearbook Layouts / Yearbook Photos) */
-#yearbook .page-section {
+#graphic-design .page-section {
   width: 400px;
   height: 60px;
   position: relative;
@@ -830,10 +811,11 @@ footer #logo {
 }
 
 /* Section title */
-#yearbook .section-title {
+#graphic-design .section-title {
   top: 10px;
   font-size: 30px;
 }
+
 
 /* Image grid */
 #yearbook .grid {
@@ -855,35 +837,15 @@ footer #logo {
   width: 100%;
 }
 
-/* Format aspect ratio of each image; image heights line up in every row */
-/* aspect ratio = width / height */
-#yearbook .portrait { flex: calc(1365 / 2048); }
-#yearbook .landscape { flex: calc(2048 / 1365); }
-
-
-
-
-
-/**************************** Graphic Design Page ****************************/
-
-/* Image for background */
-#graphic-design body {
-  background-image: url("media/yellow-background.png");
-}
-
-/* Set width of box around page title */
-#graphic-design .page-title {
-  width: 640px;
-}
 
 /* Place columns side by side and center align */
-#graphic-design .gallery {
+#flyers .grid {
   display: flex;
   justify-content: center;
 }
 
 /* Set width of each column */
-#graphic-design .column {
+#flyers .column {
   width: 33%;
   min-width: 240px;
   max-width: 480px;
@@ -892,12 +854,12 @@ footer #logo {
 }
 
 /* Bottom padding on images + their overlay */
-#graphic-design .column .image {
+#flyers .column .image {
   margin: 10px 0;
 }
 
 /* Image spans width of column */
-#graphic-design .column .image img {
+#flyers .column .image img {
   width: 100%;
   vertical-align: middle;
 }
@@ -910,7 +872,7 @@ footer #logo {
 
 /* Image for background */
 #product-design body {
-  background-image: url("media/pink-background.png");
+  background-image: url("media/yellow-background.png");
 }
 
 /* Set width of box around page title and position */
