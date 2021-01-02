@@ -3,8 +3,9 @@
 <head>
   <title>Home | Joyce Shen</title>
   <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,450;0,500;0,600;0,700;1,400;1,450;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,450;0,500;0,600;0,700;1,400;1,450;1,500;1,600;1,700&family=Mulish:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/styles_index.css">
+  <link rel="stylesheet" href="stylesheets/styles_main.css">
   <link rel="icon" type="image/x-icon" href="media/favicon.ico">
 </head>
 
@@ -15,16 +16,16 @@
     <a href="index.html">
       <img class="logo"
            src="media/logo.png"
-           alt="Joyce Shen Logo">
-      <div class="website-name">JOYCE SHEN</div>
+           alt="Joyce Shen Logo"
+	   title="Home">
+      <!--<div class="website-name">JOYCE SHEN</div>-->
     </a>
 
     <nav>
         <ul>
-          <li class="inactive"><a id="nav-ui-ux-design" href="ui-ux-design.html">UI/UX Design</a></li>
-          <li class="inactive"><a id="nav-art" href="art.html">Art</a></li>
-          <li class="inactive"><a id="nav-graphic-design" href="graphic-design.html">Graphic Design</a></li>
-          <li class="inactive"><a id="nav-product-design" href="product-design.html">Product/Interior Design</a></li>
+          <li class="selected"><a href="index.html">Work</a></li>
+          <li class="inactive"><a href="art.html">Art & More</a></li>
+          <li class="inactive"><a href="resume.html">Resume</a></li>
         </ul>
     </nav>
 
@@ -33,129 +34,131 @@
 </header>
 
 
-<body id="index">
 
-  <!-- Banner and Page Title -->
-  <div class="banner" id="intro-banner">
-    <div class="bird-circle-container">
-      <img src="media/index/seagull-circle.png" alt="Seagull"
-           class="bird-circle" style="bottom:52%;left:0;">
-      <img src="media/index/seagull-circle-hover.png" alt="Seagull"
-           class="bird-circle bird-circle-hover" style="bottom:52%;left:0;">
 
-      <img src="media/index/duck-circle.png" alt="Duck"
-           class="bird-circle" style="top:52%;left:19%;">
-      <img src="media/index/duck-circle-hover.png" alt="Duck"
-           class="bird-circle bird-circle-hover" style="top:52%;left:19%;">
+<body id="index" onload="typeWriter()">
 
-      <img src="media/index/pigeon-circle.png" alt="Pigeon"
-           class="bird-circle" style="bottom:52%;left:38%;">
-      <img src="media/index/pigeon-circle-hover.png" alt="Pigeon"
-           class="bird-circle bird-circle-hover" style="bottom:52%;left:38%;">
 
-      <img src="media/index/goose-circle.png" alt="Goose"
-           class="bird-circle" style="top:52%;left:57%;">
-      <img src="media/index/goose-circle-hover.png" alt="Goose"
-           class="bird-circle bird-circle-hover" style="top:52%;left:57%;">
+<div class="beginning">
 
-      <img src="media/index/solid-circle.png" alt="Solid Circle"
-           class="bird-circle" style="bottom:52%;left:76%;">
-      <img src="media/index/solid-circle-hover.png" alt="Solid Circle"
-           class="bird-circle bird-circle-hover" style="bottom:52%;left:76%;">
+  <div class="text-container">
 
-      <img src="media/index/outline-circle.png" alt="Outline Circle"
-           class="bird-circle" style="top:52%;left:95%;">
-      <img src="media/index/outline-circle-hover.png" alt="Outline Circle"
-           class="bird-circle bird-circle-hover" style="top:52%;left:95%;">
-    </div>
+  <div id="greeting1" class="greeting"></div>
+  <div id="greeting2" class="greeting"></div>
 
-    <div id="introduction">
-      <h1 style="font-weight:500">Hey!</h1>
-      <h1 style="font-weight:500;margin-top:-30px;">I'm Joyce.</h1>
-      <p style="margin-top:20px;">I am an undergraduate student living in the
-        Bay Area and studying computer science at Georgia Tech. I'm passionate
-        about all things art, design, and programming.</p>
-    </div>
+  <script>
+    var i = 0;
+    var j = 0;
+    var text1 = 'Hey!';
+    var text2 = 'It\'s Joyce.';
+    var speed = 100;
+
+    function typeWriter() {
+      if (i < text1.length) {
+        document.getElementById("greeting1").innerHTML += text1.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      } else if (j < text2.length && i == text1.length) {
+        i++;
+        setTimeout(typeWriter, 200);
+      } else if (j < text2.length) {
+        document.getElementById("greeting2").innerHTML += text2.charAt(j);
+        j++;
+        setTimeout(typeWriter, speed);
+      } else {
+	setTimeout(clearTypeWriter, 5000);
+      }
+    }
+
+    function clearTypeWriter() {
+      i = 0;
+      j = 0;
+      document.getElementById("greeting1").innerHTML = "";
+      document.getElementById("greeting2").innerHTML = "";
+      setTimeout(typeWriter, speed);
+    }
+
+  </script>
+
+  <div id="intro">
+    I am an undergraduate student living in the Bay Area and <b>studying computer
+    science at Georgia Tech</b>. I’m on a journey to learn about people, the way they
+    interact with the world around them, and how I can help design that world.
   </div>
-
-  <!-- About Me-->
-  <div id="about">
-    <img src="media/index/triangle1.png" style="width:25px;left:5%;top:calc(50% - 130px);transform: translateY(-50%);">
-    <img src="media/index/triangle2.png" style="width:25px;left:62%;top:calc(50% + 120px);transform: translateY(-50%);">
-    <img src="media/index/seagull-left.png" alt="Seagull" style="width:13%;max-width:200px;left:7%;top:calc(50% - 50px);transform: translateY(-50%);">
-    <img src="media/index/seagull-right.png" alt="Seagull" style="width:20%;max-width:308px;left:16%;top:calc(50% + 25px);transform: translateY(-50%);">
-    <img src="media/index/seagull-duo.png" alt="Seagull" style="width:27%;max-width:415px;top:50%;transform: translateY(-50%);left:0;right:0;margin:auto">
-    <div id="about-description">
-      <h2>About</h2>
-      <p>I’m on a journey to learn about people, the way they interact with the
-        world around them, and how I can help design that world. In other words,
-        <b>I’m really into UI/UX design</b>. Take a look around and learn more
-        about me, the stuff I make, and my slight obsession with birds.</p>
-    </div>
-  </div>
-
-
-  <!-- Links to Subpages -->
-
-  <div id="page-list">
-
-    <div style="position:relative;">
-
-    <a href="ui-ux-design.html">
-      <div class="page-title-container">
-        <img src="media/index/orange-block.png">
-        <div class="doodles"></div>
-        <h3>UI/UX Design</h3>
-      </div>
-    </a>
-
-    <a href="art.html">
-      <div class="page-title-container">
-        <img src="media/index/red-block.png">
-        <div class="doodles"></div>
-        <h3>Art</h3>
-      </div>
-    </a>
-
-    </div>
-
-    <div style="position:relative;">
-
-    <a href="graphic-design.html">
-      <div class="page-title-container">
-        <img src="media/index/blue-block.png">
-        <div class="doodles"></div>
-        <h3>Graphic Design</h3>
-      </div>
-    </a>
-
-    <a href="product-design.html">
-      <div class="page-title-container">
-        <img src="media/index/yellow-block.png">
-        <div class="doodles"></div>
-        <h3 style="height:54px;padding:18px 0;">Product/Interior Design</h3>
-      </div>
-    </a>
-
-    </div>
 
   </div>
 
+  <img class="doodle" src="media/index/temp.png" alt="Joyce">
 
-  <!-- Footer -->
-  <footer>
-    <a href="https://www.linkedin.com/in/jjjjjssss/" target="_blank">
-      <img src="media/linkedin-logo-dark.png"
-           alt="Linkedin" title="Linkedin" id="logo">
-    </a>
-    <a href="https://github.com/jjjjjssss" target="_blank">
-      <img src="media/github-logo-dark.png"
-           alt="Github" title="Github" id="logo">
-    </a>
-    <p style="color:#474747;">
-      <a href="mailto:jshen315@gatech.edu">jshen315@gatech.edu</a>
-    </p>
-  </footer>
+</div>
 
+<br>
+<br>
+<br>
+<br>
+
+<div class="grid">
+ 
+  <div class="grid-item" id="marta">
+    <a href="marta.html">
+      <div class="overlay">
+        <div class="title">Redesigning the MARTA Transit App</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="grid-item" id="homeroom">
+    <a href="homeroom.html">
+      <div class="overlay">
+        <div class="title">Homeroom: Virtual Classroom Collaboration Tool</div>
+      </div>
+    </a>
+  </div>
+  
+  <div class="grid-item" id="ui-exercises">
+    <a href="ui-exercises.html">
+      <div class="overlay">
+        <div class="title">UI Exercises</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="grid-item" id="tea-mobile">
+    <a href="tea-mobile.html">
+      <div class="overlay">
+        <div class="title">Tea Mobile: Boba Delivery App</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="grid-item" id="ice-cream">
+    <a href="ice-cream.html">
+      <div class="overlay">
+        <div class="title">Breezy Ice Cream: Ice Cream Vending Machine</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="grid-item" style="min-height:0px;height:0.01px;background-color:pink;"></div>
+
+</div>
+
+
+
+
+<div class="footer">
+  <img id="footer-seagull" src="media/footer-seagull.png">
+  <div id="email-info">
+    <p><b>Thanks for visiting!</b></p>
+    <p>Feel free to contact me at <a href="mailto:jshen315@gatech.edu">jshen315@gatech.edu</a>!</p>
+  </div>
+  <a href="https://github.com/jjjjjssss" target="_blank">
+    <img class="logo" src="media/github-logo.png" alt="GitHub" title="GitHub">
+  </a>
+  <a href="https://www.linkedin.com/in/jjjjjssss/" target="_blank">
+    <img class="logo" src="media/linkedin-logo.png" alt="Linkedin" title="Linkedin">
+  </a>
+</div>
 </body>
+
 </html>

@@ -1,0 +1,142 @@
+#index .beginning {
+  width: 7.6em;/*7 w/o circle, 8 w/*/
+  height: auto;
+  /*height: 70vh;
+  min-height: 500px;
+  max-height: 600px;*/
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  font-family: "Jost";
+  font-size: 5em;
+}
+
+#index .beginning .text-container {
+  width: 4.4em;
+  position: relative;
+  float: left;
+}
+
+#index .greeting {
+  height: 1.2em;
+  padding: 0;
+  font-weight: 450;
+  position: relative;
+  background-color: none;
+}
+
+#index #greeting1 {
+  top: 0;
+  /*left: calc(50% - 2.6em);*/
+}
+
+#index #greeting2 {
+  top: 0.05em;
+  /*left: calc(50% - 1.3em);*/
+}
+
+#index #intro {
+  padding-top: 2.7em;
+  width: 20em;
+  /*margin: auto;*/
+  position: relative;
+  font-family: "Mulish";
+  font-size: 18px;
+  line-height: 1.6em; /*originally 1.4*/
+}
+
+#index .doodle {
+  position: relative;
+  float: right;
+  width: 2em;/*1.7 w/o circle, 3 w/*/
+  height: auto;
+  padding-top: 0.2em;
+  /*transform: rotate(2deg);*/
+}
+
+#index .grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#index .grid-item {
+  min-width: 550px;
+  width: 44vw;
+  min-height: 343.75px;
+  height: 27.5vw;
+  margin: 1.2vw;
+  background-attachment: local;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#index #marta {
+  background-image: url("../media/index/marta.png");
+  background-color: #FCD034;
+}
+
+#index #homeroom {
+  background-image: url("../media/index/homeroom.png");
+  background-color: #7acfff; /*old: #B1E3FF*/
+}
+
+#index #ui-exercises {
+  background-image: url("../media/index/weekly-ui.png");
+  background-color: #B9C0FF;
+}
+
+#index #tea-mobile {
+  background-image: url("../media/index/tea-mobile.png");
+  background-color: #AB7F71;
+}
+
+#index #ice-cream {
+  background-image: url("../media/index/ice-cream.png");
+  background-color: #FF757D;
+}
+
+#index .grid-item .overlay {
+  position: relative;
+  height: inherit;
+  width: 100%;
+  transition: .5s ease;
+  background: rgba(255, 161, 10, 0);
+}
+
+/* Change overlay opacity from 0 to 0.5 when hovering*/
+#index .grid-item:hover .overlay {
+  background: rgba(255, 161, 10, 0.9);
+  /*cursor: pointer; /*not necessary but oh well*/
+}
+
+#index .grid-item .title {
+  top: 50%;
+  transform: translateY(-100%);
+  width: 90%;
+  max-height: 100%;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  font-family: "Jost";
+  font-size: 2.5em;
+  font-weight: 600;
+  line-height: 1.3em;
+  opacity: 0;
+  transition: .4s ease;
+}
+
+#index .grid-item:hover .title {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+#index .grid-item a {
+  height: 100%;
+  text-decoration: inherit;
+}
+

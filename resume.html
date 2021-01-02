@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume | Joyce Shen</title>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,450;0,500;0,600;0,700;1,400;1,450;1,500;1,600;1,700&family=Mulish:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/styles_resume.css">
+  <link rel="stylesheet" href="stylesheets/styles_main.css">
+  <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+</head>
+
+<header>
+
+  <div class="navigation-bar">
+
+    <a href="index.html">
+      <img class="logo"
+           src="media/logo.png"
+           alt="Joyce Shen Logo"
+	   title="Home">
+      <!--<div class="website-name">JOYCE SHEN</div>-->
+    </a>
+
+    <nav>
+        <ul>
+          <li class="inactive"><a href="index.html">Work</a></li>
+          <li class="inactive"><a href="art.html">Art & More</a></li>
+          <li class="selected"><a href="resume.html">Resume</a></li>
+        </ul>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+
+<body id="resume">
+
+<!--<embed src="media/resume/resume.pdf">-->
+
+
+<div id="adobe-dc-view"></div>
+<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+<script type="text/javascript">
+    document.addEventListener("adobe_dc_view_sdk.ready", function () {
+        var adobeDCView = new AdobeDC.View({
+            clientId: "32614edf38c442758f711a802feb7627",
+            divId: "adobe-dc-view"
+        });
+        adobeDCView.previewFile({
+            content: { location: { url: "media/resume/resume.pdf" } },
+            metaData: { fileName: "Joyce Shen Resume" }
+        }, {
+            embedMode: "IN_LINE",
+            showDownloadPDF: false,
+            showPrintPDF: false
+        });
+    });
+</script>
+
+
+<div class="footer">
+  <img id="footer-seagull" src="media/footer-seagull.png">
+  <div id="email-info">
+    <p><b>Thanks for visiting!</b></p>
+    <p>Feel free to contact me at <a href="mailto:jshen315@gatech.edu">jshen315@gatech.edu</a>!</p>
+  </div>
+  <a href="https://github.com/jjjjjssss" target="_blank">
+    <img class="logo" src="media/github-logo.png" alt="GitHub" title="GitHub">
+  </a>
+  <a href="https://www.linkedin.com/in/jjjjjssss/" target="_blank">
+    <img class="logo" src="media/linkedin-logo.png" alt="Linkedin" title="Linkedin">
+  </a>
+</div>
+</body>
+
+</html>

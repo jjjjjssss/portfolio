@@ -1,33 +1,37 @@
 <!DOCTYPE html>
-<html id="art">
+<html>
 <head>
-  <title>Art | Joyce Shen</title>
+  <title>Art & More | Joyce Shen</title>
   <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,450;0,500;0,600;0,700;1,400;1,450;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width">  
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,450;0,500;0,600;0,700;1,400;1,450;1,500;1,600;1,700&family=Mulish:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/styles_art.css">
+  <link rel="stylesheet" href="stylesheets/styles_modal.css">
+  <link rel="stylesheet" href="stylesheets/styles_main.css">
   <link rel="icon" type="image/x-icon" href="media/favicon.ico">
   <script src="modal.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="side-nav.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <header>
 
   <div class="navigation-bar">
 
-    <!-- Website Logo and Name -->
-    <a href="index.html" title="Home">
+    <a href="index.html">
       <img class="logo"
            src="media/logo.png"
-           alt="Joyce Shen Logo">
-      <div class="website-name">JOYCE SHEN</div>
+           alt="Joyce Shen Logo"
+	   title="Home">
+      <!--<div class="website-name">JOYCE SHEN</div>-->
     </a>
 
-    <!-- Navigation -->
     <nav>
         <ul>
-            <li class="inactive"><a id="nav-ui-ux-design" href="ui-ux-design.html">UI/UX Design</a></li>
-            <li class="selected"><a id="nav-art" href="art.html">Art</a></li>
-            <li class="inactive"><a id="nav-graphic-design" href="graphic-design.html">Graphic Design</a></li>
-            <li class="inactive"><a id="nav-product-design" href="product-design.html">Product/Interior Design</a></li>
+          <li class="inactive"><a href="index.html">Work</a></li>
+          <li class="selected"><a href="art.html">Art & More</a></li>
+          <li class="inactive"><a href="resume.html">Resume</a></li>
         </ul>
     </nav>
 
@@ -35,344 +39,135 @@
 
 </header>
 
-<body>
 
-  <!-- Page Title -->
-  <div class="page-title">ART</div>
 
-  <!-- Main Content (Gallery) -->
+
+<body id="art">
+
+<div class="intro">
+  <h1>Art & More</h1>
+  <p>Aside from my main design work, I've also dabbled in art, layout design, and industrial design. My past experiences with art and being on my high school yearbook team have helped to grow my interest in visual design. Take a look at some of the work I've made!</p>
+</div>
+
+
+
+<div class="main-content">
+
+<div class="sidebar">
+  <a id="nav-art" href="#art-section" class="scroll_to">Art</a>
+  <a id="nav-yearbook" href="#yearbook" class="scroll_to">Yearbook</a>
+  <a id="nav-id" href="#industrial-design" class="scroll_to">Industrial Design</a>
+  <a id="nav-other" href="#other" class="scroll_to">Other</a>
+</div>
+
+
+<div class="rightbar">
+
+  <div id="art-section" class="anchor"></div>
+  <div data-aos="fade" 
+       data-aos-anchor="#art-section"
+       data-aos-offset="300">
   <div class="gallery">
-
-      <!-- Row 1 -->
-      <div class="row">
-
-        <!-- Image 1: Ruin -->
-        <div id="ruin" class="image" onclick="openModal();currentSlide(1)">
-          <img src="media/art/ruin.png"
-               alt="Ruin" >
-          <div class="overlay">
-            <div class="image-description">
-              <p class="description-title">Ruin</p>
-              <p>11” × 8”, pen</p>
-              <p>I wanted to portray the devastating effects that pollution,
-                especially plastic pollution, has on the natural environment.
-                I used stippling to create a dense smoke of plastic goods like
-                bottles, food wrappers, and trash bags that fly out of a city
-                and envelop an octopus.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Image 2: Away -->
-        <div id="away" class="image" onclick="openModal();currentSlide(2)">
-          <img src="media/art/away.png"
-               alt="Away">
-          <div class="overlay">
-            <div class="image-description">
-              <p class="description-title">Away</p>
-              <p>24” × 18”, acrylic on masonite board</p>
-              <p>Inspired by David Salle’s collage-like paintings, this
-                painting reflects the chaotic feelings of homesickness and
-                confinement through the journey of a fish from the sea to the
-                fishbowl. I used contrasting colors and sharp lines to emphasize
-                the turbulence of being away from home and the frantic attempts
-                at escape.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Row 2 -->
-      <div class="row">
-
-        <!-- Image 3: Beryl Flare -->
-        <div id="beryl-flare" class="image" onclick="openModal();currentSlide(3)">
-          <img src="media/art/beryl-flare.png"
-               alt="Beryl Flare">
-          <div class="overlay">
-            <div class="image-description">
-              <p class="description-title">Beryl Flare</p>
-              <p>4800 px × 2700 px, Photoshop</p>
-              <p>This concept design for a cave was inspired by canine teeth, with
-                large molar monoliths framing a path towards a bright blue glow. I
-                worked with a team (Jaiminy Qiu, Kevin Yang) who designed a
-                character and a vehicle to add to the landscape. The final work
-                with the character and vehicle can be found here:
-                <a href="https://drive.google.com/drive/folders/1XnCqjXJ4sDgtG_dsSC-2WLP3BEx9iwlJ?usp=sharing" target="_blank">link</a></p>
-            </div>
-          </div>
-        </div>
-
-      <!-- Image 4: Bikini Bottom, 3019 A.D. -->
-        <div id="bikini-bottom" class="image" onclick="openModal();currentSlide(4)">
-          <img src="media/art/bikini-bottom.jpg"
-               alt="Bikini Bottom, 3019 A.D.">
-          <div class="overlay">
-            <div class="image-description">
-              <p class="description-title">Bikini Bottom, 3019 A.D.</p>
-              <p>1800 px × 3600 px, Photoshop</p>
-              <p>The underwater world is typically known for its beauty, with
-                colorful schools of fish and rolling blue waves. This digital
-                painting of cannibalistic fish shows an apocalyptic take on a
-                once-thriving ecosystem. I used a complementary color scheme and
-                muted colors for this work.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Row 3 -->
-      <div class="row">
-
-      <!-- Image 5: Final December -->
-        <div id="final-december" class="image" onclick="openModal();currentSlide(5)">
-          <img src="media/art/final-december.png"
-               alt="Final December">
-          <div class="overlay">
-            <div class="image-description">
-              <p class="description-title">Final December</p>
-              <p>1800 px × 1725 px, Photoshop</p>
-              <p>This is a character design for a widow living alone in a cave,
-                longing for the days of youth. Her design is inspired by
-                long-nosed villains such as the witch in Snow White. The title of
-                this work, <i>Final December</i>, reflects the character’s frailness in
-                her last days.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Image 6: Fine Line -->
-        <div id="fine-line" class="image" onclick="openModal();currentSlide(6)">
-          <img src="media/art/fine-line.png"
-               alt="Fine Line">
-          <div class="overlay">
-            <div class="image-description">
-              <p class="description-title">Fine Line</p>
-              <p>6991 px × 3300 px, Photoshop</p>
-              <p>This sewing machine, inspired by sewing machines from the 1800s,
-                was designed as a prop for the character in <i>Final December</i>.
-                It has a vintage and worn-down look to match the character.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Row 4 -->
-      <div class="row">
-
-      <!-- Image 7: 2010, Part 1 -->
-        <div id="twentyten-part-1" class="image" onclick="openModal();currentSlide(7)">
-          <!-- Location for 2010, Part 2 to link to -->
-          <span id="twentyten-part-1-anchor" style="position:relative; top:-100px;"></span>
-          <img src="media/art/2010-part-1.png"
-               alt="2010, Part 1">
-          <div class="overlay">
-            <div class="image-description">
-              <p class="description-title">2010, Part 1</p>
-              <p>3300 px × 4200 px (original image), Photoshop and Maya</p>
-              <p>I recreated a dreamy treehouse forest I imagined in my 9-year-old
-                head through the use of atmospheric perspective, calm colors, and
-                dappled lighting. I started out with thumbnails, then a 3D
-                representation on Maya, then a value painting, and finally, the
-                finished, colored piece. Part 2 can be found in the
-                <a href="product-design.html#twentyten-part-2-anchor">
-                  Product/Interior Design page</a>.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Row 5 -->
-      <div class="row">
-
-        <!-- Image 8: Laundry Day -->
-        <div id="laundry-day" class="image" onclick="openModal();currentSlide(8)">
-          <img src="media/art/laundry-day.jpg"
-               alt="Laundry Day">
-          <div class="overlay">
-            <div class="image-description">
-              <p class="description-title">Laundry Day</p>
-              <p>20” × 16”, oil on canvas</p>
-              <p>I painted a golden retriever from the perspective of the inside
-                of a washing machine, with the dark walls of the washing machine
-                creating a vignette effect on the bright subject. This painting
-                taught me to look creatively at everyday appliances and allowed
-                me to explore unique perspectives.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Image 9: Mandrill -->
-        <div id="mandrill" class="image" onclick="openModal();currentSlide(9)">
-          <img src="media/art/mandrill.jpg"
-               alt="Mandrill">
-          <div class="overlay">
-            <div class="image-description">
-              <p class="description-title">Mandrill</p>
-              <p>16” × 20”, oil on canvas</p>
-              <p>This is a painting of a mandrill from Jungle Park, Tenerife,
-                Spain, based off of a photo.</p>
-              <p>Image reference: <a href="https://c1.staticflickr.com/4/3071/5817417203_4018d75049_b.jpg" target="_blank">
-                link</a></p>
-            </div>
-          </div>
-        </div>
-
-    </div>
-
-    <!-- Row 6 -->
-    <div class="row">
-
-    <!-- Image 10: Self Portrait -->
-      <div id="self-portrait" class="image" onclick="openModal();currentSlide(10)">
-        <img src="media/art/self-portrait.jpg"
-             alt="Peingu">
-        <div class="overlay">
-          <div class="image-description">
-            <p class="description-title">Self Portrait</p>
-            <p>16” × 20”, oil on canvas</p>
-            <p>This is a painting of myself surrounded by ingredients from
-              Chinese and American cuisines, exploring a blend of the two
-              cultures I’ve grown up around.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Image 11: Lakeview -->
-      <div id="lakeview" class="image" onclick="openModal();currentSlide(11)">
-        <img src="media/art/lakeview.jpg"
-             alt="Lakeview">
-        <div class="overlay">
-          <div class="image-description">
-            <p class="description-title">Lakeview</p>
-            <p>20” × 16”, oil on canvas</p>
-            <p>This is a painting of Moraine Lake, AB, Canada, based off of a
-              photo.</p>
-            <p>Image reference: <a href="http://media.gettyimages.com/photos/reflections-of-moraine-lake-picture-id154397213?b=1&k=6&m=154397213&s=612x612&w=0&h=qgS2nrvum9ELZyeieidu12lUma_LkSZKN9O4aA77nMk=" target="_blank">
-              link</a></p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Row 7 -->
-    <div class="row">
-
-    <!-- Image 12: Adore Me Too -->
-      <div id="adore-me-too" class="image" onclick="openModal();currentSlide(12)">
-        <img src="media/art/adore-me-too.jpg"
-             alt="Adore Me Too">
-        <div class="overlay">
-          <div class="image-description">
-            <p class="description-title">Adore Me Too</p>
-            <p>13" × 16", color pencil</p>
-            <p>This drawing portrays a seagull trying to eat bird feed out of a
-              birdhouse made for sparrows. This humorously criticizes how humans
-              adore small creatures for their cuteness while detesting larger
-              creatures who do virtually the same thing as their smaller
-              counterparts.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Image 13: Nature's Glitch -->
-      <div id="natures-glitch" class="image" onclick="openModal();currentSlide(13)">
-        <img src="media/art/natures-glitch.jpg"
-             alt="Nature's Glitch">
-        <div class="overlay">
-          <div class="image-description">
-            <p class="description-title">Nature's Glitch</p>
-            <p>16” × 20”, acrylic on campus</p>
-            <p>This painting shows a seagull photobombing the Windows XP desktop
-              background, spoiling the pleasant background with its bitter
-              expression.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Row 8 -->
-    <div class="row">
-
-    <!-- Image 14: Alter Seago -->
-      <div id="alter-seago" class="image" onclick="openModal();currentSlide(14)">
-        <img src="media/art/alter-seago.jpg"
-             alt="Alter Seago">
-        <div class="overlay">
-          <div class="image-description">
-            <p class="description-title">Alter Seago</p>
-            <p>12" ×  9", pen, watercolor, Photoshop</p>
-            <p>This drawing depicts how animals are often babyfied to make cute
-              toys. The plump, beady-eyed seagull toy on the left contrasts with
-              a ruffled, unamused seagull on the right.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Image 15: In N Out -->
-      <div id="in-n-out" class="image" onclick="openModal();currentSlide(15)">
-        <!-- Location for images in home pages's introduction to link to -->
-        <span id="in-n-out-anchor" style="position:relative; top:-100px;"></span>
-        <img src="media/art/in-n-out.jpg"
-             alt="In N Out">
-        <div class="overlay">
-          <div class="image-description">
-            <p class="description-title">In N Out</p>
-            <p>9" × 12", pen</p>
-            <p>This illustration depicts how neighborhood seagulls used to
-              invade and steal children's lunches at my school.Their desperate
-              faces and wide mouths reveal their gluttonous nature.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Row 9 -->
-    <div class="row">
-
-    <!-- Image 16: Ocean's Ways -->
-      <div id="oceans-ways" class="image" onclick="openModal();currentSlide(16)">
-        <img src="media/art/oceans-ways.png"
-             alt="Ocean's Ways">
-        <div class="overlay">
-          <div class="image-description">
-            <p class="description-title">Ocean's Ways</p>
-            <p>25.5" × 33", Photoshop</p>
-            <p>Inspired by the traditional art of Native Americans living in the
-              Pacific Northwest, I illustrated interactions among various marine
-              animals using the colors and style of the traditional art. I
-              started with the illustration of the squid and the turtle,
-              duplicated it, then added in the crab and small fish to create a
-              seamless pattern.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Image 17: The Day After Yesterday -->
-      <div id="the-day-after-yesterday" class="image" onclick="openModal();currentSlide(17)">
-        <img src="media/art/the-day-after-yesterday.jpg"
-             alt="The Day After Yesterday">
-        <div class="overlay">
-          <div class="image-description">
-            <p class="description-title">The Day After Yesterday</p>
-            <p>18” × 7.5”, charcoal</p>
-            <p>I drew a skull from multiple perspectives, using simple line art
-              for the first and last images, line art combined with shading for
-              the second and fourth images, and realism for the middle image.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
+    <div class="grid-item" onclick="openModal();currentSlide(1)">
+      <img src="media/art/ruin.png"></div>
+    <div class="grid-item" onclick="openModal();currentSlide(2)">
+      <img src="media/art/beryl-flare.png"></div>
+    <div class="grid-item" onclick="openModal();currentSlide(3)">
+      <img src="media/art/bikini-bottom.jpg"></div>
+    <div class="grid-item" onclick="openModal();currentSlide(4)">
+      <img src="media/art/final-december.png"></div>
+    <div class="grid-item" onclick="openModal();currentSlide(5)">
+      <img src="media/art/fine-line.png"></div>
+    <div class="grid-item" onclick="openModal();currentSlide(6)">
+      <img src="media/art/2010-part-1.png"></div>
+    <div class="grid-item" onclick="openModal();currentSlide(7)">
+      <img src="media/art/away.png"></div>
+    <div class="grid-item" onclick="openModal();currentSlide(8)">
+      <img src="media/art/laundry-day.jpg"></div>
+    <div class="grid-item" onclick="openModal();currentSlide(9)">
+      <img src="media/art/mandrill.jpg"></div>
+    <div class="grid-item" onclick="openModal();currentSlide(10)">
+      <img src="media/art/lakeview.jpg"></div>
+    <div class="grid-item" onclick="openModal();currentSlide(11)">
+      <img src="media/art/the-day-after-yesterday.jpg"></div>
   </div>
+  </div>
+
+
+
+  <div class="big-br"></div>
+
+
+
+  <div id="yearbook" class="anchor"></div>
+  <div data-aos="fade" 
+       data-aos-anchor="#yearbook"
+       data-aos-offset="300">
+  <div class="gallery">
+    <div class="grid-item" onclick="openModal();currentSlide(12)">
+      <img src="media/yearbook/opening.png"></div>
+    <div class="grid-item" onclick="openModal();currentSlide(13)">
+      <img src="media/yearbook/closing.png"></div>
+    <div class="grid-item" onclick="openModal();currentSlide(14)">
+      <img src="media/yearbook/maze.png"></div>
+    <div class="grid-item" onclick="openModal();currentSlide(15)">
+      <img src="media/yearbook/food.png"></div>
+    <div class="grid-item" onclick="openModal();currentSlide(16)">
+      <img src="media/yearbook/sports.png"></div>
+    <div class="grid-item" onclick="openModal();currentSlide(17)">
+      <img src="media/yearbook/reference.png"></div>
+    <div class="grid-item" onclick="openModal();currentSlide(18)">
+      <img src="media/yearbook/water-polo.png"></div>
+    <div class="grid-item" onclick="openModal();currentSlide(19)">
+      <img src="media/yearbook/photos.png"></div>
+  </div>
+  </div>
+
+
+
+  <div class="big-br"></div>
+
+
+
+  <div id="industrial-design" class="anchor"></div>
+  <div data-aos="fade" 
+       data-aos-anchor="#industrial-design"
+       data-aos-offset="300">
+  <div class="gallery" style="columns:initial;">
+    <div class="grid-item" onclick="openModal();currentSlide(20)">
+      <img src="media/id/jingles.png"></div>
+    <div class="grid-item" onclick="openModal();currentSlide(21)">
+      <img src="media/id/bamboo.png"></div>
+    <div class="grid-item" onclick="openModal();currentSlide(22)">
+      <img src="media/id/peingu.png"></div>
+  </div>
+  </div>
+
+
+
+  <div class="big-br"></div>
+
+
+
+  <div id="other" class="anchor"></div>
+  <div data-aos="fade" 
+       data-aos-anchor="#other"
+       data-aos-offset="300">
+  <div class="gallery">
+    <div class="grid-item" onclick="openModal();currentSlide(23)">
+      <img src="media/other/2010-part-2.png"></div>
+    <div class="grid-item" onclick="openModal();currentSlide(24)">
+      <img src="media/other/puptoberfest.jpg"></div>
+    <div class="grid-item" onclick="openModal();currentSlide(25)">
+      <img src="media/other/fly-sfo.png"></div>
+    <!--<div class="grid-item" onclick="openModal();currentSlide(0)">
+      <img src="media/other/senior-quotes.jpg"></div>-->
+  </div>
+  </div>
+
+
+</div>
+</div>
 
 
 
@@ -383,7 +178,6 @@
     <span class="close cursor" onclick="closeModal()">&times;</span>
     <div class="modal-content">
 
-      <!-- Slide 1: Ruin -->
       <div class="mySlides">
         <div class="image-container">
           <img src="media/art/ruin.png"
@@ -392,33 +186,9 @@
         <div class="caption-container">
           <p class="description-title">Ruin</p>
           <p>11” × 8”, pen</p>
-          <p>I wanted to portray the devastating effects that pollution,
-            especially plastic pollution, has on the natural environment.
-            I used stippling to create a dense smoke of plastic goods like
-            bottles, food wrappers, and trash bags that fly out of a city
-            and envelop an octopus.</p>
         </div>
       </div>
 
-      <!-- Slide 2: Away -->
-      <div class="mySlides">
-        <div class="image-container">
-          <img src="media/art/away.png"
-             alt="Away" style="width:100%">
-        </div>
-        <div class="caption-container">
-          <p class="description-title">Away</p>
-          <p>24” × 18”, acrylic on masonite board</p>
-          <p>Inspired by David Salle’s collage-like paintings, this
-            painting reflects the chaotic feelings of homesickness and
-            confinement through the journey of a fish from the sea to the
-            fishbowl. I used contrasting colors and sharp lines to emphasize
-            the turbulence of being away from home and the frantic attempts
-            at escape.</p>
-        </div>
-      </div>
-
-      <!-- Slide 3: Beryl Flare -->
       <div class="mySlides">
         <div class="image-container">
           <img src="media/art/beryl-flare.png"
@@ -427,16 +197,9 @@
         <div class="caption-container">
           <p class="description-title">Beryl Flare</p>
           <p>4800 px × 2700 px, Photoshop</p>
-          <p>This concept design for a cave was inspired by canine teeth, with
-            large molar monoliths framing a path towards a bright blue glow. I
-            worked with a team (Jaiminy Qiu, Kevin Yang) who designed a
-            character and a vehicle to add to the landscape. The final work
-            with the character and vehicle can be found here:
-            <a href="https://drive.google.com/drive/folders/1XnCqjXJ4sDgtG_dsSC-2WLP3BEx9iwlJ?usp=sharing" target="_blank">link</a></p>
         </div>
       </div>
 
-      <!-- Slide 4: Bikini Bottom, 3019 A.D. -->
       <div class="mySlides">
         <div class="image-container">
           <img src="media/art/bikini-bottom.jpg"
@@ -445,15 +208,9 @@
         <div class="caption-container">
           <p class="description-title">Bikini Bottom, 3019 A.D.</p>
           <p>1800 px × 3600 px, Photoshop</p>
-          <p>The underwater world is typically known for its beauty, with
-            colorful schools of fish and rolling blue waves. This digital
-            painting of cannibalistic fish shows an apocalyptic take on a
-            once-thriving ecosystem. I used a complementary color scheme and
-            muted colors for this work.</p>
         </div>
       </div>
 
-      <!-- Slide 5: Final December -->
       <div class="mySlides">
         <div class="image-container">
           <img src="media/art/final-december.png"
@@ -462,15 +219,9 @@
         <div class="caption-container">
           <p class="description-title">Final December</p>
           <p>1800 px × 1725 px, Photoshop</p>
-          <p>This is a character design for a widow living alone in a cave,
-            longing for the days of youth. Her design is inspired by
-            long-nosed villains such as the witch in Snow White. The title of
-            this work, <i>Final December</i>, reflects the character’s frailness in
-            her last days.</p>
         </div>
       </div>
 
-      <!-- Slide 6: Fine Line -->
       <div class="mySlides">
         <div class="image-container">
           <img src="media/art/fine-line.png"
@@ -479,13 +230,9 @@
         <div class="caption-container">
           <p class="description-title">Fine Line</p>
           <p>6991 px × 3300 px, Photoshop</p>
-          <p>This sewing machine, inspired by sewing machines from the 1800s,
-            was designed as a prop for the character in <i>Final December</i>.
-            It has a vintage and worn-down look to match the character.</p>
         </div>
       </div>
 
-      <!-- Slide 7: 2010, Part 1 -->
       <div class="mySlides">
         <div class="image-container">
           <img src="media/art/2010-part-1.png"
@@ -494,17 +241,20 @@
         <div class="caption-container">
           <p class="description-title">2010, Part 1</p>
           <p>3300 px × 4200 px (original image), Photoshop and Maya</p>
-          <p>I recreated a dreamy treehouse forest I imagined in my 9-year-old
-            head through the use of atmospheric perspective, calm colors, and
-            dappled lighting. I started out with thumbnails, then a 3D
-            representation on Maya, then a value painting, and finally, the
-            finished, colored piece. Part 2 can be found in the
-            <a href="product-design.html#twentyten-part-2-anchor">
-              Product/Interior Design page</a>.</p>
         </div>
       </div>
 
-      <!-- Slide 8: Laundry Day -->
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/art/away.png"
+             alt="Away" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">Away</p>
+          <p>24” × 18”, acrylic on masonite board</p>
+        </div>
+      </div>
+
       <div class="mySlides">
         <div class="image-container">
           <img src="media/art/laundry-day.jpg"
@@ -513,15 +263,9 @@
         <div class="caption-container">
           <p class="description-title">Laundry Day</p>
           <p>20” × 16”, oil on canvas</p>
-          <p>I painted a golden retriever from the perspective of the inside
-            of a washing machine, with the dark walls of the washing machine
-            creating a vignette effect on the bright subject. This painting
-            taught me to look creatively at everyday appliances and allowed
-            me to explore unique perspectives.</p>
         </div>
       </div>
 
-      <!-- Slide 9: Mandrill -->
       <div class="mySlides">
         <div class="image-container">
           <img src="media/art/mandrill.jpg"
@@ -530,29 +274,9 @@
         <div class="caption-container">
           <p class="description-title">Mandrill</p>
           <p>16” × 20”, oil on canvas</p>
-          <p>This is a painting of a mandrill from Jungle Park, Tenerife,
-            Spain, based off of a photo.</p>
-          <p>Image reference: <a href="https://c1.staticflickr.com/4/3071/5817417203_4018d75049_b.jpg" target="_blank">
-            link</a></p>
         </div>
       </div>
 
-      <!-- Slide 10: Self Portrait -->
-      <div class="mySlides">
-        <div class="image-container">
-          <img src="media/art/self-portrait.jpg"
-               alt="Self Portrait" style="width:100%">
-        </div>
-        <div class="caption-container">
-          <p class="description-title">Self Portrait</p>
-          <p>16” × 20”, oil on canvas</p>
-          <p>This is a painting of myself surrounded by ingredients from
-            Chinese and American cuisines, exploring a blend of the two
-            cultures I’ve grown up around.</p>
-        </div>
-      </div>
-
-      <!-- Slide 11: Lakeview -->
       <div class="mySlides">
         <div class="image-container">
           <img src="media/art/lakeview.jpg"
@@ -561,94 +285,9 @@
         <div class="caption-container">
           <p class="description-title">Lakeview</p>
           <p>20” × 16”, oil on canvas</p>
-          <p>This is a painting of Moraine Lake, AB, Canada, based off of a
-            photo.</p>
-          <p>Image reference: <a href="http://media.gettyimages.com/photos/reflections-of-moraine-lake-picture-id154397213?b=1&k=6&m=154397213&s=612x612&w=0&h=qgS2nrvum9ELZyeieidu12lUma_LkSZKN9O4aA77nMk=" target="_blank">
-            link</a></p>
         </div>
       </div>
 
-      <!-- Slide 12: Adore Me Too -->
-      <div class="mySlides">
-        <div class="image-container">
-          <img src="media/art/adore-me-too.jpg"
-               alt="Adore Me Too" style="width:100%">
-        </div>
-        <div class="caption-container">
-          <p class="description-title">Adore Me Too</p>
-          <p>13" × 16", color pencil</p>
-          <p>This drawing portrays a seagull trying to eat bird feed out of a
-            birdhouse made for sparrows. This humorously criticizes how humans
-            adore small creatures for their cuteness while detesting larger
-            creatures who do virtually the same thing as their smaller
-            counterparts.</p>
-        </div>
-      </div>
-
-      <!-- Slide 13: Nature's Glitch -->
-      <div class="mySlides">
-        <div class="image-container">
-          <img src="media/art/natures-glitch.jpg"
-               alt="Nature's Glitch" style="width:100%">
-        </div>
-        <div class="caption-container">
-          <p class="description-title">Nature's Glitch</p>
-          <p>16” × 20”, acrylic on campus</p>
-          <p>This painting shows a seagull photobombing the Windows XP desktop
-            background, spoiling the pleasant background with its bitter
-            expression.</p>
-        </div>
-      </div>
-
-      <!-- Slide 14: Alter Seago -->
-      <div class="mySlides">
-        <div class="image-container">
-          <img src="media/art/alter-seago.jpg"
-               alt="Alter Seago" style="width:100%">
-        </div>
-        <div class="caption-container">
-          <p class="description-title">Alter Seago</p>
-          <p>12" ×  9", pen, watercolor, Photoshop</p>
-          <p>This drawing depicts how animals are often babyfied to make cute
-            toys. The plump, beady-eyed seagull toy on the left contrasts with
-            a ruffled, unamused seagull on the right.</p>
-        </div>
-      </div>
-
-      <!-- Slide 15: In N Out -->
-      <div class="mySlides">
-        <div class="image-container">
-          <img src="media/art/in-n-out.jpg"
-               alt="In N Out" style="width:100%">
-        </div>
-        <div class="caption-container">
-          <p class="description-title">In N Out</p>
-          <p>9" × 12", pen</p>
-          <p>This illustration depicts how neighborhood seagulls used to
-            invade and steal children's lunches at my school. Their desperate
-            faces and wide mouths reveal their gluttonous nature.</p>
-        </div>
-      </div>
-
-      <!-- Slide 16: Ocean's Ways -->
-      <div class="mySlides">
-        <div class="image-container">
-          <img src="media/art/oceans-ways.png"
-               alt="Ocean's Ways" style="width:100%">
-        </div>
-        <div class="caption-container">
-          <p class="description-title">Ocean's Ways</p>
-          <p>25.5" × 33", Photoshop</p>
-          <p>Inspired by the traditional art of Native Americans living in the
-            Pacific Northwest, I illustrated interactions among various marine
-            animals using the colors and style of the traditional art. I
-            started with the illustration of the squid and the turtle,
-            duplicated it, then added in the crab and small fish to create a
-            seamless pattern.</p>
-        </div>
-      </div>
-
-      <!-- Slide 17: The Day After Yesterday -->
       <div class="mySlides">
         <div class="image-container">
           <img src="media/art/the-day-after-yesterday.jpg"
@@ -657,11 +296,172 @@
         <div class="caption-container">
           <p class="description-title">The Day After Yesterday</p>
           <p>18” × 7.5”, charcoal</p>
-          <p>I drew a skull from multiple perspectives, using simple line art
-            for the first and last images, line art combined with shading for
-            the second and fourth images, and realism for the middle image.</p>
         </div>
       </div>
+
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/yearbook/opening.png"
+               alt="Opening" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">Opening</p>
+          <p>Photo Credit: Shengfeng Chien</p>
+          <p>Watercolor Credit: Ryan Lee, Helen Nguyen</p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/yearbook/closing.png"
+               alt="Closing" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">Closing</p>
+          <p>Photo Credit: Eliza Luo</p>
+          <p>Watercolor Credit: Ryan Lee, Helen Nguyen</p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/yearbook/maze.png"
+               alt="MAZE Day & Vike Night" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">MAZE Day & Vike Night</p>
+          <p>Credits listed on page</p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/yearbook/food.png"
+               alt="Culinary Arts" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">Culinary Arts</p>
+          <p>Credits listed on page</p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/yearbook/sports.png"
+               alt="Sports Divider" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">Sports Divider</p>
+          <p>Photo Credit: Kelly Chang</p>
+          <p>Watercolor Credit: Ryan Lee, Helen Nguyen</p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/yearbook/reference.png"
+               alt="Reference Divider" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">Reference Divider</p>
+          <p>Photo Credit: Vivian Liu</p>
+          <p>Watercolor Credit: Ryan Lee, Helen Nguyen</p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/yearbook/water-polo.png"
+               alt="Water Polo" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">Water Polo</p>
+          <p>Credits listed on page</p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/yearbook/photos.png"
+               alt="Photos" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">Yearbook Photos</p>
+          <p>Collection of some photos I took for my high school yearbook staff member: <a href="https://www.dropbox.com/sh/7y09slecptxectw/AADDqgBwaiLMnAtyOOYEkjaTa?dl=0" target="_blank">link</a> 
+          </p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/id/jingles.png"
+               alt="Jingles" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">Jingles</p>
+          <p>9.5” × 4” × 5.5” (large prototype), foam and cardstock (large
+            prototype), clay (small prototype), color pencil, Photoshop,
+            Autodesk Sketchbook (illustrations)</p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/id/bamboo.png"
+               alt="Bamboo" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">Bamboo</p>
+          <p>19” × 19” × 42” (chair), cardboard and bicycle tube (chair),
+            Photoshop and Autodesk Sketchbook (illustrations)</p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/id/peingu.png"
+               alt="Peingu" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">Peingü</p>
+          <p>8.5" ×  14", Photoshop</p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/other/2010-part-2.png"
+               alt="2010, Part 2" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">2010, Part 2</p>
+          <p>1762 px × 992 px, Maya</p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/other/puptoberfest.jpg"
+               alt="Pup-toberfest" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">Pup-toberfest</p>
+          <p>4" ×  3.5", Photoshop</p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="image-container">
+          <img src="media/other/fly-sfo.png"
+               alt="Fly SFO" style="width:100%">
+        </div>
+        <div class="caption-container">
+          <p class="description-title">Fly SFO</p>
+          <p>1000 px × 1294 px, Photoshop</p>
+        </div>
+      </div>
+
+
 
       <!-- Next/previous controls with buttons -->
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -687,20 +487,36 @@
   </div>
 
 
-  <!-- Footer -->
-  <footer>
-    <a href="https://www.linkedin.com/in/jjjjjssss/" target="_blank">
-      <img src="media/linkedin-logo.png"
-           alt="Linkedin" title="Linkedin" id="logo">
-    </a>
-    <a href="https://github.com/jjjjjssss" target="_blank">
-      <img src="media/github-logo.png"
-           alt="Github" title="Github" id="logo">
-    </a>
-    <p>
-      <a href="mailto:jshen315@gatech.edu">jshen315@gatech.edu</a>
-    </p>
-  </footer>
+
+
+
+
+
+<br>
+
+<div class="footer">
+  <img id="footer-seagull" src="media/footer-seagull.png">
+  <div id="email-info">
+    <p><b>Thanks for visiting!</b></p>
+    <p>Feel free to contact me at <a href="mailto:jshen315@gatech.edu">jshen315@gatech.edu</a>!</p>
+  </div>
+  <a href="https://github.com/jjjjjssss" target="_blank">
+    <img class="logo" src="media/github-logo.png" alt="GitHub" title="GitHub">
+  </a>
+  <a href="https://www.linkedin.com/in/jjjjjssss/" target="_blank">
+    <img class="logo" src="media/linkedin-logo.png" alt="Linkedin" title="Linkedin">
+  </a>
+</div>
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="scroll-to-element.js"></script>
+
 
 </body>
+
 </html>

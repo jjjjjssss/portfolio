@@ -1,34 +1,34 @@
 <!DOCTYPE html>
-<html id="design-process">
+<html>
 <head>
-  <title>Tea Mobile Design Process | Joyce Shen</title>
+  <title>Tea Mobile | Joyce Shen</title>
   <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,450;0,500;0,600;0,700;1,400;1,450;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width">  
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,450;0,500;0,600;0,700;1,400;1,450;1,500;1,600;1,700&family=Mulish:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/styles_project.css">
+  <link rel="stylesheet" href="stylesheets/styles_main.css">
   <link rel="icon" type="image/x-icon" href="media/favicon.ico">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="https://kit.fontawesome.com/74240a07b4.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <header>
 
   <div class="navigation-bar">
 
-    <!-- Website Logo and Name -->
-    <a href="index.html" title="Home">
+    <a href="index.html">
       <img class="logo"
            src="media/logo.png"
-           alt="Joyce Shen Logo">
-      <div class="website-name">JOYCE SHEN</div>
+           alt="Joyce Shen Logo"
+	   title="Home">
+      <!--<div class="website-name">JOYCE SHEN</div>-->
     </a>
 
-    <!-- Navigation -->
     <nav>
         <ul>
-          <li class="selected"><a id="nav-ui-ux-design" href="ui-ux-design.html">UI/UX Design</a></li>
-          <li class="inactive"><a id="nav-art" href="art.html">Art</a></li>
-          <li class="inactive"><a id="nav-graphic-design" href="graphic-design.html">Graphic Design</a></li>
-          <li class="inactive"><a id="nav-product-design" href="product-design.html">Product/Interior Design</a></li>
+          <li class="selected"><a href="index.html">Work</a></li>
+          <li class="inactive"><a href="art.html">Art & More</a></li>
+          <li class="inactive"><a href="resume.html">Resume</a></li>
         </ul>
     </nav>
 
@@ -37,217 +37,335 @@
 </header>
 
 
-<body>
 
 
-  <!-- Main Content (Gallery) -->
-  <div class="gallery">
+<body class="project">
 
-    <div class="table-of-contents">
-      <h3 style="font-size:24px;margin-bottom:20px;"><a href="ui-ux-design.html">&lt; BACK</a></h3>
-      <h3><a href="#ideation-anchor" class="scroll_to">Ideation</a></h3>
-      <h3><a href="#sitemap-anchor" class="scroll_to">Sitemap</a></h3>
-      <h3><a href="#wireframes-anchor" class="scroll_to">Wireframes</a></h3>
-      <h3><a href="#moodboard-anchor" class="scroll_to">Moodboard</a></h3>
-      <h3><a href="#visual-mockups-anchor" class="scroll_to">Visual Mockups</a></h3>
-      <h3><a href="https://www.sketch.com/s/34b56263-cdbe-47ab-bff6-81e79423450f/a/pPMkGk/play" target=”_blank”>Prototype&nbsp;<i class="fas fa-external-link-alt" style="font-size:16px;"></i></a></h3>
-    </div>
 
-    <div class="content">
+<div class="banner" style="background-color:#AB7F71;">
+  <img src="media/tea-mobile/mockups.png" style="width:100%;height:auto;">
+</div>
 
-      <h1>Tea Mobile Design Process</h1>
-      <br>
+<div class="intro">
 
-      <!---Ideation--->
-      <span id="ideation-anchor" style="position:relative; top:-100px;"></span>
-      <h2>Ideation</h2>
+<div class="title">Tea Mobile: Boba Delivery App</div>
 
-      <p><b>Description:</b> Tea Mobile is a delivery-only boba store
-        delivering affordable and customizable drinks to college students
-        around Midtown Atlanta.</p>
 
-      <p><b>Elevator Pitch:</b> Need a quick treat for yourself or catering for
-        a group event? Tea Mobile delivers refreshing, authentic, and
-        affordable boba right to you, perfect for study sessions, movie nights,
-        and small events.</p>
-
-      <p><b>Audience:</b> College students and event organizers for college events</p>
-      <!--<p style="margin:0;">Roles:</p>
-      <ul style="margin:0 0 7px 0;">
-        <li>College students who have had boba before</li>
-        <li>College students trying boba for the first time</li>
-        <li>Event organizers for small college events</li>
-      </ul>
-      <p style="margin:0;">Demographics:</p>
-      <ul style="margin:0 0 7px 0;">
-        <li>Gender: all genders</li>
-        <li>Age: 18-30</li>
-        <li>Education: college</li>
-        <li>Occupation: students, school administration</li>
-        <li>Marital Status: single</li>
-        <li>Income: limited income</li>
-        <li>Location: Georgia Tech (urban, college campus)</li>
-      </ul>
-      <p style="margin:0;">Psychographics:</p>
-      <ul>
-        <li>Personality & Attitudes: social, outspoken, fun, lazy</li>
-        <li>Values: open-minded, work-hard-play-hard attitude</li>
-        <li>Lifestyles: busy and stressed, studious, studies with friends,
-          works a student job</li>
-      </ul>-->
-
-      <p style="margin:0 0 7px 0"><b>User Profile:</b></p>
-      <div style="width:31.5%; margin-right:10px; display:inline-block; vertical-align:top;">
-        <p style="margin:0;">Michelle (the studious student):</p>
-        <ul>
-          <li>23-year-old Georgia Tech student</li>
-          <li>Pursuing a PhD in Digital Media</li>
-          <li>Studies alone for hours in the library</li>
-          <li>Has a small circle of friends she hangs out with on weekends</li>
-          <li>Has only tried boba once or twice before</li>
-          <li>"No pain no gain"</li>
-        </ul>
-      </div>
-      <div style="width:31.5%; margin-right:10px; display:inline-block; vertical-align:top;">
-        <p style="margin:0;">Brandon (the party student):</p>
-        <ul>
-          <li>18-year-old Georgia Tech student</li>
-          <li>Pursuing a Bachelor’s in Mechanical Engineering</li>
-          <li>Parties every weekend</li>
-          <li>Just moved from Vancouver, a place with lots of boba shops</li>
-          <li>Drinks boba every other day and keeps a stock in his fridge</li>
-          <li>“I don’t study much but I get good grades”</li>
-        </ul>
-      </div>
-      <div style="width:31.5%; margin-right:10px; display:inline-block; vertical-align:top;">
-        <p style="margin:0;">Mary (housing department staff member):</p>
-        <ul>
-          <li>Building/hall director for a small freshman dorm at Georgia Tech</li>
-          <li>Has a budget to organize dorm events</li>
-          <li>Has never tried boba before</li>
-          <li>Loving mother of three kids</li>
-          <li>Lives close to campus</li>
-          <li>"I want to make freshman year a good experience for everyone”</li>
-        </ul>
-    </div>
-
-      <p style="margin:0 0 7px 0;"><b>Strategy:</b></p>
-      <p style="margin:0;">User Needs:</p>
-      <ul style="margin:0 0 7px 0;">
-        <li>Find out if the restaurant delivers to their area</li>
-        <li>Order food online</li>
-        <li>Customize their order</li>
-        <li>Change the quantity of drinks they ordered</li>
-        <li>Track delivery</li>
-        <li>Contact the restaurant</li>
-        <li>View the restaurant menu</li>
-        <li>Learn more about boba</li>
-      </ul>
-      <p style="margin:0;">Client Needs:</p>
-      <ul>
-        <li>To sell food online that will be delivered</li>
-        <li>Provide a system for order customization</li>
-        <li>Show their colorful, fun brand identity</li>
-        <li>Communicate reliability</li>
-        <li>Communicate quality</li>
-        <li>Promote new or popular items on front page</li>
-        <li>Encourage users to buy more items</li>
-      </ul>
-
-      <!--<p style="margin:0 0 7px 0;"><b>Outline of Scope:</b></p>
-      <p style="margin:0;">Content Requirements:</p>
-      <ul style="margin:0 0 7px 0;">
-        <li>Information about boba</li>
-        <li>Information about delivery radius and speedy delivery service</li>
-        <li>About us</li>
-        <li>Pictures of new menu items</li>
-        <li>List of popular menu items</li>
-        <li>Menu: images and cost of each item</li>
-        <li>Contact information of restaurant</li>
-      </ul>
-      <p style="margin:0;">Functionality Requirements:</p>
-      <ul>
-        <li>Enter address and check if they are in the restaurant’s delivery radius</li>
-        <li>Customize their order (drink flavor, size, sugar and ice levels,
-          toppings, quantity)</li>
-        <li>Add items to cart</li>
-        <li>Check out (edit address, payment information)</li>
-        <li>Track order on a map</li>
-      </ul>-->
-
-      <br>
-
-      <!---Sitemap--->
-      <span id="sitemap-anchor" style="position:relative; top:-100px;"></span>
-      <h2>Sitemap</h2>
-      <img src="media/design-process/tea-mobile-sitemap.png" alt="Sitemap" width=80%>
-      <br><br><br>
-
-      <!---Wireframes--->
-      <span id="wireframes-anchor" style="position:relative; top:-100px;"></span>
-      <h2>Wireframes</h2>
-      <div style="margin: -5px -5px 0 -5px;" id="tea-mobile-wireframes">
-        <div class="scrollable-image"><img src="media/design-process/tea-mobile-wireframe-home-mobile.png" alt="Wireframe - Home (Mobile)"></div>
-        <div class="scrollable-image"><img src="media/design-process/tea-mobile-wireframe-hours.png" alt="Wireframe - Hours & Delivery"></div>
-        <div class="scrollable-image"><img src="media/design-process/tea-mobile-wireframe-delivery-radius.png" alt="Wireframe - Order (Delivery Radius)"></div>
-        <div class="scrollable-image"><img src="media/design-process/tea-mobile-wireframe-drink.png" alt="Wireframe - Order (Drink)"></div>
-        <div class="scrollable-image"><img src="media/design-process/tea-mobile-wireframe-customize.png" alt="Wireframe - Order (Customize)"></div>
-        <div class="scrollable-image"><img src="media/design-process/tea-mobile-wireframe-transition.png" alt="Wireframe - Order (Transition)"></div>
-        <div class="scrollable-image"><img src="media/design-process/tea-mobile-wireframe-cart.png" alt="Wireframe - Order (Cart)"></div>
-        <div class="scrollable-image"><img src="media/design-process/tea-mobile-wireframe-checkout.png" alt="Wireframe - Order (Checkout)"></div>
-        <div class="scrollable-image"><img src="media/design-process/tea-mobile-wireframe-track-order.png" alt="Wireframe - Order (Track Order)"></div>
-        <div class="scrollable-image" style="width:72.5%"><img src="media/design-process/tea-mobile-wireframe-home-web.png" alt="Wireframe - Home (Web)"></div>
-      </div>
-      <br><br>
-
-      <!---Moodboard--->
-      <span id="moodboard-anchor" style="position:relative; top:-100px;"></span>
-      <h2>Moodboard</h2>
-      <img src="media/design-process/tea-mobile-moodboard.png" alt="Moodboard" width=70%>
-      <br><br><br>
-
-      <!---Visual Mockups--->
-      <span id="visual-mockups-anchor" style="position:relative; top:-100px;"></span>
-      <h2>Visual Mockups</h2>
-      <div style="margin: -5px -5px 0 -5px;" id="tea-mobile-mockups">
-        <div class="scrollable-image"><img src="media/design-process/tea-mobile-mockup-home-mobile.png" alt="Mockup - Home (Mobile)"></div>
-        <div class="scrollable-image"><img src="media/design-process/tea-mobile-mockup-menu.png" alt="Mockup - Menu"></div>
-        <div class="scrollable-image"><img src="media/design-process/tea-mobile-mockup-delivery-radius.png" alt="Mockup - Order (Delivery Radius)"></div>
-        <div class="scrollable-image"><img src="media/design-process/tea-mobile-mockup-drink.png" alt="Mockup - Order (Drink)"></div>
-        <div class="scrollable-image"><img src="media/design-process/tea-mobile-mockup-customize.png" alt="Mockup - Order (Customize)"></div>
-        <div class="scrollable-image"><img src="media/design-process/tea-mobile-mockup-cart.png" alt="Mockup - Order (Cart)"></div>
-        <div class="scrollable-image"><img src="media/design-process/tea-mobile-mockup-checkout.png" alt="Mockup - Order (Checkout)"></div>
-        <div class="scrollable-image"><img src="media/design-process/tea-mobile-mockup-track-order.png" alt="Mockup - Home (Track Order)"></div>
-        <div class="scrollable-image"><img src="media/design-process/tea-mobile-mockup-hours.png" alt="Mockup - Hours & Delivery"></div>
-        <div class="scrollable-image"><img src="media/design-process/tea-mobile-mockup-more.png" alt="Mockup - More"></div>
-        <div class="scrollable-image" style="width:47.8%"><img src="media/design-process/tea-mobile-mockup-home-web.png" alt="Mockup - Home (Web)"></div>
-      </div>
-      <br><br>
-
-      <!--Link to Prototype-->
-      <h2>Link to Prototype</h2>
-      <p><a href="https://www.sketch.com/s/34b56263-cdbe-47ab-bff6-81e79423450f/a/pPMkGk/play">https://www.sketch.com/s/34b56263-cdbe-47ab-bff6-81e79423450f/a/pPMkGk/play</p>
-
-    </div>
-
+<div class="one-third-gallery">
+  <div>
+    <h3>Type</h3>
+    <p>Personal project, mobile website</p>
+    <h3>Role</h3>
+    <p>Prototyping, UI Design</p>
   </div>
 
+  <div>
+    <h3>Duration</h3>
+    <p>Jun - Jul 2020 (3 weeks)</p>
+    <h3>Tools</h3>
+    <p>Sketch, Balsamiq, Photoshop</p>
+  </div>
 
-  <footer>
-    <a href="https://www.linkedin.com/in/jjjjjssss/" target="_blank">
-      <img src="media/linkedin-logo.png"
-           alt="Linkedin" title="Linkedin" id="logo">
-    </a>
-    <a href="https://github.com/jjjjjssss" target="_blank">
-      <img src="media/github-logo.png"
-           alt="Github" title="Github" id="logo">
-    </a>
-    <p>
-      <a href="mailto:jshen315@gatech.edu">jshen315@gatech.edu</a>
-    </p>
-  </footer>
+  <div>
+    <h3>Description</h3>
+    <p>A boba delivery website for college students and young adults</p>
+  </div>
+</div>
 
-  <script src="scroll-to-element.js"></script>
+</div>
 
+
+
+<div class="big-br"></div>
+
+
+
+<div class="main-content">
+
+
+<div id="trigger-fade-overview"></div>
+<div data-aos="fade" 
+     data-aos-anchor="#trigger-fade-overview"
+     data-aos-offset="200"
+     data-aos-duration="500">
+
+<h1>Overview</h1>
+
+<div class="post-title-br"></div>
+
+<p>For one of my projects in a UI/UX specialization course, I was tasked with designing a food delivery website for a fictional restaurant. I decided to make a mobile website for Tea Mobile, a fictional boba shop located in Atlanta that mainly serves college students. My goal for this project was to design a product that is both visually appealing and streamlines the ordering process for customers.</p>
+
+<div class="med-br"></div>
+<h2>Store concept</h2>
+<ul>
+  <li><b>Store name:</b> Tea Mobile</li>
+  <li><b>Cost:</b> $ - Affordable</li>
+  <li><b>Location:</b> Midtown, Atlanta, GA (Urban)</li>
+  <li><b>Target audience:</b> College students and event organizers for college events</li>
+  <li><b>Menu:</b> Boba tea, smoothies, coffee (customizable by size, sugar and ice levels, toppings quantity)</li>
+</ul>
+
+</div>
+
+
+
+
+<div class="big-br"></div>
+
+
+
+
+
+<div id="trigger-fade-establishing-the"></div>
+<div data-aos="fade" 
+     data-aos-anchor="#trigger-fade-establishing-the"
+     data-aos-offset="200"
+     data-aos-duration="500">
+
+<h1>Establishing the target audience</h1>
+<div class="post-title-br"></div>
+<p>To get a better grasp of the goals and tendencies of the target audience I was working with, I listed out different target groups, as well as their demographic and psychographic information. Most of this information came from my personal experience as a student at Georgia Tech and being around avid boba drinkers, as well as looking at boba store websites like <a href="https://thet4.com/" target="_blank">T4</a>, <a href="https://www.meetfresh.us/" target="_blank">MeetFresh</a>, and <a href="https://www.kungfutea.com/" target="_blank">Kung Fu Tea</a>. However, if I were to repeat this project, I would spend some more time on user research.</p>
+
+<div class="med-br"></div>
+
+<h2>Target groups</h2>
+<ul>
+  <li>College students who buy boba frequently and want a quick and efficient ordering process that they can go through repeatedly</li>
+  <li>College students who have had boba only a few times and need more help with menu options, customization, and payment</li>
+  <li>Event organizers for small college events, who need to order 10-30 drinks at once</li>
+</ul>
+
+<div class="med-br"></div>
+
+<div class="one-half-gallery">
+
+<div>
+<h2>Demographics</h2>
+<ul>
+  <li><b>Gender:</b> all genders</li>
+  <li><b>Age:</b> 18-30</li>
+  <li><b>Education:</b> college education</li>
+  <li><b>Occupations:</b> students, school administration</li>
+  <li><b>Marital Status:</b> single</li>
+  <li><b>Income:</b> limited income</li>
+  <li><b>Location:</b> Georgia Tech (urban, college campus)</li>
+</ul>
+</div>
+
+
+<div>
+<h2>Psychographics</h2>
+<ul>
+  <li><b>Personality & Attitudes:</b> social, outspoken, fun, lazy</li>
+  <li><b>Values:</b> open-minded, work-hard-play-hard attitude</li>
+  <li><b>Lifestyles:</b> busy and stressed, studious, studies with friends, works at a student job</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+<div class="big-br"></div>
+
+
+
+
+<div id="trigger-fade-user-personas"></div>
+<div data-aos="fade" 
+     data-aos-anchor="#trigger-fade-user-personas"
+     data-aos-offset="200"
+     data-aos-duration="500">
+
+<h1>User personas</h1>
+<div class="post-title-br"></div>
+<div class="full-width-img"><img src="media/tea-mobile/user-personas.png" alt="User Personas"></div>
+</div>
+
+
+
+
+<div class="big-br"></div>
+
+
+
+
+<div id="trigger-fade-user-needs"></div>
+<div data-aos="fade" 
+     data-aos-anchor="#trigger-fade-user-needs"
+     data-aos-offset="225"
+     data-aos-duration="500">
+
+<h1>User needs, client needs, and sitemap</h1>
+<div class="post-title-br"></div>
+<p>After learning more about my target users, I listed some main user needs: viewing the menu, customizing orders, viewing their carts, and making payments. In particular, the customization process needed to be efficient for regular customers and easy to learn for new customers, and people ordering in bulk should be able to edit and change the quantities of drinks in their carts.</p>
+<p>I also noted the needs of the client, the boba shop. The website needed to communicate the shop's reliability, quality, and vibrant brand identity and also encourage customers to try new/popular items. I decided to address these needs in the website's home screen or through the visual design.</p>
+<p>Keeping user and client needs in mind, I outlined the general structure of the website in a sitemap.</p>
+
+<br>
+<br>
+
+<div class="full-width-img"><img src="media/tea-mobile/sitemap.png" alt="Sitemap"></div>
+
+</div>
+
+
+
+
+<div class="big-br"></div>
+
+
+
+
+<div id="trigger-fade-wireframes"></div>
+<div data-aos="fade" 
+     data-aos-anchor="#trigger-fade-wireframes"
+     data-aos-offset="275"
+     data-aos-duration="500">
+
+<h1>Wireframes </h1>
+<div class="post-title-br"></div>
+<p>I drafted wireframes for the screens listed in the sitemap. I took a lot of inspiration from delivery apps like <a href="https://www.starbucks.com/menu" target="_blank">Starbucks</a> and <a href="https://www.mcdonalds.com/us/en-us/mccafe.html" target="_blank">McDonalds</a> in planning how to organize each screen.</p>
+<br>
+<br>
+<div class="extra-width-img"><img src="media/tea-mobile/wireframes.png" alt="Wireframes"></div>
+
+</div>
+
+
+
+
+<div class="big-br"></div>
+
+
+
+
+<div id="trigger-fade-visual-design"></div>
+<div data-aos="fade" 
+     data-aos-anchor="#trigger-fade-visual-design"
+     data-aos-offset="325"
+     data-aos-duration="500">
+
+<h1>Visual design</h1>
+<div class="post-title-br"></div>
+<p>I wanted a vibrant look for the website that incorporates boba into the visual theme. I created a moodboard with imagery and UI inspiration to define the general style that I was looking for, and also designed a logo and set visual guidelines for the design. </p>
+<div class="med-br"></div>
+
+<h2>Moodboard</h2>
+<div class="full-width-img"><img src="media/tea-mobile/moodboard.png" alt="Moodboard"></div>
+<div class="med-br"></div>
+
+<h2>Visual guidelines</h2>
+<div class="full-width-img"><img src="media/tea-mobile/visual-guidelines.png" alt="Visual Guidelines"></div>
+
+</div>
+
+
+
+
+<div class="big-br"></div>
+
+
+
+
+<div id="trigger-fade-final-mockup"></div>
+<div data-aos="fade" 
+     data-aos-anchor="#trigger-fade-final-mockup"
+     data-aos-offset="350"
+     data-aos-duration="500">
+
+<h1>Final mockup</h1>
+<div class="post-title-br"></div>
+
+<div class="extra-width-img"><img src="media/tea-mobile/mockups.png" alt="Mockups"></div>
+<div class="med-br"></div>
+
+<h2>Demo</h2>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/u3ztwYzaZcM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+
+
+<div class="big-br"></div>
+
+
+
+
+<div id="trigger-fade-responsive-design"></div>
+<div data-aos="fade" 
+     data-aos-anchor="#trigger-fade-responsive-design"
+     data-aos-offset="350"
+     data-aos-duration="500">
+
+<h1>Responsive design</h1>
+<div class="post-title-br"></div>
+
+<p>I also made a wireframe and mockup for a web version of the home screen. I implemented the color theme and background elements in the web version and rescaled the content to fit the screen.</p>
+<br>
+<div class="extra-width-img"><img src="media/tea-mobile/responsive-design.png" alt="Responsive Design"></div>
+</div>
+
+
+
+
+<div class="big-br"></div>
+
+
+
+
+<div id="trigger-fade-future-improvements"></div>
+<div data-aos="fade" 
+     data-aos-anchor="#trigger-fade-future-improvements"
+     data-aos-offset="350"
+     data-aos-duration="500">
+
+<h1>Future improvements</h1>
+<div class="post-title-br"></div>
+
+<p>Although I was quite happy with what I was able to create in a short amount of time, I think there are a few things I could improve on for this project. Notably, I think I could have spent more time on user research by interviewing students and other users to get better insights for my product. I also feel that I could have incorporated more features to cater towards my main audience group, frequent boba buyers, such as a login/registration system, reordering past orders, and saving payment info.</p>
+
+<p>Another thing I want to consider in the future is making my design more friendly for developers, as a lot of the graphic elements I used may be time-consuming for them to implement. I also want to try designing from the shop owner's perspective and consider how they would track orders or change the menu.</p>
+</div>
+
+
+
+
+<div class="big-br"></div>
+
+
+
+
+
+<h1><a href="ice-cream.html">Next project: <span class="next">Breezy Ice Cream ></span></a></h1>
+
+
+</div>
+
+
+<div class="footer">
+  <img id="footer-seagull" src="media/footer-seagull.png">
+  <div id="email-info">
+    <p><b>Thanks for visiting!</b></p>
+    <p>Feel free to contact me at <a href="mailto:jshen315@gatech.edu">jshen315@gatech.edu</a>!</p>
+  </div>
+  <a href="https://github.com/jjjjjssss" target="_blank">
+    <img class="logo" src="media/github-logo.png" alt="GitHub" title="GitHub">
+  </a>
+  <a href="https://www.linkedin.com/in/jjjjjssss/" target="_blank">
+    <img class="logo" src="media/linkedin-logo.png" alt="Linkedin" title="Linkedin">
+  </a>
+</div>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
+
 </html>
