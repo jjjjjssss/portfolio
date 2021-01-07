@@ -43,7 +43,7 @@
   position: relative;
   font-family: "Mulish";
   font-size: 18px;
-  line-height: 1.6em; /*originally 1.4*/
+  line-height: 1.7em; /*originally 1.4, then 1.6*/
 }
 
 #index .doodle {
@@ -62,8 +62,8 @@
 }
 
 #index .grid-item {
-  min-width: 550px;
-  width: 44vw;
+  min-width: 550px; /* orig 550 */
+  width: 44%;
   min-height: 343.75px;
   height: 27.5vw;
   margin: 1.2vw;
@@ -95,7 +95,7 @@
 
 #index #ice-cream {
   background-image: url("../media/index/ice-cream.png");
-  background-color: #FF757D;
+  background-color: #FF858C; /* orig #FF757D */
 }
 
 #index .grid-item .overlay {
@@ -108,11 +108,11 @@
 
 /* Change overlay opacity from 0 to 0.5 when hovering*/
 #index .grid-item:hover .overlay {
-  background: rgba(255, 161, 10, 0.9);
+  background: rgba(255, 161, 10, 0.95);
   /*cursor: pointer; /*not necessary but oh well*/
 }
 
-#index .grid-item .title {
+#index .grid-item .text {
   top: 50%;
   transform: translateY(-100%);
   width: 90%;
@@ -122,17 +122,26 @@
   position: relative;
   overflow: hidden;
   color: white;
-  font-family: "Jost";
-  font-size: 2.5em;
-  font-weight: 600;
-  line-height: 1.3em;
   opacity: 0;
   transition: .4s ease;
 }
 
-#index .grid-item:hover .title {
+#index .grid-item:hover .text {
   opacity: 1;
   transform: translateY(-50%);
+}
+
+#index .grid-item h2 {
+  font-family: "Jost";
+  font-size: 2.3em;
+  font-weight: 600;
+  line-height: 1.3em;
+}
+
+#index .grid-item .text p {
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 1.5em;
 }
 
 #index .grid-item a {

@@ -17,20 +17,20 @@
   }
 }
 
-#art .intro p {
-  line-height: 1.7em;
+#art p {
+  line-height: 1.8em;
 }
 
-
 @media only screen and (max-width: 600px) {
-  #art .intro p {
+  #art p {
     font-size: 1.5em;
+    line-height: 1.6em;
   }
 }
 
 #art .main-content {
   margin: calc(80px + 1em) auto 0 auto;
-  width: 75%;
+  width: 72%;
   /*display: grid;
   grid-template-columns: 1fr 5fr;
   grid-column-gap: 3em;*/
@@ -42,7 +42,7 @@
 #art .sidebar {
   position: sticky;
   position: -webkit-sticky;
-  top: 80px;
+  top: calc(80px + 1em);
   width: 15%;
   padding-right: 5%;
   align-self: flex-start;
@@ -53,7 +53,7 @@
   display: block;
   margin-top: 0em;
   margin-bottom: 1em;
-  font-size: 1.5em;
+  font-size: 1.4em; /* orig 1.5 */
   font-family: "Jost";
   font-weight: 500;
   text-decoration: inherit;
@@ -61,15 +61,15 @@
   color: #c4c4c4;
 }
 
-#art #nav-art {
+/*#art #nav-art {
   color: #363636;
-}
+}*/
 
-/* Table of contents links change color on hover */
+/* Table of contents links change color on hover 
 #art .sidebar a:hover {
   color: #ffa10a;
   transition: .2s ease;
-}
+}*/
 
 
 #art .rightbar {
@@ -81,14 +81,22 @@
   align-items: left;
   flex-direction: column;
   flex-wrap: vertical;
+  padding-top: 0;
+}
+
+#art .rightbar p {
+  margin-top: 0;
+  /*font-style: italic;*/
+  color: #595959;
 }
 
 #art h2 {
   margin-top: 0;
   font-family: "Jost";
   font-weight: 500;
-  font-size: 1.4em;
+  font-size: 2.1em; /* orig 1.4? */
   letter-spacing: 0.025em;
+  line-height: 1em;
 }
 
 /* Content: main portion of page, next to sidebar */
