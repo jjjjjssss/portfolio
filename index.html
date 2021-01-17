@@ -3,10 +3,12 @@
 <head>
   <title>Home | Joyce Shen</title>
   <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,450;0,500;0,600;0,700;1,400;1,450;1,500;1,600;1,700&family=Mulish:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width">  
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,450;0,500;0,600;0,700;1,400;1,450;1,500;1,600;1,700&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,650;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/styles_index.css">
   <link rel="stylesheet" href="stylesheets/styles_main.css">
   <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
 
 <header>
@@ -38,19 +40,20 @@
 
 <body id="index" onload="typeWriter()">
 
+<br>
+<br>
+<br>
 
 <div class="beginning">
 
   <div class="text-container">
 
   <div id="greeting1" class="greeting"></div>
-  <div id="greeting2" class="greeting"></div>
 
   <script>
     var i = 0;
     var j = 0;
-    var text1 = 'Hey!';
-    var text2 = 'It\'s Joyce.';
+    var text1 = "Hey! It's Joyce.";
     var speed = 100;
 
     function typeWriter() {
@@ -58,15 +61,8 @@
         document.getElementById("greeting1").innerHTML += text1.charAt(i);
         i++;
         setTimeout(typeWriter, speed);
-      } else if (j < text2.length && i == text1.length) {
-        i++;
-        setTimeout(typeWriter, 200);
-      } else if (j < text2.length) {
-        document.getElementById("greeting2").innerHTML += text2.charAt(j);
-        j++;
-        setTimeout(typeWriter, speed);
       } else {
-	setTimeout(clearTypeWriter, 5000);
+	setTimeout(clearTypeWriter, 15000);
       }
     }
 
@@ -74,16 +70,16 @@
       i = 0;
       j = 0;
       document.getElementById("greeting1").innerHTML = "";
-      document.getElementById("greeting2").innerHTML = "";
       setTimeout(typeWriter, speed);
     }
 
   </script>
 
   <div id="intro">
-    <b>I am an undergraduate student living in the Bay Area and studying computer
-    science at Georgia Tech</b>. I’m on a journey to learn about people, the way they
-    interact with the world around them, and how I can help design that world.
+    I'm based in the <span class="half-highlight">Bay Area</span> and currently studying 
+    <span class="half-highlight">computer science at Georgia Tech</span>. I’m on a
+    journey to learn about people, the way they interact with the world around them, and
+    how I can help design that world.
   </div>
 
   </div>
@@ -96,65 +92,77 @@
 <br>
 <br>
 <br>
+<br>
+<br>
 
 <div class="grid">
  
-  <div class="grid-item" id="marta">
+  <div class="grid-item">
     <a href="marta.html">
-      <div class="overlay">
-        <div class="text">
-          <h2>Redesigning MARTA On the Go</h2>
-	  <p>Improving Atlanta's public transit app</p>
-	</div>
-      </div>
+      <div class="thumbnail" id="marta"></div>
     </a>
+    <div class="description">
+      <a href="marta.html">
+        <h2><b>Redesigning MARTA On the Go —</b> Improving Atlanta's public transit app
+        </h2>
+      </a>
+      <!--<div class="skill">Product Design</div>
+      <div class="skill">User Research</div>-->
+    </div>
   </div>
 
-  <div class="grid-item" id="homeroom">
+  <div class="grid-item">
     <a href="homeroom.html">
-      <div class="overlay">
-        <div class="text">
-          <h2>Homeroom: Virtual Classroom Collaboration Tool</h2>
-	  <p>Bridging the gap between online and in-person collaboration</p>
-	</div>
-      </div>
+      <div class="thumbnail" id="homeroom"></div>
     </a>
+    <div class="description">
+      <a href="homeroom.html">
+        <h2><b>Homeroom —</b> Bridging the gap between online and in-person collaboration
+        </h2>
+      </a>
+      <!--<div class="skill">Product Design</div>
+      <div class="skill">User Research</div>-->
+    </div>
   </div>
-  
-  <div class="grid-item" id="ui-exercises">
+
+  <div class="grid-item">
     <a href="ui-exercises.html">
-      <div class="overlay">
-        <div class="text">
-          <h2>UI Exercises</h2>
-	  <p>Weekly exercises exploring design outside my comfort zone</p>
-	</div>
-      </div>
+      <div class="thumbnail" id="ui-exercises"></div>
     </a>
+    <div class="description">
+      <a href="ui-exercises.html">
+        <h2><b>UI Exercises —</b> Weekly exercises exploring different design styles</h2>
+      </a>
+      <!--<div class="skill">UI Design</div>-->
+    </div>
   </div>
 
-  <div class="grid-item" id="tea-mobile">
+  <div class="grid-item">
     <a href="tea-mobile.html">
-      <div class="overlay">
-        <div class="text">
-          <h2>Tea Mobile: Boba Delivery App</h2>
-	  <p>Fun and streamlined mobile delivery website</p>
-	</div>
-      </div>
+      <div class="thumbnail" id="tea-mobile"></div>
     </a>
+    <div class="description">
+      <a href="tea-mobile.html">
+        <h2><b>Tea Mobile —</b> Vibrant and streamlined boba delivery website</h2>
+      </a>
+      <!--<div class="skill">Product Design</div>-->
+    </div>
   </div>
 
-  <div class="grid-item" id="ice-cream">
+  <div class="grid-item">
     <a href="ice-cream.html">
-      <div class="overlay">
-        <div class="text">
-	  <h2>Breezy Ice Cream: Ice Cream Vending Machine</h2>
-	  <p>Screen interface for a unique type of vending machine</p>
-	</div>
-      </div>
+      <div class="thumbnail" id="ice-cream"></div>
     </a>
+    <div class="description">
+      <a href="ice-cream.html">
+        <h2><b>Breezy Ice Cream —</b> Screen interface for an ice cream vending machine
+        </h2>
+      </a>
+      <!--<div class="skill">Product Design</div>-->
+    </div>
   </div>
 
-  <div class="grid-item" style="min-height:0px;height:0.01px;background-color:pink;"></div>
+  <div class="grid-item" style="min-height:0px;height:0.01px;"></div>
 
 </div>
 
@@ -162,18 +170,23 @@
 
 
 <div class="footer">
-  <img id="footer-seagull" src="media/footer-seagull.png">
-  <div id="email-info">
-    <p><b>Thanks for visiting!</b></p>
-    <p>Feel free to contact me at <a href="mailto:jshen315@gatech.edu">jshen315@gatech.edu</a>!</p>
-  </div>
+
+  <p>Let's get in touch!</p>
+
+  <a href="https://www.linkedin.com/in/jjjjjssss/" target="_blank">
+    <img class="logo" src="media/linkedin-logo.png" alt="LinkedIn" title="LinkedIn">
+  </a>
+
   <a href="https://github.com/jjjjjssss" target="_blank">
     <img class="logo" src="media/github-logo.png" alt="GitHub" title="GitHub">
   </a>
-  <a href="https://www.linkedin.com/in/jjjjjssss/" target="_blank">
-    <img class="logo" src="media/linkedin-logo.png" alt="Linkedin" title="Linkedin">
+
+  <a href="mailto:jshen315@gatech.edu">
+    <img class="logo" src="media/email-logo.png" alt="Email" title="Email (jshen315@gatech.edu)">
   </a>
+
 </div>
+
 </body>
 
 </html>

@@ -239,13 +239,28 @@
   }
 }
 
-/*.project .quote {
-  margin: 0.9em 0;
-  font-size: 1.2em;
-  color: #969696;
-  font-style: italic;
-  
-}*/
+.project .quote-box {
+  overflow: visible;
+  height: 4em;
+  position: relative;
+  margin: 2.3em 0;
+}
+
+.project .quote-box .quote-mark {
+  position: absolute;
+  color: #e8e8e8; 
+  font-size: 9em;
+  margin-top: -0.3em;
+  margin-left: -0.1em;
+}
+
+.project .quote-box p {
+  font-size: 1.05em;
+  position: absolute;
+  top: 0;
+  margin-left: 1.4em;
+  margin-top: 0.5em;
+}
 
 :root {
   --gallery-display: flex;
@@ -334,25 +349,6 @@
   }
 }
 
-.project .quote-box {
-  box-shadow: 0px 7px 25px 0px rgba(0,0,0,0.07);
-}
-
-.project blockquote {
-  margin: 0;
-  padding: 1em;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.1em;
-  color: #909090;
-  font-style: italic;
-}
-
-.project .quotee {
-  color: #adadad;
-  font-style: italic;
-}
 
 .project .main-content .one-half-gallery p, .main-content .one-third-gallery p, .main-content .one-fourth-gallery p, .intro .one-third-gallery p, .intro .one-fourth-gallery p {
   margin-top: 0;
@@ -376,5 +372,5 @@ object-fit: contain;
 }
 
 .project .footer {
-  margin-top: 8em;
+  margin-top: 6em;
 }

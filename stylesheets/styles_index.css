@@ -1,55 +1,59 @@
 #index .beginning {
-  width: 7.6em;/*7 w/o circle, 8 w/*/
+  width: 73%;/*7 w/o circle, 8 w/... orig 52%*/ 
+  min-width: 37em;
+  max-width: 48em;
   height: auto;
   /*height: 70vh;
   min-height: 500px;
   max-height: 600px;*/
+  min-height: 18em;
   margin-top: 80px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-  font-family: "Jost";
-  font-size: 5em;
+  position: relative;
 }
 
 #index .beginning .text-container {
-  width: 4.4em;
-  position: relative;
+  width: 70%;
+  position: absolute;
   float: left;
-}
-
-#index .greeting {
-  height: 1.2em;
-  padding: 0;
-  font-weight: 450;
-  position: relative;
-  background-color: none;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #index #greeting1 {
+  height: 1.2em;
+  padding: 0;
+  font-weight: 500;
+  position: relative;
+  background-color: none;
   top: 0;
   /*left: calc(50% - 2.6em);*/
+  font-family: "Jost";
+  font-size: 4em; /*orig 3.4*/
 }
 
-#index #greeting2 {
-  top: 0.05em;
-  /*left: calc(50% - 1.3em);*/
-}
 
 #index #intro {
-  padding-top: 2.7em;
-  width: 20em;
+  padding-top: 1.6em;
+  /*width: 20em;*/
   /*margin: auto;*/
   position: relative;
   font-family: "Mulish";
-  font-size: 18px;
+  font-size: 1.3em; /*orig 1.25em*/
   line-height: 1.7em; /*originally 1.4, then 1.6*/
+}
+
+.half-highlight {
+  background: linear-gradient(to top, #ffe5ba 45%, transparent 45%);
+  font-weight: 650; /*orig 650*/
 }
 
 #index .doodle {
   position: relative;
   float: right;
-  width: 2em;/*1.7 w/o circle, 3 w/*/
+  width: 9.2em;
   height: auto;
   padding-top: 0.2em;
   /*transform: rotate(2deg);*/
@@ -59,18 +63,35 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 97%;
+  margin: auto;
 }
 
 #index .grid-item {
-  min-width: 550px; /* orig 550 */
-  width: 44%;
-  min-height: 343.75px;
-  height: 27.5vw;
-  margin: 1.2vw;
+  min-width: 500px; /* orig 550 */
+  width: calc(50% - 2em);
+  margin: 1em;
+}
+
+#index .thumbnail {
+  min-height: 350px;
+  height: 26em; /*orig 27.5vw*/
   background-attachment: local;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  transition: 0.15s ease-in-out;
+}
+
+#index .thumbnail:hover {
+  opacity: 80%; /*background-size: 103%;*/
+
+}
+
+@media only screen and (max-width: 1100px) {
+  #index .grid-item {
+    width: 75%;
+  }
 }
 
 #index #marta {
@@ -98,54 +119,31 @@
   background-color: #FF858C; /* orig #FF757D */
 }
 
-#index .grid-item .overlay {
-  position: relative;
-  height: inherit;
-  width: 100%;
-  transition: .5s ease;
-  background: rgba(255, 161, 10, 0);
-}
-
-/* Change overlay opacity from 0 to 0.5 when hovering*/
-#index .grid-item:hover .overlay {
-  background: rgba(255, 161, 10, 0.95);
-  /*cursor: pointer; /*not necessary but oh well*/
-}
-
-#index .grid-item .text {
-  top: 50%;
-  transform: translateY(-100%);
-  width: 90%;
-  max-height: 100%;
-  margin: auto;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  color: white;
-  opacity: 0;
-  transition: .4s ease;
-}
-
-#index .grid-item:hover .text {
-  opacity: 1;
-  transform: translateY(-50%);
-}
-
 #index .grid-item h2 {
+  font-size: 1.2em; /* orig 1.15 with mulish */
+  font-weight: 450;
   font-family: "Jost";
-  font-size: 2.3em;
-  font-weight: 600;
-  line-height: 1.3em;
+  margin-top: 1.2em;
+  line-height: 1.4;
 }
 
-#index .grid-item .text p {
-  font-size: 1.2em;
-  font-weight: 500;
-  line-height: 1.5em;
+#index .grid-item h2 b {
+  font-weight: 600;
+}
+
+#index .grid-item .skill {
+  line-height: 0.8;
+  margin-bottom: 1.5em;
+  margin-right: 0.5em;
+  padding: 0.5em;
+  font-size: 0.9em;
+  display: inline-block;
+  color: #909090;
+  font-weight: 300;
+  background-color: #f0f0f0;
 }
 
 #index .grid-item a {
-  height: 100%;
   text-decoration: inherit;
 }
 

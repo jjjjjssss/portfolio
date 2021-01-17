@@ -129,11 +129,12 @@ body {
 /************************** Footer **************************/
 
 .footer {
-  width: 60%;
-  margin: 5em auto 3.5em auto;
+  width: 9.3em;
+  margin: 3.5em auto;
   overflow: hidden;
   font-family: "Mulish";
-  font-size: 1.1em;
+  font-size: 1.2em;
+  text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -143,26 +144,29 @@ body {
   }
 }
 
-.footer a {
-  color: #ffa10a;
-  text-decoration: inherit;
-  font-weight: 600;
-}
-
-#footer-seagull {
-  float: left;
-  height: 2.7em;
-  margin-right: 1.5em;
-}
-
-#email-info {
-  float: left;
-  margin-top: -1.1em;
+.footer p {
+  margin-top: 0;
+  margin-bottom: 1.1em;
+  font-weight: 700;
+  font-size: 1.1em;
 }
 
 .footer .logo {
-  height: 1.6em;
-  float: right;
-  margin-left: 1.5em;
+  height: 1.7em;
+  margin: 0 0.7em;
   padding: 0;
+}
+
+#footer-seagull {
+  height: 1.3em;
+}
+
+.footer .link {
+  font-weight: 500;
+  margin-left: 1em;
+}
+
+.footer .link:hover {
+  color: #ffa10a;
+  transition: .2s ease;
 }
