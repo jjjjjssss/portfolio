@@ -25,7 +25,6 @@ header {
 }
 
 .logo {
-  display: inline-block;
   padding-top: 5px;
   padding-left: 4%;
   padding-right: 20px;
@@ -50,7 +49,6 @@ header {
 
 /* Menu */
 nav ul {
-  display: inline-block;
   line-height: 10px; /* Vertically aligns to logo and name */
   list-style-type: none;
   float: right;
@@ -61,8 +59,8 @@ nav ul {
 nav li {
   display: inline-block;
   padding-left: 30px;
-  font-family: "Jost";
-  font-size: 1.25em;
+  font-family: "Poppins";
+  font-size: 1.15em;
   /* font-size: max(15.8px,min(1.60vw,20px)); */
   /* resizes text between 16 and 20 px */
 }
@@ -87,7 +85,7 @@ nav li:hover {
 /* Inactive nav link is light gray */
 nav .inactive {
   color: #909090;
-  font-weight: 450;
+  font-weight: 400;
   text-decoration: none;
 }
 
@@ -119,8 +117,16 @@ body {
   color: #363636;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins";
+}
+
 .no-wrap {
   white-space: nowrap;
+}
+
+::selection { 
+  background-color: #ffebc9;
 }
 
 
@@ -129,33 +135,39 @@ body {
 /************************** Footer **************************/
 
 .footer {
-  width: 9.3em;
+  width: 100%;
   margin: 3.5em auto;
   overflow: hidden;
-  font-family: "Mulish";
-  font-size: 1.2em;
+  font-family: "Poppins";
+  font-size: 1.15em;
   text-align: center;
-  font-weight: 700;
 }
 
 @media only screen and (max-width: 600px) {
   .footer {
     font-size: 1.5em;
-    width: 85%;
   }
 }
 
 .footer p {
   margin-top: 0;
-  margin-bottom: 1.1em;
-  font-weight: 700;
-  font-size: 1.1em;
+  margin-bottom: 1em;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.footer .logos {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .footer .logo {
   height: 1.7em;
-  margin: 0 0.7em;
+  margin: 0 0.9em;
   padding: 0;
+  display:inline-block;
 }
 
 #footer-seagull {

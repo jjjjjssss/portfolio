@@ -4,11 +4,11 @@
   <title>Home | Joyce Shen</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">  
-  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,450;0,500;0,600;0,700;1,400;1,450;1,500;1,600;1,700&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,650;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,450;0,500;0,550;0,600;0,650;0,700;0,800;1,300;1,400;1,450;1,500;1,550;1,600;1,650;1,700;1,800&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,450;0,500;0,550;0,600;0,650;0,700;0,800;1,300;1,400;1,450;1,500;1,550;1,600;1,650;1,700;1,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/styles_index.css">
   <link rel="stylesheet" href="stylesheets/styles_main.css">
   <link rel="icon" type="image/x-icon" href="media/favicon.ico">
-<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
 
 <header>
@@ -40,9 +40,7 @@
 
 <body id="index" onload="typeWriter()">
 
-<br>
-<br>
-<br>
+<div class="first-br"></div>
 
 <div class="beginning">
 
@@ -62,7 +60,7 @@
         i++;
         setTimeout(typeWriter, speed);
       } else {
-	setTimeout(clearTypeWriter, 15000);
+	//setTimeout(clearTypeWriter, 15000);
       }
     }
 
@@ -76,93 +74,79 @@
   </script>
 
   <div id="intro">
-    I'm based in the <span class="half-highlight">Bay Area</span> and currently studying 
-    <span class="half-highlight">computer science at Georgia Tech</span>. I’m on a
+    <p>I'm based in the Bay Area and currently studying 
+    computer science at Georgia Tech. I’m on a
     journey to learn about people, the way they interact with the world around them, and
-    how I can help design that world.
+    how I can help design that world.</p>
   </div>
 
   </div>
 
-  <img class="doodle" src="media/index/temp.png" alt="Joyce">
+  <div class="doodle">
+    <div id="doodles-container">
+      <img src="media/index/circle.png" id="circle">
+      <img src="media/index/temp.png" alt="Joyce">
+    </div>
+  </div>
 
 </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<br><br>
+<p id="view-work-below">View my work below <span>↓</span></p>
+
+<div class="second-br"></div>
 
 <div class="grid">
  
   <div class="grid-item">
-    <a href="marta.html">
-      <div class="thumbnail" id="marta"></div>
-    </a>
+    <div class="thumbnail" id="marta-thumbnail" onclick="location.href='marta.html'">
+    </div>
     <div class="description">
-      <a href="marta.html">
-        <h2><b>Redesigning MARTA On the Go —</b> Improving Atlanta's public transit app
-        </h2>
-      </a>
-      <!--<div class="skill">Product Design</div>
-      <div class="skill">User Research</div>-->
+      <h2>MARTA On the Go</h2>
+      <p>Redesigning Atlanta's public transit app to be more accessible and seamless for its users</p>
+      <a href="marta.html"><button>View Project</button></a>
     </div>
   </div>
 
   <div class="grid-item">
-    <a href="homeroom.html">
-      <div class="thumbnail" id="homeroom"></div>
-    </a>
+    <div class="thumbnail" id="homeroom-thumbnail" onclick="location.href='homeroom.html'">
+    </div>
     <div class="description">
-      <a href="homeroom.html">
-        <h2><b>Homeroom —</b> Bridging the gap between online and in-person collaboration
-        </h2>
-      </a>
-      <!--<div class="skill">Product Design</div>
-      <div class="skill">User Research</div>-->
+      <h2>Homeroom</h2>
+      <p>A virtual collaboration tool bridging the gap between online and in-person collaboration</p>
+      <a href="homeroom.html"><button>View Project</button></a>
     </div>
   </div>
 
   <div class="grid-item">
-    <a href="ui-exercises.html">
-      <div class="thumbnail" id="ui-exercises"></div>
-    </a>
+    <div class="thumbnail" id="ui-exercises-thumbnail" onclick="location.href='ui-exercises.html'">
+    </div>
     <div class="description">
-      <a href="ui-exercises.html">
-        <h2><b>UI Exercises —</b> Weekly exercises exploring different design styles</h2>
-      </a>
-      <!--<div class="skill">UI Design</div>-->
+      <h2>UI Exercises</h2>
+      <p>UI exercises exploring different design prompts and styles</p>
+      <a href="ui-exercises.html"><button>View Project</button></a>
     </div>
   </div>
 
   <div class="grid-item">
-    <a href="tea-mobile.html">
-      <div class="thumbnail" id="tea-mobile"></div>
-    </a>
+    <div class="thumbnail" id="tea-mobile-thumbnail" onclick="location.href='tea-mobile.html'">
+    </div>
     <div class="description">
-      <a href="tea-mobile.html">
-        <h2><b>Tea Mobile —</b> Vibrant and streamlined boba delivery website</h2>
-      </a>
-      <!--<div class="skill">Product Design</div>-->
+      <h2>Tea Mobile</h2>
+      <p>A fun and streamlined mobile website for a boba delivery service</p>
+      <a href="tea-mobile.html"><button>View Project</button></a>
     </div>
   </div>
-
+  
   <div class="grid-item">
-    <a href="ice-cream.html">
-      <div class="thumbnail" id="ice-cream"></div>
-    </a>
+    <div class="thumbnail" id="ice-cream-thumbnail" onclick="location.href='ice-cream.html'">
+    </div>
     <div class="description">
-      <a href="ice-cream.html">
-        <h2><b>Breezy Ice Cream —</b> Screen interface for an ice cream vending machine
-        </h2>
-      </a>
-      <!--<div class="skill">Product Design</div>-->
+      <h2>Breezy Ice Cream</h2>
+      <p>A playful and animated interface for a unique ice cream vending machine experience</p>
+      <a href="ice-cream.html"><button>View Project</button></a>
     </div>
   </div>
-
-  <div class="grid-item" style="min-height:0px;height:0.01px;"></div>
 
 </div>
 
@@ -173,17 +157,19 @@
 
   <p>Let's get in touch!</p>
 
-  <a href="https://www.linkedin.com/in/jjjjjssss/" target="_blank">
-    <img class="logo" src="media/linkedin-logo.png" alt="LinkedIn" title="LinkedIn">
-  </a>
+  <div class="logos">
+    <a href="https://www.linkedin.com/in/jjjjjssss/" target="_blank">
+      <img class="logo" src="media/linkedin-logo.png" alt="LinkedIn" title="LinkedIn">
+    </a>
 
-  <a href="https://github.com/jjjjjssss" target="_blank">
-    <img class="logo" src="media/github-logo.png" alt="GitHub" title="GitHub">
-  </a>
+    <a href="https://github.com/jjjjjssss" target="_blank">
+      <img class="logo" src="media/github-logo.png" alt="GitHub" title="GitHub">
+    </a>
 
-  <a href="mailto:jshen315@gatech.edu">
-    <img class="logo" src="media/email-logo.png" alt="Email" title="Email (jshen315@gatech.edu)">
-  </a>
+    <a href="mailto:jshen315@gatech.edu">
+      <img class="logo" src="media/email-logo.png" alt="Email" title="Email (jshen315@gatech.edu)">
+    </a>
+  </div>
 
 </div>
 

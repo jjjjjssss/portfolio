@@ -4,7 +4,7 @@
 
 .project .banner {
   width: 100%;
-  height: 26em;
+  height: 30em;
   margin-top: 80px;
   text-align: center;
   overflow: hidden;
@@ -38,7 +38,7 @@
 
 .project .main-content {
   font-size: 1.05em;
-  width: 50%; /* orig 65 */
+  width: 70%; /* orig 65 */
   min-width: 600px; /*orig not here*/
   max-width: 800px;
   margin: auto;
@@ -71,7 +71,7 @@
 }
 
 .project .post-title-br {
-  margin-top: 2.5em;
+  margin-top: 2em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -81,11 +81,11 @@
 }
 
 .project .title {
-  font-size: 3em;
-  font-family: "Jost";
+  font-size: 2.4em;
   font-weight: 500;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
+  font-family: "Poppins";
+  margin-top: 1.3em;
+  margin-bottom: 0.3em;
   line-height: 1.3em;
   text-align: center;
 }
@@ -99,22 +99,23 @@
 }
 
 .project h1 {
-  font-family: "Jost";
   font-weight: 500;
+  line-height: 1.5;
 }
 
 .project .intro h1 {
   margin-top: 0;
+  font-size: 1.7em;
 }
 
-@media only screen and (max-width: 600px) {
+/*@media only screen and (max-width: 600px) {
   .project .intro h1 {
     font-size: 2.4em;
   }
-}
+}*/
 
 .project .main-content h1 {
-  font-size: 2.4em;
+  font-size: 1.9em;
   margin-top: 1.3em;
   margin-bottom: 0em;
   text-align: left;
@@ -137,26 +138,25 @@
 }
 
 .project h2 {
-  font-size: 1.5em;
-  font-family: "Jost";
+  font-size: 1.3em;
   font-weight: 500;
   /*margin-top: 1.3em;*/
   /*margin-bottom: 0em;*/
   margin-top: 0.67em;
   text-align: left;
+  line-height: 1.5;
 }
 
 .project h2 a {
-  text-color: inherit;
+  color: inherit;
 }
 
 /* for beginning area */
 .project h3 {
-  font-size: 1.4em;
-  font-family: "Jost";
+  font-size: 1.3em;
   font-weight: 500;
   margin-top: 1.5em;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.3em;
 }
 
 .project .main-content p, .intro p {
@@ -180,6 +180,11 @@
   margin-bottom: 0em;
   padding-left: 1.2em;
   line-height: 1.7em;
+}
+
+.project .caption {
+  color: #909090;
+  font-size: 0.9em;
 }
 
 .project .main-content img {
@@ -241,9 +246,13 @@
 
 .project .quote-box {
   overflow: visible;
-  height: 4em;
+  height: 5em;
   position: relative;
-  margin: 2.3em 0;
+  margin: 2.5em 0;
+}
+
+.project #homeroom-quotes .quote-box { 
+  height: 4em;
 }
 
 .project .quote-box .quote-mark {
@@ -277,6 +286,7 @@
 
 .project .uneven-gallery > div {
   margin: 1.7% 3.3%;
+  align-self: flex-start; 
 }
 
 .project .uneven-gallery > div > * {
@@ -369,6 +379,18 @@
 object-fit: contain;
     margin: auto;
   }
+}
+
+.project #back-to-home {
+  color: #363636;
+  font-weight: 400;
+  font-family: "Poppins";
+  text-decoration: none;
+}
+
+.project #back-to-home:hover {
+  color: #ffa10a;
+  transition: .25s ease-in-out;
 }
 
 .project .footer {

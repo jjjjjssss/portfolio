@@ -73,7 +73,7 @@ Location: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal_ligh
 /* Bold and resize description title*/
 .modal-content .description-title {
   margin-top: 0px;
-  font-family: "Jost";
+  font-family: "Poppins";
   font-size: 20px;
   font-weight: 600;
 }
