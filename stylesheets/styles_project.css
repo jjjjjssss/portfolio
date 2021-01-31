@@ -38,9 +38,9 @@
 
 .project .main-content {
   font-size: 1.05em;
-  width: 70%; /* orig 65 */
+  width: 58%; /* orig 65 */
   min-width: 600px; /*orig not here*/
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
 }
 
