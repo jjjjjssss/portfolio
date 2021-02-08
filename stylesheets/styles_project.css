@@ -22,7 +22,10 @@
 
 .project .intro {
   font-size: 1.05em;
-  width: 67.5%;
+  /* width: 67.5%;
+  max-width: 1000px; */
+  width: 58%; 
+  min-width: 600px; 
   max-width: 1000px;
   margin: auto;
 }
@@ -59,7 +62,7 @@
 }
 
 .project .big-br {
-  margin-top: calc(6 * 2em);
+  margin-top: calc(6.5 * 2em);
 }
 
 .project .intro .big-br {
@@ -67,7 +70,7 @@
 }
 
 .project .med-br {
-  margin-top: calc(2.5 * 2em);
+  margin-top: calc(3 * 2em);
 }
 
 .project .post-title-br {
@@ -159,7 +162,7 @@
   margin-bottom: 0.3em;
 }
 
-.project .main-content p, .intro p {
+.project .main-content p:not(.caption), .intro p {
   margin-top: 1.5em;
   margin-bottom: 0em;
   line-height: 1.7em;
@@ -185,6 +188,7 @@
 .project .caption {
   color: #909090;
   font-size: 0.9em;
+  margin-top: 1em;
 }
 
 .project .main-content img {
@@ -203,6 +207,12 @@
     width: 100%;
     margin-left: 0;
   }
+}
+
+.project .ui-ex-full-width-img {
+  width: 100%;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 .project .extra-width-img {
@@ -248,7 +258,7 @@
   overflow: visible;
   height: 5em;
   position: relative;
-  margin: 2.5em 0;
+  margin: 2.0em 0;
 }
 
 .project #homeroom-quotes .quote-box { 
@@ -360,7 +370,7 @@
 }
 
 
-.project .main-content .one-half-gallery p, .main-content .one-third-gallery p, .main-content .one-fourth-gallery p, .intro .one-third-gallery p, .intro .one-fourth-gallery p {
+.project .main-content .one-half-gallery p:not(.caption), .main-content .one-third-gallery p, .main-content .one-fourth-gallery p, .intro .one-third-gallery p, .intro .one-fourth-gallery p {
   margin-top: 0;
 }
 
@@ -376,8 +386,11 @@
 @media only screen and (max-width: 600px) {
   .project .one-half-gallery img, .one-third-gallery img, .one-fourth-gallery img, .uneven-gallery img {
     max-height: 60%;
-object-fit: contain;
+    object-fit: contain;
     margin: auto;
+  }
+  .project #ui-exercises-gallery img {
+    max-height: 100%;
   }
 }
 
