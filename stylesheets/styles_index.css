@@ -136,7 +136,7 @@
   }
 }*/
 
-#index .thumbnail {
+#index .thumbnail-active, #index .thumbnail-inactive {
   width: calc(65% - 3rem);
   min-height: 250px;
   height: 23em; /*orig 27.5vw*/
@@ -149,8 +149,13 @@
   cursor: pointer;
 }
 
-#index .thumbnail:hover {
+#index .thumbnail-active:hover {
   opacity: 80%; /*background-size: 103%;*/
+}
+
+#index .thumbnail-inactive:hover {
+  opacity: 100%;
+  cursor: default;
 }
 
 #index #marta-thumbnail {
@@ -163,9 +168,19 @@
   background-color: #7acfff; /*old: #B1E3FF*/
 }
 
+#index #scheduler-thumbnail {
+  background-image: url("../media/index/scheduler.png");
+  background-color: #F69979;
+}
+
+#index #library-thumbnail {
+  background-image: url("../media/index/library.png");
+  background-color: #beb8ff; 
+}
+
 #index #ui-exercises-thumbnail {
   background-image: url("../media/index/weekly-ui.png");
-  background-color: #B9C0FF;
+  background-color: #B1BCD0; /*#B9C0FF*/
 }
 
 #index #tea-mobile-thumbnail {
@@ -208,7 +223,7 @@
   background-color: #f0f0f0;
 }
 
-#index .description button {
+#index .description .button-active, #index .description .button-inactive {
   background-color: white;
   color: #363636;
   font-size: 1em;
@@ -222,9 +237,16 @@
   cursor: pointer;
 }
 
-#index .description button:hover {
+#index .description .button-active:hover {
   background-color: #363636;
   color: white;
+}
+
+#index .description .button-inactive {
+  background-color: white;
+  color: #ababab;
+  border: 1px solid #ababab;
+  cursor: default;
 }
 
 @media only screen and (max-width: 600px) {
