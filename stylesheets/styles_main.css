@@ -60,16 +60,16 @@ nav li {
   display: inline-block;
   padding-left: 30px;
   font-family: "Poppins";
-  font-size: 1.15em;
+  font-size: 1.1em;
   /* font-size: max(15.8px,min(1.60vw,20px)); */
   /* resizes text between 16 and 20 px */
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   nav li {
     font-size: 1.5em;
   }
-}
+} */
 
 /* Appearance of menu items doesn't change as a link */
 nav li a {
@@ -78,20 +78,20 @@ nav li a {
 }
 
 nav li:hover {
-  color: #ffa10a;
+  color: var(--accent-color);
   transition: .2s ease;
 }
 
 /* Inactive nav link is light gray */
 nav .inactive {
-  color: #909090;
+  color: var(--secondary-text-color);
   font-weight: 400;
   text-decoration: none;
 }
 
 /* Selected nav link is dark gray and bold */
 nav .selected {
-  color: #363636;
+  color: var(--primary-text-color);
   font-weight: 500;
   text-decoration: none;
 }
@@ -103,22 +103,58 @@ a {
 
 
 
+/************************** Body Content **************************/
+
+
+:root {
+  --marta-color: #FCD034;
+  --homeroom-color: #7acfff;
+  --scheduler-color: #F69979;
+  --library-color: #beb8ff;
+  --ui-exercises-color: #B1BCD0;
+  --accent-color: #F35C2C;
+  --highlight-color: #FFE6DE;
+  --primary-text-color: #363636;
+  --secondary-text-color: #909090;
+  --background-color: #FFFFFF;
+}
+
+:root {
+  --body-font: "Mulish";
+  --title-font: "Poppins";
+}
+
 
 /************************** Body Content **************************/
 
 body {
   overflow: auto;
   width: 100%;
-  min-width: 1000px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Mulish", sans-serif;
+  font-family: var(--body-font);
+  font-size: 0.95em;
   color: #363636;
 }
+@media only screen and (min-width: 600px) {
+  body {
+    min-width: 1000px;
+  }
+}
+
+p {
+  line-height: 170%;
+}
+
+/* @media only screen and (max-width: 600px) {
+  p {
+    font-size: 1.75em;
+  }
+} */
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Poppins";
+  font-family: var(--title-font);
 }
 
 .no-wrap {
@@ -126,10 +162,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ::selection { 
-  background-color: #ffebc9;
+  background-color: var(--highlight-color);
 }
 
-
+.xxs-space {
+  margin-top: 1em;
+}
+.xs-space {
+  margin-top: 2em;
+}
+.s-space {
+  margin-top: 3em;
+}
+.m-space {
+  margin-top: 6em;
+}
+.l-space {
+  margin-top: 9em;
+}
+.xl-space {
+  margin-top: 12em;
+}
 
 
 /************************** Footer **************************/
@@ -139,15 +192,15 @@ h1, h2, h3, h4, h5, h6 {
   margin: 3.5em auto;
   overflow: hidden;
   font-family: "Poppins";
-  font-size: 1.15em;
+  font-size: 1em;
   text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .footer {
     font-size: 1.5em;
   }
-}
+} */
 
 .footer p {
   margin-top: 0;

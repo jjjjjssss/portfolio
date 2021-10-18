@@ -3,7 +3,7 @@
 <head>
   <title>Home | Joyce Shen</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">  
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,450;0,500;0,550;0,600;0,650;0,700;0,800;1,300;1,400;1,450;1,500;1,550;1,600;1,650;1,700;1,800&display=swap" rel="stylesheet">  
   <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,450;0,500;0,550;0,600;0,650;0,700;0,800;1,300;1,400;1,450;1,500;1,550;1,600;1,650;1,700;1,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/styles_index.css">
@@ -38,137 +38,142 @@
 
 
 
-<body id="index" onload="typeWriter()">
+<body id="index">
+  <div class="content">
 
-<div class="first-br"></div>
+  <img src="media/index/doodle.png" id="doodle">
 
-<div class="beginning">
+  <div class="beginning">
 
-  <div class="text-container">
-
-  <div id="greeting1" class="greeting"></div>
-
-  <script>
-    var i = 0;
-    var j = 0;
-    var text1 = "Hey! It's Joyce.";
-    var speed = 100;
-
-    function typeWriter() {
-      if (i < text1.length) {
-        document.getElementById("greeting1").innerHTML += text1.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-      } else {
-	//setTimeout(clearTypeWriter, 15000);
-      }
-    }
-
-    function clearTypeWriter() {
-      i = 0;
-      j = 0;
-      document.getElementById("greeting1").innerHTML = "";
-      setTimeout(typeWriter, speed);
-    }
-
-  </script>
-
-  <div id="intro">
-    <p>I'm based in the Bay Area and currently studying 
-    computer science at Georgia Tech. I’m on a
-    journey to learn about people, the way they interact with the world around them, and
-    how I can help design that world.</p>
-  </div>
-
-  </div>
-
-  <div class="doodle">
-    <div id="doodles-container">
-      <img src="media/index/circle.png" id="circle">
-      <img src="media/index/temp.png" alt="Joyce">
+    <div class="intro">
+      <h1>Hey! It's Joyce.</h1>
+      <h2>I’m on a journey to learn about the way people 
+        <span class="graphic-word">interact
+          <span id="interact-graphic">
+            <svg><circle></circle></svg>
+          </span>
+        </span>
+         with the world around them, and how I can help 
+        <span class="graphic-word">design
+          <svg id="design-graphic">
+            <rect id="main"></rect>
+            <rect class="corner" id="corner-1"></rect>
+            <rect class="corner" id="corner-2"></rect>
+            <rect class="corner" id="corner-3"></rect>
+            <rect class="corner" id="corner-4"></rect>
+          </svg>
+        </span> 
+        that world.
+      </h2>
     </div>
+
+    <div class="xs-space"></div>
+
+    <!-- <p>Currently a Product Designer 
+      <a class="tooltip org" href="https://bitsofgood.org/" target="_blank">@Bits of Good
+        <span class="tooltiptext"><img src="media/logo.png"><span>A student-run organization developing powerful web apps for nonprofits.</span></span>
+      </a> and studying computer science 
+      <a class="tooltip org" href="https://www.cc.gatech.edu/" target="_blank">@Georgia Tech
+        <span class="tooltiptext">Tooltip text</span>
+      </a>. Previously a UX Design Intern 
+      <a class="tooltip org" href="https://www.lacework.com/" target="_blank">@Lacework
+        <span class="tooltiptext">Tooltip text</span>
+      </a>.
+    </p> -->
+    <p>Current a Product Designer <a class="org" href="https://bitsofgood.org/">@Bits of Good</a> 
+      and studying computer science <a class="org" href="https://www.cc.gatech.edu/">@Georgia Tech</a>.
+      Previously a UX Design Intern <a class="org" href="https://www.lacework.com/">@Lacework</a>.
+    </p>
+
+    <div class="s-space"></div>
+
+    <p style="color:#909090">
+      View my work below <span class="down-arrow bounce">↓</span>
+    </p>
+
   </div>
 
-</div>
 
-<br><br>
-<p id="view-work-below">View my work below <span>↓</span></p>
+  <div class="l-space"></div>
 
-<div class="second-br"></div>
 
-<div class="grid">
-
-  <div class="grid-item">
-    <div class="thumbnail-active" id="marta-thumbnail" onclick="location.href='marta.html'">
+  <div class="grid"><div class="columns">
+    <div class="project-wrapper inactive">
+      <img src="media/index/lacework.png">
+      <div class="xs-space"></div>
+      <div class="tag">Internship</div>
+      <div class="xxs-space"></div>
+      <h2>Lacework Internship</h2>
+      <p>My experiences working in an amazing team to restructure Lacework's reporting workflow, develop a dark mode theme, and more!</p>
+      <div class="xs-space"></div>
+      <a class="button inactive-button" id="lacework-button">Coming Soon!</a>
     </div>
-    <div class="description">
-      <h2>MARTA On the Go</h2>
+
+    <div class="project-wrapper active">
+      <img src="media/index/marta.png" onclick="location.href='marta.html'">
+      <div class="xs-space"></div>
+      <div class="tag">User Research, UX Design</div>
+      <div class="xxs-space"></div>
+      <h2>MARTA On The Go</h2>
       <p>Redesigning Atlanta's public transit app to be more accessible and seamless for its users</p>
-      <a href="marta.html"><button class="button-active">View Project</button></a>
+      <div class="xs-space"></div>
+      <a class="button active-button" id="marta-button" href="marta.html">View Project</a>
     </div>
-  </div>
 
-  <div class="grid-item">
-    <div class="thumbnail-active" id="homeroom-thumbnail" onclick="location.href='homeroom.html'">
+    <div class="project-wrapper inactive">
+      <img src="media/index/gba.gif">
+      <div class="xs-space"></div>
+      <div class="tag">C, Game Development</div>
+      <div class="xxs-space"></div>
+      <h2>Games for the GameBoy Advance</h2>
+      <p>Designing and developing an original game + recreating classic arcade games for the GameBoy Advance</p>
+      <div class="xs-space"></div>
+      <a class="button inactive-button" id="gba-button">Coming Soon!</a>
     </div>
-    <div class="description">
-      <h2>Homeroom</h2>
-      <p>A virtual collaboration tool bridging the gap between online and in-person collaboration</p>
-      <a href="homeroom.html"><button class="button-active">View Project</button></a>
-    </div>
-  </div>
 
-  <div class="grid-item">
-    <div class="thumbnail-inactive" id="scheduler-thumbnail"></div>
-    <div class="description">
+    <div class="project-wrapper inactive">
+      <img src="media/index/scheduler.png">
+      <div class="xs-space"></div>
+      <div class="tag">UX Design</div>
+      <div class="xxs-space"></div>
       <h2>GT Scheduler</h2>
       <p>Designing a course catalog for a class scheduling tool used by thousands of Georgia Tech students</p>
-      <button class="button-inactive" style="margin-bottom:0.75em;">Coming soon!</button>
-      <a href="https://www.gt-scheduler.org/" target="_blank"><button class="button-active">Visit gtscheduler.org</button></a>
+      <div class="xs-space"></div>
+      <a class="button inactive-button" id="scheduler-button">Coming Soon!</a>
     </div>
-  </div>
 
-  <div class="grid-item">
-    <div class="thumbnail-inactive" id="library-thumbnail">
-    </div>
-    <div class="description">
+    <div class="project-wrapper active">
+      <img src="media/index/library.png" onclick="location.href='library.html'">
+      <div class="xs-space"></div>
+      <div class="tag">UX Design</div>
+      <div class="xxs-space"></div>
       <h2>Library Reservations</h2>
       <p>Envisioning a seamless reservation system for Georgia Tech's library</p>
-      <a href="https://www.notion.so/Creating-a-reservation-system-for-Georgia-Tech-s-library-da8bd376e0f34440aaefada843e9d984" target="_blank"><button class="button-active">View Project on Notion ↗</button></a>
+      <div class="xs-space"></div>
+      <a class="button active-button" id="library-button" href="library.html">View Project</a>
     </div>
-  </div>
 
-  <div class="grid-item">
-    <div class="thumbnail-active" id="ui-exercises-thumbnail" onclick="location.href='ui-exercises.html'">
+    <div class="project-wrapper active">
+      <img src="media/index/homeroom.png" onclick="location.href='homeroom.html'">
+      <div class="xs-space"></div>
+      <div class="tag">User Research, UX Design</div>
+      <div class="xxs-space"></div>
+      <h2>Homeroom</h2>
+      <p>A virtual collaboration tool bridging the gap between online and in-person collaboration</p>
+      <div class="xs-space"></div>
+      <a class="button active-button" id="homeroom-button" href="homeroom.html">View Project</a>
     </div>
-    <div class="description">
-      <h2>UI Exercises</h2>
-      <p>UI exercises exploring different design prompts and styles</p>
-      <a href="ui-exercises.html"><button class="button-active">View Project</button></a>
-    </div>
-  </div>
 
-  <div class="grid-item">
-    <div class="thumbnail-active" id="tea-mobile-thumbnail" onclick="location.href='tea-mobile.html'">
-    </div>
-    <div class="description">
-      <h2>Tea Mobile</h2>
-      <p>A fun and streamlined mobile website for a boba delivery service</p>
-      <a href="tea-mobile.html"><button class="button-active">View Project</button></a>
-    </div>
-  </div>
-  
-  <div class="grid-item">
-    <div class="thumbnail-active" id="ice-cream-thumbnail" onclick="location.href='ice-cream.html'">
-    </div>
-    <div class="description">
-      <h2>Breezy Ice Cream</h2>
-      <p>A playful and animated interface for a unique ice cream vending machine experience</p>
-      <a href="ice-cream.html"><button class="button-active">View Project</button></a>
-    </div>
-  </div>
+    <div class="project-wrapper" style="background-color: #e9e9e9;"></div>
+    <div class="project-wrapper" style="background-color: #818181;"></div>
+    <div class="project-wrapper" style="background-color: #303030;"></div>
+    <div class="project-wrapper" style="background-color: #e9e9e9;"></div>
+
+  </div></div>
+
 
 </div>
+<!-- </body> -->
 
 
 
@@ -194,5 +199,87 @@
 </div>
 
 </body>
+
+<script>
+  
+  window.onload = function(){
+    interactAnim();
+    designAnim();
+  }
+
+  function interactAnim() {
+    var interactAnimEasing = "cubic-bezier(.7,0,.90,.97)";
+    var interactRect = document.querySelector("#interact-graphic");
+    var interactCircle = document.querySelector("#interact-graphic circle");
+
+    // interactRect.style.boxShadow = "1px 3px 10px 0px rgba(0,0,0,0.25)"
+    // interactCircle.style.r = "0";
+    // interactCircle.style.opacity = "40%";
+
+    setTimeout(function() {
+      interactCircle.animate([
+        {r: "0", opacity: "50%"},
+        {r: "80%", opacity: "40%"},
+        {r: "100%", opacity: "20%"},
+        {r: "100%", opacity: "0"}
+      ], {
+        duration: 800,
+        fill: "forwards",
+        easing: interactAnimEasing
+      });
+
+      interactRect.animate({
+        boxShadow: "0px 0px 1px -5px rgba(0,0,0,0.5)"
+        // boxShadow: "inset 2px 5px 15px -10px rgba(0,0,0,1);"
+      }, {
+        duration: 500,
+        // fill: "forwards",
+        easing: interactAnimEasing
+      })
+    }, 300);
+  }
+
+  function designAnim() {
+    var designAnimDuration = 600;
+    var designAnimEasing = "cubic-bezier(.15,0,.7,1)";
+
+    var designMain = document.querySelector("#design-graphic > #main");
+    designMain.style.width = "0";
+    designMain.style.height = "0";
+    setTimeout(function() {
+      designMain.animate({
+        width: "100%",
+        height: "100%"
+      }, {
+        duration: designAnimDuration, 
+        fill: "forwards",
+        easing: designAnimEasing
+      });
+    }, 1400);
+
+    var designCorners = document.querySelectorAll("#design-graphic > .corner");
+    designCorners.forEach(function(element) {
+      var origTransform = window.getComputedStyle(element).getPropertyValue('transform');
+      element.style.transform = "translate(-0.125em, -0.125em)";
+      element.style.visibility = "hidden";
+      setTimeout(function() {
+        element.animate({
+          transform: origTransform,
+          visibility: "visible"
+        }, {
+          duration: designAnimDuration, 
+          fill: "forwards",
+          easing: designAnimEasing
+        })
+      }, 1400);
+    })
+  }
+
+
+
+
+
+
+</script>
 
 </html>
