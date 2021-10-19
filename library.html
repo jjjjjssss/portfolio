@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Library Reservations | Joyce Shen</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,450;0,500;0,550;0,600;0,650;0,700;0,800;1,300;1,400;1,450;1,500;1,550;1,600;1,650;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,450;0,500;0,550;0,600;0,650;0,700;0,800;1,300;1,400;1,450;1,500;1,550;1,600;1,650;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/styles_project.css">
+  <link rel="stylesheet" href="stylesheets/styles_main.css">
+  <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <!--<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
+</head>
+
+<header>
+
+  <div class="navigation-bar">
+
+    <a href="index.html">
+      <img class="logo" src="media/logo.png" alt="Joyce Shen Logo" title="Home">
+      <!--<div class="website-name">JOYCE SHEN</div>-->
+    </a>
+
+    <nav>
+      <ul>
+        <li class="selected"><a href="index.html">Work</a></li>
+        <li class="inactive"><a href="art.html">Art & More</a></li>
+        <li class="inactive"><a href="resume.html">Resume</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+
+<body class="project">
+
+
+  <div class="intro">
+
+    <div class="title">Visualizing a Library Reservation System</div>
+
+    <div class="one-fourth-gallery">
+      <div>
+        <h3>Type</h3>
+        <p>Personal project, website</p>
+      </div>
+
+      <div>
+        <h3>Role</h3>
+        <p>User Research, UI Design</p>
+      </div>
+
+      <div>
+        <h3>Tools</h3>
+        <p>Figma, Vectary, Google Sheets</p>
+      </div>
+
+      <div>
+        <h3>Duration</h3>
+        <p>Feb 2021 (1 week)</p>
+      </div>
+    </div>
+
+    <div class="med-br"></div>
+
+
+  </div>
+
+  <div class="banner" style="background-color:#beb8ff;">
+    <img src="media/library/banner.png" alt="Banner">
+  </div>
+
+
+
+  <div class="big-br"></div>
+
+
+
+  <div class="main-content">
+
+
+    <h1>Streamlining the Reservation Process</h1>
+    <div class="post-title-br"></div>
+    <p>For this project, I was given a week to envision and design a user experience to help students, faculty, and other community members in my school reserve library spaces. I explored current platforms for library reservations and looked for ways to streamline the reservation process, implement new visual features, and automate the check-in process.</p>
+    <br>
+    <div class="extra-extra-width-img"><img src="media/library/intro.png" alt="Library Reservations"></div>
+
+
+
+    <div class="big-br"></div>
+
+
+
+    <h1>User research</h1>
+    <div class="half-med-br"></div>
+
+    <h2>Getting to know Georgia Tech's library</h2>
+    <p>Before jumping into user research and design, I needed a better understanding of how my school's library is laid out and how their current reservations systems work. Our library consists of seven floors, and each floor is either a casual, collaborative, or quiet space. Students essentially choose what floor they want to study on by how loud they are. Currently, people can reserve collaboration rooms but not individual seats. </p>
+    <br>
+    <div class="full-width-img"><img src="media/library/secondary-research.png" alt="Secondary Research"></div>
+
+    <div class="med-br"></div>
+
+    <h2>Looking at other reservation apps/websites</h2>
+    <p>I looked at the library reservation systems of a few different schools, which were mostly powered by a service called SpringShare. In most cases, users would filter by a particular building, then by a particular floor/study zone, and then get a list of seats and their available times.</p>
+    <p>While these reservation websites make it easy to view the availability of each seat, I also thought about how seating maps can be used to better visualize the library. Since seating maps are most commonly used in booking airline tickets and movie tickets, I took a look at how those products were designed on both mobile and desktop devices.</p>
+    <br>
+    <div class="full-width-img"><img src="media/library/secondary-research-2.png" alt="Secondary Research"></div>
+
+    <div class="med-br"></div>
+
+    <h2>User surveys</h2>
+    <p>Going into ideation, my biggest questions were how people used reservation tools, their studying preferences, and whether I should design for mobile or desktop. I surveyed a few people to get help me understand and clarify how I should structure the user flow. In particular, the first question helped inspire the timetable tool I used in my final design.</p>
+    <br>
+    <div class="extra-width-img"><img src="media/library/user-surveys.png" alt="User Surveys"></div>
+
+    <div class="med-br"></div>
+
+    <h2>Key findings</h2>
+    <!-- <ul>
+      <li>People would rather see a list of available times and cater their schedules around it.</li>
+      <ul style="margin-top:0;list-style:none">
+          <li>→ create effective visualization tool for seat availability</li>
+      </ul>
+      <li>People strongly prefer to use laptops over phones for making reservations.</li>
+      <ul style="margin-top:0;list-style:none">
+        <li>→ design for desktop first, then cater to phones (responsive design over mobile-first design)</li>
+    </ul>
+      <li>People tend to have preferred study environments and seats but aren't too picky about it.</li>
+      <ul style="margin-top:0;list-style:none">
+        <li>→ help users filter for their specific needs</li>
+      </ul>
+    </ul> -->
+
+    <!-- <div class="one-third-gallery">
+      <div>
+        <p style="margin-top:0">People would rather see a list of available times and cater their schedules around it.</p>
+        <p>→ create effective visualization tool for seat availability</p>
+      </div>
+      <div>
+        <p style="margin-top:0">People strongly prefer to use laptops over phones for making reservations.</p>
+        <p>→ design for desktop first, then cater to phones (responsive design over mobile-first design)</p>
+      </div>
+      <div>
+        <p style="margin-top:0">People tend to have preferred study environments and seats but aren't too picky about it.</p>
+        <p>→ help users filter for their specific needs</p>
+      </div>
+    </div> -->
+
+    <div class="one-half-gallery">
+        <div><p>People would rather see a list of available times and cater their schedules around it.</p></div>
+        <div><p>→ Create effective visualization tool for seat availability</p></div>
+        <div><p>People strongly prefer to use laptops over phones for making reservations.</p></div>
+        <div><p>→ Design for desktop first, then cater to phones (responsive design over mobile-first design)</p></div>
+        <div><p>People tend to have preferred study environments and seats but aren't too picky about it.</p></div>
+        <div><p>→ Help users filter for their specific needs</p></div>
+    </div>
+
+
+    <div class="half-big-br"></div>
+
+  </div>
+
+  <div class="gray-bg">
+    <div class="main-content">
+      <div class="half-big-br"></div>
+
+        <h1>User flow</h1>
+        <div class="post-title-br"></div>
+        <p>Using the websites I explored and surveys I conducted during the research process, I created a user flow to visualize both the reservation process and check-in process. For the former, I explored three key parts: the home screen for selecting a seat type, the seat information screen to choose a reservation time, and the login/confirm/summary screens. For the latter, I looked into how QR codes and maps can be used to assist the process.</p>
+        <div class="half-med-br"></div>
+        <h2>Why use a QR code?</h2>
+        <p>Since users have to transition from desktops for reservation purposes to phones for check-in purposes, sending QR codes to their emails will allow them to access the code on both devices.</p>
+        <br>
+        <div class="extra-width-img"><img src="media/library/user-flow.png" alt="User Flow"></div>
+
+      <div class="half-big-br"></div>
+    </div>
+  </div>
+
+
+  <div class="main-content">
+
+
+    <div class="half-big-br"></div>
+
+
+    <h1>Wireframes</h1>
+    <div class="half-med-br"></div>
+
+    <h2>Sketches</h2>
+    <p>I first drew down my wireframe ideas on paper and laying out the screens that I wanted to design. Because of the limited time I had on this project, it was helpful to be able to quickly sketch out different ideas before heading to more complex wireframes.</p>
+    <br>
+    <div class="full-width-img"><img src="media/library/sketches.jpg" alt="Sketches"></div>
+
+    <div class="med-br"></div>
+
+    <h2>Mid-fi wireframes</h2>
+    <p>I took the ideas I drew out on paper and refined them into mid-fi wireframes.</p>
+    <br>
+    <div class="full-width-img"><img src="media/library/wireframes.png" alt="Mid-fi wireframes"></div>
+
+
+    <div class="big-br"></div>
+
+
+    <h1>Visual design</h1>
+    <div class="post-title-br"></div>
+    <p>For the visual design of this product, I decided on a clean, minimal design with a single font and a blue-purple color theme. This helped me keep a consistent and simple style while still giving me the room to play with color accents.</p>
+    <br>
+    <div class="full-width-img"><img src="media/library/visual-design.png" alt="Visual Design"></div>
+
+
+    <div class="half-big-br"></div>
+  </div>
+
+  <div class="gray-bg">
+    <div class="main-content">
+
+
+      <div class="half-big-br"></div>
+
+
+      <h1>The solution</h1>
+      <div class="half-med-br"></div>
+
+      <h2>Reserving: List View</h2>
+      <p>Users are provided a list of seating areas in the library, and can filter for their preferred seating areas. They can click on each seating area and select their reservation times using a timetable grid.</p>
+      <div class="full-width-img-2"><img src="media/library/reserve-list.gif"></div>
+      <div class="med-br"></div>
+
+      <h2>Reserving: Map View</h2>
+      <p>In addition, users can view and reserve seats from a map view of the library. The map shows users what seats are available at a certain time on each floor.</p>
+      <div class="full-width-img-2"><img src="media/library/reserve-map.gif"></div>
+      <div class="med-br"></div>
+
+      <h2>Confirm Registration</h2>
+      <p>Users are then directed to a confirmation page that lists out all of their reservations. Once they proceed, a log in popup will show up if the user is not already logged in, followed by a final screen with a QR code and check-in instructions.</p>
+      <div class="full-width-img-2"><img src="media/library/confirm-reservation.gif"></div>
+      <div class="med-br"></div>
+
+      <h2>Checking in</h2>
+      <div class="one-third-gallery">
+        <div>
+          <p style="margin:0;">Users also receive the QR code and check-in instructions through email, which they can scan at the library's kiosk. They will then be redirected to a map that points them to their seat.</p>
+        </div>
+        <div>
+          <img style="margin:0;" src="media/library/kiosk.png">
+        </div>
+        <div>
+          <img style="margin:0;" src="media/library/check-in.gif">
+        </div>
+      </div>
+      <div class="med-br"></div>
+
+
+      <h2>Reporting Issues</h2>
+      <div class="one-third-gallery">
+        <div>
+          <p style="margin:0;">From the check-in page, users can report any issues they have with their reservation.</p>
+        </div>
+        <div>
+          <img style="margin:0;" src="media/library/report-1.png">
+        </div>
+        <div>
+          <img style="margin:0;" src="media/library/report-2.png">
+        </div>
+      </div>
+      <div class="med-br"></div>
+
+
+      <div class="half-big-br"></div>
+    </div>
+  </div>
+
+
+  <div class="main-content">
+    <div class="half-big-br"></div>
+
+    <h1>What I learned + Future improvements</h1>
+    <div class="post-title-br"></div>
+    <p>Overall, I had a really fun time working on this project! I enjoyed the fast pace of this project, which pushed me to get my ideas out without getting caught up in details. It was also interesting designing for an ecosystem of platforms (like kiosks!) and exploring different ways to visualize information.</p>
+    <p>If I have more time in the future, I would like to take more time on user research + testing and make some improvements to my design. Some ideas I have in mind are:</p>
+    <ul>
+      <li>Conducting surveys and interviews with faculty and staff, who have different needs than students</li>
+      <li>Conducting user testing to improve the usability and learnability of the product</li>
+      <li>Responsive design: designing the mobile version of the reservation system</li>
+      <li>Changing the visual design to match other Georgia Tech websites and fit the school's branding</li>
+      <li>Finding ways to extend this product to other libraries</li>
+    </ul>
+
+
+    <div class="big-br"></div>
+
+
+    <h1><a href="homeroom.html">Next project: <span class="next">Homeroom ></span></a></h1>
+    <div class="post-title-br"></div>
+    <p><a href="index.html" id="back-to-home">
+        < Back to home</a>
+    </p>
+
+
+
+
+  </div>
+
+
+  <div class="footer">
+
+    <p>Let's get in touch!</p>
+
+    <div class="logos">
+      <a href="https://www.linkedin.com/in/jjjjjssss/" target="_blank">
+        <img class="logo" src="media/linkedin-logo.png" alt="LinkedIn" title="LinkedIn">
+      </a>
+
+      <a href="https://github.com/jjjjjssss" target="_blank">
+        <img class="logo" src="media/github-logo.png" alt="GitHub" title="GitHub">
+      </a>
+
+      <a href="mailto:jshen315@gatech.edu">
+        <img class="logo" src="media/email-logo.png" alt="Email" title="Email (jshen315@gatech.edu)">
+      </a>
+    </div>
+
+  </div>
+
+
+  <!--<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>-->
+</body>
+
+</html>
