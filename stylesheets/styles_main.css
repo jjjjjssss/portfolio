@@ -109,7 +109,7 @@ a {
 :root {
   --marta-color: #FCD034;
   --homeroom-color: #7acfff;
-  --scheduler-color: #F69979;
+  --scheduler-color: #FF9B71;
   --library-color: #beb8ff;
   --ui-exercises-color: #B1BCD0;
   --accent-color: #F35C2C;
@@ -155,6 +155,21 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--title-font);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .no-wrap {
@@ -217,8 +232,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer .logo {
-  height: 1.7em;
-  margin: 0 0.9em;
+  height: 1.6em;
+  margin: 0 0.5em;
   padding: 0;
   display:inline-block;
 }

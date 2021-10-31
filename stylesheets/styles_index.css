@@ -9,11 +9,12 @@
 }
 
 #index .beginning {
-  width: 70%;
+  width: 100%;
 }
 
 #index .intro {
-  width: 70%;
+  width: 50%;
+  max-width: 40em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -25,17 +26,8 @@
   }
 }
 
-#index h1 {
-  font-size: 2rem;
-  font-weight: 600;
-}
-
-#index h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
 #index .intro h2 {
+  margin-top: -0.5em;
   word-spacing: .06em;
 }
 
@@ -97,16 +89,25 @@
 #index #design-graphic #corner-3 { transform: translateY(100%) translate(-0.125em, -0.125em); }
 #index #design-graphic #corner-4 { transform: translate(100%, 100%) translate(-0.125em, -0.125em); }
 
+#index #status {
+  width: 100%;
+  display: flex;
+  direction: row;
+  flex-wrap: wrap;
+  row-gap: 2em;
+}
+#index #status > div {
+  width: 50%;
+  min-width: 300px;
+}
+#index #status h3, #index #status p {
+  margin: 0.25em 0;
+}
 
 #index .org {
   color: var(--accent-color);
   font-weight: bold;
   text-decoration: inherit;
-}
-
-#index .org:hover {
-  background-color: var(--highlight-color);
-  transition: .25s ease-in-out;
 }
 
 #index .down-arrow {

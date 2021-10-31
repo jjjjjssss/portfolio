@@ -157,7 +157,7 @@
 }
 
 .project .main-content h1 a:hover > .next {
-  color: #ffa10a;
+  color: var(--accent-color);
   transition: .25s ease-in-out;
 }
 
@@ -429,7 +429,7 @@
 }
 
 .project #back-to-home:hover {
-  color: #ffa10a;
+  color: var(--accent-color);
   transition: .25s ease-in-out;
 }
 
