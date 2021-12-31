@@ -1,0 +1,461 @@
+.project {
+  max-width: none;
+}
+
+
+.project .banner {
+  width: 100%;
+  height: 40vh;
+  min-height: 30em;
+  /* margin-top: 80px; */
+  text-align: center;
+  overflow: hidden;
+}
+
+.project .banner img {
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .project .banner {
+    width: 100%;
+  }
+}
+
+.project .intro {
+  /* width: 67.5%;
+  max-width: 1000px; */
+  width: 68%;  /* orig 58% */
+  min-width: 600px; 
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 110px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .project .intro {
+    width: 85%;
+    min-width: 600px;
+  }
+}
+
+.project .main-content {
+  width: 30%; /* orig 65 */ /* new orig: 58*/
+  min-width: 600px; /*orig not here*/
+  max-width: 1000px;
+  margin: auto;
+  /* background-color: #ffa10a; */
+}
+
+.project .wide {
+  width: 150%;
+  margin-left: -25%;
+}
+
+.project .extra-wide {
+  width: 200%;
+  margin-left: -50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .project .wide, .project .extra-wide{
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.project .gray-bg {
+  background-color: #f5f5f5;
+  overflow: auto;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .project .main-content, .project .wide-main-content {
+    width: 85%;
+  }
+}
+
+.project section {
+  display: grid;
+  grid-template-columns: 2.5fr 10fr; /* orig 3 10 */
+  grid-column-gap: 3em;
+}
+
+.project .big-br {
+  margin-top: calc(6.5 * 2em); /*12*/
+}
+
+.project .half-big-br {
+  margin-top: 7em;
+}
+
+.project .intro .big-br {
+  margin-top: calc(5 * 2em); /*9*/
+}
+
+.project .med-br {
+  margin-top: calc(3 * 2em); /*6*/
+}
+
+.project .half-med-br {
+  margin-top: 3em; /*3*/
+}
+
+.project .post-title-br {
+  margin-top: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+  .project .mobile-br {
+    margin-top: 2.5em;
+  }
+}
+
+.project .title {
+  font-size: 2.4em;
+  font-weight: 500;
+  font-family: "Poppins";
+  margin-top: 1.3em;
+  margin-bottom: 0.3em;
+  line-height: 1.3em;
+  text-align: center;
+}
+
+
+/* @media only screen and (max-width: 600px) {
+  .project .title {
+    font-size: 2.5em;
+    line-height: normal;
+  }
+} */
+
+.project h1 {
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.project .intro h1 {
+  margin-top: 0;
+  font-size: 1.7em;
+}
+
+/*@media only screen and (max-width: 600px) {
+  .project .intro h1 {
+    font-size: 2.4em;
+  }
+}*/
+
+.project .main-content h1 {
+  font-size: 1.9em;
+  margin-top: 1.3em;
+  margin-bottom: 0em;
+  text-align: left;
+  /*color: #909090;*/
+  /*text-transform: uppercase;*/
+  
+}
+
+.project .main-content h1 a {
+  text-decoration: none;
+}
+
+.project .main-content h1 .next {
+  color: #909090;
+}
+
+.project .main-content h1 a:hover > .next {
+  color: #ffa10a;
+  transition: .25s ease-in-out;
+}
+
+.project h2 {
+  font-size: 1.3em;
+  font-weight: 500;
+  /*margin-top: 1.3em;*/
+  /*margin-bottom: 0em;*/
+  margin-top: 0.67em;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.project h2 a {
+  color: inherit;
+}
+
+/* for beginning area */
+.project h3 {
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-top: 1.5em;
+  margin-bottom: 0.3em;
+}
+
+.project .main-content p:not(.caption), .intro p {
+  margin-top: 1.5em;
+  margin-bottom: 0em;
+  line-height: 1.7em;
+}
+
+.project .main-content p a {
+  color: #909090;
+  font-weight: 600;
+}
+
+.project .main-content p b a {
+  color: #909090;
+  font-weight: bold;
+}
+
+.project .main-content ul {
+  margin-top: 1.25em;
+  margin-bottom: 0em;
+  padding-left: 1.2em;
+  line-height: 1.7em;
+}
+
+.project .caption {
+  color: #909090;
+  font-size: 0.9em;
+  margin-top: 1em;
+}
+
+.project .main-content img {
+  margin-top: 1.5em;
+  width: 100%;
+}
+
+.project .full-width-img {
+  width: 104%;
+  margin-left: -2%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .project .full-width-img {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.project .full-width-img-2 {
+  width: 100%;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.project .extra-width-img {
+  /*width: 80vw;
+  min-width: 1000px;
+  position: relative;
+  margin-left: -7.5vw;
+  margin-right: 200px;*/
+  width: 150%; /* orig 155% */
+  margin-left: -25%;
+  text-align: center;
+}
+
+.project .extra-extra-width-img {
+  width: 200%; /* orig 155% */
+  margin-left: -50%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .project .extra-width-img, .project .extra-extra-width-img {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.project .video {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  padding: 1.5em;
+}
+
+.project .main-content iframe {
+  max-width: 100%;
+  width: 640px;
+  height: 360px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .project .main-content iframe, .intro iframe {
+    width: 100%;
+    height: 150vw;
+  }
+}
+
+.project .quote-box {
+  overflow: visible;
+  height: 5em;
+  position: relative;
+  margin: 2.0em 0;
+}
+
+.project #homeroom-quotes .quote-box { 
+  height: 4em;
+}
+
+.project .quote-box .quote-mark {
+  position: absolute;
+  color: #e8e8e8; 
+  font-size: 9em;
+  margin-top: -0.3em;
+  margin-left: -0.1em;
+}
+
+.project .quote-box p {
+  font-size: 1.05em;
+  position: absolute;
+  top: 0;
+  margin-left: 1.4em;
+  margin-top: 0.5em;
+}
+
+:root {
+  --gallery-display: flex;
+  --gallery-flex-wrap: wrap;
+  --gallery-margin: -1.7% -2.3% -1.7% -2.3%;
+}
+
+.project .uneven-gallery {
+  display: var(--gallery-display);
+  flex-wrap: var(--gallery-flex-wrap);
+  margin: -1.7% -3.3% -1.7% -3.3%;
+  width: 106.6%;
+}
+
+.project .uneven-gallery > div {
+  margin: 1.7% 3.3%;
+  align-self: flex-start; 
+}
+
+.project .uneven-gallery > div > * {
+  width: 100%;
+}
+
+/*.project .uneven-gallery .left {
+  width: 30.3%;
+  min-width: 7em;
+}
+
+.project .uneven-gallery .right {
+  width: 60.5%;
+  min-width: 13.976em;
+}*/
+
+.project .one-half-gallery {
+  display: var(--gallery-display);
+  flex-wrap: var(--gallery-flex-wrap);
+  margin: var(--gallery-margin);
+  width: 102.3%;
+}
+
+.project .one-half-gallery > div {
+  margin: 1.7% 2.3%;
+  min-width: 10.5em;
+  width: 45.4%;
+}
+
+.project .one-third-gallery {
+  display: var(--gallery-display);
+  flex-wrap: var(--gallery-flex-wrap);
+  margin: var(--gallery-margin);
+  width: 104.6%; /*originally 102.6%, then 104.6%*/
+}
+
+.project .one-third-gallery > div {
+  margin: 1.7% 2.3%;
+  min-width: 10.5em;
+  width: 28.7%;
+}
+
+.project .one-fourth-gallery {
+  display: var(--gallery-display);
+  flex-wrap: var(--gallery-flex-wrap);
+  margin: var(--gallery-margin);
+  width: 104.6%; /*originally 102.6, then 104.6%*/
+}
+
+.project .one-fourth-gallery > div {
+  margin: 1.7% 2.3%;
+  min-width: 0em; /*not sure*/
+  width: 20.4%;
+}
+
+
+/* Wrap galleries on mobile */
+@media only screen and (max-width: 600px) {
+  .project .uneven-gallery > div {
+    min-width: 93%;
+  }
+  .project .one-half-gallery > div {
+    min-width: 100%;
+  }
+  .project .one-third-gallery > div {
+    min-width: 100%;
+  }
+  .project .one-fourth-gallery > div {
+    min-width: 100%;
+  }
+}
+
+
+.project .main-content .one-half-gallery p:not(.caption), .main-content .one-third-gallery p, .main-content .one-fourth-gallery p, .intro .one-third-gallery p, .intro .one-fourth-gallery p {
+  margin-top: 0;
+}
+
+.project .main-content .one-half-gallery h2, .main-content .one-third-gallery h2, .main-content .one-fourth-gallery h2{
+  margin-top: 0;
+}
+
+
+.project .one-half-gallery img, .one-third-gallery img, .one-fourth-gallery img, .uneven-gallery img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .project .one-half-gallery img, .one-third-gallery img, .one-fourth-gallery img, .uneven-gallery img {
+    max-height: 60%;
+    object-fit: contain;
+    margin: auto;
+  }
+  .project #ui-exercises-gallery img {
+    max-height: 100%;
+  }
+}
+
+.project #back-to-home {
+  color: #363636;
+  font-weight: 400;
+  font-family: "Poppins";
+  text-decoration: none;
+}
+
+.project #back-to-home:hover {
+  color: #ffa10a;
+  transition: .25s ease-in-out;
+}
+
+.project .footer {
+  margin-top: 6em;
+}
+
+
+
+/**/
+
+.project .marta-gifs {
+  box-shadow: 2px 4px 30px 0px rgba(0,0,0,0.03);
+}
+
+@media only screen and (max-width: 600px) {
+  .project .marta-gifs {
+    width: 60%;
+  }
+}

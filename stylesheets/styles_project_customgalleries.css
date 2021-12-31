@@ -1,0 +1,45 @@
+/* Special Gallery Widths */
+
+/* MARTA */
+.project .marta-gallery img {
+  width: calc(30% - 24px);
+}
+.project .marta-gallery div {
+	width: calc(70% - 24px);
+}
+@media only screen and (max-width: 768px) {
+	html .project .marta-gallery > * {
+		width: 100%;
+	}
+}
+
+
+/* Library */
+.project .library-mockups-gallery-1 img {
+	width: calc(65% - 24px);
+}
+.project .library-mockups-gallery-1 div {
+	width: calc(35% - 24px);
+}
+.project .library-mockups-gallery-1 .asdf {
+	width: calc(65% - 24px);
+}
+.project .library-mockups-gallery-2 img {
+	width: calc(32.5% - 24px);
+	max-width: 100%;
+}
+.project .library-mockups-gallery-2 div {
+	width: calc(35% - 24px);
+}
+@media only screen and (max-width: 768px) {
+	html .project .library-mockups-gallery-1 > *, 
+	html .project .library-mockups-gallery-2 > * {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 768px) {
+	html .project .library-mockups-gallery-2 img {
+		width: calc(50% - 24px);
+	}
+}
+
