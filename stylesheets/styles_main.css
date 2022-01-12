@@ -6,7 +6,7 @@
   --header-height: 80px;
 }
 
-header {
+.top-nav {
   top: 0;
   left: 0;
   right: 0;
@@ -18,7 +18,7 @@ header {
   z-index: 1; /* Note: z-index of page-title is 0 */
   background-color: white;
 }
-header > * {
+.top-nav > * {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);

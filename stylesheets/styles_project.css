@@ -1,3 +1,4 @@
+
 .project #intro {
 	width: 100%;
 	display: flex;
@@ -123,6 +124,11 @@
 	padding: 18px;
 	box-shadow: 2px 8px 24px 0px #00000012;
 	box-sizing: border-box;
+	line-height: var(--line-height);
+}
+
+.project li {
+	margin: 9px;
 	line-height: var(--line-height);
 }
 

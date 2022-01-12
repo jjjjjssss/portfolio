@@ -11,7 +11,9 @@
   <link rel="icon" type="image/x-icon" href="media/favicon.ico">
 </head>
 
-<header>
+<body>
+
+<div class="top-nav">
 
   <div class="navigation-bar">
 
@@ -33,12 +35,12 @@
 
   </div>
 
-</header>
+</div>
 
 
 
 
-<body id="index">
+<div id="index">
   <div class="content">
 
   <img src="media/index/doodle.png" id="doodle">
@@ -127,15 +129,15 @@
       <a class="button inactive-button">Coming Soon!</a>
     </div>
 
-    <div class="project-wrapper inactive">
-      <img src="media/index/scheduler.png">
+    <div class="project-wrapper active">
+      <img src="media/index/scheduler.png" onclick="location.href='scheduler.html'">
       <div class="xs-space"></div>
       <div class="tag">UX Design</div>
       <div class="xxs-space"></div>
       <h2>GT Scheduler</h2>
       <p>Designing a course catalog for a class scheduling tool used by thousands of Georgia Tech students</p>
       <div class="xxs-space"></div>
-      <a class="button inactive-button">Coming Soon!</a>
+      <a class="button active-button" href="scheduler.html">View Project</a>
     </div>
 
     <div class="project-wrapper active">
@@ -194,6 +196,7 @@
 
 </div>
 
+</div>
 </body>
 
 <script>
