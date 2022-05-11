@@ -43,3 +43,25 @@
 	}
 }
 
+
+/* MBB */
+.project .mbb-intro-gallery img {
+	width: calc(65% - 24px);
+}
+.project .mbb-intro-gallery div {
+	width: calc(35% - 24px);
+}
+.project .mbb-feature-gallery p {
+	width: calc(70% - 24px);
+}
+.project .mbb-feature-gallery .img-wrapper {
+	width: calc(30% - 24px);
+}
+@media only screen and (max-width: 768px) {
+	html .project .mbb-intro-gallery > *, 
+	html .project .mbb-feature-gallery > * {
+		width: 100%;
+	}
+}
+
+

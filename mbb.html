@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>GT Scheduler | Joyce Shen</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,450;0,500;0,550;0,600;0,650;0,700;0,800;1,300;1,400;1,450;1,500;1,550;1,600;1,650;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,450;0,500;0,550;0,600;0,650;0,700;0,800;1,300;1,400;1,450;1,500;1,550;1,600;1,650;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/styles_project.css">
+  <link rel="stylesheet" href="stylesheets/styles_project_customgalleries.css">
+  <link rel="stylesheet" href="stylesheets/styles_main.css">
+  <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+
+<div class="body">
+
+<div class="top-nav">
+
+  <div class="navigation-bar">
+
+    <a href="index.html">
+      <img class="logo" src="media/logo.png" alt="Joyce Shen Logo" title="Home">
+    </a>
+
+    <nav>
+      <ul>
+        <li class="selected"><a href="index.html">Work</a></li>
+        <li class="inactive"><a href="art.html">Art & More</a></li>
+        <li class="inactive"><a href="resume.html">Resume</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+</div>
+
+
+<div class="project">
+
+	<div id="intro">
+    <div id="intro-text">
+      <h1>Motherhood Beyond Bars</h1>
+			<p style="margin-bottom:0;"><b>Duration</b></p>
+      <p style="margin-top:0;">Jan 2022 - Apr 2022 (3 months)</p>
+			<p style="margin-bottom:0;"><b>Team</b></p>
+      <p style="margin-top:0;">Product Manager, Engineering Manager, 2 Designers, 4 Developers</p>
+			<p style="margin-bottom:0;"><b>Role</b></p>
+      <p style="margin-top:0;">UI/UX Design</p>
+			<p style="margin-bottom:0;"><b>Tools</b></p>
+      <p style="margin-top:0;">Figma</p>
+    </div>
+    <div id="intro-image" style="background-color:var(--mbb-color);">
+      <img class="contain" src="media/mbb/banner.png" alt="Banner">
+    </div>
+  </div>
+
+
+
+  <div class="section">
+    <div class="tag">Overview</div>
+		<h2>Teaming up with Motherhood Beyond Bars</h2>
+		<div class="featured-text">When babies are born to women in the Georgia prison system, the mother is allotted a 48-hour stay in the hospital. Afterward, the mother is brought back to prison and a chosen caretaker will come to the hospital to pick up the baby and bring it home.</div>
+		<div class="xs-space"></div>
+		<p>Motherhood Beyond Bars (MBB) is a Georgia-based nonprofit that works to support the infants, mothers, and caretakers in these situations. Part of their work involves calling caretakers to provide them with resources and supplies, <b>but the organization is concerned about the amount of time required for calls as their client numbers continue to grow</b>.</p>
+		<p>For one semester (and counting), MBB partnered up with my team at <a href="https://bitsofgood.org/" target="_blank">Bits of Good</a> to develop a scalable platform that streamlines the onboarding process and allows for more efficient communication with caretakers.</p>
+		<div class="s-space"></div>
+
+		<div class="gallery mbb-intro-gallery">
+			<img src="media/mbb/mbb-mobile.png" alt="MBB Mobile">
+			<div>
+				<h3>A mobile app to get caretakers ready for their role</h3>
+				<p>The app contains a variety of features that improves communication between caretakers and MBB.</p>
+			</div>
+		</div>
+		<div class="s-space"></div>
+
+		<div class="gallery mbb-intro-gallery">
+			<div>
+				<h3>An admin portal to manage information</h3>
+				<p>The corresponding platform to the mobile app, where administrators can access all the information of their caretakers and update forms and information.</p>
+			</div>
+			<img src="media/mbb/mbb-web.png" alt="MBB Web">
+		</div>
+	</div>
+
+
+
+	<div class="section gray-bg">
+		<div class="tag">Ideation</div>
+		<h2>Goals, product requirements, and users</h2>
+		<p>The leadership team—the product manager, engineering manager, and us two designers—had a two-week headstart before developers joined our team. During this time, we consulted with MBB and met up several times to speedily establish a roadmap for the product.</p>
+		<div class="s-space"></div>
+
+		<h3>The first discussion with Motherhood Beyond Bars</h3>
+		<p>To get a better understanding of MBB’s main goals and requirements, our team held a meeting with Amy and Vanessa, two of the people leading MBB, to establish a list of product needs and points to keep in mind throughout our development process.</p>
+		<div class="xs-space"></div>
+		<img class="m-img" src="media/mbb/product-requirements.png" alt="Product Requirements">
+		<div class="m-space"></div>
+
+		<h3>Two user groups, two different platforms</h3>
+		<p>After this meeting, we began drawing out features for the caretaker app based on some of the needs Amy and Vanessa had listed. We also realized we needed to develop an accompanying admin portal that allows MBB admins to view caretaker information.</p>
+		<p>We organized the features with two user flows, which our product manager reviewed and updated with Amy and Vanessa.</p>
+		<div class="xs-space"></div>
+		<img class="m-img" src="media/mbb/caretaker-profile.png" alt="Caretaker Profile">
+		<div class="xs-space"></div>
+		<img class="l-img" src="media/mbb/caretaker-userflow.png" alt="Caretaker User Flow">
+		<div class="m-space"></div>
+		<img class="m-img" src="media/mbb/admin-profile.png" alt="Admin Profile">
+		<div class="xs-space"></div>
+		<img class="l-img" src="media/mbb/admin-userflow.png" alt="Admin User Flow">
+	</div>
+
+
+
+	<div class="section">
+		<div class="tag">Visual Design</div>
+		<h2>Incorporating MBB’s branding in our design system</h2>
+		<p>During our meeting with Amy and Vanessa, they mentioned that MBB was shifting over to a new vivid brand design. As we began to work through our designs, we decided to use gradients, bold colors, inviting language, a plain font, and a minimal design to reflect their brand while keeping our interface simple and readable. We pulled and customized design components from Bits of Good’s own design system.</p>
+		<div class="xs-space"></div>
+		<img class="m-img" src="media/mbb/visual-design.png" alt="Visual Design">
+	</div>
+
+
+
+	<div class="section gray-bg">
+		<div class="tag">Feature</div>
+		<h2>Part 1: Caregiver Onboarding</h2>
+		<div class="gallery mbb-feature-gallery">
+			<p><b>The onboarding workflow automates information collection from caretakers and compiles it for MBB</b>. This reduces the amount of time MBB spends on menial tasks as the organization continues to grow.</p>
+			<div class="img-wrapper">
+				<img class="mobile-gif" src="media/mbb/onboarding-caretaker.gif" alt="Onboarding - Caretaker">
+				<div class="caption">Caretaker onboarding forms</div> 
+			</div>
+		</div>
+		<div class="s-space"></div>
+
+		<img class="xl-img" src="media/mbb/onboarding-admin.png" alt="Onboarding - Admin">
+		<div class="caption">Caretaker uploads a photo</div>
+		<div class="m-space"></div>
+
+		<h3>Challenge: Get wireframes from 0% → 100% in two weeks</h3>
+		<p>This first sprint was a little daunting—because developers began working shortly after we designers started, we had about two weeks to mock up an entire onboarding process. We had to find an efficient way to roll our design in phases to Amy and Vanessa, our leadership team, and the developers.</p>
+		<div class="xs-space"></div>
+		<img class="m-img" src="media/mbb/onboarding-timeline.png" alt="Onboarding Process">
+	</div>
+
+
+
+	<div class="section">
+		<div class="tag">Feature</div>
+		<h2>Part 2: Support Page + Item Requests</h2>
+		<div class="gallery mbb-feature-gallery">
+			<p>After onboarding, caretakers can reach out to MBB for additional help through a support page. This page lists the organization’s contact information and leads them to a form where they can request additional baby supplies from MBB.</p>
+			<div class="img-wrapper">
+				<img class="mobile-gif" src="media/mbb/support-caretaker.gif" alt="Support - Caretaker">
+				<div class="caption">Caretaker requests items</div> 
+			</div>
+		</div>
+		<div class="s-space"></div>
+
+		<img class="xl-img" src="media/mbb/support-admin.png" alt="Support - Admin">
+		<div class="caption">Admins can see counts of requested items and a list of individually requested items.</div>
+		<div class="m-space"></div>
+
+		<h3>Over-automated? Maintaining person-to-person interactions</h3>
+		<p><b>We initially visualized the item requests feature as an online store</b>, with a catalog, cart, and all. But MBB explained that requesting items was not a formal process, and they planned to call caretakers individually after they made their requests.</p>
+		<div class="featured-text"><b>Calling caretakers about item requests gives MBB a chance to maintain person-to-person interactions and genuine relationships with caretakers.</b> Phone calls allow them to catch up on how caretakers are doing, so we should avoid over-automating the process. &#10084;&#65039;</div>
+		<p>Working with Amy and Vanessa, we decided the item request feature should be a form within a support page, listed with the organization’s contact information.</p>
+		<div class="xs-space"></div>
+		<img class="m-img" src="media/mbb/overautomated.png" alt="Overautomated">
+	</div>
+
+
+
+	<div class="section gray-bg">
+		<div class="tag">Feature</div>
+		<h2>Part 3: Baby Book</h2>
+		<div class="gallery mbb-feature-gallery">
+			<p>The baby book, a photo-uploading portal, allows caretakers to add photos and descriptions of their children on a regular basis, which admins can print out and share with mothers. <b>This helps MBB ensure that caretakers are documenting regularly and simplifies the process of collection and printing photos.</b></p>
+			<div class="img-wrapper">
+				<img class="mobile-gif" src="media/mbb/babybook-caretaker.gif" alt="Baby Book - Caretaker">
+				<div class="caption">Caretaker uploads a photo</div> 
+			</div>
+		</div>
+		<div class="s-space"></div>
+
+		<img class="xl-img" src="media/mbb/babybook-admin.png" alt="Baby Book - Admin">
+		<div class="caption">Each child has their own baby book that admins can manage. The second screen will also be shared with mothers once they are released, so they can have an album of old photos when they are reunited with their children.</div>
+	</div>
+
+	<div class="section">
+		<div class="tag">Feature</div>
+		<h2>Part 4: Resources</h2>
+		<p>MBB also wanted a way to share and update links and FAQs to caretakers, which is especially helpful for new caretakers.</p>
+		<div class="xs-space"></div>
+		<img class="m-img" src="media/mbb/resources.png" alt="Resources">
+	</div>
+
+
+	<hr>
+
+
+	<div class="section">
+		<div class="tag">Feature</div>
+		<h2>Part 5: Settings</h2>
+		<p>The caretaker app and admin app both have a settings page to edit account information. MBB also requested that admins be able to edit liability waivers.</p>
+		<div class="xs-space"></div>
+		<img class="m-img" src="media/mbb/settings.png" alt="Settings">
+	</div>
+
+
+	<hr>
+
+
+	<div class="section">
+		<div class="tag">Reflection</div>
+		<h2>Future considerations and the sustainability of the app</h2>
+		<p>I had an amazing time working with my team and Motherhood Beyond Bars on this app. Our team rolled out a good number of features in one semester, and as this project continues for another semester, we need to consider the best way to make this project usable and sustainable in the future. Some future considerations include:</p>
+		<div class="featured-text"><b>Security:</b> We need to be especially careful working with vulnerable populations like children and incarcerated women. For instance, we need to be able to download pictures from baby books with proper security + privacy.</div>
+		<div class="xxs-space"></div>
+		<div class="featured-text"><b>Usability:</b> We should run usability tests for these apps, especially on non-tech savvy caretakers.</div>
+		<div class="xxs-space"></div>		
+		<div class="featured-text"><b>Engagement:</b> The app should encourage caretakers to use the baby book with push notifications and incentives. We can also add more visual points of delight to the app.</div>
+		<div class="s-space"></div>
+
+		<p>We also want to make features customizable to admins to ensure the sustainability of the app. Admins can currently change liability waivers and resources, and we should continue to make sure the app can adapt to the organization’s growth.</p>
+		<p>I’m excited to see where this project goes in future semesters, and to see this app creating real impact for a really impactful organization.</p>
+		<div class="s-space"></div>
+
+		<img class="xs-img" src="media/mbb/team-1.jpg" alt="Team Picture 1">
+		<div class="caption xs-caption">Our team enjoying donuts at our weekly meeting!</div>
+		<div class="s-space"></div>
+		<img class="xs-img" src="media/mbb/team-2.jpg" alt="Team Picture 2">
+		<div class="caption xs-caption">The leadership team :)</div>
+	</div>
+
+
+	<hr>
+
+
+	<div class="section directory">
+    <a href="index.html">Home</a>
+    <a href="lacework.html">Lacework Internship</a>
+    <a href="marta.html">MARTA On the Go</a>
+		<a href="gba.html">Games for the GameBoy Advance</a>
+		<a href="mbb.html" id="selected">Motherhood Beyond Bars</a>
+    <a href="scheduler.html">GT Scheduler</a>
+    <a href="library.html">Library Reservations</a>
+  </div>
+
+
+  <div class="footer">
+    <div class="logos">
+      <a href="https://www.linkedin.com/in/jjjjjssss/" target="_blank">
+        <img class="logo" src="media/linkedin-logo.svg" alt="LinkedIn" title="LinkedIn">
+      </a>
+      <a href="https://github.com/jjjjjssss" target="_blank">
+        <img class="logo" src="media/github-logo.svg" alt="GitHub" title="GitHub">
+      </a>
+      <a href="mailto:jshen315@gatech.edu">
+        <img class="logo" src="media/email-logo.svg" alt="Email" title="Email (jshen315@gatech.edu)">
+      </a>
+    </div>
+    <p>Let's get in touch!</p>
+  </div>
+
+</div>
+
+</body>
+</html>

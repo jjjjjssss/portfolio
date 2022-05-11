@@ -136,6 +136,7 @@
 .project .featured-text {
 	width: 100%;
 	padding: 18px;
+	background-color: var(--background-color);
 	box-shadow: 2px 8px 24px 0px #00000012;
 	box-sizing: border-box;
 	line-height: var(--line-height);
@@ -208,11 +209,7 @@
 	border-radius: 4px;
 	border-width: 4px 8px;
 }
-.section .mini-pigeon {
-	width: 50px !important;
-}
-@media only screen and (max-width: 600px) {
-	.section .mini-pigeon {
-		width: 50px !important;
-	}
+.project .mobile-gif {
+	box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.05);
+	border-radius: 10px;
 }
