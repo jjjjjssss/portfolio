@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>GT Scheduler | Joyce Shen</title>
+  <title>Motherhood Beyond Bars | Joyce Shen</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width initial-scale=1">
   <link
@@ -56,7 +56,7 @@
       <p style="margin-top:0;">Figma</p>
     </div>
     <div id="intro-image" style="background-color:var(--mbb-color);">
-      <img class="contain" src="media/mbb/banner.png" alt="Banner">
+      <img class="cover" src="media/mbb/banner.png" alt="Banner">
     </div>
   </div>
 
@@ -72,20 +72,20 @@
 		<div class="s-space"></div>
 
 		<div class="gallery mbb-intro-gallery">
-			<img src="media/mbb/mbb-mobile.png" alt="MBB Mobile">
 			<div>
 				<h3>A mobile app to get caretakers ready for their role</h3>
 				<p>The app contains a variety of features that improves communication between caretakers and MBB.</p>
 			</div>
+			<img src="media/mbb/mbb-mobile.png" alt="MBB Mobile">
 		</div>
 		<div class="s-space"></div>
 
 		<div class="gallery mbb-intro-gallery">
+			<img src="media/mbb/mbb-web.png" alt="MBB Web">
 			<div>
 				<h3>An admin portal to manage information</h3>
 				<p>The corresponding platform to the mobile app, where administrators can access all the information of their caretakers and update forms and information.</p>
 			</div>
-			<img src="media/mbb/mbb-web.png" alt="MBB Web">
 		</div>
 	</div>
 
@@ -124,6 +124,10 @@
 		<p>During our meeting with Amy and Vanessa, they mentioned that MBB was shifting over to a new vivid brand design. As we began to work through our designs, we decided to use gradients, bold colors, inviting language, a plain font, and a minimal design to reflect their brand while keeping our interface simple and readable. We pulled and customized design components from Bits of Good’s own design system.</p>
 		<div class="xs-space"></div>
 		<img class="m-img" src="media/mbb/visual-design.png" alt="Visual Design">
+		<div class="caption">How we incorporated MBB’s Instagram page and website into our product</div>
+		<div class="xs-space"></div>
+		<img class="m-img" src="media/mbb/style-guide.png" alt="Style Guide">
+		<div class="caption">Style guide for colors, fonts, spacing, and drop shadows</div>
 	</div>
 
 
@@ -144,6 +148,7 @@
 		<div class="caption">The admin portal displays a table of caretakers, and admins can whitelist additional caretakers to use the app.</div>
 		<div class="m-space"></div>
 
+		<div class="tag">Process</div>
 		<h3>Challenge: Get wireframes from 0% → 100% in two weeks</h3>
 		<p>This first sprint was a little daunting—because developers began working shortly after we designers started, we had about two weeks to mock up an entire onboarding process. We had to find an efficient way to roll our design in phases to Amy and Vanessa, our leadership team, and the developers.</p>
 		<div class="xs-space"></div>
@@ -168,12 +173,17 @@
 		<div class="caption">Admins can see counts of requested items and a list of individually requested items.</div>
 		<div class="m-space"></div>
 
+		<div class="tag">Process</div>
 		<h3>Over-automated? Maintaining person-to-person interactions</h3>
-		<p><b>We initially visualized the item requests feature as an online store</b>, with a catalog, cart, and all. But MBB explained that requesting items was not a formal process, and they planned to call caretakers individually after they made their requests.</p>
-		<div class="featured-text"><b>Calling caretakers about item requests gives MBB a chance to maintain person-to-person interactions and genuine relationships with caretakers.</b> Phone calls allow them to catch up on how caretakers are doing, so we should avoid over-automating the process. &#10084;&#65039;</div>
-		<p>Working with Amy and Vanessa, we decided the item request feature should be a form within a support page, listed with the organization’s contact information.</p>
+		<p>We initially visualized the item requests feature as an online store, with a catalog, cart, and all. But MBB explained that requesting items was not a formal process, and they planned to call caretakers individually after they made their requests.</p>
+		<p><b>Calling caretakers about item requests gives MBB a chance to maintain person-to-person interactions and genuine relationships with caretakers.</b> Phone calls allow them to catch up on how caretakers are doing, so we should avoid over-automating the process.</p>
+		<p>Working with Amy and Vanessa, we decided the item request feature should be a form on a support page, listed with the organization’s contact information.</p>
 		<div class="xs-space"></div>
 		<img class="m-img" src="media/mbb/overautomated.png" alt="Overautomated">
+		<div class="caption">Changing from a store layout to a support page + form layout</div>
+		<!-- <div class="s-space"></div>
+		<img class="m-img" src="media/mbb/overautomated-2.png" alt="Support page alternative layouts">
+		<div class="caption">Other layouts for the support page we brainstormed</div> -->
 	</div>
 
 
@@ -191,7 +201,9 @@
 		<div class="s-space"></div>
 
 		<img class="xl-img" src="media/mbb/babybook-admin.png" alt="Baby Book - Admin">
-		<div class="caption">Each child has their own baby book that admins can manage. The second screen will also be shared with mothers once they are released, so they can have an album of old photos when they are reunited with their children.</div>
+		<div class="caption">Each child has their own baby book that admins can manage.</div>
+		<div class="s-space"></div>
+		<p>The second screen above will also be shared with mothers once they are released, so they can have an album of old photos when they are reunited with their children.</p>
 	</div>
 
 	<div class="section">
@@ -200,6 +212,7 @@
 		<p>MBB also wanted a way to share and update links and FAQs to caretakers, which is especially helpful for new caretakers.</p>
 		<div class="xs-space"></div>
 		<img class="m-img" src="media/mbb/resources.png" alt="Resources">
+		<div class="caption">Caretakers can see a list of FAQs about childcare, which admins can update.</div>
 	</div>
 
 
@@ -212,6 +225,7 @@
 		<p>The caretaker app and admin app both have a settings page to edit account information. MBB also requested that admins be able to edit liability waivers.</p>
 		<div class="xs-space"></div>
 		<img class="m-img" src="media/mbb/settings.png" alt="Settings">
+		<div class="caption">Both caretakers and admins can edit their settings.</div>
 	</div>
 
 
