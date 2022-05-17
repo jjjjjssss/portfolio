@@ -54,7 +54,7 @@
 .project .mbb-feature-gallery p {
 	width: calc(70% - 24px);
 }
-.project .mbb-feature-gallery .img-wrapper {
+.project .mbb-feature-gallery > div {
 	width: calc(30% - 24px);
 }
 @media only screen and (max-width: 768px) {
