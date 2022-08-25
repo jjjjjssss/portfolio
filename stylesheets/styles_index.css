@@ -60,6 +60,13 @@
   transform: translate(40%, 50%);
 }
 
+#index #cursor {
+  width: 24px;
+  position: absolute;
+  bottom: -35%;
+  left: 30%;
+}
+
 #index #design-graphic {
   position: absolute;
   overflow: visible;
