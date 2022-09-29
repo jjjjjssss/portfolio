@@ -14,36 +14,6 @@
 }
 
 
-/* Library */
-.project .library-mockups-gallery-1 img {
-	width: calc(65% - 24px);
-}
-.project .library-mockups-gallery-1 div {
-	width: calc(35% - 24px);
-}
-.project .library-mockups-gallery-1 .asdf {
-	width: calc(65% - 24px);
-}
-.project .library-mockups-gallery-2 img {
-	width: calc(32.5% - 24px);
-	max-width: 100%;
-}
-.project .library-mockups-gallery-2 div {
-	width: calc(35% - 24px);
-}
-@media only screen and (max-width: 768px) {
-	html .project .library-mockups-gallery-1 > *, 
-	html .project .library-mockups-gallery-2 > * {
-		width: 100%;
-	}
-}
-@media only screen and (max-width: 768px) {
-	html .project .library-mockups-gallery-2 img {
-		width: calc(50% - 24px);
-	}
-}
-
-
 /* MBB */
 .project .mbb-intro-gallery img {
 	width: calc(65% - 24px);
@@ -60,6 +30,33 @@
 @media only screen and (max-width: 768px) {
 	html .project .mbb-intro-gallery > *, 
 	html .project .mbb-feature-gallery > * {
+		width: 100%;
+	}
+}
+
+
+/*MoodFood*/
+.project .moodfood-gallery > div {
+	width: calc(70% - 24px);
+}
+.project .moodfood-gallery > div > .first-p {
+	margin-top: 0;
+} 
+.project .moodfood-gallery > div > .last-p {
+	margin-top: 0;
+} 
+.project .moodfood-gallery > div > img {
+	margin-left: 0;
+} 
+.project .moodfood-gallery > p {
+	width: calc(70% - 24px);
+}
+
+.project .moodfood-gallery > img {
+	width: calc(30% - 24px);
+}
+@media only screen and (max-width: 768px) {
+	html .project .moodfood-gallery > * {
 		width: 100%;
 	}
 }

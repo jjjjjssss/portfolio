@@ -98,7 +98,7 @@ a {
   --marta-color: #FCD034;
   --scheduler-color: #FF9B71;
   --mbb-color: #B7B5FA;
-  --library-color: #beb8ff;
+  --moodfood-color: #748BDA;
   --lacework-color: #1BBCF9;
   --gba-color: #CCE9A7;
   --accent-color: #F35C2C;
@@ -161,7 +161,7 @@ h2 {
 
 h3 {
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 550;
 }
 
 .no-wrap {
