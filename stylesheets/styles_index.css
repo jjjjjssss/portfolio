@@ -17,7 +17,7 @@
   max-width: 40em;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   #index .beginning {
     width: 100%;
   }
@@ -102,10 +102,11 @@
   direction: row;
   flex-wrap: wrap;
   row-gap: 2em;
+  column-gap: 1em;
 }
 #index #status > div {
-  width: 50%;
-  min-width: 300px;
+  flex-grow: 1;
+  min-width: 200px;
 }
 #index #status h3, #index #status p {
   margin: 0.25em 0;
