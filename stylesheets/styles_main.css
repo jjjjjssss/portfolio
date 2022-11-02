@@ -85,7 +85,7 @@ nav .selected {
 }
 
 a {
-  color: inherit;
+  color: var(--secondary-text-color);
 }
 
 

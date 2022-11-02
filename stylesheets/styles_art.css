@@ -74,6 +74,7 @@
   columns: 300px 2;
   column-gap: 1em;
   min-height: auto;
+  padding: 0;
 }
 
 #art .gallery .grid-item {
