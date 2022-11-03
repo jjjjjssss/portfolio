@@ -85,7 +85,7 @@ nav .selected {
 }
 
 a {
-  color: var(--seco);
+  color: var(--secondary-text-color);
 }
 
 
