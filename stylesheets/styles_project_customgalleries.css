@@ -21,11 +21,16 @@
 .project .mbb-intro-gallery div {
 	width: calc(35% - 24px);
 }
-.project .mbb-feature-gallery p {
-	width: calc(70% - 24px);
+.project .mbb-feature-gallery {
+	width: 150%;
+	margin-left: -25%;
+	justify-content: space-between;
 }
-.project .mbb-feature-gallery > div {
-	width: calc(30% - 24px);
+.project .mbb-feature-gallery .left {
+	width: calc(24.4% - 36px);
+}
+.project .mbb-feature-gallery > .right {
+	width: calc(75.6% - 36px);
 }
 @media only screen and (max-width: 768px) {
 	html .project .mbb-intro-gallery > *, 
@@ -33,27 +38,30 @@
 		width: 100%;
 	}
 }
+.project .mbb-feature-gallery .web {
+	box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.05);
+}
 
 
 /*MoodFood*/
 .project .moodfood-gallery > div {
-	width: calc(70% - 24px);
+	width: calc(65% - 24px);
 }
-.project .moodfood-gallery > div > .first-p {
+.project .moodfood-gallery > div > .first {
 	margin-top: 0;
 } 
-.project .moodfood-gallery > div > .last-p {
+.project .moodfood-gallery > div > .last {
 	margin-top: 0;
 } 
 .project .moodfood-gallery > div > img {
 	margin-left: 0;
 } 
 .project .moodfood-gallery > p {
-	width: calc(70% - 24px);
+	width: calc(65% - 24px);
 }
 
 .project .moodfood-gallery > img {
-	width: calc(30% - 24px);
+	width: calc(35% - 24px);
 }
 @media only screen and (max-width: 768px) {
 	html .project .moodfood-gallery > * {
