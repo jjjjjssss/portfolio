@@ -96,6 +96,10 @@
 	width: 175%;
 	margin-left: -37.5%;
 }
+.project .mobile-gif {
+	box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.05);
+	border-radius: 10px;
+}
 /* IDK WHY .PROJECT ISNT WORKING */
 @media only screen and (max-width: 768px) {
 	.section img:not(.fixed-width-img) { 
@@ -227,9 +231,16 @@
 	border-radius: 4px;
 	border-width: 4px 8px;
 }
-.project .mobile-gif {
-	box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.05);
-	border-radius: 10px;
+/* Different restrict height for 2 images in MoodFood */
+@media only screen and (max-width: 768px) {
+	.section .restrict-height-custom-1 {
+		max-height: 104vh; /* I think height works here too */
+		object-fit: contain;
+	}
+	.section .restrict-height-custom-2 {
+		max-height: 93vh; /* I think height works here too */
+		object-fit: contain;
+	}
 }
 /* Lazy solution to the box shadow issue on restrict-height images */
 @media only screen and (max-width: 768px) {
@@ -245,3 +256,4 @@
 		flex-direction: row-reverse;
 	}
 }
+
