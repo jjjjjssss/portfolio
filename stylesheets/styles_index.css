@@ -5,28 +5,23 @@
 }
 
 #index #doodle {
-  width: 100px;
+  width: 120px;
 }
 
 #index .beginning {
   width: 100%;
+  padding-top: 0.5em;
 }
 
-#index .intro {
-  width: 50%;
-  max-width: 40em;
-}
-
-@media only screen and (max-width: 768px) {
-  #index .beginning {
-    width: 100%;
-  }
-  #index .intro {
-    width: 100%;
+/* Larger than tablet */
+@media only screen and (min-width: 768px) {
+  #index .intro h1
+  {
+    font-size: 3rem;
   }
 }
 
-#index .intro h2 {
+#index .intro h1 {
   margin-top: -0.5em;
   word-spacing: .06em;
 }
@@ -61,9 +56,9 @@
 }
 
 #index #cursor {
-  width: 24px;
+  width: 36px;
   position: absolute;
-  bottom: -35%;
+  bottom: -20%;
   left: 30%;
 }
 
