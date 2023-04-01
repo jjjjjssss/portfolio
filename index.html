@@ -71,36 +71,29 @@
         that world.
       </h2>
     </div>
-
-    <p style="color:#909090">
+    <!-- <p style="color:#909090">
       Learn more about me! <span class="down-arrow bounce">↓</span>
-    </p>
-    <!-- Custom space -->
+    </p> -->
+
     <div class="m-space" ></div>
 
     <div id="status">
       <div>
-        <h3>What I've been up to –</h3>
-        <!-- <p>Getting ready to be a Design Intern <a class="org" href="https://corp.roblox.com/" target="_blank">@Roblox</a></p> -->
-        <p>Designing powerful web apps for nonprofits <a class="org" href="https://bitsofgood.org/" target="_blank">@Bits of Good</a></p>
-        <p>Finishing my fourth year of computer science <a class="org" href="https://www.cc.gatech.edu/" target="_blank">@Georgia Tech</a></p>
+        <h2>What I do –</h2>
+        <p>Teach design & design web apps for nonprofits <a class="org" href="https://bitsofgood.org/" target="_blank">@Bits of Good</a></p>
+        <p>Study computer science with a user & media focus <a class="org" href="https://www.cc.gatech.edu/" target="_blank">@Georgia Tech</a></p>
       </div>
       <div>
-        <h3>Previously –</h3>
-        <p>Researching emerging banking technologies <a class="org" href="https://www.usbank.com/index.html" target="_blank">@U.S. Bank</a></p>
-        <p>Presenting a vision for collaboration in game creation <a class="org" href="https://www.roblox.com/create" target="_blank">@Roblox</a></p>
-        <p>Enhancing cloud security reporting tools <a class="org" href="https://www.lacework.com/" target="_blank">@Lacework</a></p>
+        <h2>What I did –</h2>
+        <p>Researched emerging banking technologies <a class="org" href="https://www.usbank.com/index.html" target="_blank">@U.S. Bank</a></p>
+        <p>Presented a vision for collaboration in game creation <a class="org" href="https://www.roblox.com/create" target="_blank">@Roblox</a></p>
+        <p>Enhanced cloud security reporting tools <a class="org" href="https://www.lacework.com/" target="_blank">@Lacework</a></p>
       </div>
     </div>
-
-    <div class="s-space"></div>
-
-
-
   </div>
 
 
-  <div class="l-space"></div>
+  <div class="xl-space"></div>
 
 
   <div class="grid"><div class="columns">
@@ -282,27 +275,28 @@
 
     var designCorners = document.querySelectorAll("#design-graphic > .corner");
     designCorners.forEach(function(element) {
-      var origTransform = window.getComputedStyle(element).getPropertyValue('transform');
-      element.style.transform = "translate(-0.125em, -0.125em)";
+      console.log("hh");
+      var transformResult = window.getComputedStyle(element).getPropertyValue('transform');
+      element.style.transform = "translate(-5px, -5px)";
       element.style.visibility = "hidden";
       setTimeout(function() {
         element.animate({
-          transform: origTransform,
+          transform: transformResult,
           visibility: "visible"
         }, {
           duration: designAnimDuration, 
-          fill: "forwards",
+          fill: "none",
           easing: designAnimEasing
         })
+        
       }, 1400);
+      // Reset to initial css style after animation finishes playing; fixes issues with screen resize 
+      setTimeout(function() {
+        element.style.transform = "";
+        element.style.visibility = "";
+      }, 1400 + designAnimDuration);
     })
   }
-
-
-
-
-
-
 </script>
 
 </html>

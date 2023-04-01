@@ -28,6 +28,10 @@
   color: var(--secondary-text-color);
 }
 
+#art .sidebar a:hover {
+  color: var(--accent-color);
+}
+
 #art .rightbar {
   /*margin-left: 20%;*/
   width: 80%;
