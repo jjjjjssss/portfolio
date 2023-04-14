@@ -92,7 +92,7 @@
 #index #design-graphic #corner-3 { transform: translateY(100%) translate(-5px, -5px); }
 #index #design-graphic #corner-4 { transform: translate(100%, 100%) translate(-5px, -5px); }
 
-#index #status {
+/* #index #status {
   width: 100%;
   display: flex;
   direction: row;
@@ -106,6 +106,10 @@
 }
 #index #status h3, #index #status p {
   margin: 0.25em 0;
+} */
+
+#index #status > p {
+  margin: 0.5em;
 }
 
 #index .org {
