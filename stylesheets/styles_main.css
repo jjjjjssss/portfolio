@@ -96,12 +96,10 @@ a {
 
 :root {
   --marta-color: #FCD034;
-  --scheduler-color: #FF9B71;
   --mbb-color: #B7B5FA;
   --moodfood-color: #748BDA;
   --roblox-color: #2C3237;
   --lacework-color: #1BBCF9;
-  --gba-color: #CCE9A7;
   --accent-color: #F35C2C;
   --highlight-color: #FFE6DE;
   --primary-text-color: #363636;
@@ -242,7 +240,7 @@ h3 {
   width: 100%;
   margin: 60px auto;
   overflow: hidden;
-  font-family: "Poppins";
+  font-family: var(--title-font);
   font-weight: 500;
   text-align: center;
 }
