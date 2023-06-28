@@ -47,7 +47,7 @@ Location: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal_ligh
   position: relative;
   margin: auto;
   max-height: 100%;
-  max-width: 100%;
+  width: 100%;
   object-fit: contain;
   /* Vertically align images in container*/
   top: 50%;
@@ -73,7 +73,7 @@ Location: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal_ligh
 /* Bold and resize description title*/
 .modal-content .description-title {
   margin-top: 0px;
-  font-family: "Poppins";
+  font-family: var(--title-font);
   font-size: 20px;
   font-weight: 600;
 }

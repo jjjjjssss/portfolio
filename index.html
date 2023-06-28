@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="stylesheets/styles_index.css">
   <link rel="stylesheet" href="stylesheets/styles_main.css">
   <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -28,7 +29,7 @@
     <nav>
         <ul>
           <li class="selected"><a href="index.html">Work</a></li>
-          <li class="inactive"><a href="art.html">Art & More</a></li>
+          <li class="inactive"><a href="playground.html">Playground</a></li>
           <li class="inactive"><a href="resume.html">Resume</a></li>
         </ul>
     </nav>
@@ -78,19 +79,25 @@
     <div class="s-space" ></div>
 
     <div id="status">
-      <p>Just graduated from <a class="org" href="https://www.cc.gatech.edu/" target="_blank">@Georgia Tech</a>!</p>
-      <p>Previously an intern <a class="org" href="https://www.roblox.com/create" target="_blank">@Roblox</a>, <a class="org" href="https://www.usbank.com/index.html" target="_blank">@U.S. Bank</a>, and <a class="org" href="https://www.lacework.com/" target="_blank">@Lacework</a>.</p>
+      <p>Just graduated <a class="org" href="https://www.cc.gatech.edu/" target="_blank">@Georgia Tech</a>!</p>
+      <p>Previously designing <a class="org" href="https://www.roblox.com/create" target="_blank">@Roblox</a>, <a class="org" href="https://www.usbank.com/index.html" target="_blank">@U.S. Bank</a>, <a class="org" href="https://www.lacework.com/" target="_blank">@Lacework</a>, and <a class="org" href="https://bitsofgood.org/" target="_blank">@Bits of Good</a>.</p>
+      <div class="xxs-space"></div>
+      <!-- <p style="color:#909090">View my work below <span class="down-arrow bounce">↓</span></p>-->
+      <p class="down-arrow bounce">↓</p>
     </div>
   </div>
 
 
-  <div class="xl-space"></div>
+  <div class="m-space"></div>
 
 
-  <div class="grid">
+  <div class="grid"
+    data-aos="fade-up" 
+    data-aos-anchor-placement="top-bottom"
+    data-aos-offset="300">
 
     <div class="project-wrapper active">
-      <img src="media/index/roblox.png" onclick="location.href='roblox.html'">
+      <img src="media/index/roblox.png" alt="Roblox" onclick="location.href='roblox.html'">
       <div class="xs-space"></div>
       <div class="tag">Design Internship</div>
       <div class="xxs-space"></div>
@@ -101,7 +108,7 @@
     </div>
 
     <div class="project-wrapper active">
-      <img src="media/index/mbb.png" onclick="location.href='mbb.html'">
+      <img src="media/index/mbb.png" alt="Motherhood Beyond Bars" onclick="location.href='mbb.html'">
       <div class="xs-space"></div>
       <div class="tag">UI/UX Design</div><div class="tag">Nonprofit Partnership</div>
       <div class="xxs-space"></div>
@@ -112,9 +119,9 @@
     </div>
 
     <div class="project-wrapper active">
-      <img src="media/index/moodfood.png" onclick="location.href='moodfood.html'">
+      <img src="media/index/moodfood.png" alt="MoodFood" onclick="location.href='moodfood.html'">
       <div class="xs-space"></div>
-      <div class="tag">User Research</div><div class="tag">UI/UX Design</div><div class="tag">Design Challenge</div>
+      <div class="tag">User Research</div><div class="tag">UI/UX Design</div>
       <div class="xxs-space"></div>
       <h2>MoodFood</h2>
       <p>Encouraging reading through a mood-based quick reads app</p>
@@ -123,7 +130,7 @@
     </div>
 
     <div class="project-wrapper active">
-      <img src="media/index/marta.png" onclick="location.href='marta.html'">
+      <img src="media/index/marta.png" alt="MARTA On The Go" onclick="location.href='marta.html'">
       <div class="xs-space"></div>
       <div class="tag">User Research</div><div class="tag">UI/UX Design</div>
       <div class="xxs-space"></div>
@@ -134,7 +141,7 @@
     </div>
 
     <div class="project-wrapper active">
-      <img src="media/index/lacework.png" onclick="location.href='lacework.html'">
+      <img src="media/index/lacework.png" alt="Lacework" onclick="location.href='lacework.html'">
       <div class="xs-space"></div>
       <div class="tag">Design Internship</div>
       <div class="xxs-space"></div>
@@ -267,6 +274,11 @@
       }, 1400 + designAnimDuration);
     })
   }
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
 </script>
 
 </html>

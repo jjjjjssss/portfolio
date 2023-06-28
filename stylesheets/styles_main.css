@@ -1,3 +1,27 @@
+/************************** Common Vars **************************/
+
+
+:root {
+  --marta-color: #FCD034;
+  --mbb-color: #B7B5FA;
+  --moodfood-color: #748BDA;
+  --roblox-color: #2C3237;
+  --lacework-color: #1BBCF9;
+  --gba-color: #CCE9A7;
+  --accent-color: #F35C2C;
+  --highlight-color: #F35C2C26;
+  --primary-text-color: #363636;
+  --secondary-text-color: #909090;
+  --background-color: #FFFFFF;
+}
+
+:root {
+  --body-font: "Mulish";
+  --title-font: "Poppins";
+}
+
+
+
 
 
 /************************** Header (Navigation Bar) **************************/
@@ -50,8 +74,9 @@ nav ul {
 nav li {
   display: inline-block;
   padding-left: 30px;
-  font-family: "Poppins";
+  font-family: var(--title-font);
   font-size: 1.1em;
+  font-weight: 500;
 }
 @media only screen and (max-width: 600px) {
   nav li {
@@ -80,7 +105,7 @@ nav .inactive {
 /* Selected nav link is dark gray and bold */
 nav .selected {
   color: var(--primary-text-color);
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -90,27 +115,6 @@ a {
 
 
 
-
-/************************** Common Vars **************************/
-
-
-:root {
-  --marta-color: #FCD034;
-  --mbb-color: #B7B5FA;
-  --moodfood-color: #748BDA;
-  --roblox-color: #2C3237;
-  --lacework-color: #1BBCF9;
-  --accent-color: #F35C2C;
-  --highlight-color: #F35C2C26;
-  --primary-text-color: #363636;
-  --secondary-text-color: #909090;
-  --background-color: #FFFFFF;
-}
-
-:root {
-  --body-font: "Mulish";
-  --title-font: "Poppins";
-}
 
 
 /************************** Body Content **************************/
@@ -190,6 +194,11 @@ h3 {
   margin-top: 192px;
 }
 
+.graphic-word {
+  position: relative;
+  display: inline-block;
+}
+
 .tag {
   display: inline-block;
   width: fit-content;
@@ -234,6 +243,11 @@ h3 {
   cursor: default;
 }
 
+.anchor {
+  position: relative;
+  top: -80px;
+}
+
 /************************** Footer **************************/
 
 .footer {
@@ -241,7 +255,7 @@ h3 {
   margin: 60px auto;
   overflow: hidden;
   font-family: var(--title-font);
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
 }
 
