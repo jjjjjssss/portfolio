@@ -11,7 +11,6 @@
   <link rel="icon" type="image/x-icon" href="media/favicon.ico">
   <script src="scripts/modal.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="scripts/side-nav.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
@@ -33,6 +32,7 @@
         <ul>
           <li class="inactive"><a href="index.html">Work</a></li>
           <li class="selected"><a href="playground.html">Playground</a></li>
+          <li class="inactive"><a href="about.html">About</a></li>
           <li class="inactive"><a href="resume.html">Resume</a></li>
         </ul>
     </nav>
@@ -58,7 +58,11 @@
     
     <div class="m-space"></div>
 
-    <div class="gallery">
+    <div class="anchor" id="gallery-anchor"></div>
+    <div class="gallery"
+      data-aos="fade-up" 
+      data-aos-anchor="#gallery-anchor"
+      data-aos-offset="300">
       <div class="grid-item">
         <img src="media/playground/couch-potato.gif" alt="Potato game" onclick="openModal();currentSlide(1)">
         <p>Potato-themed platform game in Unity</p>
@@ -75,7 +79,7 @@
         <img src="media/playground/polyhedron.gif" alt="Dual of polyhedron" onclick="openModal();currentSlide(4)">
         <p>Visualizing the <a href="https://mathworld.wolfram.com/DualPolyhedron.html" target="_blank">duals</a> of polyhedrons using p5.js</p>
       </div>
-      <div class="grid-item">
+      <div class="grid-item" style="display:inline-block"> <!--inline-block helps overcome firefox flaws as mentioned in the stylesheet-->
         <img src="media/playground/mandrill.jpg" alt="Mandrill oil painting" onclick="openModal();currentSlide(5)">
         <p>Oil painting of a mandrill</p>
       </div>
@@ -98,10 +102,6 @@
       <div class="grid-item">
         <img src="media/playground/bamboo.png" alt="Cardboard chair" onclick="openModal();currentSlide(10)">
         <p>Cardboard chair inspired by bamboo</p>
-      </div>
-      <div class="grid-item">
-        <img src="media/playground/crochet.jpeg" alt="Crochet amigurumi" onclick="openModal();currentSlide(11)">
-        <p>Crochet <a href="https://en.wikipedia.org/wiki/Amigurumi" target="_blank">amigurumi</a> &#128034;&#128057;</p>
       </div>
 
     </div>
@@ -135,7 +135,7 @@
         <div class="caption-container">
           <p class="description-title">Lets Get This Bread</p>
           <p style="margin-bottom:0;">Series of minigames for the GameBoy Advance using C</p>
-          <p style="margin-top:0;"><a href="gba.html">Read more about this game</a></p>
+          <p style="margin-top:0;"><a href="gba.html" target="_blank">Read more about this game</a></p>
         </div>
       </div>
 
@@ -146,7 +146,7 @@
         <div class="caption-container">
           <p class="description-title">Tetris</p>
           <p style="margin-bottom:0;">Built for the GameBoy Advance using C</p>
-          <p style="margin-top:0;"><a href="gba.html#tetris">See more games I recreated</a></p>
+          <p style="margin-top:0;"><a href="gba.html#tetris" target="_blank">See more games I recreated</a></p>
         </div>
       </div>
 
@@ -156,7 +156,7 @@
         </div>
         <div class="caption-container">
           <p class="description-title">Dual Polyhedron Meshes</p>
-          <p>Visualizing the <a href="https://mathworld.wolfram.com/DualPolyhedron.html" target="_blank">duals</a> of polyhedrons using p5.js</p>
+          <p style="margin-bottom:0;">Visualizing the <a href="https://mathworld.wolfram.com/DualPolyhedron.html" target="_blank">duals</a> of polyhedrons using p5.js</p>
         </div>
       </div>
 
@@ -217,16 +217,6 @@
         <div class="caption-container">
           <p class="description-title">Chair Design</p>
           <p>Cardboard chair inspired by bamboo</p>
-        </div>
-      </div>
-
-      <div class="mySlides">
-        <div class="image-container">
-          <img src="media/playground/crochet.jpeg" alt="Crochet amigurumi">
-        </div>
-        <div class="caption-container">
-          <p class="description-title">Crochet Amigurumi</p>
-          <p>I crochet little creatures (<a href="https://en.wikipedia.org/wiki/Amigurumi" target="_blank">amigurumi</a>) for fun!</p>
         </div>
       </div>
 

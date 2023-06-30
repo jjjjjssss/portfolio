@@ -1,6 +1,12 @@
 #playground .content {
     width: 60%;
-    margin: calc(80px + 18px) auto 0 auto;
+    margin: calc(var(--header-height) + 18px) auto 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+    #playground .content {
+        width: 80%;
+    }
 }
 
 #playground #playground-graphic {

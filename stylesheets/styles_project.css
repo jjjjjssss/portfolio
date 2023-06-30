@@ -5,7 +5,7 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: left;
-	margin-top: calc(var(--header-height) + 36px);
+	margin-top: calc(var(--header-height) + 18px);
 }
 .project #intro-text {
 	width: 25%;
@@ -48,8 +48,8 @@
 }
 @media only screen and (max-width: 1100px) {
 	.project .section {
-		padding-left: 15%;
-		padding-right: 15%;
+		padding-left: 10%;
+		padding-right: 10%;
 	}
 }
 
@@ -62,7 +62,7 @@
 }
 @media only screen and (max-width: 1100px) {
 	.project hr {
-		width: 70%;
+		width: 80%;
 	}
 }
 
@@ -105,7 +105,7 @@
 	.section img:not(.fixed-width-img) { 
 		min-width: 75%;
 	}
-	.project .l-img, .project .xl-img, .project .xxl-img {
+	.project .xl-img, .project .xxl-img {
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
@@ -116,9 +116,9 @@
 	}
 }
 @media only screen and (max-width: 1100px) {
-	.project .xl-img, .project .xxl-img {
-		width: 125%;
-		margin-left: -12.5%;
+	.project .l-img, .project .xl-img, .project .xxl-img {
+		width: 115%;
+		margin-left: -7.5%;
 	}
 }
 @media only screen and (max-width: 600px) {

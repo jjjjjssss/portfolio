@@ -167,6 +167,11 @@ h3 {
   font-weight: 550;
 }
 
+h4 {
+  font-size: 1rem;
+  font-weight: 550;
+}
+
 .no-wrap {
   white-space: nowrap;
 }

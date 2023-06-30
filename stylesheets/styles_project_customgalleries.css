@@ -29,12 +29,16 @@
 .project .mbb-feature-gallery .left {
 	width: calc(24.4% - 36px);
 }
-.project .mbb-feature-gallery > .right {
+.project .mbb-feature-gallery .right {
 	width: calc(75.6% - 36px);
 }
 @media only screen and (max-width: 768px) {
+	.project .mbb-feature-gallery {
+		width: 100%;
+		margin-left: 0;
+	}
 	html .project .mbb-intro-gallery > *, 
-	html .project .mbb-feature-gallery > * {
+	html .project .mbb-feature-gallery .left, html .project .mbb-feature-gallery .right  {
 		width: 100%;
 	}
 }
