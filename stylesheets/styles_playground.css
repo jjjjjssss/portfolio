@@ -1,6 +1,6 @@
 #playground .content {
     width: 60%;
-    margin: calc(var(--header-height) + 18px) auto 0 auto;
+    margin: calc(var(--header-height) + 48px) auto 0 auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -9,38 +9,49 @@
     }
 }
 
-#playground #playground-graphic {
+#playground .big-text {
+    font-size: 2rem;
+    font-weight: 650;
+    font-family: var(--title-font);
+    line-height: 140%;
+    margin: 0;
+}
+
+#playground .doodle {
+    vertical-align: text-top;
+}
+
+/* #playground #playground-graphic {
     position: absolute;
     top: 53%;
     left: 50%;
     z-index: -1;
     overflow: visible;
-}
+} */
 
-#playground #playground-graphic > ellipse {
-    /* height: calc(1.4em + 4%);
-    width: calc(5em + 12%); */
-    rx: 6.75rem;
-    ry: 2rem;
+/* #playground #playground-graphic > ellipse {
+    rx: 5.9rem;
+    ry: 1.9rem;
     stroke: var(--primary-text-color);
     stroke-dasharray: 6px;
     stroke-dashoffset: 3px;
     stroke-width: 1px;
-    fill: var(--highlight-color);
-}
+    fill: var(--accent-color);
+} */
 
-#playground #cursor {
+/* #playground #cursor {
     width: 24px;
     position: absolute;
     bottom: -40%;
     left: 95%;
-}
+} */
 
 #playground .gallery {
     width: 100%;
     columns: 300px 2;
     column-gap: 48px;
     min-height: auto;
+    margin-bottom: -48px;
 }
   
 #playground .gallery .grid-item {
@@ -48,13 +59,22 @@
     break-inside: avoid-column; /*problematic on firefox*/
 }
   
-#playground .gallery .grid-item img {
+#playground .gallery .grid-item > img {
     max-height: 600px; /*orig 450px*/
     max-width: 100%;
     width: auto;
     margin: auto;
     cursor: pointer;
     display: block;
+}
+
+#playground .gallery .grid-item p {
+    margin-bottom: 0;
+}
+
+#playground .small-doodle {
+    vertical-align: text-top;
+    padding-right:3px;
 }
 
 

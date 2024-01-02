@@ -4,8 +4,7 @@
   <title>Home | Joyce Shen</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">  
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,450;0,500;0,550;0,600;0,650;0,700;0,800;1,300;1,400;1,450;1,500;1,550;1,600;1,650;1,700;1,800&display=swap" rel="stylesheet">  
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,450;0,500;0,550;0,600;0,650;0,700;0,800;1,300;1,400;1,450;1,500;1,550;1,600;1,650;1,700;1,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,450;0,500;0,550;0,600;0,650;0,700;0,750;0,800;1,300;1,400;1,450;1,500;1,550;1,600;1,650;1,700;1,750;1,800&display=swap" rel="stylesheet">  
   <link rel="stylesheet" href="stylesheets/styles_index.css">
   <link rel="stylesheet" href="stylesheets/styles_main.css">
   <link rel="icon" type="image/x-icon" href="media/favicon.ico">
@@ -20,7 +19,7 @@
 
     <a href="index.html">
       <img class="logo"
-           src="media/logo.png"
+           src="media/logo.svg"
            alt="Joyce Shen Logo"
 	   title="Home">
       <!--<div class="website-name">JOYCE SHEN</div>-->
@@ -45,15 +44,15 @@
 <div id="index">
   <div class="content">
 
-  <img src="media/index/doodle.png" id="doodle">
+  <img src="media/index/doodle.svg" id="doodle" alt="Icon">
 
-  <div class="xs-space"></div>
+  <div class="xxs-space"></div>
 
   <div class="beginning">
 
     <div class="intro">
-      <h1 style="font-weight:bold;">Hey! It's Joyce.</h1>
-      <h1>I’m on a journey to learn about the way people 
+
+      <p><a href="about.html">Hi, I'm Joyce!</a> I’m a product designer learning about the way people 
         <span class="graphic-word">interact
           <span id="interact-graphic">
             <svg><circle></circle></svg>
@@ -71,7 +70,7 @@
           </svg>
         </span> 
         that world.
-      </h2>
+      </p>
     </div>
     <!-- <p style="color:#909090">
       Learn more about me! <span class="down-arrow bounce">↓</span>
@@ -80,11 +79,8 @@
     <div class="s-space" ></div>
 
     <div id="status">
-      <p>Just graduated <a class="org" href="https://www.cc.gatech.edu/" target="_blank">@Georgia Tech</a>!</p>
-      <p>Previously designing <a class="org" href="https://www.roblox.com/create" target="_blank">@Roblox</a>, <a class="org" href="https://www.usbank.com/index.html" target="_blank">@U.S. Bank</a>, <a class="org" href="https://www.lacework.com/" target="_blank">@Lacework</a>, and <a class="org" href="https://bitsofgood.org/" target="_blank">@Bits of Good</a>.</p>
-      <div class="xxs-space"></div>
-      <!-- <p style="color:#909090">View my work below <span class="down-arrow bounce">↓</span></p>-->
-      <p class="down-arrow bounce">↓</p>
+      <p>Currently a designer at Expedia Group. Previously at U.S. Bank, Roblox, and Lacework.</p>
+      <p>Check out my past work! <span class="down-arrow bounce">↓</span></p>
     </div>
   </div>
 
@@ -92,96 +88,91 @@
   <div class="m-space"></div>
 
 
-  <div class="anchor" id="grid-anchor"></div>
-  <div class="grid"
+  <div class="anchor" id="projects-anchor"></div>
+  <div class="projects"
     data-aos="fade-up" 
-    data-aos-anchor="#grid-anchor"
-    data-aos-offset="300">
+    data-aos-anchor="#projects-anchor"
+    data-aos-offset="200">
 
-    <div class="project-wrapper active">
-      <img src="media/index/roblox.png" alt="Roblox" onclick="location.href='roblox.html'">
-      <div class="xs-space"></div>
-      <div class="tag">Design Internship</div>
-      <div class="xxs-space"></div>
-      <h2>Roblox Design Internship</h2>
-      <p>Improving the collaboration experience for Roblox's game creators</p>
-      <div class="xxs-space"></div>
-      <a class="button active-button" href="roblox.html">View Project</a>
-    </div>
+    <a class="project-wrapper" href="roblox.html" >
+      <div class="project" id="roblox">
+        <div class="text-container">
+          <p class="year">2022</p>
+          <h2>File collaboration in Roblox Studio →</h2>
+          <p>Design Internship • Discovery & Vision</p>
+        </div>
+        <div class="image-container">
+          <img src="media/index/roblox.png" alt="Components from Roblox project">
+        </div>
+      </div>
+    </a>
 
-    <div class="project-wrapper active">
-      <img src="media/index/mbb.png" alt="Motherhood Beyond Bars" onclick="location.href='mbb.html'">
-      <div class="xs-space"></div>
-      <div class="tag">UI/UX Design</div><div class="tag">Nonprofit Partnership</div>
-      <div class="xxs-space"></div>
-      <h2>Motherhood Beyond Bars</h2>
-      <p>Designing for Motherhood Beyond Bars, a nonprofit supporting incarcerated mothers, their children, and caretakers</p>
-      <div class="xxs-space"></div>
-      <a class="button active-button" href="mbb.html">View Project</a>
-    </div>
+    <div class="s-space"></div>
 
-    <div class="project-wrapper active">
-      <img src="media/index/moodfood.png" alt="MoodFood" onclick="location.href='moodfood.html'">
-      <div class="xs-space"></div>
-      <div class="tag">User Research</div><div class="tag">UI/UX Design</div>
-      <div class="xxs-space"></div>
-      <h2>MoodFood</h2>
-      <p>Encouraging reading through a mood-based quick reads app</p>
-      <div class="xxs-space"></div>
-      <a class="button active-button" href="moodfood.html">View Project</a>
-    </div>
+    <a class="project-wrapper" href="mbb.html" >
+      <div class="project" id="mbb">
+        <div class="text-container">
+          <p class="year">2022</p>
+          <h2>Tools to support children of incarcerated mothers →</h2>
+          <p>Nonprofit Partnership • Web & Mobile Design</p>
+        </div>
+        <div class="image-container">
+          <img src="media/index/mbb.png" alt="Wireframe for Motherhood Beyond Bars web app">
+        </div>
+      </div>
+    </a>
 
-    <div class="project-wrapper active">
-      <img src="media/index/marta.png" alt="MARTA On The Go" onclick="location.href='marta.html'">
-      <div class="xs-space"></div>
-      <div class="tag">User Research</div><div class="tag">UI/UX Design</div>
-      <div class="xxs-space"></div>
-      <h2>MARTA On The Go</h2>
-      <p>Redesigning Atlanta's public transit app to be more accessible and seamless for its users</p>
-      <div class="xxs-space"></div>
-      <a class="button active-button" href="marta.html">View Project</a>
-    </div>
+    <div class="s-space"></div>
 
-    <div class="project-wrapper active">
-      <img src="media/index/lacework.png" alt="Lacework" onclick="location.href='lacework.html'">
-      <div class="xs-space"></div>
-      <div class="tag">Design Internship</div>
-      <div class="xxs-space"></div>
-      <h2>Lacework Design Internship</h2>
-      <p>Restructuring a workflow for creating security reports, developing a dark mode theme, and more!</p>
-      <div class="xxs-space"></div>
-      <a class="button active-button" href="lacework.html">View Project</a>
-    </div>
+    <a class="project-wrapper" href="moodfood.html" >
+      <div class="project" id="moodfood">
+        <div class="text-container">
+          <p class="year">2021</p>
+          <h2>MoodFood: A mood-based reading app →</h2>
+          <p>Design Challenge • Mobile Design </p>
+        </div>
+        <div class="image-container">
+          <img src="media/index/moodfood.png" alt="Wireframes for MoodFood app">
+        </div>
+      </div>
+    </a>
 
-    <div class="project-wrapper hidden"></div>
+    <div class="s-space"></div>
 
+    <a class="project-wrapper" href="lacework.html" >
+      <div class="project" id="lacework">
+        <div class="text-container">
+          <p class="year">2021</p>
+          <h2>Report creation and management in Lacework Console →</h2>
+          <p>Design Internship • B2B Product Design</p>
+        </div>
+        <div class="image-container">
+          <img src="media/index/lacework.png" alt="Wireframe for Lacework reports page">
+        </div>
+      </div>
+    </a>
+    
   </div>
-
 </div>
 
 
-<div class="l-space"></div>
-
+<div class="m-space"></div>
 
 <div class="footer">
-
-  <div class="logos">
-    <a href="https://www.linkedin.com/in/jjjjjssss/" target="_blank">
-      <img class="logo" src="media/linkedin-logo.svg" alt="LinkedIn" title="LinkedIn">
-    </a>
-
-    <a href="https://github.com/jjjjjssss" target="_blank">
-      <img class="logo" src="media/github-logo.svg" alt="GitHub" title="GitHub">
-    </a>
-
-    <a href="mailto:joyceshen0@gmail.com">
-      <img class="logo" src="media/email-logo.svg" alt="Email" title="Email (joyceshen0@gmail.com)">
-    </a>
+  <hr>
+  <div class="s-space"></div>
+  <h3>Thanks for stopping by •◡•</h3>
+  <div class="contact-wrapper">
+    <p>Let's get in touch!</p>
+    <div class="links">
+      <span>joyceshen0@gmail.com</span>
+      <a href="https://www.linkedin.com/in/jjjjjssss/" target="_blank">LinkedIn ↗</a>
+      <a href="https://github.com/jjjjjssss" target="_blank">GitHub ↗</a>
+    </div>
   </div>
-
-  <p>Let's get in touch!</p>
-
+  <div class="s-space"></div>
 </div>
+
 
 </div>
 </body>
@@ -206,9 +197,9 @@
     interactRect.style.backgroundColor = "#FFFFFF";
     setTimeout(function() {
       interactCircle.animate([
-        {r: "0", opacity: "50%"},
-        {r: "80%", opacity: "40%"},
-        {r: "100%", opacity: "20%"},
+        {r: "0", opacity: "100%"},
+        {r: "80%", opacity: "80%"},
+        {r: "100%", opacity: "40%"},
         {r: "100%", opacity: "0"}
       ], {
         duration: 800,
@@ -240,18 +231,25 @@
     var designAnimEasing = "cubic-bezier(.15,0,.7,1)";
 
     var designMain = document.querySelector("#design-graphic > #main");
-    designMain.style.width = "0";
-    designMain.style.height = "0";
+    var endWidth = window.getComputedStyle(designMain).getPropertyValue('width');
+    var endHeight = window.getComputedStyle(designMain).getPropertyValue('height');
+    designMain.style.width = "0px";
+    designMain.style.height = "0px";
     setTimeout(function() {
       designMain.animate({
-        width: "100%",
-        height: "100%"
+        width: endWidth,
+        height: endHeight
       }, {
         duration: designAnimDuration, 
-        fill: "forwards",
+        fill: "none",
         easing: designAnimEasing
       });
     }, 1400);
+    // Revert to css control after animation finishes playing; fixes issues with screen resize 
+    setTimeout(function() {
+      designMain.style.width = "";
+      designMain.style.height = "";
+    }, 1400 + designAnimDuration);
 
     var designCorners = document.querySelectorAll("#design-graphic > .corner");
     designCorners.forEach(function(element) {
@@ -269,7 +267,7 @@
         })
         
       }, 1400);
-      // Reset to initial css style after animation finishes playing; fixes issues with screen resize 
+      // Revert to css control after animation finishes playing; fixes issues with screen resize 
       setTimeout(function() {
         element.style.transform = "";
         element.style.visibility = "";

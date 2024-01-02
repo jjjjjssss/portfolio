@@ -1,11 +1,10 @@
 #index .content {
-    margin: 80px auto 0 auto;
-
+    margin: calc(var(--header-height) + 48px) auto 0 auto;
     width: 80%;
 }
 
 #index #doodle {
-  width: 120px;
+  width: 80px;
 }
 
 #index .beginning {
@@ -13,17 +12,23 @@
   padding-top: 0.5em;
 }
 
-/* Larger than tablet */
-@media only screen and (min-width: 768px) {
-  #index .intro h1
-  {
-    font-size: 3rem;
-  }
+#index .intro p {
+  font-size: 3rem;
+  font-weight: 650;
+  font-family: var(--title-font);
+  line-height: 140%;
+  margin: 0;
+  letter-spacing: -0.025rem;
+  word-spacing: .075em;
 }
-
-#index .intro h1 {
-  margin-top: -0.5em;
-  word-spacing: .06em;
+/* Tablet and smaller */
+@media only screen and (max-width: 768px) {
+  #index .intro p
+  {
+    font-size: 2rem;
+    letter-spacing: 0;
+    word-spacing: 0;
+  }
 }
 
 /* see styles_main.css
@@ -32,17 +37,23 @@
   display: inline-block;
 } */
 
+#index .intro a {
+  color: inherit;
+  text-decoration: underline 1px var(--primary-text-color);
+  text-underline-offset: 6px;
+}
+
 #index #interact-graphic {
   position: absolute;
   overflow: hidden;
-  top: -2%;
+  top: 4.5%;
   left: -6%;
-  height: calc(1.4em + 4%);
-  width: calc(3.9em + 12%);
+  height: 1.2em;
+  width: 3.9em;
   z-index: -1;
   border: 1.0px solid var(--primary-text-color);
   border-radius: 10000rem;
-  background-color: var(--highlight-color);
+  background-color: var(--accent-color);
   box-shadow: 1px 3px 10px 0px rgba(0,0,0,0.15);
 }
 #index #interact-graphic svg {
@@ -51,7 +62,7 @@
 }
 #index #interact-graphic circle {
   r: 150%;
-  fill: var(--accent-color);
+  fill: var(--accent-color-darkened);
   opacity: 0;
   transform: translate(40%, 50%);
 }
@@ -62,25 +73,33 @@
   bottom: -20%;
   left: 30%;
 }
+@media only screen and (max-width: 768px) {
+  #index #cursor { 
+    bottom: -30%;
+    width: 30px;
+  }
+}
 
 #index #design-graphic {
   position: absolute;
   overflow: visible;
-  top: -2%;
+  top: 8%;
   left: -3%;
-  height: calc(1.5em + 4%);
-  width: calc(3.45em + 6%);
+  height: calc(1.35em - 4%);
+  width: calc(3em + 6%);
   z-index: -1;
 }
+
 #index #design-graphic rect {
-  fill: none;
+  fill: var(--accent-color);
   stroke: var(--primary-text-color);
-  stroke-width: 1.25px;
+  stroke-width: 1px;
 }
 #index #design-graphic #main {
-  width: 100%;
-  height: 100%;
-  stroke-dasharray: 6, 2;
+  /* height and width copy pasted from #design-graphic, essentially 100% but it's not working when em is recalculated */
+  height: calc(1.35em - 4%); 
+  width: calc(3em + 6%);
+  /* stroke-dasharray: 6, 2; */
 }
 #index #design-graphic .corner {
   fill: var(--background-color);
@@ -108,7 +127,7 @@
   display: inline-block;
   position: relative;
   font-size: 1.25em;
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
 }
 
 .bounce {
@@ -127,29 +146,114 @@
   }
 }
 
-#index .grid {
+/* Containers for project elements */
+#index .project-wrapper {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+#index .project  {
     width: 100%;
+    height: 400px;
+    flex: 1;
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--darker-background-color);
+    border: 1px solid var(--primary-text-color);
+    border-radius: 18px;
     display: flex;
-    justify-content: center;
-    align-items: left;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 120px;
-    row-gap: 144px;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+}
+#index #roblox { background-color: #ffbf87; }
+#index #mbb { background-color: #EAC7F6; }
+#index #moodfood { background-color: #C2C7FA; }
+#index #lacework { background-color: #A3DBFB; }
+#index .project:hover  {
+  background-color: var(--accent-color) !important; 
 }
 
 
-#index .project-wrapper  {
-    width: calc(50% - 3.75rem);
+/* Text */
+#index .project .text-container {
+  width: calc(40% - 84px);
+  margin: 0 24px 0 60px;
+  text-align: left;
+}
+#index .project .year {
+  font-family: var(--title-font);
+  margin-top: 0;
+  font-weight: 650;
+}
+#index .project h2 {
+  font-size: 2rem;
+  margin-top: 0;
 }
 
+
+/* Images */
+#index .project .image-container {
+  width: calc(60% - 84px);
+  margin: 0 60px 0 24px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#index .project .image-container img {
+  max-width: 90%;
+  max-height: 90%;
+  transition: 0.2s ease-in-out;
+}
+#index .project:hover .image-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+/* Responsive project containers */
+@media only screen and (min-width: 1300px) {
+  #index .project { 
+    height: 450px; 
+  }
+}
+@media only screen and (min-width: 1500px) {
+  #index .project { 
+    height: 500px; 
+  }
+}
 @media only screen and (max-width: 900px) {
+  #index .project {
+    height: auto;
+  }
+  #index .project .text-container { /* Full width */
+    width: calc(100% - 24px);
+    margin: 36px 24px 6px 24px;
+  }
+  #index .project .image-container { /* Full width */
+    width: calc(100% - 24px);
+    height: auto;
+    margin: 6px 24px 12px 24px;
+  }
+  #index .project .image-container img { /* Full width w/o hover */
+    max-width: 100%;
+    max-height: 100%;
+  }
+  #index .project h2 {
+    font-size: 1.5em;
+  }
+}
+/* @media only screen and (max-width: 900px) {
   #index .grid > * {
       width: 100%;
   }
-}
+} */
 
-#index .project-wrapper img {
+/* #index .project-wrapper img {
     width: 100%;
     transition: 0.15s ease-in-out;
 }
@@ -161,11 +265,4 @@
 
 #index .project-wrapper h2 {
     margin: .5rem 0 -.5rem 0;
-}
-
-/* #index .tag {
-    color: var(--accent-color);
-    font-size: .8em;
-    font-weight: 500;
-    text-transform: uppercase;
 } */

@@ -1,16 +1,22 @@
-#resume embed {
+#resume .content {
+  margin: calc(var(--header-height) + 48px) auto 0 auto;
+  width: 60%;
+}
+@media only screen and (max-width: 768px) {
+  #resume .content {
+      width: 80%;
+  }
+}
+
+#resume .embed-wrapper {
   width: 100%;
-  height: 80vh;
-  margin-top: 80px;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
+  /* aspect-ratio: 8.5/11; */
 }
 
 #resume #adobe-dc-view {
-  width: 850px;
-  height: 1100px;
-  margin: 85px auto 0 auto;
+  /* width: 850px;
+  height: 1100px; */
+  width: 100%;
+  /* margin: 85px auto 0 auto; */
   box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.07);
 }

@@ -2,22 +2,23 @@
 
 
 :root {
-  --marta-color: #FCD034;
   --mbb-color: #B7B5FA;
   --moodfood-color: #748BDA;
   --roblox-color: #2C3237;
   --lacework-color: #1BBCF9;
   --gba-color: #CCE9A7;
-  --accent-color: #F35C2C;
-  --highlight-color: #F35C2C26;
-  --primary-text-color: #363636;
-  --secondary-text-color: #909090;
+  --accent-color: #FFD874; /*old: #F35C2C*/
+  --accent-color-darkened: #ffbb0e;
+  --highlight-color: #ffd87462;
+  --primary-text-color: #1a1a1a;
+  --secondary-text-color: #595959;
   --background-color: #FFFFFF;
+  --darker-background-color: #F2F2F2;
 }
 
 :root {
-  --body-font: "Mulish";
-  --title-font: "Poppins";
+  --body-font: "Figtree";
+  --title-font: "Figtree";
 }
 
 
@@ -27,7 +28,7 @@
 /************************** Header (Navigation Bar) **************************/
 
 :root {
-  --header-height: 80px;
+  --header-height: 72px;
 }
 
 .top-nav {
@@ -41,46 +42,47 @@
   overflow-y: hidden;
   z-index: 1; /* Note: z-index of page-title is 0 */
   background-color: white;
-}
-.top-nav > * {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  opacity: 0.95;
+  /* backdrop-filter: blur(20px); this slows down webpage like crazzzy */
 }
 
 /* Container for logo, website name, and menu*/
 .navigation-bar {
-  width: 100%;
+  width: 80%;
+  height: calc(100% - 1px);
   margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--primary-text-color);
 }
 
 .logo {
-  padding-top: 5px;
-  padding-left: 4%;
-  padding-right: 20px;
-  float: left;
-  height: 35px;
+  margin-top: 4px;
+  height: 36px;
 }
 
 /* Menu */
 nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
   line-height: 10px; /* Vertically aligns to logo and name */
   list-style-type: none;
-  float: right;
-  padding-right: 4%;
+  margin: -6px 0 -6px -36px;
 }
 
 /* Menu Items */
 nav li {
-  display: inline-block;
-  padding-left: 30px;
+  /* display: inline-block; */
+  margin: 6px 0 6px 36px;
   font-family: var(--title-font);
   font-size: 1.1em;
   font-weight: 500;
 }
 @media only screen and (max-width: 600px) {
   nav li {
-    padding-left: 15px;
+    margin: 6px 0 6px 18px;
     font-size: 0.9em;
   }
 }
@@ -88,12 +90,15 @@ nav li {
 /* Appearance of menu items doesn't change as a link */
 nav li a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline dashed 1px;
+  text-underline-offset: 6px;
+  text-decoration-color: transparent;
+  transition: .2s ease;
 }
 
-nav li:hover {
-  color: var(--accent-color);
-  transition: .2s ease;
+nav li:hover a {
+  /* color: var(--accent-color); */
+  text-decoration-color: initial;
 }
 
 /* Inactive nav link is light gray */
@@ -105,12 +110,13 @@ nav .inactive {
 /* Selected nav link is dark gray and bold */
 nav .selected {
   color: var(--primary-text-color);
-  font-weight: 600;
+  font-weight: 650;
   text-decoration: none;
 }
 
 a {
   color: var(--secondary-text-color);
+  text-underline-offset: 3px;
 }
 
 
@@ -127,13 +133,8 @@ body {
   margin-right: auto;
   font-family: var(--body-font);
   font-size: 0.95em;
-  color: #363636;
+  color: var(--primary-text-color);
 }
-/* @media only screen and (min-width: 768px) {
-  body {
-    min-width: 1000px;
-  }
-} */
 
 :root {
   --line-height: 170%;
@@ -142,34 +143,28 @@ p {
   line-height: var(--line-height);
 }
 
-/* @media only screen and (max-width: 600px) {
-  p {
-    font-size: 1.75em;
-  }
-} */
-
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--title-font);
 }
 
 h1 {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 650;
 }
 
 h2 {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 650;
 }
 
 h3 {
   font-size: 1.2rem;
-  font-weight: 550;
+  font-weight: 650;
 }
 
 h4 {
   font-size: 1rem;
-  font-weight: 550;
+  font-weight: 650;
 }
 
 .no-wrap {
@@ -204,16 +199,23 @@ h4 {
   display: inline-block;
 }
 
+hr {
+	border: 0;
+  height: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid var(--secondary-text-color);
+}
+
 .tag {
   display: inline-block;
   width: fit-content;
-  background-color: var(--highlight-color);
+  background-color: var(--accent-color);
   padding: 6px;
   box-sizing: border-box;
   border-radius: 6px;
   margin-right: 12px;
   font-size: .8em;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.4px;
 }
@@ -222,25 +224,26 @@ h4 {
 .button {
   display: block;
   width: fit-content;
-  border: 1.5px solid;
+  border: 1px solid;
   border-radius: 10000rem; /*orig .5rem*/
-  font-weight: bold;
+  font-weight: auto;
   font-size: .95em;
   text-decoration: none;
   text-align: center;
-  padding: 9px 16px; /* orig .75rem 1rem; */
+  line-height: 100%;
+  padding: 15px 18px; /* orig .75rem 1rem; */
   transition: 0.15s ease-in-out;
 }
 
 .active-button {
-	border-color: var(--accent-color);
-  color: var(--accent-color);
+	border-color: var(--primary-text-color);
+  color: var(--primary-text-color);
+  background-color: var(--accent-color);
   cursor: pointer;
 	margin: none;
 }
 .active-button:hover {
-	background-color: var(--accent-color);
-  color: white;
+	background-color: var(--accent-color-darkened);
 }
 .inactive-button {
 	border-color: var(--secondary-text-color);
@@ -256,34 +259,44 @@ h4 {
 /************************** Footer **************************/
 
 .footer {
-  width: 100%;
-  margin: 60px auto;
+  /* width set in style files for each page */
+  width: 80%;
+  margin: auto;
   overflow: hidden;
-  font-family: var(--title-font);
-  font-weight: 600;
-  text-align: center;
+  font-family: var(--body-font);
+}
+.footer h3 {
+  margin-top: 0;
 }
 
-/* @media only screen and (max-width: 600px) {
-  .footer {
-    font-size: 1.5em;
-  }
-} */
-
-.footer p {
-  margin-top: 16px;
+.footer .contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3.25fr;
+  column-gap: 12px;
 }
-
-.footer .logos {
-  text-align: center;
+.footer .contact-wrapper > p {
+  margin: 0;
+  line-height: 140%;
   width: 100%;
-  display: flex;
-  justify-content: center;
 }
-
-.footer .logo {
-  height: 24px;
-  margin: 0 9px;
-  padding: 0;
-  display:inline-block;
+.footer .contact-wrapper .links {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: right;
+  justify-content: flex-end;
+  margin: 0 -12px -12px -12px;
+}
+.footer .contact-wrapper .links > * {
+  margin: 0 12px 12px 12px;
+  color: var(--secondary-text-color)
+}
+@media only screen and (max-width: 600px) {
+  .footer .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .footer .contact-wrapper .links {
+    margin-top: 18px;
+    text-align: left;
+    justify-content: flex-start;
+  }
 }

@@ -5,7 +5,7 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: left;
-	margin-top: calc(var(--header-height) + 18px);
+	margin-top: calc(var(--header-height) + 36px);
 }
 .project #intro-text {
 	width: 25%;
@@ -43,22 +43,21 @@
 .project .section {
   padding: 96px 25%;
 }
+.project .footer {
+	padding: 0 25%;
+}
 .project .gray-bg {
-	background-color: #f2f2f2;
+	background-color: var(--darker-background-color);
 }
 @media only screen and (max-width: 1100px) {
-	.project .section {
-		padding-left: 10%;
-		padding-right: 10%;
+	.project .section, .project .footer {
+		padding-left: 7.5%;
+		padding-right: 7.5%;
 	}
 }
 
 .project hr {
 	width: 50%;
-	border: 0;
-  	height: 0;
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
-	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 @media only screen and (max-width: 1100px) {
 	.project hr {
@@ -209,21 +208,24 @@
 	margin: 9px 18px;
 	font-family: var(--title-font);
 	font-weight: 500;
-	text-decoration: none;
 	font-size: 1.1em;
 	color: var(--secondary-text-color);
-	transition: 0.15s ease-in-out;
+	text-decoration: underline dashed 1px;
+	text-underline-offset: 6px;
+	text-decoration-color: transparent;
+	transition: .2s ease;
 }
 .project .directory > *:hover {
-	color: var(--accent-color);
+	/* color: var(--accent-color); */
+	text-decoration-color: initial;
 }
 .project .directory #selected {
 	color: var(--primary-text-color);
-	font-weight: 600;
+	font-weight: 650;
 }
-.project .directory #selected:hover {
+/* .project .directory #selected:hover {
 	color: var(--accent-color);
-}
+} */
 
 
 /* File specific */

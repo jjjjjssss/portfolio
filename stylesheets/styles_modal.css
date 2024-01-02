@@ -66,8 +66,12 @@ Location: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal_ligh
   text-align: center;
   overflow: auto;
   color: white;
-  font-family: "Mulish";
+  font-family: var(--body-font);
   font-size: 0.9em;
+}
+
+.modal-content .caption-container a {
+  color: white;
 }
 
 /* Bold and resize description title*/

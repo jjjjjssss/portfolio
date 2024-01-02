@@ -3,8 +3,8 @@
 <head>
   <title>Playground | Joyce Shen</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">  
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,450;0,500;0,600;0,700;1,400;1,450;1,500;1,600;1,700&family=Mulish:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width initial-scale=1">  
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,450;0,500;0,600;0,700;1,400;1,450;1,500;1,600;1,700&family=Mulish:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/styles_playground.css">
   <link rel="stylesheet" href="stylesheets/styles_modal.css">
   <link rel="stylesheet" href="stylesheets/styles_main.css">
@@ -22,7 +22,7 @@
 
     <a href="index.html">
       <img class="logo"
-           src="media/logo.png"
+           src="media/logo.svg"
            alt="Joyce Shen Logo"
 	   title="Home">
       <!--<div class="website-name">JOYCE SHEN</div>-->
@@ -48,13 +48,15 @@
 
 <div class="content">
 
-    <h1>Welcome to my 
-      <span class="graphic-word">playground
+    <div class="big-text">Welcome to my playground: 
+      <!-- <span class="graphic-word">playground
         <svg id="playground-graphic"><ellipse></ellipse></svg>
         <img id="cursor" src="media/playground/move-cursor.png">
-      </span>
-      ! Here are some cool things I've worked on —
-    </h1>
+      </span>:  -->
+      a miscellaneous collection of projects I've <img class="doodle" src="media/playground/program-graphic.svg"> developed, 
+      <img class="doodle" src="media/playground/draw-graphic.svg"> drawn, and 
+      <img class="doodle"src="media/playground/build-graphic.svg"> built.
+    </div>
     
     <div class="m-space"></div>
 
@@ -62,54 +64,69 @@
     <div class="gallery"
       data-aos="fade-up" 
       data-aos-anchor="#gallery-anchor"
-      data-aos-offset="300">
+      data-aos-offset="200">
       <div class="grid-item">
         <img src="media/playground/couch-potato.gif" alt="Potato game" onclick="openModal();currentSlide(1)">
-        <p>Potato-themed platform game in Unity</p>
+        <p><img class="small-doodle" src="media/playground/program-graphic-small.svg" alt="Icon">Couch Potato: A platform game built with Unity</p>
       </div>
       <div class="grid-item">
         <img src="media/playground/pigeon.gif" alt="Pigeon game" onclick="openModal();currentSlide(2)">
-        <p>Series of minigames for the GameBoy Advance using C</p>
+        <p><img class="small-doodle" src="media/playground/program-graphic-small.svg" alt="Icon"> Let's Get This Bread: A series of minigames for the GameBoy Advance </p>
       </div>
       <div class="grid-item">
         <img src="media/playground/tetris.gif" alt="Tetris" onclick="openModal();currentSlide(3)">
-        <p>Tetris for the GameBoy Advance</p>
+        <p><img class="small-doodle" src="media/playground/program-graphic-small.svg" alt="Icon"> Tetris for the GameBoy Advance</p>
       </div>
       <div class="grid-item">
         <img src="media/playground/polyhedron.gif" alt="Dual of polyhedron" onclick="openModal();currentSlide(4)">
-        <p>Visualizing the <a href="https://mathworld.wolfram.com/DualPolyhedron.html" target="_blank">duals</a> of polyhedrons using p5.js</p>
+        <p><img class="small-doodle" src="media/playground/program-graphic-small.svg" alt="Icon"> Visualizing the <a href="https://mathworld.wolfram.com/DualPolyhedron.html" target="_blank">duals</a> of polyhedrons using p5.js</p>
       </div>
       <div class="grid-item" style="display:inline-block"> <!--inline-block helps overcome firefox flaws as mentioned in the stylesheet-->
         <img src="media/playground/mandrill.jpg" alt="Mandrill oil painting" onclick="openModal();currentSlide(5)">
-        <p>Oil painting of a mandrill</p>
+        <p><img class="small-doodle" src="media/playground/draw-graphic-small.svg" alt="Icon"> Oil painting</p>
       </div>
       <div class="grid-item">
         <img src="media/playground/bikini-bottom.jpg" alt="Fish digital painting" onclick="openModal();currentSlide(6)">
-        <p>Digital painting of a dystopian fish society</p>
+        <p><img class="small-doodle" src="media/playground/draw-graphic-small.svg" alt="Icon"> Digital painting</p>
       </div>
       <div class="grid-item">
         <img src="media/playground/beryl-flare.png" alt="Landscape digital painting" onclick="openModal();currentSlide(7)">
-        <p>Landscape design</p>
+        <p><img class="small-doodle" src="media/playground/draw-graphic-small.svg" alt="Icon"> Digital painting</p>
       </div>
       <div class="grid-item">
         <img src="media/playground/the-day-after-yesterday.jpg" alt="Charcoal sketch of skulls" onclick="openModal();currentSlide(8)">
-        <p>Charcoal sketch</p>
+        <p><img class="small-doodle" src="media/playground/draw-graphic-small.svg" alt="Icon"> Charcoal sketch</p>
       </div>
       <div class="grid-item">
         <img src="media/playground/2010.png" alt="Interior model" onclick="openModal();currentSlide(9)">
-        <p>Interior model done in Maya</p>
+        <p><img class="small-doodle" src="media/playground/build-graphic-small.svg" alt="Icon"> Interior model built in Maya</p>
       </div>
       <div class="grid-item">
         <img src="media/playground/bamboo.png" alt="Cardboard chair" onclick="openModal();currentSlide(10)">
-        <p>Cardboard chair inspired by bamboo</p>
+        <p><img class="small-doodle" src="media/playground/build-graphic-small.svg" alt="Icon"> Chair built with cardboard and bike inner tubes</p>
       </div>
 
     </div>
-
 </div>
 
 
+<div class="m-space"></div>
+  
 
+<div class="footer">
+  <hr>
+  <div class="s-space"></div>
+  <h3>Thanks for stopping by •◡•</h3>
+  <div class="contact-wrapper">
+    <p>Let's get in touch!</p>
+    <div class="links">
+      <span>joyceshen0@gmail.com</span>
+      <a href="https://www.linkedin.com/in/jjjjjssss/" target="_blank">LinkedIn ↗</a>
+      <a href="https://github.com/jjjjjssss" target="_blank">GitHub ↗</a>
+    </div>
+  </div>
+  <div class="s-space"></div>
+</div>
 
 
   <!-- The Modal/Lightbox -->
@@ -123,7 +140,7 @@
         </div>
         <div class="caption-container">
           <p class="description-title">Couch Potato</p>
-          <p style="margin-bottom:0;">Platform game in Unity</p>
+          <p style="margin-bottom:0;">Platform game built with Unity</p>
           <p style="margin-top:0;">Built by Seuyoung Chung, Nathan Duong, Curie Kim, Natalie Ng, and me</p>
         </div>
       </div>
@@ -133,8 +150,8 @@
           <img src="media/playground/pigeon.gif" alt="Pigeon game">
         </div>
         <div class="caption-container">
-          <p class="description-title">Lets Get This Bread</p>
-          <p style="margin-bottom:0;">Series of minigames for the GameBoy Advance using C</p>
+          <p class="description-title">Let's Get This Bread</p>
+          <p style="margin-bottom:0;">Series of minigames for the GameBoy Advance</p>
           <p style="margin-top:0;"><a href="gba.html" target="_blank">Read more about this game</a></p>
         </div>
       </div>
@@ -145,7 +162,7 @@
         </div>
         <div class="caption-container">
           <p class="description-title">Tetris</p>
-          <p style="margin-bottom:0;">Built for the GameBoy Advance using C</p>
+          <p style="margin-bottom:0;">Built for the GameBoy Advance</p>
           <p style="margin-top:0;"><a href="gba.html#tetris" target="_blank">See more games I recreated</a></p>
         </div>
       </div>
@@ -166,7 +183,7 @@
         </div>
         <div class="caption-container">
           <p class="description-title">Mandrill</p>
-          <p>Oil on canvas, 16” × 20”</p>
+          <p>Oil painting</p>
         </div>
       </div>
 
@@ -176,7 +193,7 @@
         </div>
         <div class="caption-container">
           <p class="description-title">Bikini Bottom</p>
-          <p>Digital painting in Photoshop</p>
+          <p>Digital painting made in Photoshop</p>
         </div>
       </div>
 
@@ -186,7 +203,7 @@
         </div>
         <div class="caption-container">
           <p class="description-title">Beryl Flare</p>
-          <p>Landscape design in Photoshop</p>
+          <p>Digital painting made in Photoshop</p>
         </div>
       </div>
 
@@ -196,7 +213,7 @@
         </div>
         <div class="caption-container">
           <p class="description-title">Still Life</p>
-          <p>Charcoal sketch, 18” × 7.5”</p>
+          <p>Charcoal sketch</p>
         </div>
       </div>
 
@@ -205,8 +222,8 @@
           <img src="media/playground/2010.png" alt="Interior model">
         </div>
         <div class="caption-container">
-          <p class="description-title">Interior Model</p>
-          <p>Done in Maya</p>
+          <p class="description-title">Cozy Corner</p>
+          <p>Interior model built in Maya</p>
         </div>
       </div>
 
@@ -215,8 +232,8 @@
           <img src="media/playground/bamboo.png" alt="Cardboard chair">
         </div>
         <div class="caption-container">
-          <p class="description-title">Chair Design</p>
-          <p>Cardboard chair inspired by bamboo</p>
+          <p class="description-title">Cardboard Chair</p>
+          <p>Chair built with cardboard and bike inner tubes (sittable!)</p>
         </div>
       </div>
 
@@ -253,27 +270,6 @@
 
 
 <br>
-
-<div class="footer">
-
-  <div class="logos">
-    <a href="https://www.linkedin.com/in/jjjjjssss/" target="_blank">
-      <img class="logo" src="media/linkedin-logo.svg" alt="LinkedIn" title="LinkedIn">
-    </a>
-
-    <a href="https://github.com/jjjjjssss" target="_blank">
-      <img class="logo" src="media/github-logo.svg" alt="GitHub" title="GitHub">
-    </a>
-
-    <a href="mailto:joyceshen0@gmail.com">
-      <img class="logo" src="media/email-logo.svg" alt="Email" title="Email (joyceshen0@gmail.com)">
-    </a>
-    
-  </div>
-
-  <p>Let's get in touch!</p>
-
-</div>
 
 
 
