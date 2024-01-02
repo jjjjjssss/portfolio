@@ -5,6 +5,13 @@
 
 #index #doodle {
   width: 80px;
+  margin-bottom: 18px;
+}
+/* Hide on mobile screens */
+@media only screen and (max-width: 480px) {
+  #index #doodle {
+    display: none;
+  }
 }
 
 #index .beginning {

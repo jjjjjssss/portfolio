@@ -273,10 +273,11 @@ hr {
   display: grid;
   grid-template-columns: 1fr 3.25fr;
   column-gap: 12px;
+  line-height: var(--line-height);
 }
 .footer .contact-wrapper > p {
   margin: 0;
-  line-height: 140%;
+  line-height: inherit;
   width: 100%;
 }
 .footer .contact-wrapper .links {
