@@ -21,6 +21,17 @@
   --title-font: "Figtree";
 }
 
+:root {
+  --heading-1-font-size: 3em;
+  --heading-2-font-size: 2.5em;
+  --heading-3-font-size: 2em;
+  --heading-4-font-size: 1.5em;
+  --heading-5-font-size: 1.2em;
+  --heading-6-font-size: 1em;
+  --heading-bold-font-weight: 650;
+  --heading-semibold-font-weight: 600;
+}
+
 
 
 
@@ -77,7 +88,7 @@ nav li {
   /* display: inline-block; */
   margin: 6px 0 6px 36px;
   font-family: var(--title-font);
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 500;
 }
 @media only screen and (max-width: 600px) {
@@ -110,7 +121,7 @@ nav .inactive {
 /* Selected nav link is dark gray and bold */
 nav .selected {
   color: var(--primary-text-color);
-  font-weight: 650;
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -143,29 +154,34 @@ p {
   line-height: var(--line-height);
 }
 
+
+/************************** Deprecating these and replacing with heading tokens **************************/
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--title-font);
 }
 
 h1 {
   font-size: 2rem;
-  font-weight: 650;
+  font-weight: 600;
 }
 
 h2 {
   font-size: 1.5rem;
-  font-weight: 650;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 1.2rem;
-  font-weight: 650;
+  font-weight: 600;
 }
 
 h4 {
   font-size: 1rem;
-  font-weight: 650;
+  font-weight: 600;
 }
+
+/************************** End **************************/
 
 .no-wrap {
   white-space: nowrap;
@@ -183,6 +199,9 @@ h4 {
 }
 .s-space {
   margin-top: 48px;
+}
+.s-m-space {
+  margin-top: 72px; /*use sparingly*/
 }
 .m-space {
   margin-top: 96px;
@@ -227,7 +246,7 @@ hr {
   border: 1px solid;
   border-radius: 10000rem; /*orig .5rem*/
   font-weight: auto;
-  font-size: .95em;
+  font-size: 1em;
   text-decoration: none;
   text-align: center;
   line-height: 100%;
@@ -265,7 +284,8 @@ hr {
   overflow: hidden;
   font-family: var(--body-font);
 }
-.footer h3 {
+.footer h2 {
+  font-size: var(--heading-5-font-size);
   margin-top: 0;
 }
 
@@ -289,7 +309,7 @@ hr {
 }
 .footer .contact-wrapper .links > * {
   margin: 0 12px 12px 12px;
-  color: var(--secondary-text-color)
+  color: var(--primary-text-color)
 }
 @media only screen and (max-width: 600px) {
   .footer .contact-wrapper {

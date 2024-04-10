@@ -1,61 +1,44 @@
 #index .content {
-    margin: calc(var(--header-height) + 48px) auto 0 auto;
+    margin: calc(var(--header-height) + 60px) auto 0 auto;
     width: 80%;
-}
-
-#index #doodle {
-  width: 80px;
-  margin-bottom: 18px;
-}
-/* Hide on mobile screens */
-@media only screen and (max-width: 480px) {
-  #index #doodle {
-    display: none;
-  }
 }
 
 #index .beginning {
   width: 100%;
-  padding-top: 0.5em;
+}
+#index .intro {
+  font-size: var(--heading-1-font-size);
+  font-weight: var(--heading-semibold-font-weight);
+}
+#index .intro p {
+  margin: 0;
+  line-height: 150%;
+}
+#index #smiley {
+  width: 48px;
+  margin-left: 12px;
+  vertical-align: text-top;
 }
 
-#index .intro p {
-  font-size: 3rem;
-  font-weight: 650;
-  font-family: var(--title-font);
-  line-height: 140%;
-  margin: 0;
-  letter-spacing: -0.025rem;
-  word-spacing: .075em;
-}
 /* Tablet and smaller */
-@media only screen and (max-width: 768px) {
-  #index .intro p
-  {
-    font-size: 2rem;
-    letter-spacing: 0;
-    word-spacing: 0;
+@media only screen and (max-width: 1048px) {
+  #index .intro {
+    font-size: var(--heading-2-font-size);
+  }
+  #index #smiley {
+    width: 40px;
+    margin-left: 6px;
+    vertical-align: top;
   }
 }
 
-/* see styles_main.css
-#index .graphic-word {
-  position: relative;
-  display: inline-block;
-} */
-
-#index .intro a {
-  color: inherit;
-  text-decoration: underline 1px var(--primary-text-color);
-  text-underline-offset: 6px;
-}
 
 #index #interact-graphic {
   position: absolute;
   overflow: hidden;
-  top: 4.5%;
+  top: 4%;
   left: -6%;
-  height: 1.2em;
+  height: 1.35em;
   width: 3.9em;
   z-index: -1;
   border: 1.0px solid var(--primary-text-color);
@@ -73,40 +56,34 @@
   opacity: 0;
   transform: translate(40%, 50%);
 }
-
 #index #cursor {
-  width: 36px;
+  width: 21px;
   position: absolute;
-  bottom: -20%;
-  left: 30%;
+  bottom: -6%;
+  left: 35%;
 }
 @media only screen and (max-width: 768px) {
   #index #cursor { 
-    bottom: -30%;
-    width: 30px;
+    bottom: -25%;
   }
 }
-
 #index #design-graphic {
   position: absolute;
   overflow: visible;
   top: 8%;
   left: -3%;
   height: calc(1.35em - 4%);
-  width: calc(3em + 6%);
+  width: calc(2.72em + 6%);
   z-index: -1;
 }
-
 #index #design-graphic rect {
   fill: var(--accent-color);
   stroke: var(--primary-text-color);
   stroke-width: 1px;
 }
 #index #design-graphic #main {
-  /* height and width copy pasted from #design-graphic, essentially 100% but it's not working when em is recalculated */
-  height: calc(1.35em - 4%); 
-  width: calc(3em + 6%);
-  /* stroke-dasharray: 6, 2; */
+  height: calc(1.35em - 4%);
+  width: calc(2.7em + 6%);
 }
 #index #design-graphic .corner {
   fill: var(--background-color);
@@ -120,156 +97,126 @@
 #index #design-graphic #corner-4 { transform: translate(100%, 100%) translate(-5px, -5px); }
 
 
-#index #status > p {
-  margin: 0.5em;
+#index .intro-space {
+  margin-top: min(15vh, 144px);
 }
-
-#index .org {
-  color: var(--accent-color);
-  font-weight: bold;
-  text-decoration: inherit;
-}
-
-#index .down-arrow {
-  display: inline-block;
-  position: relative;
-  font-size: 1.25em;
-  color: var(--primary-text-color);
-}
-
-.bounce {
-    animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-.3rem);
-  }
-  60% {
-    transform: translateY(-.3rem);
+@media only screen and (max-width: 728px) {
+  #index .intro-space {
+    margin-top: 72px;
   }
 }
 
-/* Containers for project elements */
+#index #status {
+  display: flex;
+  gap: 24px 24px;
+  flex-wrap: wrap;
+}
+#index #status > * {
+  flex: 1 1 240px;
+}
+#index #status h2 {
+  font-weight: var(--heading-semibold-font-weight);
+  font-size: var(--heading-6-font-size);
+}
+#index #status p {
+  margin: 0;
+}
+#index #status #links {
+  margin-right: -18px;
+}
+#index #status #links a {
+  margin-right: 18px;
+  color: inherit;
+}
+
+
+#index #select-work-heading {
+  font-size: var(--heading-4-font-size);
+}
+
+/* Wrapper for project */
 #index .project-wrapper {
   display: block;
   text-decoration: none;
   color: inherit;
 }
-
-#index .project  {
-    width: 100%;
-    height: 400px;
-    flex: 1;
-    cursor: pointer;
-    text-align: center;
-    background-color: var(--darker-background-color);
-    border: 1px solid var(--primary-text-color);
-    border-radius: 18px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.2s ease-in-out;
-}
-#index #roblox { background-color: #ffbf87; }
-#index #mbb { background-color: #EAC7F6; }
-#index #moodfood { background-color: #C2C7FA; }
-#index #lacework { background-color: #A3DBFB; }
-#index .project:hover  {
-  background-color: var(--accent-color) !important; 
-}
-
-
-/* Text */
-#index .project .text-container {
-  width: calc(40% - 84px);
-  margin: 0 24px 0 60px;
-  text-align: left;
-}
-#index .project .year {
-  font-family: var(--title-font);
-  margin-top: 0;
-  font-weight: 650;
-}
-#index .project h2 {
-  font-size: 2rem;
-  margin-top: 0;
-}
-
-
-/* Images */
-#index .project .image-container {
-  width: calc(60% - 84px);
-  margin: 0 60px 0 24px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#index .project .image-container img {
-  max-width: 90%;
-  max-height: 90%;
+#index .project-border-outline {
+  outline: 1px dashed transparent; 
+  outline-offset: 21px;
+  border-radius: 6px;
   transition: 0.2s ease-in-out;
 }
-#index .project:hover .image-container img {
+#index .project-border-outline:hover {
+  outline-color: var(--secondary-text-color);
+}
+
+/* Layout for project */
+#index .project {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  column-gap: 36px;
+}
+
+/* Image */
+#index .project-image-wrapper {
+  flex: 5;
+  background-color: lightblue;
+  min-width: 0;
+  height: 450px; /*temp*/
+  /* border: 1px solid var(--primary-text-color); */
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+#index .project-image-wrapper img {
   max-width: 100%;
   max-height: 100%;
+  display: block;
+  margin: auto;
+  object-fit: contain;
 }
-
-
-/* Responsive project containers */
-@media only screen and (min-width: 1300px) {
-  #index .project { 
-    height: 450px; 
-  }
-}
-@media only screen and (min-width: 1500px) {
-  #index .project { 
-    height: 500px; 
-  }
-}
-@media only screen and (max-width: 900px) {
-  #index .project {
+@media only screen and (max-width: 768px) {
+  #index .project-image-wrapper { /* Full width */
     height: auto;
   }
-  #index .project .text-container { /* Full width */
-    width: calc(100% - 24px);
-    margin: 36px 24px 6px 24px;
-  }
-  #index .project .image-container { /* Full width */
-    width: calc(100% - 24px);
-    height: auto;
-    margin: 6px 24px 12px 24px;
-  }
-  #index .project .image-container img { /* Full width w/o hover */
-    max-width: 100%;
-    max-height: 100%;
-  }
-  #index .project h2 {
-    font-size: 1.5em;
+}
+#index #roblox { background: #2C3237; }
+#index #mbb { background: linear-gradient(0deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.20) 100%), linear-gradient(153deg, #4D6BF5 11.64%, #A08FE0 90.26%); }
+#index #moodfood { background: #5D77D2; }
+#index #lacework { background: linear-gradient(330deg, #C6EAFF 7.07%, #86C2FF 87.66%); }
+
+
+/* Description */
+#index .project-description-wrapper {
+  flex: 3;
+  min-width: 0;
+}
+#index .project-description-wrapper h3 {
+  font-size: var(--heading-4-font-size);
+  margin: 24px 0 0 0;
+  text-decoration: none;
+}
+#index .project-description-wrapper .tagline {
+  margin: 6px 0 0 0;
+}
+#index .project-description-wrapper .description {
+  margin: 18px 0 0 0;
+}
+/* depending on styles_main, refactor to inherit main tag */
+#index .project-description-wrapper .project-number {
+  border: 1px solid;
+  border-radius: 10000rem;
+  width: fit-content;
+  background-color: var(--accent-color);
+  padding: 6px 12px;
+  font-size: 1em;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1048px) {
+  #index .project-image-wrapper, #index .project-description-wrapper {
+    flex-basis: 100%;
   }
 }
-/* @media only screen and (max-width: 900px) {
-  #index .grid > * {
-      width: 100%;
-  }
-} */
-
-/* #index .project-wrapper img {
-    width: 100%;
-    transition: 0.15s ease-in-out;
-}
-
-#index .active img:hover {
-    opacity: 80%;
-    cursor: pointer;
-}
-
-#index .project-wrapper h2 {
-    margin: .5rem 0 -.5rem 0;
-} */

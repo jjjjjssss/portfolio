@@ -7,6 +7,10 @@
         width: 80%;
     }
 }
+#about h2 {
+    font-size: var(--heading-4-font-size);
+    font-weight: var(--heading-semibold-font-weight);
+}
 
 #about .intro {
     display: flex;
@@ -20,8 +24,8 @@
 }
 
 #about .intro .big-text {
-    font-size: 2rem;
-    font-weight: 650;
+    font-size: var(--heading-3-font-size);
+    font-weight: var(--heading-semibold-font-weight);
     font-family: var(--title-font);
     line-height: 140%;
     margin: 0;
@@ -39,11 +43,6 @@
     width: 100%;
 }
 
-@media only screen and (min-width: 900px) and (max-width: 1200px) {
-    #about .intro h1 {
-        font-size: 1.5rem;
-    }
-}
 @media only screen and (max-width: 900px) {
     #about .intro .text-container, #about .intro .image-container {
         width: 100%;
