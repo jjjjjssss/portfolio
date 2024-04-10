@@ -10,8 +10,8 @@
 }
 
 #playground .big-text {
-    font-size: 2rem;
-    font-weight: 650;
+    font-size: var(--heading-3-font-size);
+    font-weight: var(--heading-semibold-font-weight);
     font-family: var(--title-font);
     line-height: 140%;
     margin: 0;

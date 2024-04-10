@@ -30,7 +30,6 @@
           <li class="selected"><a href="index.html">Work</a></li>
           <li class="inactive"><a href="playground.html">Playground</a></li>
           <li class="inactive"><a href="about.html">About</a></li>
-          <li class="inactive"><a href="resume.html">Resume</a></li>
         </ul>
     </nav>
 
@@ -44,15 +43,13 @@
 <div id="index">
   <div class="content">
 
-  <img src="media/index/doodle.svg" id="doodle" alt="Icon">
-
-  <div class="xxs-space"></div>
+  <!-- <img src="media/index/doodle.svg" id="doodle" alt="Icon"> -->
 
   <div class="beginning">
 
     <div class="intro">
-
-      <p><a href="about.html">Hi, I'm Joyce!</a> I’m a product designer learning about the way people 
+      <p>Hey! I'm Joyce.<img id="smiley" src="media/index/smiley.svg"></p>
+      <p>I'm a product designer exploring how people 
         <span class="graphic-word">interact
           <span id="interact-graphic">
             <svg><circle></circle></svg>
@@ -60,7 +57,7 @@
           <img id="cursor" src="media/index/cursor.svg">
         </span>
          with the world around them, and how I can help 
-        <span class="graphic-word">design
+        <span class="graphic-word">shape
           <svg id="design-graphic">
             <rect id="main"></rect>
             <rect class="corner" id="corner-1"></rect>
@@ -72,87 +69,128 @@
         that world.
       </p>
     </div>
-    <!-- <p style="color:#909090">
-      Learn more about me! <span class="down-arrow bounce">↓</span>
-    </p> -->
 
-    <div class="s-space" ></div>
+    <div class="intro-space" ></div>
 
     <div id="status">
-      <p>Currently a designer at Expedia Group. Previously at U.S. Bank, Roblox, and Lacework.</p>
-      <p>Check out my past work! <span class="down-arrow bounce">↓</span></p>
+      <div>
+        <h2>Currently —</h2>
+        <p>Designing at Expedia Group</p>
+      </div>
+      <div>
+        <h2>Previously —</h2>
+        <p>Designing at Roblox, U.S. Bank, & Lacework</p>
+      </div>
+      <div>
+        <h2>Links —</h2>
+        <p id="links">
+          <a href="resume.html">Resume</a>
+          <a href="https://www.linkedin.com/in/jjjjjssss/" target="_blank">LinkedIn ↗</a>
+          <a href="mailto:joyceshen0@gmail.com">Email ↗</a>
+        </p>
+      </div>
     </div>
   </div>
 
+  <div class="s-m-space"></div>
 
-  <div class="m-space"></div>
+  <hr>
 
+  <div class="s-m-space"></div>
 
-  <div class="anchor" id="projects-anchor"></div>
-  <div class="projects"
-    data-aos="fade-up" 
-    data-aos-anchor="#projects-anchor"
-    data-aos-offset="200">
+  <h2 id="select-work-heading">Select work</h2>
+  <div class="xs-space"></div>
 
-    <a class="project-wrapper" href="roblox.html" >
-      <div class="project" id="roblox">
-        <div class="text-container">
-          <p class="year">2022</p>
-          <h2>File collaboration in Roblox Studio →</h2>
-          <p>Design Internship • Discovery & Vision</p>
+    <!-- Animation on scroll -->
+    <div class="anchor" id="roblox-anchor"></div>
+    <div data-aos="fade-up" 
+      data-aos-anchor="#roblox-anchor"
+      data-aos-offset="200">
+      <!-- Content -->
+      <a class="project-wrapper project-border-outline" href="roblox.html">
+        <div class="project">
+          <div class="project-image-wrapper" id="roblox">
+            <img src="media/index/roblox.png" alt="Roblox internship cover photo">
+          </div>
+          <div class="project-description-wrapper">
+            <div class="project-number">01</div>
+            <h3>File collaboration in Roblox Studio</h3>
+            <p class="tagline">Discovery & Vision • Design Internship</p>
+            <p class="description">Reenvisioning how game developers share, organize, and collaborate on projects.</p>
+          </div>
         </div>
-        <div class="image-container">
-          <img src="media/index/roblox.png" alt="Components from Roblox project">
-        </div>
-      </div>
-    </a>
+      </a>
+      <!-- End of content -->
+    </div>
 
-    <div class="s-space"></div>
+    <div class="m-space"></div>
 
-    <a class="project-wrapper" href="mbb.html" >
-      <div class="project" id="mbb">
-        <div class="text-container">
-          <p class="year">2022</p>
-          <h2>Tools to support children of incarcerated mothers →</h2>
-          <p>Nonprofit Partnership • Web & Mobile Design</p>
+    <!-- Animation on scroll -->
+    <div class="anchor" id="mbb-anchor"></div>
+    <div data-aos="fade-up" 
+      data-aos-anchor="#mbb-anchor"
+      data-aos-offset="200">
+      <!-- Content -->
+      <a class="project-wrapper project-border-outline" href="mbb.html">
+        <div class="project">
+          <div class="project-image-wrapper" id="mbb">
+            <img src="media/index/mbb.png" alt="Motherhood Beyond Bars cover photo">
+          </div>
+          <div class="project-description-wrapper">
+            <div class="project-number">02</div>
+            <h3>Tools for Motherhood Beyond Bars</h3>
+            <p class="tagline">Web & Mobile Design • Nonprofit Partnership</p>
+            <p class="description">Building internal and client-facing applications for Motherhood Beyond Bars, a nonprofit supporting incarcerated mothers, their children, and caretakers.</p>
+          </div>
         </div>
-        <div class="image-container">
-          <img src="media/index/mbb.png" alt="Wireframe for Motherhood Beyond Bars web app">
-        </div>
-      </div>
-    </a>
+      </a>
+    </div>
 
-    <div class="s-space"></div>
+    <div class="m-space"></div>
 
-    <a class="project-wrapper" href="moodfood.html" >
-      <div class="project" id="moodfood">
-        <div class="text-container">
-          <p class="year">2021</p>
-          <h2>MoodFood: A mood-based reading app →</h2>
-          <p>Design Challenge • Mobile Design </p>
+    <!-- Animation on scroll -->
+    <div class="anchor" id="moodfood-anchor"></div>
+    <div data-aos="fade-up" 
+      data-aos-anchor="#moodfood-anchor"
+      data-aos-offset="200">
+      <!-- Content -->
+      <a class="project-wrapper project-border-outline" href="moodfood.html">
+        <div class="project">
+          <div class="project-image-wrapper" id="moodfood">
+            <img src="media/index/moodfood.png" alt="MoodFood cover photo">
+          </div>
+          <div class="project-description-wrapper">
+            <div class="project-number">03</div>
+            <h3>MoodFood</h3>
+            <p class="tagline">Mobile Design • Design Challenge</p>
+            <p class="description">Conceptualizing an app that recommends short reads based on users’ moods.</p>
+          </div>
         </div>
-        <div class="image-container">
-          <img src="media/index/moodfood.png" alt="Wireframes for MoodFood app">
-        </div>
-      </div>
-    </a>
+      </a>
+    </div>
 
-    <div class="s-space"></div>
+    <div class="m-space"></div>
 
-    <a class="project-wrapper" href="lacework.html" >
-      <div class="project" id="lacework">
-        <div class="text-container">
-          <p class="year">2021</p>
-          <h2>Report creation and management in Lacework Console →</h2>
-          <p>Design Internship • B2B Product Design</p>
+    <!-- Animation on scroll -->
+    <div class="anchor" id="lacework-anchor"></div>
+    <div data-aos="fade-up" 
+      data-aos-anchor="#lacework-anchor"
+      data-aos-offset="200">
+      <!-- Content -->
+      <a class="project-wrapper project-border-outline" href="lacework.html">
+        <div class="project">
+          <div class="project-image-wrapper" id="lacework">
+            <img src="media/index/lacework.png" alt="Lacework cover photo">
+          </div>
+          <div class="project-description-wrapper">
+            <div class="project-number">04</div>
+            <h3>Security reports in Lacework Console</h3>
+            <p class="tagline">B2B SaaS Design • Design Internship</p>
+            <p class="description">Revamping a workflow for creating and managing security reports, developing dark mode for a design system, and more.</p>
+          </div>
         </div>
-        <div class="image-container">
-          <img src="media/index/lacework.png" alt="Wireframe for Lacework reports page">
-        </div>
-      </div>
-    </a>
-    
-  </div>
+      </a>
+    </div>
 </div>
 
 
@@ -165,9 +203,9 @@
   <div class="contact-wrapper">
     <p>Let's get in touch!</p>
     <div class="links">
-      <span>joyceshen0@gmail.com</span>
+      <a href="resume.html">Resume</a>
       <a href="https://www.linkedin.com/in/jjjjjssss/" target="_blank">LinkedIn ↗</a>
-      <a href="https://github.com/jjjjjssss" target="_blank">GitHub ↗</a>
+      <span>joyceshen0@gmail.com</span>
     </div>
   </div>
   <div class="s-space"></div>

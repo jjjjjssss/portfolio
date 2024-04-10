@@ -7,6 +7,10 @@
       width: 80%;
   }
 }
+#resume h1 {
+  font-size: var(--heading-3-font-size);
+  font-weight: var(--heading-semibold-font-weight);
+}
 
 #resume .embed-wrapper {
   width: 100%;
