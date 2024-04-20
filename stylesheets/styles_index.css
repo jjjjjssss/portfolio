@@ -36,9 +36,9 @@
 #index #interact-graphic {
   position: absolute;
   overflow: hidden;
-  top: 4%;
-  left: -6%;
-  height: 1.35em;
+  top: 0.13em;
+  left: -0.2em;
+  height: 1.2em;
   width: 3.9em;
   z-index: -1;
   border: 1.0px solid var(--primary-text-color);
@@ -59,8 +59,8 @@
 #index #cursor {
   width: 21px;
   position: absolute;
-  bottom: -6%;
-  left: 35%;
+  bottom: -0.05em;
+  left: 1.3em;
 }
 @media only screen and (max-width: 768px) {
   #index #cursor { 
@@ -70,10 +70,10 @@
 #index #design-graphic {
   position: absolute;
   overflow: visible;
-  top: 8%;
-  left: -3%;
-  height: calc(1.35em - 4%);
-  width: calc(2.72em + 6%);
+  top: 0.25em;
+  left: -0.1em;
+  height: 1.1em;
+  width: 2.85em;
   z-index: -1;
 }
 #index #design-graphic rect {
@@ -82,8 +82,8 @@
   stroke-width: 1px;
 }
 #index #design-graphic #main {
-  height: calc(1.35em - 4%);
-  width: calc(2.7em + 6%);
+  height: 1.1em;
+  width: 2.85em;
 }
 #index #design-graphic .corner {
   fill: var(--background-color);
@@ -122,10 +122,10 @@
   margin: 0;
 }
 #index #status #links {
-  margin-right: -18px;
+  margin-right: -24px;
 }
 #index #status #links a {
-  margin-right: 18px;
+  margin-right: 24px;
   color: inherit;
 }
 
@@ -164,7 +164,7 @@
   background-color: lightblue;
   min-width: 0;
   height: 450px; /*temp*/
-  /* border: 1px solid var(--primary-text-color); */
+  border: 1px solid var(--primary-text-color);
   border-radius: 6px;
   overflow: hidden;
   display: flex;
