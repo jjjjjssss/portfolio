@@ -164,7 +164,7 @@
   background-color: lightblue;
   min-width: 0;
   height: 450px; /*temp*/
-  border: 1px solid var(--primary-text-color);
+  /* border: 1px solid var(--primary-text-color); */
   border-radius: 6px;
   overflow: hidden;
   display: flex;
