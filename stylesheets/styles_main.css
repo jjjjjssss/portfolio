@@ -252,6 +252,8 @@ hr {
   line-height: 100%;
   padding: 15px 18px; /* orig .75rem 1rem; */
   transition: 0.15s ease-in-out;
+  background-color: var(--accent-color);
+  color: inherit;
 }
 
 .active-button {

@@ -1,6 +1,6 @@
 #about .content {
-    width: 60%;
-    margin: calc(var(--header-height) + 48px) auto 0 auto;
+    width: 80%;
+    margin: calc(var(--header-height) + 60px) auto 0 auto;
 }
 @media only screen and (max-width: 768px) {
     #about .content {
@@ -15,12 +15,12 @@
 #about .intro {
     display: flex;
     flex-wrap: wrap;
-    gap: 48px;
+    gap: 60px;
     justify-content: center;
 }
 
 #about .intro .text-container {
-    width: calc(55% - 2rem);
+    width: calc(60% - 30px);
 }
 
 #about .intro .big-text {
@@ -31,12 +31,8 @@
     margin: 0;
 }
 
-#about .intro .small-doodle {
-    vertical-align: text-top;
-}
-
 #about .intro .image-container {
-    width: calc(45% - 2rem);
+    width: calc(40% - 30px);
 }
 
 #about .intro .image-container img {
@@ -48,68 +44,15 @@
         width: 100%;
     }
     #about .intro .image-container {
-        width: 60%;
+        width: 50%;
     }
 }
-
-
-#about .experiences {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -18px;
-}
-
-#about .experience {
-    margin: 18px;
-    width: calc(50% - 36px);
-    display: grid;
-    grid-template-columns: 60px 1fr;
-    grid-column-gap: 18px;
-    align-items: center;
-}
 @media only screen and (max-width: 600px) {
-    #about .experience {
+    #about .intro .image-container {
         width: 100%;
     }
 }
 
-#about .experience img {
-    width: 100%;
-    border: 1px solid var(--primary-text-color);
-    border-radius: 6px;
-    background-color: var(--darker-background-color);
-}
-
-#about .experience .text {
-    margin: 0;
-    padding: 0;
-    display: grid;
-    /* gap: 6px; */
-    list-style-type: none;
-}
-
-#about .experience .text > * {
-    margin: 0;
-    line-height: var(--line-height);
-}
-
-
-#about .activity {
-    display: grid;
-    grid-template-columns: 120px 1fr;
-    grid-column-gap: 18px;
-    align-items: start;
-}
-
-#about .activity img {
-    width: 120px;
-    height: 120px;
-    border: 1px solid var(--primary-text-color);
-    border-radius: 12px;
-    background-color: var(--darker-background-color);
-}
-
-#about .activity p {
-    margin: 0;
-    padding: 0;
+#about .custom-intro-space {
+    margin-top: 60px;
 }
