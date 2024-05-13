@@ -9,7 +9,7 @@
     values="10.2539;8.47656;10.2539"
     keyTimes="0;0.5;1"
     dur="400ms"
-    begin="1.5s;x1.end+1.5s"
+    begin="1s;x1.end+1.275s"
     fill="freeze"
   />
   <animate
@@ -18,7 +18,7 @@
     values="21.4189;24.0186;21.4189"
     keyTimes="0;0.5;1"
     dur="400ms"
-    begin="1.5s;y1.end+1.5s"
+    begin="1s;y1.end+1.275s"
     fill="freeze"
   />
   <animate
@@ -27,7 +27,7 @@
     values="3;7;3"
     keyTimes="0;0.5;1"
     dur="400ms"
-    begin="1.5s;width1.end+1.5s"
+    begin="1s;width1.end+1.275s"
     fill="freeze"
   />
   <animate
@@ -36,18 +36,18 @@
     values="3;1;3"
     keyTimes="0;0.5;1"
     dur="400ms"
-    begin="1.5s;height1.end+1.5s"
+    begin="1s;height1.end+1.275s"
     fill="freeze"
   />
-  <animate
+  <!-- <animate
     id="rx1"
     attributeName="rx"
     values="1;0.5;1"
     keyTimes="0;0.5;1"
     dur="400ms"
-    begin="1.5s;rx1.end+1.5s"
+    begin="1s;rx1.end+1.275s"
     fill="freeze"
-  />
+  /> -->
 </rect>
 
 <rect x="32.4688" y="15.4663" width="3" height="3" rx="1" transform="rotate(-15 32.4688 15.4663)" fill="#1A1A1A">
@@ -58,7 +58,7 @@
     values="32.4688;30.6914;32.4688"
     keyTimes="0;0.5;1"
     dur="400ms"
-    begin="1.5s;x1.end+1.5s"
+    begin="1s;x1.end+1.275s"
     fill="freeze"
   />
   <animate
@@ -67,7 +67,7 @@
     values="15.4663;18.0659;15.4663"
     keyTimes="0;0.5;1"
     dur="400ms"
-    begin="1.5s;y1.end+1.5s"
+    begin="1s;y1.end+1.275s"
     fill="freeze"
   />
   <animate
@@ -76,7 +76,7 @@
     values="3;7;3"
     keyTimes="0;0.5;1"
     dur="400ms"
-    begin="1.5s;width1.end+1.5s"
+    begin="1s;width1.end+1.275s"
     fill="freeze"
   />
   <animate
@@ -85,18 +85,18 @@
     values="3;1;3"
     keyTimes="0;0.5;1"
     dur="400ms"
-    begin="1.5s;height1.end+1.5s"
+    begin="1s;height1.end+1.275s"
     fill="freeze"
   />
-  <animate
+  <!-- <animate
     id="rx1"
     attributeName="rx"
     values="1;0.5;1"
     keyTimes="0;0.5;1"
     dur="400ms"
-    begin="1.5s;rx1.end+1.5s"
+    begin="1s;rx1.end+1.275s"
     fill="freeze"
-  />
+  /> -->
 </rect>
 
 <path d="M13.418 29.3706C13.418 29.3706 17.5151 35.0021 26.6914 32.5433C35.8677 30.0845 36.6002 23.159 36.6002 23.159" stroke="#1A1A1A" stroke-linecap="round"/>

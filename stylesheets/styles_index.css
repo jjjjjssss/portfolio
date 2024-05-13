@@ -2,221 +2,199 @@
     margin: calc(var(--header-height) + 60px) auto 0 auto;
     width: 80%;
 }
-
-#index .beginning {
-  width: 100%;
-}
-#index .intro {
-  font-size: var(--heading-1-font-size);
-  font-weight: var(--heading-semibold-font-weight);
-}
-#index .intro p {
-  margin: 0;
-  line-height: 150%;
-}
-#index #smiley {
-  width: 48px;
-  margin-left: 12px;
-  vertical-align: text-top;
-}
-
-/* Tablet and smaller */
-@media only screen and (max-width: 1048px) {
-  #index .intro {
-    font-size: var(--heading-2-font-size);
-  }
-  #index #smiley {
-    width: 40px;
-    margin-left: 6px;
-    vertical-align: top;
+@media only screen and (max-width: 600px) {
+  #index .content {
+    width: 90%;
   }
 }
 
-
-#index #interact-graphic {
-  position: absolute;
-  overflow: hidden;
-  top: 0.13em;
-  left: -0.2em;
-  height: 1.2em;
-  width: 3.9em;
-  z-index: -1;
-  border: 1.0px solid var(--primary-text-color);
-  border-radius: 10000rem;
-  background-color: var(--accent-color);
-  box-shadow: 1px 3px 10px 0px rgba(0,0,0,0.15);
+#index #top-space {
+  margin-top: 25vh;
 }
-#index #interact-graphic svg {
-  width: 100%;
-  height: 100%;
-}
-#index #interact-graphic circle {
-  r: 150%;
-  fill: var(--accent-color-darkened);
-  opacity: 0;
-  transform: translate(40%, 50%);
-}
-#index #cursor {
-  width: 21px;
-  position: absolute;
-  bottom: -0.05em;
-  left: 1.3em;
+@media only screen and (min-height: 1200px) {
+  #index #top-space {
+    margin-top: 144px;
+  }
 }
 @media only screen and (max-width: 768px) {
-  #index #cursor { 
-    bottom: -25%;
-  }
-}
-#index #design-graphic {
-  position: absolute;
-  overflow: visible;
-  top: 0.25em;
-  left: -0.1em;
-  height: 1.1em;
-  width: 2.85em;
-  z-index: -1;
-}
-#index #design-graphic rect {
-  fill: var(--accent-color);
-  stroke: var(--primary-text-color);
-  stroke-width: 1px;
-}
-#index #design-graphic #main {
-  height: 1.1em;
-  width: 2.85em;
-}
-#index #design-graphic .corner {
-  fill: var(--background-color);
-  width: 10px;
-  height: 10px;
-}
-
-#index #design-graphic #corner-1 { transform: translate(-5px, -5px); }
-#index #design-graphic #corner-2 { transform: translateX(100%) translate(-5px, -5px); }
-#index #design-graphic #corner-3 { transform: translateY(100%) translate(-5px, -5px); }
-#index #design-graphic #corner-4 { transform: translate(100%, 100%) translate(-5px, -5px); }
-
-
-#index .intro-space {
-  margin-top: min(15vh, 144px);
-}
-@media only screen and (max-width: 728px) {
-  #index .intro-space {
-    margin-top: 72px;
+  #index #top-space {
+    margin-top: 0;
   }
 }
 
-#index #status {
+#index #top-area {
+  width: 100%;
   display: flex;
-  gap: 24px 24px;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 48px 24px;
 }
-#index #status > * {
-  flex: 1 1 240px;
+#index #intro {
+  flex: 1 1;
 }
-#index #status h2 {
+@media only screen and (max-width: 768px) {
+  #index #intro {
+    flex-basis: 100%;
+  }
+}
+
+#index #intro h1 {
+  font-size: var(--heading-1-font-size);
   font-weight: var(--heading-semibold-font-weight);
-  font-size: var(--heading-6-font-size);
-}
-#index #status p {
   margin: 0;
+  position: relative;
+  transform: translateY(-100%);
+  animation: moveDown 0.5s ease forwards;
 }
-#index #status #links {
-  margin-right: -24px;
+#index #intro h2 {
+  font-size: var(--heading-1-font-size);
+  font-weight: normal;
+  margin: 0;
+  position: relative;
+  transform: translateY(-100%);
+  animation: moveDown 0.5s ease forwards 0.25s;
 }
-#index #status #links a {
-  margin-right: 24px;
-  color: inherit;
+#index #intro .p-container {
+  position: relative;
+  transform: translateY(-200%);
+  animation: moveDown 0.5s ease forwards 0.5s;
+}
+#index #intro .p-container p{
+  margin: 6px 0 0 0;
+}
+#index #intro .p-container:nth-child(1) {
+  margin: 30px 0 0 0;
+}
+#index #intro .gray-text {
+  color: var(--secondary-text-color);
+}
+#index #image-container {
+  flex: 0 0 237px;
+  animation: fadeIn 0.5s ease forwards;
+}
+@media only screen and (max-width: 1048px) {
+  #index #intro h1, #index #intro h2 {
+    font-size: var(--heading-2-font-size);
+  }
 }
 
 
-#index #select-work-heading {
-  font-size: var(--heading-4-font-size);
+
+#index #down-arrow-wrapper {
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 0.5s ease forwards;
+}
+#index #down-arrow {
+  display: inline-block;
+  position: relative;
+  font-size: 1.5em;
+  font-weight: 100;
+}
+.bounce {
+    animation: 1675ms bounce 1s infinite;
+}
+@keyframes bounce {
+  0%, 30%, 60%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-.5em);
+  }
+  40% {
+    transform: translateY(-.5em);
+  }
 }
 
-/* Wrapper for project */
-#index .project-wrapper {
+
+
+#index #featured-work-heading {
+  font-size: var(--heading-6-font-size);
+  font-weight: normal;
+  color: var(--secondary-text-color);
+}
+
+#index .projects-container {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards 0.5s;
+}
+
+#index .project {
   display: block;
   text-decoration: none;
   color: inherit;
 }
 #index .project-border-outline {
-  outline: 1px dashed transparent; 
-  outline-offset: 21px;
-  border-radius: 6px;
+  outline: 1px solid transparent; 
+  outline-offset: 24px;
+  border-radius: 0.001px;
   transition: 0.2s ease-in-out;
 }
 #index .project-border-outline:hover {
-  outline-color: var(--secondary-text-color);
+  outline-color: var(--light-stroke-color);
+}
+@media only screen and (max-width: 600px) {
+  #index .project-border-outline {
+    outline-offset: 15px;
+  }
 }
 
-/* Layout for project */
-#index .project {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 24px;
-  column-gap: 36px;
+#index .project h3 {
+  font-size: var(--heading-1-font-size);
+  font-weight: var(--heading-semibold-font-weight);
+  margin: 0 0 24px 0;
 }
+#index .project .description {
+  font-weight: normal;
+}
+@media only screen and (max-width: 1048px) {
+  #index .project h3 {
+    font-size: var(--heading-2-font-size);
+  }
+}
+
 
 /* Image */
 #index .project-image-wrapper {
-  flex: 5;
-  background-color: lightblue;
+  position: relative;
   min-width: 0;
-  height: 450px; /*temp*/
-  /* border: 1px solid var(--primary-text-color); */
-  border-radius: 0px;
+  height: 450px;
   overflow: hidden;
-  display: flex;
-  align-items: center;
 }
 #index .project-image-wrapper img {
+  position: relative;
   max-width: 100%;
   max-height: 100%;
-  display: block;
-  margin: auto;
-  object-fit: contain;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s ease-in-out;
+}
+#index .project:hover .project-image-wrapper img {
+  max-width: 105%;
+  max-height: 105%;
 }
 @media only screen and (max-width: 768px) {
   #index .project-image-wrapper { /* Full width */
     height: auto;
   }
+  #index .project-image-wrapper img {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  #index .project:hover .project-image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 #index #roblox { background: #2C3237; }
 #index #mbb { background: linear-gradient(0deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.20) 100%), linear-gradient(153deg, #4D6BF5 11.64%, #A08FE0 90.26%); }
 #index #moodfood { background: #5D77D2; }
-#index #lacework { background: linear-gradient(330deg, #C6EAFF 7.07%, #86C2FF 87.66%); }
+#index #lacework { background: linear-gradient(330deg, #E2F4FF 7.07%, #86C2FF 87.66%); }
 
 
-/* Description */
-#index .project-description-wrapper {
-  flex: 3;
-  min-width: 0;
-}
-#index .project-description-wrapper h3 {
-  font-size: var(--heading-4-font-size);
+#index .project .tags {
   margin: 24px 0 0 0;
-  text-decoration: none;
-}
-#index .project-description-wrapper .tagline {
-  margin: 6px 0 0 0;
-}
-#index .project-description-wrapper .description {
-  margin: 18px 0 0 0;
-}
-/* depending on styles_main, refactor to inherit main tag */
-#index .project-description-wrapper .project-number {
-  border: 1px solid;
-  border-radius: 10000rem;
-  width: fit-content;
-  background-color: var(--accent-color);
-  padding: 6px 12px;
-  font-size: 1em;
-}
-
-/* Responsive */
-@media only screen and (max-width: 1048px) {
-  #index .project-image-wrapper, #index .project-description-wrapper {
-    flex-basis: 100%;
-  }
 }

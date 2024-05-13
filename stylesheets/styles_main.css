@@ -14,6 +14,7 @@
   --secondary-text-color: #595959;
   --background-color: #FFFFFF;
   --darker-background-color: #F2F2F2;
+  --light-stroke-color: #c2c2c2;
 }
 
 :root {
@@ -32,8 +33,29 @@
   --heading-semibold-font-weight: 600;
 }
 
-
-
+/************************** Animations **************************/
+@keyframes moveDown {
+  0% { transform: translateY(-200%); }
+  100% { transform: translateY(0); }
+}
+@keyframes moveUp {
+  0% { transform: translateY(200%); }
+  100% { transform: translateY(0); }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.move-down-wrapper {
+  overflow: hidden;
+}
+.move-up-wrapper {
+  overflow: hidden;
+}
 
 
 /************************** Header (Navigation Bar) **************************/
@@ -67,6 +89,11 @@
   align-items: center;
   border-bottom: 1px solid var(--primary-text-color);
 }
+@media only screen and (max-width: 600px) {
+  .navigation-bar {
+    width: 90%;
+  }
+}
 
 .logo {
   margin-top: 4px;
@@ -80,18 +107,21 @@ nav ul {
   justify-content: end;
   line-height: 10px; /* Vertically aligns to logo and name */
   list-style-type: none;
-  margin: -6px 0 -6px -36px;
+  margin: -6px 0 -6px -42px;
 }
 
 /* Menu Items */
 nav li {
   /* display: inline-block; */
-  margin: 6px 0 6px 36px;
+  margin: 6px 0 6px 42px;
   font-family: var(--title-font);
   font-size: 1em;
   font-weight: 500;
 }
 @media only screen and (max-width: 600px) {
+  nav ul {
+    margin: -6px 0 -6px -18px;
+  }
   nav li {
     margin: 6px 0 6px 18px;
     font-size: 0.9em;
@@ -101,7 +131,7 @@ nav li {
 /* Appearance of menu items doesn't change as a link */
 nav li a {
   color: inherit;
-  text-decoration: underline dashed 1px;
+  text-decoration: underline solid 1px;
   text-underline-offset: 6px;
   text-decoration-color: transparent;
   transition: .2s ease;
@@ -143,7 +173,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-family: var(--body-font);
-  font-size: 0.95em;
+  font-size: 1em;
   color: var(--primary-text-color);
 }
 
@@ -159,6 +189,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--title-font);
+  line-height: 130%;
 }
 
 h1 {
@@ -318,7 +349,7 @@ hr {
     grid-template-columns: 1fr;
   }
   .footer .contact-wrapper .links {
-    margin-top: 18px;
+    margin-top: 6px;
     text-align: left;
     justify-content: flex-start;
   }

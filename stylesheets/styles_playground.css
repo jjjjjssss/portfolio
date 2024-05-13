@@ -3,52 +3,40 @@
     margin: calc(var(--header-height) + 48px) auto 0 auto;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1048px) {
     #playground .content {
         width: 80%;
     }
 }
-
-#playground .big-text {
-    font-size: var(--heading-3-font-size);
-    font-weight: var(--heading-semibold-font-weight);
-    font-family: var(--title-font);
-    line-height: 140%;
-    margin: 0;
+@media only screen and (max-width: 600px) {
+    #playground .content {
+        width: 90%;
+    }
 }
 
-#playground .doodle {
+#playground h1 {
+    font-size: var(--heading-1-font-size);
+    font-weight: var(--heading-semibold-font-weight);
+    margin-top: 0;
+}
+#playground .h1-description {
+    font-weight: normal;
+}
+#playground .h1-icon {
     vertical-align: text-top;
 }
-
-/* #playground #playground-graphic {
-    position: absolute;
-    top: 53%;
-    left: 50%;
-    z-index: -1;
-    overflow: visible;
-} */
-
-/* #playground #playground-graphic > ellipse {
-    rx: 5.9rem;
-    ry: 1.9rem;
-    stroke: var(--primary-text-color);
-    stroke-dasharray: 6px;
-    stroke-dashoffset: 3px;
-    stroke-width: 1px;
-    fill: var(--accent-color);
-} */
-
-/* #playground #cursor {
-    width: 24px;
-    position: absolute;
-    bottom: -40%;
-    left: 95%;
-} */
+@media only screen and (max-width: 1048px) {
+    #playground h1 {
+        font-size: var(--heading-2-font-size);
+    }
+    #playground .h1-icon {
+        height: 40px;
+    }
+}
 
 #playground .gallery {
     width: 100%;
-    columns: 300px 2;
+    columns: 290px 2;
     column-gap: 48px;
     min-height: auto;
     margin-bottom: -48px;
@@ -63,9 +51,9 @@
     max-height: 600px; /*orig 450px*/
     max-width: 100%;
     width: auto;
-    margin: auto;
+    margin: 0 auto;
     cursor: pointer;
-    display: block;
+    display: block;;
 }
 
 #playground .gallery .grid-item p {
