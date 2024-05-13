@@ -7,11 +7,11 @@
         width: 80%;
     }
 }
-#about h2 {
-    font-size: var(--heading-4-font-size);
-    font-weight: var(--heading-semibold-font-weight);
+@media only screen and (max-width: 600px) {
+    #about .content {
+        width: 90%;
+    }
 }
-
 #about .intro {
     display: flex;
     flex-wrap: wrap;
@@ -20,19 +20,31 @@
 }
 
 #about .intro .text-container {
-    width: calc(60% - 30px);
+    width: calc(55% - 30px);
 }
 
-#about .intro .big-text {
-    font-size: var(--heading-3-font-size);
+#about h1 {
+    font-size: var(--heading-1-font-size);
     font-weight: var(--heading-semibold-font-weight);
-    font-family: var(--title-font);
-    line-height: 140%;
     margin: 0;
+    animation: moveDown 0.5s ease forwards;
+}
+#about #smiley {
+    width: 48px;
+    margin-left: 6px;
+    vertical-align: text-top;
+  }
+@media only screen and (max-width: 1048px) {
+    #about h1 {
+      font-size: var(--heading-2-font-size);
+    }
+    #about #smiley {
+        width: 40px;
+    }
 }
 
 #about .intro .image-container {
-    width: calc(40% - 30px);
+    width: calc(45% - 30px);
 }
 
 #about .intro .image-container img {
@@ -44,10 +56,10 @@
         width: 100%;
     }
     #about .intro .image-container {
-        width: 50%;
+        width: 60%;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 375px) {
     #about .intro .image-container {
         width: 100%;
     }

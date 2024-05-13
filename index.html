@@ -30,6 +30,7 @@
           <li class="selected"><a href="index.html">Work</a></li>
           <li class="inactive"><a href="playground.html">Playground</a></li>
           <li class="inactive"><a href="about.html">About</a></li>
+          <li class="inactive"><a href="resume.html">Resume</a></li>
         </ul>
     </nav>
 
@@ -45,153 +46,118 @@
 
   <!-- <img src="media/index/doodle.svg" id="doodle" alt="Icon"> -->
 
-  <div class="beginning">
+  <div id="top-space"></div>
 
-    <div class="intro">
-      <p>Hey! I'm Joyce.<img id="smiley" src="media/index/smiley.svg"></p>
-      <p>I'm a product designer exploring how people 
-        <span class="graphic-word">interact
-          <span id="interact-graphic">
-            <svg><circle></circle></svg>
-          </span>
-          <img id="cursor" src="media/index/cursor.svg">
-        </span>
-         with the world around them, and how I can help 
-        <span class="graphic-word">shape
-          <svg id="design-graphic">
-            <rect id="main"></rect>
-            <rect class="corner" id="corner-1"></rect>
-            <rect class="corner" id="corner-2"></rect>
-            <rect class="corner" id="corner-3"></rect>
-            <rect class="corner" id="corner-4"></rect>
-          </svg>
-        </span> 
-        that world.
-      </p>
-    </div>
+  <div id="top-area" >
 
-    <div class="m-space" ></div>
-
-    <div id="status">
-      <div>
-        <h2>Currently –</h2>
-        <p>Designing @ Expedia Group</p>
-      </div>
-      <div>
-        <h2>Previously –</h2>
-        <p>Designing @ Roblox, U.S. Bank, & Lacework</p>
-      </div>
-      <div>
-        <h2>Links –</h2>
-        <p id="links">
-          <a href="about.html">About</a>
-          <a href="resume.html">Resume</a>
-          <a href="https://www.linkedin.com/in/jjjjjssss/" target="_blank">LinkedIn ↗</a>
-          <!-- <a href="mailto:joyceshen0@gmail.com">Email ↗</a> -->
-        </p>
+    <div id="intro">
+      <div class="move-down-wrapper"><h1>Hello there, I'm Joyce!</h1></div>
+      <div class="move-down-wrapper"><h2>Designer, strategist, & storyteller.</h2></div>
+      <div class="move-down-wrapper">
+        <div class="p-container">
+          <p><span class="gray-text">UX Designer</span> @ Expedia Group.</p>
+          <p><span class="gray-text">Previously</span> @ Roblox, U.S. Bank, & Lacework.</p>
+        </div>
       </div>
     </div>
+
+    <div id="image-container">
+      <img src="media/index/joyce.svg" alt="Doodle of Joyce">
+    </div>
+
   </div>
 
-  <div class="s-m-space"></div>
 
-  <hr>
+  <div class="m-space"></div>
 
-  <div class="s-m-space"></div>
+  <div id="down-arrow-wrapper"><span id="down-arrow" class="bounce">↓</span></div>
 
-  <h2 id="select-work-heading">Recent work</h2>
-  <div class="xs-space"></div>
+  <div class="m-space"></div>
+
+
+  <div class="projects-container">
 
     <!-- Animation on scroll -->
     <div class="anchor" id="roblox-anchor"></div>
     <div data-aos="fade-up" 
       data-aos-anchor="#roblox-anchor"
-      data-aos-offset="200">
+      data-aos-offset="250">
+      <!-- Featured work heading -->
+      <h2 id="featured-work-heading">Featured work –</h2>
+      <div class="s-space"></div>
       <!-- Content -->
-      <a class="project-wrapper project-border-outline" href="roblox.html">
-        <div class="project">
-          <div class="project-image-wrapper" id="roblox">
-            <img src="media/index/roblox.png" alt="Roblox internship cover photo">
-          </div>
-          <div class="project-description-wrapper">
-            <div class="project-number">01</div>
-            <h3>File collaboration in Roblox Studio</h3>
-            <p class="tagline">Discovery & Vision • Design Internship</p>
-            <p class="description">Reenvisioning how game developers share, organize, and collaborate on projects.</p>
-          </div>
+      <a class="project project-border-outline" href="roblox.html">
+        <h3>1. Roblox Studio – <span class="description">Reenvisioning how game developers share and collaborate on projects.</span></h3>
+        <div class="project-image-wrapper" id="roblox">
+          <img src="media/index/roblox.png" alt="Roblox internship cover photo">
         </div>
+        <p class="tags">Discovery & Vision • Design Internship</p>
       </a>
       <!-- End of content -->
     </div>
 
-    <div class="m-space"></div>
 
-    <!-- Animation on scroll -->
-    <div class="anchor" id="mbb-anchor"></div>
-    <div data-aos="fade-up" 
-      data-aos-anchor="#mbb-anchor"
-      data-aos-offset="200">
-      <!-- Content -->
-      <a class="project-wrapper project-border-outline" href="mbb.html">
-        <div class="project">
-          <div class="project-image-wrapper" id="mbb">
-            <img src="media/index/mbb.png" alt="Motherhood Beyond Bars cover photo">
-          </div>
-          <div class="project-description-wrapper">
-            <div class="project-number">02</div>
-            <h3>Tools for Motherhood Beyond Bars</h3>
-            <p class="tagline">Web & Mobile Design • Nonprofit Partnership</p>
-            <p class="description">Building internal and client-facing applications for Motherhood Beyond Bars, a nonprofit supporting incarcerated mothers, their children, and caretakers.</p>
-          </div>
-        </div>
-      </a>
-    </div>
+    <div class="l-space"></div>
 
-    <div class="m-space"></div>
-
-    <!-- Animation on scroll -->
-    <div class="anchor" id="moodfood-anchor"></div>
-    <div data-aos="fade-up" 
-      data-aos-anchor="#moodfood-anchor"
-      data-aos-offset="200">
-      <!-- Content -->
-      <a class="project-wrapper project-border-outline" href="moodfood.html">
-        <div class="project">
-          <div class="project-image-wrapper" id="moodfood">
-            <img src="media/index/moodfood.png" alt="MoodFood cover photo">
-          </div>
-          <div class="project-description-wrapper">
-            <div class="project-number">03</div>
-            <h3>MoodFood</h3>
-            <p class="tagline">Mobile Design • Design Challenge</p>
-            <p class="description">Conceptualizing an app that recommends short reads based on users’ moods.</p>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="m-space"></div>
 
     <!-- Animation on scroll -->
     <div class="anchor" id="lacework-anchor"></div>
     <div data-aos="fade-up" 
       data-aos-anchor="#lacework-anchor"
-      data-aos-offset="200">
+      data-aos-offset="250">
       <!-- Content -->
-      <a class="project-wrapper project-border-outline" href="lacework.html">
-        <div class="project">
-          <div class="project-image-wrapper" id="lacework">
-            <img src="media/index/lacework.png" alt="Lacework cover photo">
-          </div>
-          <div class="project-description-wrapper">
-            <div class="project-number">04</div>
-            <h3>Security reports in Lacework Console</h3>
-            <p class="tagline">B2B SaaS Design • Design Internship</p>
-            <p class="description">Revamping a workflow for creating and managing security reports + developing the dark mode for a design system.</p>
-          </div>
+      <a class="project project-border-outline" href="lacework.html">
+        <h3>2. Lacework Console – <span class="description">A workflow for creating and managing security reports.</span></h3>
+        <div class="project-image-wrapper" id="lacework">
+          <img src="media/index/lacework.png" alt="Lacework internship cover photo">
         </div>
+        <p class="tags">B2B Design • Web Design • Design Internship</p>
       </a>
+      <!-- End of content -->
     </div>
+
+
+    <div class="l-space"></div>
+
+
+    <!-- Animation on scroll -->
+    <div class="anchor" id="mbb-anchor"></div>
+    <div data-aos="fade-up" 
+      data-aos-anchor="#mbb-anchor"
+      data-aos-offset="250">
+      <!-- Content -->
+      <a class="project project-border-outline" href="mbb.html">
+        <h3>3. Motherhood Beyond Bars – <span class="description">Tools to support incarcerated mothers, their children, and caretakers.</span></h3>
+        <div class="project-image-wrapper" id="mbb">
+          <img src="media/index/mbb.png" alt="Motherhood Beyond Bars cover photo">
+        </div>
+        <p class="tags">Web & App Design • Nonprofit Partnership</p>
+      </a>
+      <!-- End of content -->
+    </div>
+
+
+    <div class="l-space"></div>
+
+
+    <!-- Animation on scroll -->
+    <div class="anchor" id="moodfood-anchor"></div>
+    <div data-aos="fade-up" 
+      data-aos-anchor="#moodfood-anchor"
+      data-aos-offset="250">
+      <!-- Content -->
+      <a class="project project-border-outline" href="moodfood.html">
+        <h3>4. MoodFood – <span class="description">An app recommending short reads based on your mood.</span></h3>
+        <div class="project-image-wrapper" id="moodfood">
+          <img src="media/index/moodfood.png" alt="Moodfood cover photo">
+        </div>
+        <p class="tags">App Design • Design Challenge</p>
+      </a>
+      <!-- End of content -->
+    </div>
+
+
+  </div>
 </div>
 
 
@@ -204,9 +170,8 @@
   <div class="contact-wrapper">
     <p>Let's get in touch!</p>
     <div class="links">
-      <a href="resume.html">Resume</a>
-      <a href="https://www.linkedin.com/in/jjjjjssss/" target="_blank">LinkedIn ↗</a>
       <span>joyceshen0@gmail.com</span>
+      <a href="https://www.linkedin.com/in/jjjjjssss/" target="_blank">LinkedIn</a>
     </div>
   </div>
   <div class="s-space"></div>
@@ -214,10 +179,7 @@
 
 
 </div>
-</body>
-
-<script>
-  
+</body>  
   window.onload = function(){
     interactAnim();
     designAnim();
@@ -313,7 +275,7 @@
       }, 1400 + designAnimDuration);
     })
   }
-</script>
+</script> -->
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>

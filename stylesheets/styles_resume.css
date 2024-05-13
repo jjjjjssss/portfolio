@@ -2,14 +2,24 @@
   margin: calc(var(--header-height) + 48px) auto 0 auto;
   width: 60%;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1048px) {
   #resume .content {
       width: 80%;
   }
 }
+@media only screen and (max-width: 600px) {
+  #resume .content {
+      width: 90%;
+  }
+}
 #resume h1 {
-  font-size: var(--heading-3-font-size);
+  font-size: var(--heading-1-font-size);
   font-weight: var(--heading-semibold-font-weight);
+}
+@media only screen and (max-width: 1048px) {
+  #resume h1 {
+    font-size: var(--heading-2-font-size);
+  }
 }
 
 #resume .embed-wrapper {
