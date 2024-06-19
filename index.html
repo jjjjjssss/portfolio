@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">  
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,450;0,500;0,550;0,600;0,650;0,700;0,750;0,800;1,300;1,400;1,450;1,500;1,550;1,600;1,650;1,700;1,750;1,800&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">  
   <link rel="stylesheet" href="stylesheets/styles_index.css">
   <link rel="stylesheet" href="stylesheets/styles_main.css">
   <link rel="icon" type="image/x-icon" href="media/favicon.ico">
@@ -51,12 +52,13 @@
   <div id="top-area" >
 
     <div id="intro">
-      <div class="move-down-wrapper"><h1>Hello there, I'm Joyce!</h1></div>
+      <div class="move-down-wrapper"><h1>Hello, I'm Joyce –</h1></div>
       <div class="move-down-wrapper"><h2>Designer, strategist, & storyteller.</h2></div>
+      <div class="xxs-space"></div>
       <div class="move-down-wrapper">
         <div class="p-container">
-          <p><span class="gray-text">UX Designer</span> @ Expedia Group.</p>
-          <p><span class="gray-text">Previously</span> @ Roblox, U.S. Bank, & Lacework.</p>
+          <p><span class="">UX Designer @</span> Expedia Group.</p>
+          <p><span class="">Previously designing @</span> Roblox, U.S. Bank, and Lacework.</p>
         </div>
       </div>
     </div>
@@ -70,9 +72,19 @@
 
   <div class="m-space"></div>
 
+  <!-- <p style="text-align: center;margin-bottom: 6px;" class="tag">See my recent work!</p> -->
   <div id="down-arrow-wrapper"><span id="down-arrow" class="bounce">↓</span></div>
 
   <div class="m-space"></div>
+
+      <!-- Animation on scroll -->
+      <!-- <div class="anchor" id="featured-work-anchor"></div>
+      <div data-aos="fade-up" 
+        data-aos-anchor="#featured-work-anchor"
+        data-aos-offset="250">
+        <h2 id="featured-work-heading">Featured work</h2>
+        <div class="m-space"></div>
+      </div> -->
 
 
   <div class="projects-container">
@@ -82,22 +94,21 @@
     <div data-aos="fade-up" 
       data-aos-anchor="#roblox-anchor"
       data-aos-offset="250">
-      <!-- Featured work heading -->
-      <h2 id="featured-work-heading">Featured work –</h2>
-      <div class="s-space"></div>
-      <!-- Content -->
       <a class="project project-border-outline" href="roblox.html">
-        <h3>1. Roblox Studio – <span class="description">Reenvisioning how game developers share and collaborate on projects.</span></h3>
+        <div class="tag">01. Discovery & Vision</div>
+        <h3>Collaboration in Roblox Studio</h3>
+        <!-- <img src="media/index/arrow.svg" class="heading-arrow"> -->
+        <p class="description">Reenvisioning the file collaboration experience for 8+ million game developers.</p>
         <div class="project-image-wrapper" id="roblox">
-          <img src="media/index/roblox.png" alt="Roblox internship cover photo">
+          <div class="hover-overlay low-opacity"></div>
+          <img class="img-fill" src="media/index/roblox.png" alt="Roblox internship cover photo">
         </div>
-        <p class="tags">Discovery & Vision • Design Internship</p>
       </a>
       <!-- End of content -->
     </div>
 
 
-    <div class="l-space"></div>
+    <div class="xl-space"></div>
 
 
     <!-- Animation on scroll -->
@@ -107,17 +118,19 @@
       data-aos-offset="250">
       <!-- Content -->
       <a class="project project-border-outline" href="lacework.html">
-        <h3>2. Lacework Console – <span class="description">A workflow for creating and managing security reports.</span></h3>
+        <div class="tag">02. B2B Product Design</div>
+        <h3>Report management in Lacework</h3>
+        <p class="description">Helping cloud security leaders generate and deliver reports across organizations.</p>
         <div class="project-image-wrapper" id="lacework">
-          <img src="media/index/lacework.png" alt="Lacework internship cover photo">
+          <!-- <div class="hover-overlay high-opacity"></div> -->
+          <img class="img-fill" src="media/index/lacework.png" alt="Lacework internship cover photo">
         </div>
-        <p class="tags">B2B Design • Web Design • Design Internship</p>
       </a>
       <!-- End of content -->
     </div>
 
 
-    <div class="l-space"></div>
+    <div class="xl-space"></div>
 
 
     <!-- Animation on scroll -->
@@ -127,17 +140,19 @@
       data-aos-offset="250">
       <!-- Content -->
       <a class="project project-border-outline" href="mbb.html">
-        <h3>3. Motherhood Beyond Bars – <span class="description">Tools to support incarcerated mothers, their children, and caretakers.</span></h3>
+        <div class="tag">03. Internal & External Product Design</div>
+        <h3>Motherhood Beyond Bars</h3>
+        <p class="description">Building tools for a nonprofit to support incarcerated mothers, their children, and caretakers.</p>
         <div class="project-image-wrapper" id="mbb">
-          <img src="media/index/mbb.png" alt="Motherhood Beyond Bars cover photo">
+          <!-- <div class="hover-overlay"></div> -->
+          <img class="img-contain" src="media/index/mbb.png" alt="Motherhood Beyond Bars cover photo">
         </div>
-        <p class="tags">Web & App Design • Nonprofit Partnership</p>
       </a>
       <!-- End of content -->
     </div>
 
 
-    <div class="l-space"></div>
+    <div class="xl-space"></div>
 
 
     <!-- Animation on scroll -->
@@ -147,11 +162,13 @@
       data-aos-offset="250">
       <!-- Content -->
       <a class="project project-border-outline" href="moodfood.html">
-        <h3>4. MoodFood – <span class="description">An app recommending short reads based on your mood.</span></h3>
+        <div class="tag">04. Design Challenge</div>
+        <h3>MoodFood</h3>
+        <p class="description">A creative challenge for a mood-based reading app.</p>
         <div class="project-image-wrapper" id="moodfood">
-          <img src="media/index/moodfood.png" alt="Moodfood cover photo">
+          <!-- <div class="hover-overlay"></div> -->
+          <img class="img-contain" src="media/index/moodfood.png" alt="MoodFood cover photo">
         </div>
-        <p class="tags">App Design • Design Challenge</p>
       </a>
       <!-- End of content -->
     </div>

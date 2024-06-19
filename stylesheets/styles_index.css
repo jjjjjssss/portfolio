@@ -11,7 +11,7 @@
 #index #top-space {
   margin-top: 25vh;
 }
-@media only screen and (min-height: 1200px) {
+@media only screen and (min-height: 1080px) {
   #index #top-space {
     margin-top: 144px;
   }
@@ -63,15 +63,18 @@
 #index #intro .p-container p{
   margin: 6px 0 0 0;
 }
-#index #intro .p-container:nth-child(1) {
-  margin: 30px 0 0 0;
+#index #intro .p-container a {
+  color: inherit;
 }
-#index #intro .gray-text {
-  color: var(--secondary-text-color);
+/* #index #intro .p-container:nth-child(1) {
+  margin: 30px 0 0 0;
+} */
+#index .gray-text {
+  color: var(--light-secondary-text-color);
 }
 #index #image-container {
   flex: 0 0 237px;
-  animation: fadeIn 0.5s ease forwards;
+  /* animation: fadeIn 0.5s ease forwards; */
 }
 @media only screen and (max-width: 1048px) {
   #index #intro h1, #index #intro h2 {
@@ -108,13 +111,6 @@
 }
 
 
-
-#index #featured-work-heading {
-  font-size: var(--heading-6-font-size);
-  font-weight: normal;
-  color: var(--secondary-text-color);
-}
-
 #index .projects-container {
   opacity: 0;
   animation: fadeIn 1s ease forwards 0.5s;
@@ -126,32 +122,39 @@
   color: inherit;
 }
 #index .project-border-outline {
-  outline: 1px solid transparent; 
-  outline-offset: 24px;
+  outline: 1px solid transparent;
+  outline-offset: 30px;
   border-radius: 0.001px;
   transition: 0.2s ease-in-out;
 }
 #index .project-border-outline:hover {
   outline-color: var(--light-stroke-color);
 }
-@media only screen and (max-width: 600px) {
-  #index .project-border-outline {
-    outline-offset: 15px;
-  }
-}
 
+#index .project .tag {
+  margin-bottom: 36px;
+}
 #index .project h3 {
   font-size: var(--heading-1-font-size);
   font-weight: var(--heading-semibold-font-weight);
-  margin: 0 0 24px 0;
-}
-#index .project .description {
-  font-weight: normal;
+  margin: 0 0 0px 0;
 }
 @media only screen and (max-width: 1048px) {
   #index .project h3 {
     font-size: var(--heading-2-font-size);
   }
+}
+#index .project .heading-arrow {
+  transition: 0.2s ease-in-out;
+}
+#index .project:hover .heading-arrow {
+  margin-left: 12px;
+}
+#index .project .description {
+  margin: 18px 0 42px 0;
+}
+#index #intro .p-container p{
+  margin: 6px 0 0 0;
 }
 
 
@@ -164,17 +167,29 @@
 }
 #index .project-image-wrapper img {
   position: relative;
-  max-width: 100%;
-  max-height: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: 0.2s ease-in-out;
 }
-#index .project:hover .project-image-wrapper img {
-  max-width: 105%;
-  max-height: 105%;
+#index .project-image-wrapper .img-contain {
+  max-width: 100%;
+  max-height: 100%;
 }
+#index .project-image-wrapper .img-fill {
+  max-width: 100%;
+}
+/* Web only */
+@media only screen and (min-width: 768.001px) {
+  #index .project:hover .project-image-wrapper .img-contain {
+    max-width: 103%;
+    max-height: 103%;
+  }
+  #index .project:hover .project-image-wrapper .img-fill {
+    max-width: 103%;
+  }
+}
+/* Mobile only */
 @media only screen and (max-width: 768px) {
   #index .project-image-wrapper { /* Full width */
     height: auto;
@@ -183,18 +198,25 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
-  }
-  #index .project:hover .project-image-wrapper img {
     max-width: 100%;
     max-height: 100%;
   }
 }
 #index #roblox { background: #2C3237; }
 #index #mbb { background: linear-gradient(0deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.20) 100%), linear-gradient(153deg, #4D6BF5 11.64%, #A08FE0 90.26%); }
-#index #moodfood { background: #5D77D2; }
+#index #moodfood { background: linear-gradient(330.3deg, #6B85DF 7.07%, #1231D5 87.66%); }
 #index #lacework { background: linear-gradient(330deg, #E2F4FF 7.07%, #86C2FF 87.66%); }
 
-
-#index .project .tags {
-  margin: 24px 0 0 0;
+#index .project .hover-overlay {
+  background-color: white;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#index .project:hover .hover-overlay {
+  opacity: 0.075;
 }

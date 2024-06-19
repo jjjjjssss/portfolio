@@ -26,11 +26,11 @@
 <path d="M104 127.5C104 127.5 106.5 134 116 134C125.5 134 128 127.5 128 127.5" stroke="#1A1A1A" stroke-linecap="round"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M116 59.0001C116 86.6143 93.6142 109 66 109C57.3047 109 49.1279 106.78 42.0051 102.877C42.0017 102.585 42 102.293 42 102C42 64.5996 69.7458 33.6795 105.777 28.7004C112.191 37.1078 116 47.6091 116 59.0001ZM126.223 28.7004C119.809 37.1078 116 47.6091 116 59.0001C116 86.6143 138.386 109 166 109C174.695 109 182.872 106.78 189.995 102.877C189.998 102.585 190 102.293 190 102C190 64.5996 162.254 33.6795 126.223 28.7004Z" fill="#1A1A1A"/>
 <rect x="105" y="29" width="22" height="30" fill="#1A1A1A"/>
-<rect x="36.5" y="12.5" width="159" height="163" stroke="#2496FF"/>
-<rect x="34.5" y="10.5" width="4" height="4" fill="white" stroke="#2496FF"/>
-<rect x="34.5" y="173.5" width="4" height="4" fill="white" stroke="#2496FF"/>
-<rect x="193.5" y="10.5" width="4" height="4" fill="white" stroke="#2496FF"/>
-<rect x="193.5" y="173.5" width="4" height="4" fill="white" stroke="#2496FF"/>
+<rect x="36.5" y="12.5" width="159" height="163" stroke="#81818c"/>
+<rect x="34.5" y="10.5" width="4" height="4" fill="white" stroke="#81818c"/>
+<rect x="34.5" y="173.5" width="4" height="4" fill="white" stroke="#81818c"/>
+<rect x="193.5" y="10.5" width="4" height="4" fill="white" stroke="#81818c"/>
+<rect x="193.5" y="173.5" width="4" height="4" fill="white" stroke="#81818c"/>
 <animateTransform id="anim1" attributeName="transform" type="rotate"
                 values="0 123 99; 0 123 99; 7 123 99; 7 123 99; 0 123 99; 0 123 99"
                 keyTimes="0;0.1;0.3;0.7;0.9;1"
@@ -43,11 +43,11 @@
 <!-- Moving hand -->
 <g>
 <circle cx="17" cy="243" r="14.5" fill="#FFD874" stroke="#1A1A1A"/>
-<rect x="2.5" y="228.5" width="29" height="29" stroke="#2496FF"/>
-<rect x="0.5" y="226.5" width="4" height="4" fill="white" stroke="#2496FF"/>
-<rect x="0.5" y="255.5" width="4" height="4" fill="white" stroke="#2496FF"/>
-<rect x="29.5" y="226.5" width="4" height="4" fill="white" stroke="#2496FF"/>
-<rect x="29.5" y="255.5" width="4" height="4" fill="white" stroke="#2496FF"/>
+<rect x="2.5" y="228.5" width="29" height="29" stroke="#81818c"/>
+<rect x="0.5" y="226.5" width="4" height="4" fill="white" stroke="#81818c"/>
+<rect x="0.5" y="255.5" width="4" height="4" fill="white" stroke="#81818c"/>
+<rect x="29.5" y="226.5" width="4" height="4" fill="white" stroke="#81818c"/>
+<rect x="29.5" y="255.5" width="4" height="4" fill="white" stroke="#81818c"/>
 <g filter="url(#filter0_d_3214_24333)">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M32 257.883L17 251L20.5477 267.25L24.8828 260.832L32 257.883V257.883Z" fill="white"/>
 <path d="M30.718 257.859L24.6865 260.358L24.5441 260.417L24.4578 260.545L20.7932 265.97L17.7203 251.895L30.718 257.859Z" stroke="white" stroke-width="1.02566" stroke-miterlimit="16"/>
