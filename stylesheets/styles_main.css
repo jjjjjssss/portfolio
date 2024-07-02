@@ -11,8 +11,8 @@
   --accent-color-darkened: #ffbb0e;
   --highlight-color: #ffd87462;
   --primary-text-color: #1a1a1a;
-  --secondary-text-color: #505058;
-  --light-secondary-text-color: #81818c;
+  --secondary-text-color: #64646c;
+  --light-secondary-text-color: #7c7c85;
   --background-color: #FFFFFF;
   --darker-background-color: #F2F2F2;
   --light-stroke-color: #dadada;
@@ -147,7 +147,8 @@ nav li:hover a {
 
 /* Inactive nav link is light gray */
 nav .inactive {
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
+  font-weight: normal;
   text-decoration: none;
 }
 
@@ -157,13 +158,6 @@ nav .selected {
   font-weight: 600;
   text-decoration: none;
 }
-
-a {
-  color: var(--secondary-text-color);
-  text-underline-offset: 3px;
-}
-
-
 
 
 
@@ -272,9 +266,22 @@ hr {
   text-transform: uppercase;
   letter-spacing: 0.4px;
 } */
+
+a {
+  color: var(--secondary-text-color);
+  text-underline-offset: 3px;
+}
+.external-link-wrapper {
+  white-space: nowrap;
+}
+.external-link-arrow {
+  vertical-align: text-top;
+}
+
+
 .tag  {
   font-family: var(--mono-font);
-  color: var(--light-secondary-text-color);
+  color: var(--secondary-text-color);
   font-weight: 300;
   font-size: 0.9375em;
   background-color: #eeeef7;
