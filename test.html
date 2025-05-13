@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scroll-Based Image Resize</title>
+  <style>
+    body {
+      height: 200vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .spacer {
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: blue;
+    }
+
+    img {
+      width: 80%;
+      /* max-width: 1000px; */
+      /* object-fit: cover; */
+      transition: width 0.1s ease-out;
+    }
+  </style>
+</head>
+<body>
+  <!-- <div class="spacer"></div> -->
+
+  <div style="height: 2000px"></div>
+  <div class="container">
+    <img id="scrollImage" src="media/lacework/bridgegood2.jpeg" alt="Expandable" />
+  </div>
+
+  <!-- <script>
+    const img = document.getElementById("scrollImage");
+
+    function updateImageWidth() {
+      const rect = img.getBoundingClientRect();
+      const imgCenter = rect.top + rect.height / 2;
+      const viewportHeight = window.innerHeight;
+
+      const start = 0;
+      const end = viewportHeight * 0.6;
+
+      if (imgCenter < start) {
+        img.style.width = "80%";
+      } else if (imgCenter > end) {
+        img.style.width = "100%";
+      } else {
+        const progress = (imgCenter - start) / (end - start);
+        const widthPercent = 80 + (100 - 80) * progress;
+        img.style.width = `${widthPercent}%`;
+        console.log("scrolled");
+      }
+    }
+
+    window.addEventListener("scroll", updateImageWidth);
+    window.addEventListener("resize", updateImageWidth);
+    updateImageWidth(); // run once on load
+  </script> -->
+
+
+  <!-- <script>
+        const img = document.getElementById("scrollImage");
+    const startWidth = 200;
+    const startHeight = 200;
+    const maxWidth = 400;
+    const maxHeight = 400;
+    const triggerScroll = window.innerHeight * 0.8;
+
+    window.addEventListener("scroll", () => {
+      const scrollY = window.scrollY;
+
+      let scaleFactor = Math.min(scrollY / triggerScroll, 1); // clamp between 0 and 1
+
+      let newWidth = startWidth + (maxWidth - startWidth) * scaleFactor;
+      let newHeight = startHeight + (maxHeight - startHeight) * scaleFactor;
+
+      img.style.width = `${newWidth}px`;
+      img.style.height = `${newHeight}px`;
+    });
+  </script> -->
+
+
+  <script>
+    const img = document.getElementById("scrollImage");
+
+
+    window.addEventListener("scroll", () => {
+
+    const sixtyPercentViewport = window.innerHeight * 0.6;
+    const imageTop = img.getBoundingClientRect().top;
+    const distanceScrolled = window.innerHeight - imageTop;
+  
+
+
+    // const scrollPast = Math.max(0, scrollY + sixtyPercentViewport - imageTop);
+      let scaleFactor = Math.min(distanceScrolled / sixtyPercentViewport, 1);
+
+      const scalePercent = 80 + (20 * scaleFactor);
+        img.style.width = `${scalePercent}%`;
+        
+    });
+
+  </script>
+</body>
+</html>
